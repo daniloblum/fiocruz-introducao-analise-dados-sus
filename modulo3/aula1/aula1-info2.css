@@ -1,0 +1,62 @@
+/* AULA 1 - INFO 2 */
+.st0 {
+  fill: url(#linear-gradient);
+  fill:#2d4b9f;
+}
+
+.st0,
+.st1 {
+  stroke-width: .2px;
+}
+
+.st0,
+.st1,
+.st2 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: url(#linear-gradient1);
+  fill:#8144ab;
+}
+
+.st3 {
+  fill: #2d4b9f;
+}
+
+.st4 {
+  fill: #fff;
+}
+
+.st2 {
+  fill: #6bc9c7;
+}
+
+.st5 {
+  fill: #7872b4;
+}
+
+#info-brasil a:hover #bt-amazonas .st1,
+#info-brasil a:focus #bt-amazonas .st1 {
+  transition: .3s;
+  fill: #e4daf2;
+}
+
+#info-brasil a:hover #bt-amazonas .st2,
+#info-brasil a:focus #bt-amazonas .st2 {
+  transition: .3s;
+  fill:#8144ab;
+}
+
+#info-brasil a:hover #bt-bahia .st0,
+#info-brasil a:focus #bt-bahia .st0 {
+  transition: .3s;
+  fill: #6994e2;
+}
+
+#info-brasil a:hover #bt-bahia .st2,
+#info-brasil a:focus #bt-bahia .st2 {
+  transition: .3s;
+  fill:#2d4b9f;
+}

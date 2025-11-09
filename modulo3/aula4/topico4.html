@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex" />
+		<meta name="author" content="Fiocruz, Campus Virtual" />
+		<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
+
+		<!-- Facebook Open Graph -->
+		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/etica-integridade-pesquisa" />
+		<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta property="og:image" content="" />
+		<meta property="og:image:width" content="1080" />
+		<meta property="og:image:height" content="1080" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:image:src" content="" />
+
+		<!-- Favicons and Touch Icons -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../../media/icons/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="../../media/icons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../../media/icons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../../media/icons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../../media/icons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../../media/icons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../../media/icons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="../../media/icons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../../media/icons/apple-icon-180x180.png" />
+
+		<link rel="icon" type="image/png" sizes="192x192" href="../../media/icons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../../media/icons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../../media/icons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../../media/icons/favicon-16x16.png" />
+		<link rel="manifest" href="../media/icons/manifest.json" />
+
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="../../media/icons/ms-icon-144x144.png" />
+		<!-- <meta name="theme-color" content="#003066" /> -->
+		<meta name="theme-color" content="#001833" />
+
+		<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 4</title>
+
+		<!-- Bootstrap CSS 5.1.3 -->
+		<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+
+		<!-- Project CSS -->
+		<link rel="stylesheet" href="../../assets/css/style.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="mobile-toggle-open">
+				<a class="mobile-toggle__button" tabindex="0" role="button">
+					<span class="icon material-symbols-rounded">read_more</span>
+				</a>
+			</div>
+			<div class="brand">
+				<img class="img-fluid logo-black" src="../../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+			</div>
+			<div class="title">
+				<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+			</div>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+
+				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-glossario">Glossário</a></li>
+			</ul>
+		</header>
+		<div class="main">
+			<div class="sidebar" role="navigation">
+				<div class="sidebar__inner" style="position: relative">
+					<div class="sidebar__group d-lg-none">
+						<div class="sidebar__group-item">
+							<div class="sidebar__header">
+								<span>Curso</span>
+								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="sidebar__title">
+								<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+							</div>
+						</div>
+						<div class="sidebar__group-item">
+							<ul class="nav">
+								<li class="nav-item">
+									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+									<span class="label">Módulos</span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo1/apresentacao.html"><strong>Módulo 1</strong><br />Lógica e Linguagem de Programação</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo2/apresentacao.html"><strong>Módulo 2</strong><br />Estatística Descritiva e Comunicação de Resultados</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>3</span></span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+									<span class="label">Conteúdo</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Módulo 3</span>
+										<span class="title">Integração de dados, novas fontes e uso</span>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../apresentacao.html"><strong>Apresentação do módulo</strong></a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula1/topico1.html"><strong>Aula 1: </strong>Interoperabilidade de padrões em Informática em Saúde</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Rede Nacional de Dados em Saúde</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Fontes de dados digitais: barramentos de interoperabilidade</a>
+									</li>
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Interoperabilidade para as políticas sociais: exemplos práticos</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group">
+						<div class="sidebar__group-item">
+							<span class="text class">Aula 4</span>
+						</div>
+						<div class="sidebar__group-item">
+							<div class="dropend">
+								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="200,30">
+									<span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>
+									<span class="label">Tópicos</span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="d-lg-none dropdown-menu__header">
+										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+									</li>
+									<li class="dropdown-menu__title">
+										<span class="label">Aula 4</span>
+										<span class="title">Interoperabilidade para as políticas sociais: exemplos práticos</span>
+									</li>
+									<li class="dropdown-menu__item">
+										<nav class="topic-list">
+											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
+
+											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução à Interoperabilidade em Saúde</span>
+
+											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Exemplos práticos</a>
+
+											<a href="topico4.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Plataformas e  Sistemas</a>
+
+											<a href="topico5.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Rede Nacional de Dados em Saúde (RNDS)</a>
+											
+											<a href="topico6.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Interoperabilidade em Saúde: Integrando Atenção e Tecnologia no Cuidado ao Paciente</a>
+
+											<a href="topico7.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Interoperabilidade e o paciente: desafios e oportunidades</a>
+
+											<a href="topico8.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Interoperabilidade e o futuro da saúde no Brasil</a>
+											
+                                            <a href="topico9.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Considerações finais</a>
+
+                                            <a href="topico10.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico não concluído" status=""> <span class="material-symbols-rounded"></span>Exercício de fixação</a>
+										</nav>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="divider">
+						<hr />
+					</div>
+					<div class="sidebar__group extra">
+						<div class="sidebar__group-item">
+							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod3">
+								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+								<span class="label">Bibliografia</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div id="page-title">
+					<div class="container">
+						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+							<div class="col-12 col-md-10 col-lg-11">
+								<h2 class="title">
+									<span class="label">Módulo 3 | Aula 4</span>
+									<br />
+									Interoperabilidade para as políticas sociais: exemplos práticos
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="page-content" class="">
+					<!-- Inserir o conteúdo aqui -->
+					<section>
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<span class="small">Tópico 4</span>
+										<h3 class="heading__title">Plataformas e  Sistemas</h3>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Infraestrutura Nacional de Dados (IND)</h4>
+									</div>
+
+									<p>A <a href='https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados' target='_blank'>Infraestrutura Nacional de Dados</a> (IND) surge como uma resposta necessária à complexidade e dinamismo da sociedade moderna, na qual a digitalização permeia todas as esferas da vida pública e privada. Este conjunto de normas, políticas, arquiteturas, padrões e ferramentas tecnológicas tem como finalidade não apenas prover um manejo eficiente dos dados, mas também transformar esses dados em ativos estratégicos para a sociedade.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Eixos da Infraestrutura Nacional de Dados</h4>
+									</div>
+
+									<p>A IND é composta por cinco eixos principais:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-9 pt-5 mb-5">
+									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste para navegar entre os 5 cartões</p>
+								</div>
+
+								<div class="col-12 col-md-6 col-lg-6 col-xl-5 mb-5">
+									<!-- Swipper Effect Card with Flipcard -->
+									<div class="swiper swiper--effect-card swiper-flipcard">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<!--Flipcard-->
+												<div class="flipcard">
+													<div class="flip-card">
+														<input type="checkbox" id="flipcardA" class="more" aria-hidden="true">
+														<div class="flip-card-inner">
+															<!-- FRENTE -->
+															<div class="card shadow flip-card-front fundo1 ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h4 card-title">Governança de Dados</span>
+																		<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+																	</div>
+			
+																	<div class="card-footer text-white">
+																		<div class="card-btn">
+																			<label for="flipcardA" class="fio-button fio-button-primary" aria-hidden="true">
+																				<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36">
+																				Confira
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<!-- VERSO -->
+															<div class="card flip-card-back ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h5">Governança de Dados</span>
+																		<div class="scrollable">
+																			<p>Este eixo envolve o gerenciamento e a supervisão das práticas relacionadas à coleta, armazenamento e compartilhamento de dados. A governança deve garantir a qualidade, a integridade e a segurança dos dados, promovendo uma cultura de responsabilidade e transparência.</p>
+																		</div>
+																	</div>
+			
+																	<div class="card-footer">
+																		<div class="card-btn">
+																			<label for="flipcardA" class="fio-button fio-button-secondary return" aria-hidden="true">
+																				<span class="material-symbols-rounded">arrow_back</span> Voltar
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<!--Flipcard-->
+												<div class="flipcard">
+													<div class="flip-card">
+														<input type="checkbox" id="flipcardB" class="more" aria-hidden="true">
+														<div class="flip-card-inner">
+															<!-- FRENTE -->
+															<div class="card shadow flip-card-front fundo1 ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h4 card-title" style="letter-spacing: -1px;">Interoperabilidade</span>
+																		<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+																	</div>
+			
+																	<div class="card-footer text-white">
+																		<div class="card-btn">
+																			<label for="flipcardB" class="fio-button fio-button-primary" aria-hidden="true">
+																				<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36">
+																				Confira
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<!-- VERSO -->
+															<div class="card flip-card-back ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h5">Interoperabilidade</span>
+																		<div class="scrollable">
+																			<p>Este aspecto é vital para a conexão entre diferentes sistemas e plataformas, permitindo que os dados sejam compartilhados e utilizados de forma fluida entre órgãos públicos e empresas, sem barreiras tecnológicas.</p>
+																		</div>
+																	</div>
+			
+																	<div class="card-footer">
+																		<div class="card-btn">
+																			<label for="flipcardB" class="fio-button fio-button-secondary return" aria-hidden="true">
+																				<span class="material-symbols-rounded">arrow_back</span> Voltar
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<!--Flipcard-->
+												<div class="flipcard">
+													<div class="flip-card">
+														<input type="checkbox" id="flipcardC" class="more" aria-hidden="true">
+														<div class="flip-card-inner">
+															<!-- FRENTE -->
+															<div class="card shadow flip-card-front fundo1 ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h4 card-title">Catálogo de Bases de Dados</span>
+																		<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+																	</div>
+			
+																	<div class="card-footer text-white">
+																		<div class="card-btn">
+																			<label for="flipcardC" class="fio-button fio-button-primary" aria-hidden="true">
+																				<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36">
+																				Confira
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<!-- VERSO -->
+															<div class="card flip-card-back ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h5">Catálogo de Bases de Dados</span>
+																		<div class="scrollable">
+																			<p>A criação de um catálogo acessível e bem estruturado de bases de dados é essencial para facilitar a descoberta e o acesso às informações disponíveis, promovendo uma utilização mais eficaz dos dados governamentais.</p>
+																		</div>
+																	</div>
+			
+																	<div class="card-footer">
+																		<div class="card-btn">
+																			<label for="flipcardC" class="fio-button fio-button-secondary return" aria-hidden="true">
+																				<span class="material-symbols-rounded">arrow_back</span> Voltar
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<!--Flipcard-->
+												<div class="flipcard">
+													<div class="flip-card">
+														<input type="checkbox" id="flipcardD" class="more" aria-hidden="true">
+														<div class="flip-card-inner">
+															<!-- FRENTE -->
+															<div class="card shadow flip-card-front fundo1 ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h4 card-title">Privacidade e Segurança</span>
+																		<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+																	</div>
+			
+																	<div class="card-footer text-white">
+																		<div class="card-btn">
+																			<label for="flipcardD" class="fio-button fio-button-primary" aria-hidden="true">
+																				<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36">
+																				Confira
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<!-- VERSO -->
+															<div class="card flip-card-back ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h5">Privacidade e Segurança</span>
+																		<div class="scrollable">
+																			<p>O manejo responsável dos dados implica em respeitar a privacidade dos cidadãos e proteger as informações sensíveis contra acessos não autorizados, garantindo a confidencialidade e a segurança.</p>
+																		</div>
+																	</div>
+			
+																	<div class="card-footer">
+																		<div class="card-btn">
+																			<label for="flipcardD" class="fio-button fio-button-secondary return" aria-hidden="true">
+																				<span class="material-symbols-rounded">arrow_back</span> Voltar
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<!--Flipcard-->
+												<div class="flipcard">
+													<div class="flip-card">
+														<input type="checkbox" id="flipcardE" class="more" aria-hidden="true">
+														<div class="flip-card-inner">
+															<!-- FRENTE -->
+															<div class="card shadow flip-card-front fundo1 ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h4 card-title">Informações Geoespaciais</span>
+																		<!-- <p>Este card <strong>possui</strong> um texto rolável atrás</p> -->
+																	</div>
+			
+																	<div class="card-footer text-white">
+																		<div class="card-btn">
+																			<label for="flipcardE" class="fio-button fio-button-primary" aria-hidden="true">
+																				<img src="../../media/templates/flipcard-icon-dark.svg" alt="Ícone de flipcard" width="36">
+																				Confira
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+			
+															<!-- VERSO -->
+															<div class="card flip-card-back ">
+																<div class="h-100 bg-transparent border-0 text-center">
+																	<div class="card-body justify-content-center d-flex flex-column">
+																		<span class="h5">Informações Geoespaciais</span>
+																		<div class="scrollable">
+																			<p>A integração de dados geoespaciais contribui para a elaboração de políticas públicas mais efetivas, permitindo uma análise espacial que pode orientar decisões em diversas áreas, como urbanismo, saúde e segurança.</p>
+																		</div>
+																	</div>
+			
+																	<div class="card-footer">
+																		<div class="card-btn">
+																			<label for="flipcardE" class="fio-button fio-button-secondary return" aria-hidden="true">
+																				<span class="material-symbols-rounded">arrow_back</span> Voltar
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination swiper-pagination3"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 pt-5mb-5">
+									<p>Com esses eixos, a IND pretende melhorar a qualidade dos serviços públicos, racionalizar custos e promover o desenvolvimento econômico e social por meio do uso estratégico de dados. Além disso, a iniciativa reforça a importância de um ambiente digital seguro e transparente, capaz de empoderar cidadãos e garantir uma gestão pública eficiente e integrada.</p>
+
+									<p>Essa infraestrutura é coordenada pela Secretaria de Governo Digital, que se responsabiliza por definir padrões técnicos e desenvolver capacidades nas equipes envolvidas na transformação digital dos órgãos públicos</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Objetivos da Infraestrutura Nacional de Dados</h4>
+									</div>
+
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img2.jpg" alt="" title="Fonte: Campus Virtual Fiocruz">
+										<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Os <strong>objetivos </strong>da Infraestrutura Nacional de Dados (IND) estão centrados na transformação dos dados públicos em ativos estratégicos e na promoção de um governo mais eficiente e integrado. Abaixo estão os principais propósitos da IND, de acordo com documentos oficiais:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Accordion -->
+									<div class="accordion accordion-flush" id="accordionExample2">
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item1">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Transformar dados em ativos estratégicos da sociedade</button>
+											</h5>
+											<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A IND permite que dados públicos sejam mais do que simples registros; eles se tornam ativos estratégicos que ajudam a sociedade e o governo a tomar decisões informadas e a desenvolver soluções mais eficazes para problemas sociais e econômicos.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item2">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Permitir a elaboração de políticas assertivas</button>
+											</h5>
+											<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+												<div class="accordion-body">
+													<p>Ter acesso a dados confiáveis possibilita a formulação de políticas públicas mais eficazes e direcionadas às necessidades reais da população.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item3">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Viabilizar serviços públicos personalizados, integrados e de qualidade</button>
+											</h5>
+											<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+												<div class="accordion-body">
+													<p>Com uma base de dados bem estruturada, é possível oferecer serviços mais adaptados às necessidades individuais dos cidadãos, promovendo uma administração mais eficiente e de qualidade superior.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item4">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Fortalecer a soberania nacional e o papel das empresas públicas federais</button>
+											</h5>
+											<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A gestão estratégica dos dados fortalece o papel do Estado e das empresas públicas, garantindo que a administração de dados esteja alinhada aos interesses nacionais e contribua para a independência e segurança do país.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item5">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Promover a transparência, a segurança, a privacidade e a proteção de dados</button>
+											</h5>
+											<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A estrutura da IND deve garantir que os cidadãos tenham acesso às informações que lhes dizem respeito, promovendo um ambiente de confiança. Ao mesmo tempo, assegura a conformidade com a LGPD, protegendo dados pessoais e sensíveis.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item6">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Disponibilizar um ambiente de confiança para a sociedade</button>
+											</h5>
+											<div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+												<div class="accordion-body">
+													<p>Além de transparência, a IND busca estabelecer um ambiente seguro em que a sociedade possa confiar na administração pública e no uso adequado de dados.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item7">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item7" aria-expanded="false" aria-controls="collapse1-item7">Apoiar a integração federativa</button>
+											</h5>
+											<div id="collapse1-item7" class="accordion-collapse collapse" aria-labelledby="heading1-item7" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A IND fomenta a colaboração entre diferentes níveis de governo (federal, estadual e municipal), promovendo a integração das informações e a eficiência na prestação de serviços públicos.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item8">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item8" aria-expanded="false" aria-controls="collapse1-item8">Estimular o uso de novas tecnologias</button>
+											</h5>
+											<div id="collapse1-item8" class="accordion-collapse collapse" aria-labelledby="heading1-item8" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A iniciativa incentiva a inovação tecnológica, ampliando a capacidade do governo de responder a desafios contemporâneos e melhorar continuamente seus serviços digitais.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item9">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item9" aria-expanded="false" aria-controls="collapse1-item9">Racionalizar custos</button>
+											</h5>
+											<div id="collapse1-item9" class="accordion-collapse collapse" aria-labelledby="heading1-item9" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A otimização de processos por meio do uso eficiente de dados permite reduzir despesas operacionais, evitando duplicações e aumentando a eficiência da administração pública</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item10">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item10" aria-expanded="false" aria-controls="collapse1-item10">Impulsionar o desenvolvimento econômico e social do país</button>
+											</h5>
+											<div id="collapse1-item10" class="accordion-collapse collapse" aria-labelledby="heading1-item10" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A IND contribui para o crescimento sustentável e equilibrado ao promover a digitalização e um ecossistema mais dinâmico e alinhado às necessidades sociais e econômicas do Brasil.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<!-- Citação -->
+									<div class="quotation">
+										<blockquote class="">
+											<div class="quotation-body">
+												<span class="quotation-mark fa1"></span>
+												
+												<p>“No Brasil, a Infraestrutura Nacional de Dados, uma iniciativa que envolve ações de diversos órgãos e entidades, nasce com essa mesma percepção sobre a relevância dos dados. Embora inicialmente focada nas ofertas de seus Departamentos e dos principais parceiros do SISP (Sistema de Administração dos Recursos de Tecnologia da Informação), há uma clara visão futura de estabelecer conexões robustas e guiadas pela concepção de dados como um bem comum. Esta visão abrange todo o governo federal, todas as esferas públicas e até iniciativas privadas alinhadas ao desenvolvimento nacional” </p>
+												<span class="quotation-autor">MINISTÉRIO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS</span>
+												
+											</div>
+											<span class="quotation-mark fa2"></span>
+											
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!-- Navegação da aula -->
+				<section>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="page-nav d-flex justify-content-evenly">
+									<a class="fio-button fio-button-primary" href="topico3.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
+									<a class="fio-button fio-button-primary" href="topico5.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<footer>
+				<div class="container-fluid">
+					<div class="row justify-content-center align-items-center linha-de-marcas">
+						<div class="col-12 col-md-auto">
+							<ul class="logos">
+								<!-- <li class="realizacao"> -->
+								<li>
+									<img class="img-fluid logo1" src="../../media/logos/logo-icict-vertical.svg" alt="Logo do ICICT" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo2" src="../../media/logos/logo-campus-horizontal.png" alt="Logo do Campus Virtual Fiocruz" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz-horizontal-black.png" alt="Logo da Fiocruz" height="" />
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-12 col-md-auto">
+							<ul class="logos principais align-self-end">
+								<li>
+									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.png" alt="Logo do SUS Digital" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/ministerio-saude-gov-federal.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+
+								<li>
+									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/ministerio-saude-gov-federal-mobile.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!--  Bootstrap JS and Popper -->
+		<script src="../../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Sticky Sidebar -->
+		<script type="text/javascript" src="../../assets/js/ResizeSensor.js"></script>
+		<script type="text/javascript" src="../../assets/js/sticky-sidebar.js"></script>
+		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
+
+		<script type="text/javascript">
+			var sidebar = new StickySidebar('.sidebar', {
+				topSpacing: 0,
+				bottomSpacing: 0,
+				containerSelector: '.main',
+				innerWrapperSelector: '.sidebar__inner',
+				minWidth: 991,
+			});
+		</script>
+
+		<!-- Swiper -->
+		<script src="../../assets/js/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/swiper-init.js"></script>
+
+		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
+		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>
+		<script type="text/javascript" src="../../source/animate/aos/dist/aos.js"></script>
+
+		<!-- Timeline horizontal -->
+		<script src="../../assets/js/timeline-horizontal/util.js"></script>
+		<!-- util functions included in the CodyHouse framework -->
+		<script src="../../assets/js/timeline-horizontal/swipe-content.js"></script>
+		<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+		<script src="../../assets/js/timeline-horizontal/main.js"></script>
+		<!-- Start the Timeline -->
+		<script>
+			document.getElementsByTagName('html')[0].className += ' js';
+		</script>
+
+		<script>
+			AOS.init();
+		</script>
+	</body>
+
+</html>

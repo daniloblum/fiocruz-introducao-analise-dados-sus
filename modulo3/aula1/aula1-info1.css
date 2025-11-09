@@ -1,0 +1,207 @@
+/* AULA 1 - INFO 1 */
+
+.st0 {
+fill: none;
+}
+
+.st1 {
+fill: #e4daf2;
+}
+
+.st2 {
+fill: #4b4f58;
+}
+
+.st3 {
+fill: #b1dfe0;
+}
+
+.st4 {
+opacity: .7;
+}
+
+.st4, .st5 {
+fill: #fff;
+}
+
+.st6 {
+fill: #1f7a75;
+}
+
+.st7 {
+mix-blend-mode: color-dodge;
+}
+
+.st7, .st8 {
+opacity: .8;
+}
+
+.st9 {
+isolation: isolate;
+}
+
+.st10 {
+fill: #2d4b9f;
+}
+
+.st11 {
+opacity: .4;
+}
+
+.st12 {
+fill: #29a39d;
+}
+
+.st13 {
+fill: #6bc9c7;
+}
+
+.st14 {
+fill: #7872b4;
+}
+
+.st16 {
+clip-path: url(#clippath);
+}
+
+.st17 {
+fill: #4d6db5;
+}
+
+#info-mindmap .content-card {
+    display: none;
+    animation: saida .5s ease-out;
+}
+
+#info-mindmap .content-card.show {
+    display: block;
+    animation: entrada .5s ease-out;
+}
+
+/* #info-mindmap #content-card1.content-card {
+    display: block;
+} */
+
+#info-mindmap .content-card text {
+   fill:#fff;
+}
+
+#info-mindmap .bt {
+    animation: move2 .75s ease-out infinite alternate;
+}
+
+#info-mindmap .bt:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+	filter: drop-shadow(0 4px 4px #ababab);
+}
+
+#info-mindmap #bt2.bt,
+#info-mindmap #bt4.bt{
+    animation-delay: 250ms;    
+}
+
+#info-mindmap #bt3.bt,
+#info-mindmap #bt5.bt {
+    animation-delay: 100ms;    
+}
+
+#info-mindmap .bt:focus {
+	animation:none;
+	transform: translateY(-5px);
+}
+
+#info-mindmap #bt1:hover .st3,
+#info-mindmap #bt2:hover .st3,
+#info-mindmap #bt3:hover .st3 {
+    transition: .3s;
+    fill: var(--fio-sys-color-primary-medium);
+}
+
+#info-mindmap #bt1:hover .st6,
+#info-mindmap #bt2:hover .st6,
+#info-mindmap #bt3:hover .st6 {
+    transition: .3s;
+    fill: var(--fio-sys-color-primary-light-contrast);
+}
+
+#info-mindmap #bt4:hover .st17,
+#info-mindmap #bt5:hover .st17,
+#info-mindmap #bt6:hover .st17 {
+    transition: .3s;
+    fill: var(--fio-sys-color-tertiary-dark);
+}
+
+#info-mindmap #bt4:hover .st10,
+#info-mindmap #bt5:hover .st10,
+#info-mindmap #bt6:hover .st10 {
+    transition: .3s;
+    fill: var(--fio-sys-color-tertiary-light-contrast);
+}
+
+/*Close Button*/
+#info-mindmap #close-button1:hover,
+#info-mindmap #close-button2:hover,
+#info-mindmap #close-button3:hover,
+#info-mindmap #close-button4:hover,
+#info-mindmap #close-button5:hover,
+#info-mindmap #close-button6:hover {
+    cursor: pointer;
+    transition: .3s;
+}
+
+#info-mindmap #close-button1:hover circle.st6,
+#info-mindmap #close-button2:hover circle.st6,
+#info-mindmap #close-button3:hover circle.st6 {
+    fill: var(--fio-sys-color-primary-medium);
+}
+
+#info-mindmap #close-button4:hover circle.st10,
+#info-mindmap #close-button5:hover circle.st10,
+#info-mindmap #close-button6:hover circle.st10 {
+     fill: var(--fio-sys-color-tertiary-light-contrast);
+}
+
+@keyframes entrada {
+	0% {
+		transform: translateY(-100px);
+        opacity:0;
+	}
+
+    20%{
+       opacity:0; 
+    }
+
+	100% {
+        transform: translateY(0);
+        opacity:1;
+	}
+}
+
+@keyframes saida {
+	0% {
+		transform: translateY(0);
+        opacity:1;
+	}
+
+    20%{
+       opacity:1; 
+    }
+
+	100% {
+        transform: translateY(-100px);
+        opacity:0;
+	}
+}
+
+@keyframes move2 {
+	from {
+		transform: translateY(0);
+		filter: drop-shadow(0 1px 1px rgba(11,41,39,.5));
+	}
+
+	to {
+		transform: translateY(-20px);
+		filter: drop-shadow(0 10px 4px rgba(11,41,39,.5));
+	}
+}
