@@ -242,7 +242,7 @@
 				<section>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8">
 								<div class="heading__block">
 									<span class="small">Tópico 5</span>
 									<h3 class="heading__title">Laços de repetição</h3>
@@ -255,7 +255,7 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 								<!-- CÓDIGO -->
 								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<pre aria-label="Exemplo de estrutura básica do comando 'ENQUANTO':">
@@ -299,7 +299,7 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8">
 								<p>O código acima seria executado pela primeira vez com a condição: “100 é maior do que 1?” Como a resposta é sim, o IMC é calculado, o resultado é exibido, o contador é incrementado em 1, e a condição é verificada novamente: “100 é maior do que 2?” Novamente sim, e o mesmo procedimento é executado para o segundo paciente. No caso do paciente número 100, a condição seria: “100 é maior ou igual a 100?” A resposta continua sendo sim, então o procedimento é realizado. Na próxima execução, a condição seria “100 é maior do que 101?”, o que retorna falso, encerrando o laço, e o código seguiria para a primeira instrução após o laço.</p>
 
 								<p>Outra opção é o laço de pós-teste, que tem como finalidade garantir a execução do bloco de código pelo menos uma vez. Ao final da primeira execução, é verificada uma condição lógica: se for verdadeira, o laço continua; caso contrário, a execução é automaticamente encerrada</p>
@@ -309,7 +309,7 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 								<!-- CÓDIGO -->
 								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<pre aria-label="Exemplo de estrutura básica do comando 'REPITA':">
@@ -385,26 +385,187 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8">
 								<div class="heading__block">
 									<p class="h5 heading__title">Matriz</p>
 								</div>
 
 								<p>Matrizes são estruturas de dados bidimensionais utilizadas para organizar e manipular informações. Diferente dos vetores, que possuem apenas uma dimensão, as matrizes têm tanto linhas quanto colunas, permitindo o armazenamento de dados em uma grade. Essa estrutura é útil quando precisamos representar tabelas ou qualquer conjunto de informações que requerem organização em duas dimensões. Cada elemento de uma matriz pode ser acessado por sua posição específica, definida pelos índices de linha e coluna, facilitando operações como iteração, busca e modificação de dados.</p>
-
-								<p>Supondo que temos a seguinte matriz : </p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- CÓDIGO -->
+								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<pre aria-label="Exemplo de matriz">
+										<code>
+											<p>Supondo que temos a seguinte matriz:</p>
+											<span class="keyword">m</span> = <span class="keyword">[a, b]</span>,
+											    [c, d]
 
+											<p>levando em conta que esse índice começa de 1, podemos acessar o valor B usando os seguintes index: 1 para a primeira linha e 2 para o segundo item da primeira linha.</p>
+
+											<span class="keyword">valor</span> = <span class="keyword">m[1][2]</span>,
+											valor teria o mesmo valor B
+										</code>
+									</pre>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<p>É comum o uso de laços de repetição para preenchimento ou manipulação de vetores e matrizes.</p>
+
+								<p>Voltando ao exemplo da gaveta de talheres, se imaginarmos a gaveta vista de cima, com várias fileiras (linhas) e colunas, cada posição ocupada por um tipo de talher em determinada quantidade, temos uma matriz, por meio da qual podemos acessar os dados por linha e coluna.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<p class="h5 heading__title">Função</p>
+								</div>
 
+								<p>Funções são blocos de códigos reutilizáveis que podem realizar operações computacionais específicas, como entrada, processamento e saída. A ideia de utilizar funções é que, de maneira geral, problemas complexos exigem algoritmos complexos  e o uso de funções pode ajudar a quebrar um problema complexo em vários problemas mais simples (dividir para conquistar). Esse tipo de estrutura usa o conceito de modularidade, que é a divisão de um algoritmo em partes menores, e tem vários benefícios, como:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush aos-init aos-animate" id="aula1-accordion2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Reutilização</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Quando uma função é definida, ela pode ser usada <span class="color-tertiary-dark"><strong>N</strong></span> vezes em várias partes do algoritmo sem precisar duplicar o código.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Organização</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O uso de funções pode deixar o código mais fácil de entender e melhorar a legibilidade, já que cada bloco faz uma tarefa específica.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Manutenção</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Se você usa uma função várias vezes e precisa alterar, só é necessário alterar em um local, sem a necessidade de modificar várias partes do código.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Colaboração</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Em projetos maiores, diferentes programadores podem trabalhar em funções diferentes de forma independente, facilitando o trabalho.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Testabilidade</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Usando funções podemos testar o funcionamento da função individualmente, permitindo que bugs sejam identificados mais rapidamente.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Uma função tem um início e fim, é identificada por um nome, que é como essa função vai ser utilizada por todo o código. Para usar uma função é preciso escrevê-la antes da sua chamada. </p>
+
+								<p>Uma função pode ter parâmetros, que são os dados de entrada, e a função pode ou não retornar um resultado. No exemplo a seguir definimos 2 parâmetros de entrada, e usamos a palavra especial para retornar um valor chamada de retorno, a sintaxe é retorno <span class="color-tertiary-dark"><strong>[variável]</strong></span>.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Na Prática - CÓDIGO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Na prática</h5>
+									</div>
+
+									<pre aria-label="Exemplo de código com funções">
+											<code>
+												<span class="comment">// Exemplos:</span>
+
+												<span class="keyword">função</span> <span class="function">somar</span>(<span class="variable">A</span>, <span class="variable">B</span>) { <span class="comment"># nome da função somar, a função recebe dois parâmetros A e B</span>
+												   <span class="keyword">retorno</span> <span class="variable">A</span> + <span class="variable">B</span> <span class="comment"># processamento, realiza uma soma utilizando A e B, então  retorna o valor resultante da soma</span>
+												}
+
+												<p>Após definir uma função podemos chamá-la, dessa forma:</p>
+												<span class="variable">resultado</span> = <span class="function">somar</span>(<span class="number">1</span>, <span class="number">3</span>) <span class="comment"># 1 e 3 são argumentos que estamos enviando para a função somar</span>
+												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># 4</span>
+
+												<span class="variable">resultado</span> = <span class="function">somar</span>(<span class="number">100</span>, <span class="number">200</span>)
+												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># 300</span>
+											</code>
+										</pre>
+
+									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Observe que, no primeiro exemplo anterior, enviamos para a função <strong>somar</strong> os números 1 e 3, que chamaremos de argumentos, enquanto eles serão atribuídos de forma correspondente aos parâmetros A e B que foram definidos na <strong>função somar</strong>. Quando estamos no âmbito de uma função, as variáveis passam a ter um contexto local, ou seja, os parâmetros dentro de uma função só existem dentro daquela função e não são visíveis ao código principal, enquanto às variáveis que ficam fora da função, e dentro do código principal, chamamos de variáveis de <strong>contexto global</strong>. Vamos a um exemplo.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<!-- Na Prática - CÓDIGO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Na prática</h5>
+									</div>
+
+									<pre aria-label="Exemplo de código com funções">
+											<code>
+												<span class="variable">A</span> = <span class="number">100</span>
+
+												<span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
+												   <span class="variable">res</span> = <span class="variable">A</span> * <span class="variable">multiplicador</span>
+												   <span class="variable">A</span> = <span class="variable">res</span>
+												   <span class="keyword">retorno</span> <span class="variable">A</span>
+												}
+
+												<span class="variable">resultado</span> = <span class="function">multiplicar</span>(<span class="number">2</span>, <span class="number">2</span>) <span class="comment"># envio 2 argumentos como pede a função em sua definição</span>
+
+												<span class="function">mostrar</span>(<span class="variable">A</span>) <span class="comment"># mostraria 100</span>
+
+												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># mostraria 4, o valor de A dentro da função não tem nenhuma relação com A fora da função.</span>
+											</code>
+										</pre>
+
+									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -418,7 +579,7 @@
 						<div class="col-12 col-md-10 col-lg-8">
 							<div class="page-nav d-flex justify-content-evenly">
 								<a class="fio-button fio-button-primary" href="topico4.html" rel="prev"><span class="material-symbols-rounded" aria-hidden="true">west</span> Tópico Anterior</a>
-								<a class="fio-button fio-button-primary" href="topico6.html" rel="next">Aula 2 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+								<a class="fio-button fio-button-primary" href="topico6.html" rel="next">Próximo tópico <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
 							</div>
 						</div>
 					</div>

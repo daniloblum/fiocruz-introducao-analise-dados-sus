@@ -57,7 +57,7 @@
   color: #ffffff !important;
 }
 strong {
-  font-family: var(--fio-sys-typography-family-primary-bold);
+  font-family: var(--fio-sys-typography-family-primary-extra-bold);
 }
 
 i {
@@ -152,9 +152,9 @@ section {
   padding: var(--fio-sys-size-margin-xl) 0;
 }
 
-.row > div:last-child {
+/* .row > div:last-child {
   margin-bottom: var(--fio-sys-size-margin-xl);
-}
+} */
 
 /* .row > div:last-child figure {
 	margin-bottom: 0;
