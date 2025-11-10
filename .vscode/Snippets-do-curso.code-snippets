@@ -1,0 +1,96 @@
+{
+	// Place your fiocruz-introducao-analise-dados-sus workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"accordion": {
+		"prefix": "criarAccorion",
+		"body": [
+			"<!-- Accordion -->",
+			"<div class=\"accordion accordion-flush\" id=\"accordionExample2\">",
+    "	<div class=\"accordion-item\">",
+    "		<h5 class=\"accordion-header\" id=\"heading1-item1\">",
+    "			<button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse1-item1\" aria-expanded=\"true\" aria-controls=\"collapse1-item1\">Accordion ítem 1</button>",
+    "		</h5>",
+    "		<div id=\"collapse1-item1\" class=\"accordion-collapse collapse\" aria-labelledby=\"heading1-item1\" data-bs-parent=\"\">",
+    "			<div class=\"accordion-body\">",
+    "				<p class=\"h6\">ANVISA</p>",
+    "				<p>Agência Nacional de Vigilância Sanitária, autarquia que exerce atividades de regulação, normatização, controle e fiscalização na área de vigilância sanitária.</p>",
+			"",
+    "				<p><strong>Autoridade Nacional Reguladora do Medicamento (ANARME) ou Entidade Reguladora de Moçambique</strong></p>",
+			"",
+    "				<p>Instituição pública, dotada de personalidade jurídica, autonomia administrativa, financeira e patrimonial, que desempenha funções de regulamentação, supervisão, fiscalização e sancionamento, nos termos definidos pela Lei.</p>",
+			"",
+    "				<p><strong>Autoridades Regulatórias</strong></p>",
+			"",
+    "				<p>Instituições que têm poder regulatório, ou seja, autoridades que analisam os dados submetidos e conduzem inspeções. Podem também serem denominadas autoridades competentes.</p>",
+    "			</div>",
+    "		</div>",
+    "	</div>",
+			"",
+    "	<div class=\"accordion-item\">",
+    "		<h5 class=\"accordion-header\" id=\"heading1-item2\">",
+    "			<button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse1-item2\" aria-expanded=\"false\" aria-controls=\"collapse1-item2\">Accordion ítem 2</button>",
+    "		</h5>",
+    "		<div id=\"collapse1-item2\" class=\"accordion-collapse collapse\" aria-labelledby=\"heading1-item2\" data-bs-parent=\"\">",
+    "			<div class=\"accordion-body\">",
+    "				<p>Conteúdo Accordion 2</p>",
+    "			</div>",
+    "		</div>",
+    "	</div>",
+			"",
+    "	<div class=\"accordion-item\">",
+    "		<h5 class=\"accordion-header\" id=\"heading1-item3\">",
+    "			<button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse1-item3\" aria-expanded=\"false\" aria-controls=\"collapse1-item3\">Accordion ítem 3</button>",
+    "		</h5>",
+    "		<div id=\"collapse1-item3\" class=\"accordion-collapse collapse\" aria-labelledby=\"heading1-item3\" data-bs-parent=\"\">",
+    "			<div class=\"accordion-body\">",
+    "				<p>Conteúdo Accordion 3</p>",
+    "			</div>",
+    "		</div>",
+    "	</div>",
+			"</div>"
+		],
+		"description": "accordion"
+	},
+	"lista não ordenada": {
+		"prefix": "criarListaSimples",
+		"body": [
+			"<!-- Lista Não-Ordenada -->",
+			"<div class=\"list\">",
+    "	<ul class=\"list-group\">",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style=\"default\" data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\">a ação popular que ficou conhecida como Queda da Bastilha, uma prisão que era símbolo da opressão e do poder real na França do Século XVIII, durante a Revolução Francesa; </li>",
+			"",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style='audio' data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\" data-aos-delay=\"100\">",
+    "			<a href='' target=''>Exemplo de link de áudio</a>",
+    "		</li>",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style='file' data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\" data-aos-delay=\"200\">",
+    "			<a href='' target=''>Exemplo de link para arquivos</a>",
+    "		</li>",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style='pages' data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\" data-aos-delay=\"300\">",
+    "			<a href='' target='_blank'>Exemplo de link para páginas</a>",
+    "		</li>",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style='default' data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\" data-aos-delay=\"400\">",
+    "			<a href='' target=''>Exemplo de link de vídeo</a>",
+    "		</li>",
+			"",
+    "		<li class=\"list-group-item aos-init aos-animate\" list-style=\"none\" data-aos=\"fade-right\" data-aos-easing=\"ease-out\" data-aos-duration=\"1200\">Lista sem ícone</li>",
+			"",
+    "	</ul>",
+			"</div>"
+		],
+		"description": "lista não ordenada"
+	}
+}

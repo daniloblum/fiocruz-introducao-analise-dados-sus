@@ -119,3 +119,33 @@
     display: block;
     outline: none;
 }
+
+/* cores de sintaxe */
+.code-example-container .keyword {
+    color: #2887d4 !important;
+}
+
+.code-example-container .variable {
+    color: #4bbcf9 !important;
+}
+
+.code-example-container .number {
+    color: #b5cea8 !important;
+}
+
+.code-example-container .function {
+    color: #e39c19 !important;
+}
+
+.code-example-container .comment {
+    color: #6a9955 !important;
+    font-style: italic;
+}
+
+.destaque-parallax .code-example-container {
+    color: var(--fio-sys-color-neutral-white) !important;
+}
+
+.destaque-parallax .code-example-container .comment {
+    color: #9eda83 !important;
+}
