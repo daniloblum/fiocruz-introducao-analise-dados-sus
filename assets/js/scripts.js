@@ -1,13 +1,13 @@
 // Stick Header
 
-window.addEventListener('scroll', function () {
-	const header = document.querySelector('.header');
-	const titleHeight = document.querySelector('.header').scrollHeight;
+window.addEventListener("scroll", function () {
+	const header = document.querySelector(".header");
+	const titleHeight = document.querySelector(".header").scrollHeight;
 
 	if (window.scrollY > 150) {
-		header.classList.add('header--sticky');
+		header.classList.add("header--sticky");
 	} else {
-		header.classList.remove('header--sticky');
+		header.classList.remove("header--sticky");
 	}
 });
 
@@ -77,10 +77,10 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 // Botão de copiar podcast
 
-const copyButton = document.querySelectorAll('.copy-to-clip');
+const copyButton = document.querySelectorAll(".copy-to-clip");
 
-copyButton.forEach(btn => {
-	btn.addEventListener('click', () => {
+copyButton.forEach((btn) => {
+	btn.addEventListener("click", () => {
 		copyToClipboard(btn);
 		// tooltipShow(btn);
 
@@ -89,14 +89,14 @@ copyButton.forEach(btn => {
 });
 
 function copyToClipboard(e) {
-	const textToCopy = e.getAttribute('data-link');
-	const textarea = document.createElement('textarea');
-	textarea.setAttribute('readonly', '');
-	textarea.style.position = 'absolute';
+	const textToCopy = e.getAttribute("data-link");
+	const textarea = document.createElement("textarea");
+	textarea.setAttribute("readonly", "");
+	textarea.style.position = "absolute";
 	textarea.value = textToCopy;
 	document.body.appendChild(textarea);
 	textarea.select();
-	document.execCommand('copy');
+	document.execCommand("copy");
 	document.body.removeChild(textarea);
 }
 function tooltipFeedback(b) {
@@ -104,43 +104,46 @@ function tooltipFeedback(b) {
 
 	// feedback.tooltip('show');
 
-	b.addEventListener('mouseout', () => {
-		feedback.tooltip('hide');
+	b.addEventListener("mouseout", () => {
+		feedback.tooltip("hide");
 	});
 }
 
 // Lightbox (insert the class "lightbox" into <figure>)
 
-const imageToLightbox = document.querySelectorAll('.lightbox');
+const imageToLightbox = document.querySelectorAll(".lightbox");
+// const lightboxImage = imageToLightbox.querySelector("img");
 
-imageToLightbox.forEach(image => {
-	image.addEventListener('click', () => {
-		if (!image.classList.contains('lightbox--show')) {
-			const getImage = image.querySelector('img');
-			const getImageSrc = getImage.getAttribute('src');
-			const imageLightbox = document.createElement('div');
+console.log(imageToLightbox);
 
-			imageLightbox.classList.add('lightbox__image');
+imageToLightbox.forEach((image) => {
+	image.addEventListener("click", () => {
+		if (!image.classList.contains("lightbox--show")) {
+			const getImage = image.querySelector("img");
+			const getImageSrc = getImage.getAttribute("src");
+			const imageLightbox = document.createElement("div");
+
+			imageLightbox.classList.add("lightbox__image");
 
 			document.body.appendChild(imageLightbox);
 			imageLightbox.innerHTML = `<img src="${getImageSrc}"/>`;
 			console.log(getImageSrc);
 
-			image.classList.add('lightbox--show');
+			image.classList.add("lightbox--show");
 
-			document.body.style.overflow = 'hidden';
-			document.body.style.userSelect = 'none';
+			document.body.style.overflow = "hidden";
+			document.body.style.userSelect = "none";
 
 			closeLightbox(imageLightbox);
 		}
 
 		function closeLightbox(e) {
-			const lightboxOpen = document.querySelector('.lightbox__image');
-			e.addEventListener('click', () => {
+			const lightboxOpen = document.querySelector(".lightbox__image");
+			e.addEventListener("click", () => {
 				document.body.removeChild(e);
-				image.classList.remove('lightbox--show');
-				document.body.style.overflow = 'auto';
-				document.body.style.userSelect = 'auto';
+				image.classList.remove("lightbox--show");
+				document.body.style.overflow = "auto";
+				document.body.style.userSelect = "auto";
 			});
 		}
 	});
@@ -148,12 +151,12 @@ imageToLightbox.forEach(image => {
 
 // Boxes - inserir o título de acordo com o atributo
 
-const boxes = document.querySelectorAll('.box');
+const boxes = document.querySelectorAll(".box");
 
-boxes.forEach(box => {
-	const boxAttribute = box.getAttribute('data-box');
+boxes.forEach((box) => {
+	const boxAttribute = box.getAttribute("data-box");
 
-	const boxLabel = box.querySelector('.label');
+	const boxLabel = box.querySelector(".label");
 
 	boxLabel.innerHTML = boxAttribute;
 });
@@ -162,9 +165,9 @@ boxes.forEach(box => {
 
 const modalInfos = {
 	creditos: {
-		ariaLabel: 'creditos',
-		modalSize: 'modal-lg',
-		modalTitle: 'Créditos',
+		ariaLabel: "creditos",
+		modalSize: "modal-lg",
+		modalTitle: "Créditos",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
@@ -339,9 +342,9 @@ const modalInfos = {
 		`,
 	},
 	bibliografiaMod1: {
-		ariaLabel: 'bibliografiaMod1',
-		modalSize: 'modal-xl',
-		modalTitle: 'Bibliografia Módulo 1',
+		ariaLabel: "bibliografiaMod1",
+		modalSize: "modal-xl",
+		modalTitle: "Bibliografia Módulo 1",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
@@ -488,9 +491,9 @@ const modalInfos = {
 		`,
 	},
 	bibliografiaMod2: {
-		ariaLabel: 'bibliografiaMod2',
-		modalSize: 'modal-xl',
-		modalTitle: 'Bibliografia Módulo 2',
+		ariaLabel: "bibliografiaMod2",
+		modalSize: "modal-xl",
+		modalTitle: "Bibliografia Módulo 2",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
@@ -705,9 +708,9 @@ const modalInfos = {
 		`,
 	},
 	bibliografiaMod3: {
-		ariaLabel: 'bibliografiaMod3',
-		modalSize: 'modal-xl',
-		modalTitle: 'Bibliografia Módulo 3',
+		ariaLabel: "bibliografiaMod3",
+		modalSize: "modal-xl",
+		modalTitle: "Bibliografia Módulo 3",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
@@ -842,9 +845,9 @@ const modalInfos = {
 		`,
 	},
 	bibliografiaMod4: {
-		ariaLabel: 'bibliografiaMod4',
-		modalSize: 'modal-xl',
-		modalTitle: 'Bibliografia Módulo 4',
+		ariaLabel: "bibliografiaMod4",
+		modalSize: "modal-xl",
+		modalTitle: "Bibliografia Módulo 4",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-11">
@@ -897,9 +900,9 @@ const modalInfos = {
 		`,
 	},
 	autorMod1Aula1: {
-		ariaLabel: 'autorMod1Aula1',
-		modalSize: 'modal-xl',
-		modalTitle: 'Sobre os autores',
+		ariaLabel: "autorMod1Aula1",
+		modalSize: "modal-xl",
+		modalTitle: "Sobre os autores",
 		modalBody: `
 			<div class="row justify-content-center pt-5">
 				<div class="col-12 col-md-10 col-lg-10">
@@ -918,9 +921,9 @@ const modalInfos = {
 		`,
 	},
 	glossario: {
-		ariaLabel: 'glossario',
-		modalSize: 'modal-lg',
-		modalTitle: 'Glossário',
+		ariaLabel: "glossario",
+		modalSize: "modal-lg",
+		modalTitle: "Glossário",
 		modalBody: `
 			<div class="accordion accordion-flush" id="accordionExample2">
 	<div class="accordion-item">
@@ -1075,14 +1078,14 @@ const modalInfos = {
 // Get all buttons and links that have "modal" in the data-bs-toggle
 const modalButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
 
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 	//do work
 
-	modalButtons.forEach(btn => {
+	modalButtons.forEach((btn) => {
 		// Check if the modal exist
-		const modalId = btn.getAttribute('data-bs-target').slice(1);
+		const modalId = btn.getAttribute("data-bs-target").slice(1);
 		const createdModalId = document.getElementById(modalId);
-		const modalOrigin = btn.getAttribute('data-bs-target').slice(7);
+		const modalOrigin = btn.getAttribute("data-bs-target").slice(7);
 		const hasPropriety = Object.hasOwn(modalInfos, modalOrigin);
 
 		if (!createdModalId && hasPropriety) {
@@ -1095,14 +1098,14 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 function createModal(id) {
-	const newModal = document.createElement('div');
+	const newModal = document.createElement("div");
 	const modalLabel = id.slice(6);
 
-	newModal.classList.add('modal', 'fade');
-	newModal.setAttribute('id', id);
-	newModal.setAttribute('tabindex', '-1');
-	newModal.setAttribute('aria-labelledby', modalLabel);
-	newModal.setAttribute('aria-hidden', 'true');
+	newModal.classList.add("modal", "fade");
+	newModal.setAttribute("id", id);
+	newModal.setAttribute("tabindex", "-1");
+	newModal.setAttribute("aria-labelledby", modalLabel);
+	newModal.setAttribute("aria-hidden", "true");
 
 	newModal.innerHTML = `
 		<div class="modal-dialog ${modalInfos[modalLabel].modalSize}">
@@ -1125,7 +1128,7 @@ function createModal(id) {
 }
 
 //Before and after
-const container = document.querySelector('.antes-e-depois--container');
-document.querySelector('.antes-e-depois--slider').addEventListener('input', e => {
-	container.style.setProperty('--position', `${e.target.value}%`);
+const container = document.querySelector(".antes-e-depois--container");
+document.querySelector(".antes-e-depois--slider").addEventListener("input", (e) => {
+	container.style.setProperty("--position", `${e.target.value}%`);
 });
