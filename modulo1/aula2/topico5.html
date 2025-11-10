@@ -183,6 +183,10 @@
 								</li>
 
 								<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+								</li>
+
+								<li class="dropdown-menu__item">
 									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
 								</li>
 							</ul>
@@ -268,15 +272,384 @@
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
-									<span class="small">Tópico 4</span>
-									<h3 class="heading__title">Funções da Informação</h3>
+									<span class="small">Tópico 5</span>
+									<h3 class="heading__title">Agrupamento de dados</h3>
+								</div>
+
+								<p>Agrupamento de dados é o processo de agrupar informações baseadas em uma ou mais categorias. Isso permite que você resuma as observações e obtenha insights de maneira mais clara. Basicamente, você pega os dados de várias linhas ou colunas e realiza operações matemáticas ou estatísticas, como somar, contar ou calcular a média, para transformar um grande volume de informações em um resumo mais simples e fácil de interpretar.</p>
+
+								<p>Por exemplo, ao agrupar os dados de atendimentos de diferentes meses nos anos de 2017 a 2024, podemos calcular a soma total de atendimentos por ano ou a média de atendimentos por município. Dessa forma, conseguimos identificar padrões e tendências sem precisar analisar cada detalhe individualmente.</p>
+
+								<p>No R, os dois principais argumentos usados para realizar a agregação de dados no pacote <span class="color-tertiary-dark"><strong>{dplyr}</strong></span> são <span class="color-tertiary-dark"><strong>group_by()</strong></span> e <span class="color-tertiary-dark"><strong>summarise()</strong></span>.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Não-Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" >Com <span class="color-tertiary-dark"><strong>group_by()</strong></span>, agrupamos os dados de acordo com uma ou mais colunas, ou seja, criamos "subgrupos" baseados nos valores dessas colunas.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Em seguida, utilizamos <span class="color-tertiary-dark"><strong>summarise()</strong></span>, escolhemos o nome da nova coluna que será criada e aplicamos uma operação matemática ou estatística (como soma, média etc.), referenciando a coluna sobre a qual queremos fazer o cálculo.</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Podemos considerar, de acordo com Aguiar (1991), as seguintes funções da informação: </p>
+								<p>Por exemplo, se quisermos calcular a soma de uma coluna de "atendimentos" para cada "município" e "ano", primeiro agrupamos as observações por essas categorias com <span class="color-tertiary-dark"><strong>group_by()</strong></span> e, em seguida, usamos <span class="color-tertiary-dark"><strong>summarise()</strong></span> para realizar a soma.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- CÓDIGO -->
+								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<pre aria-label="Exemplo de estrutura básica do comando 'SE':">
+											<code>
+												<p>Olhe este exemplo:</p>
+												dados_agregados &lt;- dados %>% group_by(Ano, Municipio) %>% 
+
+												summarise(Atendimentos_Totais = sum(Atendimentos))
+											</code>
+										</pre>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Com este código, a gente transforma a tabela de entrada na tabela de saída representadas adiante.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="4">ENTRADA: Tabela de Atendimentos por Município (Antes da agregação)</th>
+											</tr>
+											<tr class="text-center">
+												<th>Ano</th>
+												<th>Mês</th>
+												<th>Município</th>
+												<th>Atendimentos</th>
+										</thead>
+
+										<tbody>
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Jan</td>
+												<td>Salvador</td>
+												<td>300</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Fev</td>
+												<td>Salvador</td>
+												<td>280</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Jan</td>
+												<td>Feira de Santana</td>
+												<td>150</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Fev</td>
+												<td>Feira de Santana</td>
+												<td>160</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2018</strong></td>
+												<td>Jan</td>
+												<td>Salvador</td>
+												<td>310</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2018</strong></td>
+												<td>Fev</td>
+												<td>Salvador</td>
+												<td>290</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="3">SAÍDA: Tabela após agregação (Exemplo de soma por município e ano)</th>
+											</tr>
+											<tr class="text-center">
+												<th>Ano</th>
+												<th>Município</th>
+												<th>Atendimentos Totais</th>
+										</thead>
+
+										<tbody>
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Salvador</td>
+												<td>580</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2017</strong></td>
+												<td>Feira de Santana</td>
+												<td>310</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2018</strong></td>
+												<td>Salvador</td>
+												<td>600</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Prática com o banco de dados: agrupando o número de óbitos por mês</h4>
+								</div>
+
+								<p>No código a seguir estamos utilizando o <span class="color-tertiary-dark"><strong>dplyr</strong></span> para agrupar o número de óbitos por mês, a partir de uma coluna de data <span class="color-tertiary-dark"><strong>(dt_DTOBITO)</strong></span>. Veja como o código funciona:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Na Prática - CÓDIGO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Na prática</h5>
+									</div>
+
+									<pre aria-label="Exemplo de código">
+											<code>
+												<p>Comando:</p>
+												<span class="comment"># agrupar o n de óbitos por mês</span>
+												<span class="variable">grouped_mes</span> = <span class="function">df_csv %>% group_by(</span><span class="variable">mes</span> = <span class="function">month(</span><span class="keyword">dt_DTOBITO</span><span class="function">)) %>%</span> 
+
+												<span class="function">summarise(</span><span class="variable">n_obitos</span> = <span class="function">n())</span>
+
+												<p><strong>1. Agrupamento por mês:</strong> Utilizamos a função <span class="function">group_by()</span> para agrupar os dados pela coluna mes. Para extrair o mês da data, usamos a função <span class="function">month()</span> do pacote <span class="keyword">{lubridate}</span>, passando como argumento a coluna de data <span class="keyword">(dt_DTOBITO)</span>.</p>
+
+												<p><strong>2. Contagem de óbitos:</strong> Na função <span class="function">summarise()</span>, contamos o número de óbitos em cada mês utilizando a função <span class="function">n()</span>, que conta as linhas do agrupamento. O resultado é armazenado na nova coluna <span class="variable">n_obitos</span>.</p>
+
+												<p><strong>Resultado esperado:</strong> o resultado será uma tabela com duas colunas.</p>
+												<span class="variable d-inline">mes</span>: extraído da data do óbito.
+												<span class="variable d-inline">n_obitos</span>: contagem de óbitos ocorridos naquele mês.
+											</code>
+										</pre>
+
+									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula2-img15.jpg" alt="" title="Fonte: Elaborada pelo autor (2025).">
+									<figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2025).</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Saiba Mais -->
+								<div class="saiba-mais pb-5">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+										</div>
+
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais1">
+												<p>Para praticar, você pode usar a famosa biblioteca <span class="color-tertiary-dark"><strong>iris</strong></span>. Ela é amplamente utilizada para treinos e estudos, pois é simples e bem documentada. Além disso, muitas pessoas usam o iris para exemplos. Então, se você enfrentar algum problema, há grandes chances de encontrar soluções em fóruns e na documentação disponível online. Para instalar você já sabe, mas não custa lembrar: use a função: <span class="color-tertiary-dark"><strong>install.packages("iris")</strong></span> e depois ative o pacote quando for usar: <span class="color-tertiary-dark"><strong>library(iris)</strong></span>.</p>
+
+												<p>Acesse <a href='https://archive.ics.uci.edu/dataset/53/iris' target='_blank'>este link</a> para ver a documentação.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h4 class="heading__title">Junções (joins)</h4>
+								</div>
+
+								<p>Ao trabalhar com dados, é muito comum nos depararmos com a necessidade de combinar dois ou mais <span class="color-tertiary-dark"><strong>dataframes</strong></span>. Felizmente, o pacote <span class="color-tertiary-dark"><strong>{dplyr}</strong></span> nos oferece uma série de funções, chamadas de <span class="color-tertiary-dark"><strong>joins</strong></span>, que permitem realizar essa tarefa com facilidade. Cada tipo de <span class="color-tertiary-dark"><strong>join</strong></span> tem um nome e um comportamento específicos, e escolher o certo depende do resultado que você deseja obter.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Não-Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" ><span class="color-tertiary-dark"><strong>Left Join</strong></span>: retorna todas as linhas da tabela à esquerda e as correspondências da tabela à direita. Se não houver correspondência, os resultados da tabela à direita serão nulos.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span class="color-tertiary-dark"><strong>Inner Join</strong></span>: retorna apenas as linhas que têm correspondência em ambas as tabelas envolvidas.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span class="color-tertiary-dark"><strong>Right Join</strong></span>: retorna todas as linhas da tabela à direita e as correspondências da tabela à esquerda. Se não houver correspondência, os resultados da tabela à esquerda serão nulos.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span class="color-tertiary-dark"><strong>Full join</strong></span>: retorna todas as linhas quando há uma correspondência em uma das tabelas. Inclui todas as linhas da tabela à esquerda e da tabela à direita, preenchendo com nulos quando não houver correspondência. </li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Anti Join</strong></span>: retorna as linhas da tabela à esquerda que não têm correspondência na tabela à direita.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Semi Join</strong></span>: rretorna as linhas da tabela à esquerda que têm pelo menos uma correspondência na tabela à direita, mas sem retornar dados da tabela à direita.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A ideia central dos <span class="color-tertiary-dark"><strong>joins</strong></span> é simples: a junção entre dois <span class="color-tertiary-dark"><strong>dataframes</strong></span> só pode ocorrer se eles tiverem colunas com observações em comum, que atuem como chave para conectar as informações de um <span class="color-tertiary-dark"><strong>dataframe</strong></span> ao outro.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
+								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula2-img16.jpg" alt="" title="Fonte: https://intro2r.library.duke.edu/join.html. Acesso em: 20 jul. 2025.">
+									<figcaption class="figure-caption fonte">Fonte: https://intro2r.library.duke.edu/join.html. Acesso em: 20 jul. 2025.</figcaption>
+								</figure>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Suponha que temos dois <span class="color-tertiary-dark"><strong>dataframe</strong></span>: o primeiro contém a soma total de atendimentos por município, e o segundo possui o código IBGE de cada um deles. Para combinar essas tabelas corretamente, precisamos de uma coluna que funcione como uma chave de ligação. No Brasil, o código IBGE é o identificador único de cada município, o que garante que possamos distinguir cidades com nomes iguais.</p>
+
+								<p>Por exemplo, podemos ter dois municípios chamados “São João”, mas cada um terá um código IBGE distinto. Isso nos permite unir as informações de forma precisa, sem confundir os dados de municípios com o mesmo nome.</p>
+
+								<p>Para unir as tabelas usando o código IBGE como chave, em R <span class="color-tertiary-dark"><strong>(com o pacote {dplyr})</strong></span>,</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- CÓDIGO -->
+								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<pre aria-label="Exemplo de estrutura básica do comando 'SE':">
+											<code>
+												<p>Comando:</p>
+												<span class="comment"># Juntando as tabelas de atendimentos e população</span>
+												m
+												dados_agregados &lt;- dados %>% group_by(Ano, Municipio) %>% 
+
+												tabela_unida <- atendimentos_totais %>%  left_join(populacao, by = codigo_ibge)
+											</code>
+										</pre>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="3">Tabela 1: Atendimentos Totais</th>
+											</tr>
+											<tr class="text-center">
+												<th>codigo_ibge</th>
+												<th>municipio</th>
+												<th>atendimentos_totais</th>
+										</thead>
+
+										<tbody>
+											<tr class="text-center">
+												<td><strong>2910800</strong></td>
+												<td>Salvador</td>
+												<td>5000</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2927408</strong></td>
+												<td>Feira de Santana</td>
+												<td>1200</td>
+											</tr>
+
+											<tr class="text-center">
+												<td><strong>2905701</strong></td>
+												<td>Camaçari</td>
+												<td>800</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Tabela -->
+								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="text-center" colspan="2">Tabela 2: População</th>
+											</tr>
+											<tr class="text-center">
+												<th>codigo_ibge</th>
+												<th>população</th>
+										</thead>
+
+										<tbody>
+											<tr class="text-center">
+												<td>2910800</td>
+												<td>2886698</td>
+											</tr>
+
+											<tr class="text-center">
+												<td>2927408</td>
+												<td>619609</td>
+											</tr>
+
+											<tr class="text-center">
+												<td>2905701</td>
+												<td>304732</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>A tabela final ficará assim:</p>
 							</div>
 						</div>
 
@@ -287,31 +660,32 @@
 									<table class="table table-bordered">
 										<thead>
 											<tr class="text-center">
-												<th width="50%">Informação <br class="d-block d-md-none">Científica</th>
-												<th>Informação <br class="d-block d-md-none">Tecnológica</th>
-											</tr>
+												<th>codigo_ibge</th>
+												<th>município</th>
+												<th>atendimentos_totais</th>
+												<th>população</th>
 										</thead>
 
 										<tbody>
-											<tr>
-												<td>
-													<ul>
-														<li>Divulgar o conhecimento para garantir a autoria e aumentar a compreensão dos fenômenos;</li>
-														<li>Constituir insumo para outras pesquisas;</li>
-														<li>Explicitar metodologias, para garantir a replicabilidade da pesquisa.</li>
-													</ul>
-												</td>
+											<tr class="text-center">
+												<td>2910800</td>
+												<td>Salvador</td>
+												<td>5000</td>
+												<td>2886698</td>
+											</tr>
 
-												<td>
-													<ul>
-														<li>Constituir insumo para o desenvolvimento de pesquisas tecnológicas;</li>
-														<li>Assegurar o direito à propriedade industrial;</li>
-														<li>Difundir tecnologias de domínio público;</li>
-														<li>Subsidiar o processo de gestão tecnológica;</li>
-														<li>Possibilitar o acompanhamento e avaliação das tendências tecnológicas;</li>
-														<li>Permitir a avaliação do impacto econômico, social e ambiental.</li>
-													</ul>
-												</td>
+											<tr class="text-center">
+												<td>2927408</td>
+												<td>Feira de Santana</td>
+												<td>1200</td>
+												<td>619609</td>
+											</tr>
+
+											<tr class="text-center">
+												<td>2905701</td>
+												<td>Camaçari</td>
+												<td>800</td>
+												<td>304732</td>
 											</tr>
 										</tbody>
 									</table>
@@ -329,7 +703,7 @@
 							<div class="page-nav d-flex justify-content-evenly">
 								<a class="fio-button fio-button-primary" href="topico4.html" rel="prev"><span
 										class="material-symbols-rounded">west</span> Tópico anterior</a>
-								<a class="fio-button fio-button-primary" href="../../modulo2/apresentacao.html" rel="next">Módulo 2
+								<a class="fio-button fio-button-primary" href="../atividade.html" rel="next">Atividade
 									<span class="material-symbols-rounded" aria-hidden="true">east</span></a>
 							</div>
 						</div>
