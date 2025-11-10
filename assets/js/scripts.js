@@ -206,7 +206,7 @@ const modalInfos = {
 						<p class="mb-1">Isabela Schincariol</p>
 						<p class="small text-muted"><em>Assessora de comunicação</em></p>
 					
-						<p class="mb-1">Shênia Mineiro Martins</p>
+						<p class="mb-1">Roberta Saboya</p>
 						<p class="small text-muted"><em>Designer Educacional</em></p>
 
 						<p class="mb-1">Pilar Tavares Veras Florentino</p>
@@ -234,7 +234,7 @@ const modalInfos = {
 						<p class="mb-1">Natália Rasina</p>
 						<p class="small text-muted"><em>Audiodescrição</em></p>
 
-						<p class="mb-1">Maria Angélica Marcondes Drska</p>
+						<p class="mb-1">Janaina Vieira</p>
 						<p class="small text-muted"><em>Revisão de português</em></p>
 
 
@@ -247,10 +247,10 @@ const modalInfos = {
 						<p class="small text-muted"><em>Desenvolvedor</em></p>
 
 						<p class="mb-1">Adriano Lourenço</p>
-						<p class="small text-muted"><em>Analista de suporte</em></p>
+						<p class="small text-muted"><em>Analista de Tecnologias Educacionais</em></p>
 
 						<p class="mb-1">Orlando Terra</p>
-						<p class="small text-muted"><em>Analista de suporte</em></p>
+						<p class="small text-muted"><em>Analista de Tecnologias Educacionais</em></p>
 
 						<p class="mb-1">Fábio Carneiro</p>
 						<p class="small text-muted"><em>Designer gráfico e web designer</em></p>
@@ -259,82 +259,52 @@ const modalInfos = {
 					<span class="h5 mb-3 d-block">Coordenação do Projeto</span>
 					
 					<div class="mb-5">
-						<p class="mb-1">Mônica de Avelar Figueiredo Mafra Magalhães</p>
-						<p class="small text-muted"><em>Vice-Diretora de Pesquisa, Tecnologista em Saúde Pública no Instituto de Comunicação e Informação Científica e Tecnológica em Saúde (Icict)/Fiocruz</em></p>
+						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
+						<p class="small text-muted mb-0"><em>Programa de Computação Científica (PROCC) – Fiocruz</em></p>
+						<p class="small text-muted"><em>Coordenadora</em></p>
 
-						<p class="mb-1">Marilyn Anderson Alves Bonfim </p>
-						<p class="small text-muted"><em>Vice-Diretora de Ensino e Diretora Adjunta, Analista de Gestão em Saúde no Instituto de Comunicação e Informação Científica e Tecnológica em Saúde (Icict)/Fiocruz</em></p>
+						<p class="mb-1">Carlos Antonio de Souza Teles Santos</p>
+						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
+						<p class="small text-muted"><em>Coordenador</em></p>
 
 
 						<span class="h6 mb-3 d-block">Conteudistas</span>
 						
-						<p class="mb-1"><strong>Módulo 1: Políticas Sociais e Informação</strong></p>
+						<p class="mb-1"><strong>Módulo 1: Lógica e Linguagem de Programação</strong></p>
 						
-						<p class="mb-1 mt-3"><strong>Aula 1</strong></p>
-						<p class="mb-1">Marcelo Fornazin</p>
-						<p class="small text-muted"><em>ENSP/Fiocruz</em></p>
+						<p class="mb-1">Juracy Bertoldo</p>
+						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
+						<p class="small text-muted mb-0"><em>Instituto de Saúde Coletiva da Universidade Federal da Bahia (ISC/UFBA)</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
 
-						<p class="mb-1">Lais Fiebig</p>
-						<p class="small text-muted"><em>ENSP/Fiocruz</em></p>
+						<p class="mb-1">Pilar Tavares Veras Florentino</p>
+						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
 
-						<p class="mb-1">Matheus Zuliane Falcão</p>
-						<p class="small text-muted"><em>Cepedisa - USP</em></p>
+						<p class="mb-1"><strong>Módulo 2: Estatística Descritiva e Comunicação de Resultados</strong></p>
 
-						<p class="mb-1 mt-3"><strong>Aula 2</strong></p>
-						<p class="mb-1">Rosane Abdala Lins</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
+						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
+						<p class="small text-muted mb-0"><em>Programa de Computação Científica (PROCC) – Fiocruz</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 1]</em></p>
 
-						<p class="mb-1">Rosinalva Alves de Souza</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
-						
-						<p class="mb-1 mt-3"><strong>Aula 3</strong></p>
-						<p class="mb-1 mt-3">Laiza Daniele Nunes de Assumpção</p>
-						<p class="small text-muted"><em>Fiocruz</em></p>
-
-						<p class="mb-1">Angela Cristina Volpini</p>
-						<p class="small text-muted"><em>Instituto René Rachou/Fiocruz Minas</em></p>
-
-						<p class="mb-1">Carlos Henrique Soares Carvalho</p>
-						<p class="small text-muted"><em>Instituto Leônidas e Maria Deane/Fiocruz</em></p>
-
-						<p class="mb-1">Erika Sayume Ramos Hashimoto</p>
-						<p class="small text-muted"><em>Privacidade e Proteção de Dados, Diretoria Executiva – FIOCRUZ/PR</em></p>
-
-						<p class="mb-1">Rafael Pereira Barboza</p>
-						<p class="small text-muted"><em>Fiocruz</em></p>
-
-						<p class="mb-1 mt-3"><strong>Aula 4</strong></p>
-						<p class="mb-1">Carolina de Campos Carvalho</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
-
-						<p class="mb-1"><strong>Módulo 2: Sistemas de Informação de Saúde e Fonte de Dados de Interesse à Saúde</strong></p>
-
-						<p class="mb-1 mt-3"><strong>Aula 1</strong></p>
-						<p class="mb-1">Aline Pinto Marques</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
-
-						<p class="mb-1 mt-3"><strong>Aula 2</strong></p>
-						<p class="mb-1">Jessica Muzy</p>
-						<p class="small text-muted"><em>NIPPIS/Icict/Fiocruz</em></p>
-
-						<p class="mb-1 mt-3"><strong>Aula 3</strong></p>
-						<p class="mb-1">Diego Ricardo Xavier</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
-						
-						<p class="mb-1 mt-3"><strong>Aula 4</strong></p>
-						<p class="mb-1">Carolina de Campos Carvalho </p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
+						<p class="mb-1">Thiago Cerqueira-Silva</p>
+						<p class="small text-muted mb-0"><em>London School of Hygiene and Tropical Medicine (LSHTM)</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 2]</em></p>
 
 						
-						<p class="mb-1"><strong>Módulo 3: Integração de Dados, Novas Fontes e Uso</strong></p>
+						<p class="mb-1"><strong>Módulo 3: Modelos estatísticos</strong></p>
 
-						<p class="mb-1 mt-3"><strong>Aulas 1, 3 e 4</strong></p>
-						<p class="mb-1">Marcel de Moraes Pedroso</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
+						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
+						<p class="small text-muted mb-0"><em>Programa de Computação Científica (PROCC) – Fiocruz</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 3]</em></p>
 
-						<p class="mb-1 mt-3"><strong>Aulas 2</strong></p>
-						<p class="mb-1">Diego Ricardo Xavier</p>
-						<p class="small text-muted"><em>Icict/Fiocruz</em></p>
+						<p class="mb-1">Aline Araújo Nobre</p>
+						<p class="small text-muted mb-0"><em>Programa de Computação Científica, Presidência, Fundação Oswaldo Cruz</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
+
+						<p class="mb-1">Thiago Cerqueira-Silva</p>
+						<p class="small text-muted mb-0"><em>London School of Hygiene and Tropical Medicine (LSHTM)</em></p>
+						<p class="small text-muted mb-0"><em>[Aula 4]</em></p>
 					</div>
 					
 				</div>
