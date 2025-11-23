@@ -250,7 +250,7 @@
 				<section>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
 									<span class="small">Tópico 5</span>
 									<h3 class="heading__title">Laços de repetição</h3>
@@ -263,51 +263,63 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de estrutura básica do comando 'ENQUANTO':">
-												<code>
-													<span class="keyword">ENQUANTO</span> (<span class="variable">< condição ></span>) faça {
-													instruções executadas enquanto a condição é verdadeira
-													} 
-													fim_enquanto
-												</code>
-											</pre>
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço ENQUANTO - estrutura de repetição com pré-teste</span>
+
+											<span class="keyword">ENQUANTO</span> (<span class="variable">condição</span>) <span class="keyword">FAÇA</span> {
+											   <span class="variable">instruções executadas enquanto a condição é verdadeira</span> 
+											} <span class="keyword">FIM_ENQUANTO</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<p><strong>Exemplo:</strong></p>
+
+								<p>Temos uma lista de 100 pacientes e seus pesos e alturas, precisamos calcular  o Índice de Massa Corporal (IMC) de cada um deles e verificar se estão dentro da faixa saudável.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<span class="comment">// Exemplo:</span>
-												<p>Temos uma lista de 100 pacientes e seus pesos e alturas, precisamos calcular  o Índice de Massa Corporal (IMC) de cada um deles e verificar se estão dentro da faixa saudável.</p>
-												<span class="variable">N</span> = <span class="number">100</span>
-												<span class="variable">contador</span> = <span class="number">1</span>
+										<code>
+											<span class="comment">// Laço ENQUANTO (pré-teste) - calcula IMC de 100 pacientes</span>
 
-												<span class="keyword">ENQUANTO</span> (<span class="variable">N</span> >= <span class="variable">contador</span>) faça {
-												  calcula o IMC e mostra na tela se está ou não dentro da faixa saudável
-												  <span class="variable">contador</span> = <span class="variable">contador</span> + <span class="number">1</span>
-												} 
-												fim_enquanto
-											</code>
-										</pre>
+											<span class="variable">N</span> <span class="operator">=</span> <span class="number">100</span>
+											<span class="variable">contador</span> <span class="operator">=</span> <span class="number">1</span>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+											<span class="keyword">ENQUANTO</span> (<span class="variable">contador</span> <span class="operator">&lt;=</span> <span class="variable">N</span>) <span class="keyword">faça</span> {
+											   <span class="function">calcula o IMC e mostra na tela se está ou não dentro da faixa saudável</span>
+											   <span class="variable">contador</span> <span class="operator">=</span> <span class="variable">contador</span> <span class="operator">+</span> <span class="number">1</span>
+											} <span class="keyword">fim_enquanto</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<p>O código acima seria executado pela primeira vez com a condição: “100 é maior do que 1?” Como a resposta é sim, o IMC é calculado, o resultado é exibido, o contador é incrementado em 1, e a condição é verificada novamente: “100 é maior do que 2?” Novamente sim, e o mesmo procedimento é executado para o segundo paciente. No caso do paciente número 100, a condição seria: “100 é maior ou igual a 100?” A resposta continua sendo sim, então o procedimento é realizado. Na próxima execução, a condição seria “100 é maior do que 101?”, o que retorna falso, encerrando o laço, e o código seguiria para a primeira instrução após o laço.</p>
 
 								<p>Outra opção é o laço de pós-teste, que tem como finalidade garantir a execução do bloco de código pelo menos uma vez. Ao final da primeira execução, é verificada uma condição lógica: se for verdadeira, o laço continua; caso contrário, a execução é automaticamente encerrada</p>
@@ -317,44 +329,60 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de estrutura básica do comando 'REPITA':">
-												<code>
-													<span class="keyword">REPITA</span>
-													   bloco de códigos
-													<span class="keyword">até_que</span> (Condição)
-												</code>
-											</pre>
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Laço REPITA-ATÉ - estrutura de repetição com pré-teste</span>
+
+											<span class="keyword">REPITA</span> {
+											   <span class="variable">bloco de código</span> 
+											} <span class="keyword">ATÉ QUE</span> (<span class="variable">condição</span>)
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Considere que estamos realizando a modelagem de um caso de predição, com a meta de que o erro seja menor do que um valor Y. Durante a modelagem, temos diversos parâmetros que podem ser ajustados e queremos testá-los até que o erro seja inferior a Y. Nesse caso, o laço de pós-teste seria mais adequado, pois precisamos executar a predição pelo menos uma vez. Se, na primeira execução, o erro for menor do que o valor desejado, o processo pode ser encerrado. Caso contrário, continuaremos ajustando os parâmetros e testando a predição até que o erro seja menor do que Y.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<p>Considere que estamos realizando a modelagem de um caso de predição, com a meta de que o erro seja menor do que um valor Y. Durante a modelagem, temos diversos parâmetros que podem ser ajustados e queremos testá-los até que o erro seja inferior a Y. Nesse caso, o laço de pós-teste seria mais adequado, pois precisamos executar a predição pelo menos uma vez. Se, na primeira execução, o erro for menor do que o valor desejado, o processo pode ser encerrado. Caso contrário, continuaremos ajustando os parâmetros e testando a predição até que o erro seja menor do que Y.</p>
-												<span class="keyword">REPITA</span>
-												  <span class="variable">X</span> = <span class="keyword">criar parâmetros</span>
-												  executar a predição nos dados usando os parâmetros X
-												  <span class="variable">Y</span> = modelo(<span class="variable">X</span>)
-												<span class="keyword">até_que</span> (<span class="variable">Y</span> < valor_desejado)
-											</code>
-										</pre>
+										<code>
+											<span class="comment">// Laço REPITA-ATÉ (pós-teste) - ajusta modelo até erro &lt; valor desejado</span>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+											<span class="keyword">REPITA</span>
+											   <span class="variable">X</span> <span class="operator">=</span> <span class="function">criar parâmetros</span>
+											   <span class="function">executar a predição nos dados usando os parâmetros X</span>
+											   <span class="variable">Y</span> <span class="operator">=</span> <span class="function">modelo</span>(<span class="variable">X</span>)
+											<span class="keyword">até_que</span> (<span class="variable">Y</span> <span class="operator">&lt;</span> <span class="variable">valor_desejado</span>)
+
+											<span class="comment">// Executa pelo menos uma vez antes de testar a condição</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
 
+						
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
@@ -393,31 +421,60 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
 									<p class="h5 heading__title">Matriz</p>
 								</div>
 
 								<p>Matrizes são estruturas de dados bidimensionais utilizadas para organizar e manipular informações. Diferente dos vetores, que possuem apenas uma dimensão, as matrizes têm tanto linhas quanto colunas, permitindo o armazenamento de dados em uma grade. Essa estrutura é útil quando precisamos representar tabelas ou qualquer conjunto de informações que requerem organização em duas dimensões. Cada elemento de uma matriz pode ser acessado por sua posição específica, definida pelos índices de linha e coluna, facilitando operações como iteração, busca e modificação de dados.</p>
+
+								<p>Supondo que temos a seguinte matriz:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de matriz">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
 										<code>
-											<p>Supondo que temos a seguinte matriz:</p>
-											<span class="keyword">m</span> = <span class="keyword">[a, b]</span>,
-											    [c, d]
+											<span class="comment">// Declaração de matriz bidimensional</span>
 
-											<p>levando em conta que esse índice começa de 1, podemos acessar o valor B usando os seguintes index: 1 para a primeira linha e 2 para o segundo item da primeira linha.</p>
-
-											<span class="keyword">valor</span> = <span class="keyword">m[1][2]</span>,
-											valor teria o mesmo valor B
+											<span class="variable">m</span> <span class="operator">=</span> [<span class="variable">a</span>, <span class="variable">b</span>]
+											    [<span class="variable">c</span>, <span class="variable">d</span>]
 										</code>
 									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Levando em conta que esse índice começa de 1, podemos acessar a posição de <span class="color-tertiary-dark"><strong>b</strong></span> usando os seguintes index: 1 para a primeira linha e 2 para a segunda coluna.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Acessando posições específicas em uma matriz</span>
+
+											<span class="variable">posição</span> <span class="operator">=</span> <span class="variable">m</span>[<span class="number">1</span>, <span class="number">2</span>]
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -512,30 +569,28 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- SINTAXE -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Sintaxe</h5>
 									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Definição e uso de funções</span>
+											<span class="keyword">função</span> <span class="function">somar</span>(<span class="variable">A</span>, <span class="variable">B</span>) {
+											   <span class="keyword">retorno</span> <span class="variable">A</span> <span class="operator">+</span> <span class="variable">B</span>  <span class="comment">// retorna a soma de A e B</span>
+											}
 
-									<pre aria-label="Exemplo de código com funções">
-											<code>
-												<span class="comment">// Exemplos:</span>
+											<span class="comment">// Chamando a função</span>
+											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">1</span>, <span class="number">3</span>)
+											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 4</span>
 
-												<span class="keyword">função</span> <span class="function">somar</span>(<span class="variable">A</span>, <span class="variable">B</span>) { <span class="comment"># nome da função somar, a função recebe dois parâmetros A e B</span>
-												   <span class="keyword">retorno</span> <span class="variable">A</span> + <span class="variable">B</span> <span class="comment"># processamento, realiza uma soma utilizando A e B, então  retorna o valor resultante da soma</span>
-												}
+											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">100</span>, <span class="number">200</span>)
+											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 300</span>
+										</code>
+									</pre>
 
-												<p>Após definir uma função podemos chamá-la, dessa forma:</p>
-												<span class="variable">resultado</span> = <span class="function">somar</span>(<span class="number">1</span>, <span class="number">3</span>) <span class="comment"># 1 e 3 são argumentos que estamos enviando para a função somar</span>
-												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># 4</span>
-
-												<span class="variable">resultado</span> = <span class="function">somar</span>(<span class="number">100</span>, <span class="number">200</span>)
-												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># 300</span>
-											</code>
-										</pre>
-
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -547,32 +602,35 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<!-- Na Prática - CÓDIGO -->
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Sintaxe</h5>
 									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Escopo de variáveis - variáveis globais e locais</span>
 
-									<pre aria-label="Exemplo de código com funções">
-											<code>
-												<span class="variable">A</span> = <span class="number">100</span>
+											<span class="variable">A</span> <span class="operator">=</span> <span class="number">100</span>  <span class="comment">// Variável global</span>
 
-												<span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
-												   <span class="variable">res</span> = <span class="variable">A</span> * <span class="variable">multiplicador</span>
-												   <span class="variable">A</span> = <span class="variable">res</span>
-												   <span class="keyword">retorno</span> <span class="variable">A</span>
-												}
+											<span class="comment">// Função com parâmetro chamado A (diferente do A global)</span>
+											<span class="keyword">função</span> <span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
+											   <span class="variable">produto</span> <span class="operator">=</span> <span class="variable">A</span> <span class="operator">*</span> <span class="variable">multiplicador</span>  <span class="comment">// Usa o A do parâmetro, não o A global</span>
+											   <span class="keyword">retorno</span> <span class="variable">produto</span>
+											}
 
-												<span class="variable">resultado</span> = <span class="function">multiplicar</span>(<span class="number">2</span>, <span class="number">2</span>) <span class="comment"># envio 2 argumentos como pede a função em sua definição</span>
+											<span class="variable">resposta</span> <span class="operator">=</span> <span class="function">multiplicar</span>(<span class="number">5</span>, <span class="number">3</span>)  <span class="comment">// Passa 5 como parâmetro A e 3 como multiplicador</span>
 
-												<span class="function">mostrar</span>(<span class="variable">A</span>) <span class="comment"># mostraria 100</span>
+											<span class="function">mostrar</span>(<span class="variable">A</span>)        <span class="comment">// 100 (A global permanece 100)</span>
+											<span class="function">mostrar</span>(<span class="variable">resposta</span>) <span class="comment">// 15 (usou A = 5 como parâmetro, então 5 * 3 = 15)</span>
 
-												<span class="function">mostrar</span>(<span class="variable">resultado</span>) <span class="comment"># mostraria 4, o valor de A dentro da função não tem nenhuma relação com A fora da função.</span>
-											</code>
-										</pre>
+											<span class="comment">// O A dentro da função (parâmetro) é diferente do A fora (global)
+											// Mesmo tendo o mesmo nome, são variáveis independentes</span>
+										</code>
+									</pre>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>

@@ -1,12 +1,33 @@
 /* --- CODE --- */
 
+/* ==============================================================================
+   GUIA DE REFERÊNCIA
+   ============================================================================== */
+
+/*
+┌──────────────┬──────────┬────────────────────────────────────┐
+│ CLASSE       │ COR      │ EXEMPLOS                           │
+├──────────────┼──────────┼────────────────────────────────────┤
+│ .comment     │ #8E908C  │ // comentário                      │
+│ .keyword     │ #8959A8  │ SE, SENÃO, ENQUANTO, função        │
+│ .string      │ #718C00  │ "positivo", "PCR"                  │
+│ .number      │ #C82829  │ 1, 100, 18.5                       │
+│ .operator    │ #3E999F  │ =, ==, >=, !=, +, -                │
+│ .function    │ #4271AE  │ somar(), mostrar(), calcular()     │
+│ .variable    │ #C99E00  │ idade, resultado, A, contador      │
+│ .boolean     │ #C82829  │ TRUE, FALSE, VERDADEIRO            │
+└──────────────┴──────────┴────────────────────────────────────┘
+
 /* CÓDIGO COM FUNDO PRETO E BOTÃO DE COPIAR */
 .code-container {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    padding: var(--fio-sys-size-padding-md);
+    /* background-color: #1e1e1e; */
+    /* color: #d4d4d4; */
+    background-color: #FAFAFA;
+    border: 1px solid var(--fio-sys-color-accent-light);
+    color: #4D4D4C;
     border-radius: var(--fio-sys-size-radius-sm);
-    font-family: Consolas, "Courier New", monospace;
+    padding: var(--fio-sys-size-padding-md);
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 20px;
     position: relative;
     overflow-x: auto;
@@ -15,13 +36,13 @@
 
 .code-container .heading__block {
     margin-bottom: 0;
-    border-bottom: 1px solid var(--fio-sys-color-secondary-medium);
+    border-bottom: 1px solid var(--fio-sys-color-secondary-dark);
 }
 
 .code-container .heading__title {
     margin: 0;
     padding-bottom: var(--fio-sys-size-padding-xs);
-    color: var(--fio-sys-color-accent-extra-dark-contrast);
+    color: var(--fio-sys-color-accent-dark);
 }
 
 .code-container pre {
@@ -35,15 +56,20 @@
     outline: none;
 }
 
+.code-container pre code,
+.code-container pre code p {
+    color:#353535
+}
+
 .code-container code p {
-    color: #d4d4d4;
-    font-family: Consolas, "Courier New", monospace;
+    /* color: #d4d4d4; */
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 20px;
     margin-bottom: 0;
 }
 
 /* cores de sintaxe */
-.code-container .keyword {
+/* .code-container .keyword {
     color: #569cd6;
 }
 
@@ -74,11 +100,64 @@
     padding: 6px 10px;
     border-radius: 4px;
     cursor: pointer;
+} */
+
+/* Cores de sintaxe */
+.code-container .comment {
+    /* color: #8e908c; */
+    color:#707169;
+    font-style: italic;
+}
+
+.code-container .keyword {
+    color: #8959a8;
+    font-weight: bold;
+}
+
+.code-container .string {
+    color: #718c00;
+}
+
+.code-container .number {
+    color: #c82829;
+}
+
+.code-container .operator {
+    color: #3e999f;
+}
+
+.code-container .function {
+    color: #4271ae;
+    font-weight: 500;
+}
+
+.code-container .variable {
+    color: #c99e00;
+}
+
+.code-container .boolean {
+    color: #c82829;
+    font-weight: bold;
 }
 
 .code-container .copy-btn:hover {
     background: var(--fio-sys-color-accent-dark-contrast);
     color: #333;
+}
+
+.code-container .copy-btn {
+    /*display:none;*/ /*Habilite esta linha para não exibir o botão de copiar*/
+    /* background: #333;
+    color: #fff; */
+    background: var(--fio-sys-color-accent-medium);
+    color: var(--fio-sys-color-neutral-white);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Acessibilidade visual do foco */

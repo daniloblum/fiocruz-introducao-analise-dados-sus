@@ -351,31 +351,26 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- SINTAXE -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Sintaxe</h5>
 									</div>
+
 									<pre aria-label="Exemplo de código">
-											<code>
-												<span class="variable">a</span> = <span class="number">1</span>
-												<span class="variable">b</span> = <span class="number">2</span>
+										<code>
+											<span class="comment">// Operadores de comparação</span>
+											<span class="variable">a</span> <span class="operator">=</span> <span class="number">1</span>
+											<span class="variable">b</span> <span class="operator">=</span> <span class="number">2</span>
 
-												<span class="variable">a</span> == <span class="variable">b</span> <span class="comment">//a é igual b?</span>
-												FALSO
+											<span class="variable">a</span> <span class="operator">==</span> <span class="variable">b</span>  <span class="comment">// a é igual a b? FALSO</span>
+											<span class="variable">a</span> <span class="operator">&gt;</span> <span class="variable">b</span>   <span class="comment">// a é maior que b? FALSO</span>
+											<span class="variable">b</span> <span class="operator">&gt;</span> <span class="variable">a</span>   <span class="comment">// b é maior que a? VERDADEIRO</span>
+											<span class="variable">a</span> <span class="operator">!=</span> <span class="variable">b</span>  <span class="comment">// a é diferente de b? VERDADEIRO</span>
+										</code>
+									</pre>
 
-												<span class="variable">a</span> > <span class="variable">b</span> <span class="comment">//a é maior que b?</span>
-												FALSO
-
-												<span class="variable">b</span> > <span class="variable">a</span> <span class="comment">//b é maior que a?</span>
-												VERDADEIRO
-
-												<span class="variable">a</span> != <span class="variable">b</span> <span class="comment">//a é diferente de b?</span>
-												VERDADEIRO
-											</code>
-										</pre>
-
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -440,16 +435,22 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de estrutura básica do comando 'SE':">
-											<code>
-												<span class="keyword">SE</span> (<span class="variable">condição</span>) {
-												  bloco de códigos A
-												} 
-												  restante do código
-											</code>
-										</pre>
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="keyword">SE</span> (<span class="variable">condição</span>) {
+											   <span class="variable">bloco de código A</span>
+											}
+											   <span class="variable">restante do código</span>
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -457,32 +458,35 @@
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<p>Caso a condição seja falsa, o bloco de códigos A dentro das chaves não seria executado pelo computador e o algoritmo seguiria normalmente para o restante dos códigos fora do <span class="color-tertiary-dark"><strong>"SE"</strong></span>.</p>
+
+								<p>Vamos pensar agora em um caso prático: nosso código deve verificar se o resultado do teste de covid-19 foi positivo ou negativo, de modo que usaremos aqui uma variável chamada resultado, que tem as seguintes categorias: 1 para positivo, 3 para negativo.</p>
+
+								<p>Veja o exemplo:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<p>Vamos pensar agora em um caso prático: nosso código deve verificar se o resultado do teste de covid-19 foi positivo ou negativo, de modo que usaremos aqui uma variável chamada resultado, que tem as seguintes categorias: 1 para positivo, 3 para negativo.</p>
+										<code>
+											<span class="comment">// Verificar resultado do teste de COVID-19</span>
+											<span class="comment">// resultado: 1 = positivo, 3 = negativo</span>
 
-												<span class="comment">// Veja o exemplo:</span>
-												<span class="keyword">SE</span> (<span class="variable">resultado</span> == <span class="number">1</span>) {
-												  "positivo"
-												} 
-												<span class="keyword">SE</span> (<span class="variable">resultado</span> == <span class="number">3</span>) {
-												  "negativo"
-												}
-											</code>
-										</pre>
+											<span class="keyword">SE</span> (<span class="variable">resultado</span> <span class="operator">==</span> <span class="number">1</span>) {
+											   <span class="string">"positivo"</span>
+											}
+											<span class="keyword">SE</span> (<span class="variable">resultado</span> <span class="operator">==</span> <span class="number">3</span>) {
+											   <span class="string">"negativo"</span>
+											}
+										</code>
+									</pre>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -497,24 +501,24 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<span class="keyword">SE</span> (<span class="variable">resultado</span> == <span class="number">1</span>) {
-												  "positivo"
-												} 
-												<span class="keyword">SENÃO</span> {
-												  "negativo"
-												}
-											</code>
-										</pre>
+										<code>
+											<span class="comment">// Usando SE-SENÃO para garantir exclusividade</span>
+											<span class="keyword">SE</span> (<span class="variable">resultado</span> <span class="operator">==</span> <span class="number">1</span>) {
+											   <span class="string">"positivo"</span>
+											}
+											<span class="keyword">SENÃO</span> {
+											   <span class="string">"negativo"</span>
+											}
+										</code>
+									</pre>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -529,34 +533,34 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<span class="comment">// Exemplo usando SE e SE NÃO</span>
-												<span class="keyword">SE</span> (<span class="variable">tipo</span> == <span class="number">1</span>) {
-												  "PCR"
-												} 
-												<span class="keyword">SENÃO</span> {
-												  <span class="keyword">SE</span> (<span class="variable">tipo</span> == <span class="number">2</span>) {
-												    "Antígeno"
-												  } 
-												  <span class="keyword">SENÃO</span> {
-												    “”
-												  }
-												}
-											</code>
-										</pre>
+										<code>
+											<span class="comment">// SE aninhado (com indentação excessiva)</span>
+											<span class="comment">// tipo: 1 = PCR, 2 = Antígeno</span>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+											<span class="keyword">SE</span> (<span class="variable">tipo</span> <span class="operator">==</span> <span class="number">1</span>) {
+											   <span class="string">"PCR"</span>
+											}
+											<span class="keyword">SENÃO</span> {
+											   <span class="keyword">SE</span> (<span class="variable">tipo</span> <span class="operator">==</span> <span class="number">2</span>) {
+												   <span class="string">"Antígeno"</span>
+											   }
+											   <span class="keyword">SENÃO</span> {
+												   <span class="string">""</span>
+											   }
+											}
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
-
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
@@ -566,27 +570,29 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
-
 									<pre aria-label="Exemplo de código">
-											<code>
-												<span class="keyword">SE</span> (<span class="variable">tipo</span> == <span class="number">1</span>) {
-												  "PCR"
-												} 
-												<span class="keyword">SENÃO SE</span> (<span class="variable">tipo</span> == <span class="number">2</span>) {
-												  "Antígeno"
-												} 
-												<span class="keyword">SENÃO</span> {
-												    “”
-												}
-											</code>
-										</pre>
+										<code>
+											<span class="comment">// SENÃO SE (código mais limpo e legível)</span>
+											<span class="comment">// tipo: 1 = PCR, 2 = Antígeno</span>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+											<span class="keyword">SE</span> (<span class="variable">tipo</span> <span class="operator">==</span> <span class="number">1</span>) {
+											   <span class="string">"PCR"</span>
+											}
+											<span class="keyword">SENÃO SE</span> (<span class="variable">tipo</span> <span class="operator">==</span> <span class="number">2</span>) {
+											   <span class="string">"Antígeno"</span>
+											}
+											<span class="keyword">SENÃO</span> {
+											   <span class="string">""</span>
+											}
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -781,28 +787,28 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Operador E (AND) - todas as condições devem ser verdadeiras</span>
+											<span class="variable">média</span> <span class="operator">=</span> <span class="number">7</span>
+											<span class="variable">falta</span> <span class="operator">=</span> <span class="number">4</span>
 
-									<pre aria-label="Exemplo de código usando E (AND)">
-											<code>
-												<span class="comment">// Exemplo usando E (AND):</span>
-												<span class="variable">média</span> = <span class="number">7</span>
-												<span class="variable">falta</span> = <span class="number">4</span>
+											<span class="keyword">SE</span> (<span class="variable">média</span> <span class="operator">&gt;=</span> <span class="number">7</span> <span class="operator">&amp;</span> <span class="variable">falta</span> <span class="operator">&lt;=</span> <span class="number">3</span>) {
+											   <span class="variable">Aprovado</span>
+											}
+											<span class="keyword">SENÃO</span> {
+											   <span class="variable">Reprovado</span>
+											}
+											<span class="comment">// Resultado: Reprovado (falta não atende)</span>
+										</code>
+									</pre>
 
-												<span class="keyword">SE</span> (<span class="variable">média</span> >= <span class="number">7</span> & <span class="variable">falta</span> <= <span class="number">3</span> ) {
-												  Aprovado
-												} 
-												<span class="keyword">SENÃO</span> {
-												  Reprovado
-												}
-											</code>
-										</pre>
-
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -815,25 +821,28 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
+								<!-- EXEMPLO DE APLICAÇÃO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Exemplo de aplicação</h5>
 									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment">// Operador OU (OR) - pelo menos uma condição deve ser verdadeira</span>
+											<span class="variable">média</span> <span class="operator">=</span> <span class="number">7</span>
+											<span class="variable">falta</span> <span class="operator">=</span> <span class="number">4</span>
 
-									<pre aria-label="Exemplo de código usando E (AND)">
-											<code>
-												<span class="comment">// Exemplo usando OU (OR):</span>
-												<span class="keyword">SE</span> (<span class="variable">média</span> >= <span class="number">7</span> | <span class="variable">falta</span> <= <span class="number">3</span> ) {
-												  Aprovado
-												} 
-												<span class="keyword">SENÃO</span> {
-												  Reprovado
-												}
-											</code>
-										</pre>
+											<span class="keyword">SE</span> (<span class="variable">média</span> <span class="operator">&gt;=</span> <span class="number">7</span> <span class="operator">|</span> <span class="variable">falta</span> <span class="operator">&lt;=</span> <span class="number">3</span>) {
+											   <span class="variable">Aprovado</span>
+											}
+											<span class="keyword">SENÃO</span> {
+											   <span class="variable">Reprovado</span>
+											}
+											<span class="comment">// Resultado: Aprovado (média atende)</span>
+										</code>
+									</pre>
 
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>

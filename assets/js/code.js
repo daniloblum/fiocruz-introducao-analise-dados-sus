@@ -29,13 +29,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const code = container.querySelector("code");
         normalizarIndentacao(code);
 
-        const btn = document.createElement("button");
-        btn.textContent = "Copiar";
-        btn.className = "copy-btn";
-        btn.onclick = () => copiarCodigo(code);
-        container.appendChild(btn);
+         // Opção 1: Usa o botão já existente NO HTML
+        const btn = container.querySelector(".copy-btn");
+        if (btn) {
+            btn.onclick = () => copiarCodigo(code);
+        }
+
+        //Opção 2: Cria um novo botão e adiciona ele no HTML
+        // const btn = document.createElement("button");
+        // btn.textContent = "Copiar";
+        // btn.className = "copy-btn";
+        // btn.onclick = () => copiarCodigo(code);
+        // container.appendChild(btn);
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,252 +1,427 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex" />
-		<meta name="author" content="Fiocruz, Campus Virtual" />
-		<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
 
-		<!-- Facebook Open Graph -->
-		<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/etica-integridade-pesquisa" />
-		<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta property="og:image" content="" />
-		<meta property="og:image:width" content="1080" />
-		<meta property="og:image:height" content="1080" />
-		<meta property="og:type" content="website" />
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex" />
+	<meta name="author" content="Fiocruz, Campus Virtual" />
+	<meta name="description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="keywords" content="Fiocruz Curso Introdução à Análise de Dados para pesquisa no SUS" />
 
-		<!-- Twitter Cards -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
-		<meta name="twitter:url" content="" />
-		<meta name="twitter:description" content="" />
-		<meta name="twitter:image:src" content="" />
+	<!-- Facebook Open Graph -->
+	<meta property="og:url" content="https://mooc.campusvirtual.fiocruz.br/rea/etica-integridade-pesquisa" />
+	<meta property="og:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:description" content="Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta property="og:image" content="" />
+	<meta property="og:image:width" content="1080" />
+	<meta property="og:image:height" content="1080" />
+	<meta property="og:type" content="website" />
 
-		<!-- Favicons and Touch Icons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Campus Virtual Fiocruz | Curso Introdução à Análise de Dados para pesquisa no SUS" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image:src" content="" />
 
-		<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
-		<link rel="manifest" href="../media/icons/manifest.json" />
+	<!-- Favicons and Touch Icons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="../media/icons/apple-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="../media/icons/apple-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="../media/icons/apple-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../media/icons/apple-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="../media/icons/apple-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="../media/icons/apple-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="../media/icons/apple-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="../media/icons/apple-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../media/icons/apple-icon-180x180.png" />
 
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
-		<!-- <meta name="theme-color" content="#003066" /> -->
-		<meta name="theme-color" content="#001833" />
+	<link rel="icon" type="image/png" sizes="192x192" href="../media/icons/android-icon-192x192.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="../media/icons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="96x96" href="../media/icons/favicon-96x96.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="../media/icons/favicon-16x16.png" />
+	<link rel="manifest" href="../media/icons/manifest.json" />
 
-		<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 1 | Apresentação</title>
+	<meta name="msapplication-TileColor" content="#ffffff" />
+	<meta name="msapplication-TileImage" content="../media/icons/ms-icon-144x144.png" />
+	<!-- <meta name="theme-color" content="#003066" /> -->
+	<meta name="theme-color" content="#001833" />
 
-		<!-- Bootstrap CSS 5.1.3 -->
-		<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 1 | Apresentação</title>
 
-		<!-- Project CSS -->
-		<link rel="stylesheet" href="../assets/css/style.css" />
-	</head>
+	<!-- Bootstrap CSS 5.1.3 -->
+	<link rel="stylesheet" href="../source/bootstrap-5.1.3/css/bootstrap.min.css" />
 
-	<body>
-		<header class="header">
-			<div class="mobile-toggle-open">
-				<a class="mobile-toggle__button" tabindex="0" role="button">
-					<span class="icon material-symbols-rounded">read_more</span>
-				</a>
-			</div>
-			<div class="brand">
-				<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
-			</div>
-			<div class="title">
-				<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-			</div>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
-				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-glossario">Glossário</a></li>
-			</ul>
-		</header>
-		<div class="main">
-			<div class="sidebar" role="navigation">
-				<div class="sidebar__inner" style="position: relative">
-					<div class="sidebar__group d-lg-none">
-						<div class="sidebar__group-item">
-							<div class="sidebar__header">
-								<span>Curso</span>
-								<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-							</div>
+	<!-- Project CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="mobile-toggle-open">
+			<a class="mobile-toggle__button" tabindex="0" role="button">
+				<span class="icon material-symbols-rounded">read_more</span>
+			</a>
+		</div>
+		<div class="brand">
+			<img class="img-fluid logo-black" src="../media/logos/header-fiocruz-campus-virtual.png" alt="Campus Virtual Fiocruz" />
+		</div>
+		<div class="title">
+			<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
+		</div>
+		<ul class="nav nav-pills">
+			<li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
+			<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-glossario">Glossário</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="sidebar" role="navigation">
+			<div class="sidebar__inner" style="position: relative">
+				<div class="sidebar__group d-lg-none">
+					<div class="sidebar__group-item">
+						<div class="sidebar__header">
+							<span>Curso</span>
+							<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 						</div>
-						<div class="sidebar__group-item">
-							<div class="sidebar__title">
-								<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
-							</div>
+					</div>
+					<div class="sidebar__group-item">
+						<div class="sidebar__title">
+							<h1>Introdução à Análise de Dados para pesquisa no SUS</h1>
 						</div>
-						<div class="sidebar__group-item">
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+					</div>
+					<div class="sidebar__group-item">
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html" class="nav-link" tabindex="0"><span class="icon material-symbols-rounded" aria-hidden="true">home</span>Início</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
+								<span class="label">Módulos</span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
 								</li>
-								<li class="nav-item">
-									<a href="#" class="nav-link" tabindex="0" data-bs-toggle="modal" data-bs-target="#modal-creditos"><span class="icon material-symbols-rounded" aria-hidden="true"> format_list_bulleted</span>Créditos</a>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/apresentacao.html"><strong>Módulo 1</strong><br />Lógica e Linguagem de Programação</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/apresentacao.html"><strong>Módulo 2</strong><br />Estatística Descritiva e Comunicação de Resultados</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button id="dropdown-modulos" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">grid_view</span>
-									<span class="label">Módulos</span>
-								</button>
-								<ul class="dropdown-menu" aria-labelledby="dropdown-modulos">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo1/apresentacao.html"><strong>Módulo 1</strong><br />Lógica e Linguagem de Programação</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo2/apresentacao.html"><strong>Módulo 2</strong><br />Estatística Descritiva e Comunicação de Resultados</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+				</div>
+				<div class="divider">
+					<hr />
+				</div>
+				<div class="sidebar__group">
+					<div class="sidebar__group-item">
+						<span class="text module">Módulo <br class="d-none d-lg-block" /><span>1</span></span>
 					</div>
-					<div class="divider">
-						<hr />
-					</div>
-					<div class="sidebar__group">
-						<div class="sidebar__group-item">
-							<span class="text module">Módulo <br class="d-none d-lg-block" /><span>1</span></span>
-						</div>
-						<div class="sidebar__group-item">
-							<div class="dropend">
-								<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
-									<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
-									<span class="label">Conteúdo</span>
-								</button>
-								<ul class="dropdown-menu">
-									<li class="d-lg-none dropdown-menu__header">
-										<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
-										<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
-									</li>
-									<li class="dropdown-menu__title">
-										<span class="label">Módulo 1</span>
-										<span class="title">Lógica e Linguagem de Programação</span>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="apresentacao.html"><strong>Apresentação do módulo</strong></a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Introdução à Lógica de programação</a>
-									</li>
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Introdução a Linguagem de Programação</a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
-									</li>
-
-									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="encerramento.html"><strong>Resumo do módulo</strong></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar__group extra">
-						<div class="sidebar__group-item">
-							<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
-								<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
-								<span class="label">Bibliografia</span>
+					<div class="sidebar__group-item">
+						<div class="dropend">
+							<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-offset="0,30">
+								<span class="icon material-symbols-rounded" aria-hidden="true">apps</span>
+								<span class="label">Conteúdo</span>
 							</button>
+							<ul class="dropdown-menu">
+								<li class="d-lg-none dropdown-menu__header">
+									<a class="dropdown-menu__back-button" tabindex="0" role="button"><span class="icon material-symbols-rounded">chevron_left</span> Voltar</a>
+									<a class="mobile-toggle-close" tabindex="0" role="button"><span class="icon material-symbols-rounded">read_more</span></a>
+								</li>
+								<li class="dropdown-menu__title">
+									<span class="label">Módulo 1</span>
+									<span class="title">Lógica e Linguagem de Programação</span>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="apresentacao.html"><strong>Apresentação do módulo</strong></a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula1/topico1.html"><strong>Aula 1: </strong>Introdução à Lógica de programação</a>
+								</li>
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="aula2/topico1.html"><strong>Aula 2: </strong>Introdução a Linguagem de Programação</a>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="atividade.html"><strong>Atividade</strong></a>
+								</li>
+
+								<li class="dropdown-menu__item">
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="encerramento.html"><strong>Resumo do módulo</strong></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar__group extra">
+					<div class="sidebar__group-item">
+						<button type="button" class="" data-bs-toggle="modal" data-bs-target="#modal-bibliografiaMod1">
+							<span class="icon material-symbols-rounded" aria-hidden="true"> menu_book</span>
+							<span class="label">Bibliografia</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="page-title">
+				<div class="container">
+					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
+						<div class="col-12 col-md-10 col-lg-11">
+							<h2 class="title">
+								<span class="label">Módulo 1</span>
+								<br />
+								Lógica e Linguagem de Programação
+							</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="content">
-				<div id="page-title">
+			<div id="page-content" class="">
+				<!-- Inserir o conteúdo aqui -->
+				<section>
 					<div class="container">
-						<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
-							<div class="col-12 col-md-10 col-lg-11">
-								<h2 class="title">
-									<span class="label">Módulo 1</span>
-									<br />
-									Lógica e Linguagem de Programação
-								</h2>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="heading__block">
+									<h3 class="heading__title">Apresentação do módulo</h3>
+								</div>
+
+								<p>Neste módulo você irá explorar os conceitos fundamentais da lógica de programação, abordando as bases que guiam o desenvolvimento de algoritmos. Igualmente, desenvolverá a capacidade de organizar o raciocínio lógico por meio da utilização de ferramentas fundamentais da programação, como variáveis, operadores, estruturas de controle e laços, além de introduzir o conceito de funções para modularizar e otimizar o código.</p>
+
+								<p>Na aula 1, sempre que apresentarmos um novo conteúdo relacionado a pseudocódigo, utilizaremos o recurso <strong>Sintaxe</strong>, que servirá para demonstrar, de forma prática e direta, como transformar conceitos teóricos em passos lógicos estruturados.</p>
+
+								<p>Na segunda aula, o recurso <strong>Na prática</strong> irá apresentar o comando e a saída do código, permitindo que você visualize o resultado que deverá ser gerado no R. Recomendamos que você reproduza os scripts a seguir no ambiente de R e confira o gabarito esperado no Github.</p>
 							</div>
 						</div>
-					</div>
-				</div>
 
-				<div id="page-content" class="">
-					<!-- Inserir o conteúdo aqui -->
-					<section>
-						<div class="container">
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h3 class="heading__title">Apresentação do módulo</h3>
-									</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 pt-5">
+								<div class="heading__block">
+									<h3 class="heading__title">Objetivos do módulo</h3>
+								</div>
 
-									<p>Neste módulo você irá explorar os conceitos fundamentais da lógica de programação, abordando as bases que guiam o desenvolvimento de algoritmos. Igualmente, desenvolverá a capacidade de organizar o raciocínio lógico por meio da utilização de ferramentas fundamentais da programação, como variáveis, operadores, estruturas de controle e laços, além de introduzir o conceito de funções para modularizar e otimizar o código.</p>
+								<p>Ao final deste módulo esperamos que você seja capaz de: </p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Entender os conceitos fundamentais da lógica de programação.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Entender sobre os tipos de dados e operadores.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Saber como utilizar estrutura de controle e estrutura de repetição.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Entender conceito de funções e como utilizá-lo.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400">Instalar e configurar o R e o RStudio para suas análises de dados.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="500">Compreender a estrutura básica da linguagem R, incluindo variáveis, data frames e funções.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="600">Utilizar diversos pacotes do Tidyverse.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="700">Realizar operações de manipulação de dados, cálculos e importação de arquivos.</li>
+
+									</ul>
 								</div>
 							</div>
+						</div>
 
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 pt-5">
-									<div class="heading__block">
-										<h3 class="heading__title">Objetivos do módulo</h3>
-									</div>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
 
-									<p>Ao final deste módulo esperamos que você seja capaz de: </p>
-								</div>
 							</div>
+						</div>
 
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Entender os conceitos fundamentais da lógica de programação.</li>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mt-5 mb-5 pb-5">
+								<p>Esse é o exemplo de fórmula, Então: 
+									<math style="font-size:30px;" display="inline">
+										<mfrac mathcolor="#000000">
+											<mrow>
+											<mi mathcolor="#000000">n</mi>
+											<mo mathcolor="#000000">+</mo>
+											<mn mathcolor="#000000">1</mn>
+											</mrow>
+											<mrow>
+											<mn mathcolor="#000000">2</mn>
+											</mrow>
+										</mfrac>
+									</math>
+								</p>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Entender sobre os tipos de dados e operadores.</li>
+								<style>
+									.formula-matematica{
+										background: pink;
+									}
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Saber como utilizar estrutura de controle e estrutura de repetição.</li>
+									.formula-matematica math {
+										font-size:25px;
+										max-width: 100%;
+										overflow:hidden;
+										overflow-x:scroll;
+										padding-bottom:20px;
+										overflow-wrap: break-word;
+										
+									}
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Entender conceito de funções e como utilizá-lo.</li>
+								</style>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400">Instalar e configurar o R e o RStudio para suas análises de dados.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="500">Compreender a estrutura básica da linguagem R, incluindo variáveis, data frames e funções.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="600">Utilizar diversos pacotes do Tidyverse.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="700">Realizar operações de manipulação de dados, cálculos e importação de arquivos.</li>
-
-										</ul>
-									</div>
+								<div class="formula-matematica">
+									<math display="block">
+										<mover accent="false">
+											<mrow>
+											<mi mathcolor="#FF0000">x</mi>
+											</mrow>
+											<mo mathcolor="BLUE" style="font-size:40px;">¯</mo>
+										</mover>
+										<mo mathcolor="#000000">=</mo>
+										<mfrac mathcolor="#000000">
+											<mrow>
+											<mrow>
+												<munderover>
+												<mo mathcolor="#000000" stretchy="false">∑</mo>
+												<mrow>
+													<mi mathcolor="#000000">i</mi>
+													<mo mathcolor="#000000">=</mo>
+													<mn mathcolor="#000000">1</mn>
+												</mrow>
+												<mrow>
+													<mi mathcolor="#000000">n</mi>
+												</mrow>
+												</munderover>
+												<mrow>
+												<msub>
+													<mrow>
+													<mi mathcolor="#000000">x</mi>
+													</mrow>
+													<mrow>
+													<mi mathcolor="#000000">i</mi>
+													</mrow>
+												</msub>
+												</mrow>
+											</mrow>
+											</mrow>
+											<mrow>
+											<mi mathcolor="#000000">n</mi>
+											</mrow>
+										</mfrac>
+										<mo mathcolor="#000000">=</mo>
+										<mfrac mathcolor="#000000">
+											<mrow>
+											<mrow>
+												<munderover>
+												<mo mathcolor="#000000" stretchy="false">∑</mo>
+												<mrow>
+													<mi mathcolor="#000000">i</mi>
+													<mo mathcolor="#000000">=</mo>
+													<mn mathcolor="#000000">1</mn>
+												</mrow>
+												<mrow>
+													<mn mathcolor="#000000">20</mn>
+												</mrow>
+												</munderover>
+												<mrow>
+												<msub>
+													<mrow>
+													<mi mathcolor="#000000">x</mi>
+													</mrow>
+													<mrow>
+													<mi mathcolor="#000000">i</mi>
+													</mrow>
+												</msub>
+												</mrow>
+											</mrow>
+											</mrow>
+											<mrow>
+											<mn mathcolor="#000000">20</mn>
+											</mrow>
+										</mfrac>
+										<mo mathcolor="#000000">=</mo>
+										<mfrac mathcolor="#000000">
+											<mrow>
+											<msub>
+												<mrow>
+												<mi mathcolor="#000000">x</mi>
+												</mrow>
+												<mrow>
+												<mn mathcolor="#000000">1</mn>
+												</mrow>
+											</msub>
+											<mo mathcolor="#000000">+</mo>
+											<msub>
+												<mrow>
+												<mi mathcolor="#000000">x</mi>
+												</mrow>
+												<mrow>
+												<mn mathcolor="#000000">1</mn>
+												</mrow>
+											</msub>
+											<mo mathcolor="#000000">+</mo>
+											<mo mathcolor="#000000">…</mo>
+											<mo mathcolor="#000000">+</mo>
+											<msub>
+												<mrow>
+												<mi mathcolor="#000000">x</mi>
+												</mrow>
+												<mrow>
+												<mn mathcolor="#000000">20</mn>
+												</mrow>
+											</msub>
+											</mrow>
+											<mrow>
+											<mn mathcolor="#000000">20</mn>
+											</mrow>
+										</mfrac>
+										<mo mathcolor="#000000">=</mo>
+										<mfrac mathcolor="#000000">
+											<mrow>
+											<mn mathcolor="#000000">3265</mn>
+											<mo mathcolor="#000000">+</mo>
+											<mn mathcolor="#000000">3260</mn>
+											<mo mathcolor="#000000">+</mo>
+											<mo mathcolor="#000000">…</mo>
+											<mo mathcolor="#000000">+</mo>
+											<mn mathcolor="#000000">2834</mn>
+											</mrow>
+											<mrow>
+											<mn mathcolor="#000000">20</mn>
+											</mrow>
+										</mfrac>
+										<mo mathcolor="#000000">=</mo>
+										<mn mathcolor="#000000">3166.9</mn>
+										<mi mathcolor="#000000">g</mi>
+									</math>
 								</div>
+									
 							</div>
-							
-							<!-- <div class="row justify-content-center">
+						</div>
+
+						<!-- <div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 pt-5">
 									<div class="heading__block">
 										<h3 class="heading__title">Conteúdo programático</h3>
@@ -283,100 +458,101 @@
 									</div>
 								</div>
 							</div> -->
-						</div>
-					</section>
-				</div>
-
-				<!-- Navegação da aula -->
-				<section>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<div class="page-nav d-flex justify-content-evenly">
-									<!-- <a class="fio-button fio-button-primary" href="aula1.html" rel="prev"><span class="material-symbols-rounded">west</span> Início do módulo 1</a> -->
-									<a class="fio-button fio-button-primary" href="aula1/topico1.html" rel="next">Iniciar Aula 1 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
-								</div>
-							</div>
-						</div>
 					</div>
 				</section>
 			</div>
 
-			<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 col-md-auto">
-							<ul class="logos">
-								<!-- <li class="realizacao"> -->
-								<li>
-									<img class="img-fluid logo1" src="../media/logos/logo-icict-vertical.svg" alt="Logo do ICICT" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo2" src="../media/logos/logo-campus-horizontal.png" alt="Logo do Campus Virtual Fiocruz" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo3" src="../media/logos/logo-fiocruz-horizontal-black.png" alt="Logo da Fiocruz" height="" />
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-12 col-md-auto">
-							<ul class="logos principais align-self-end">
-								<li>
-									<img class="img-fluid logo4" src="../media/logos/logo-sus-digital-cor.png" alt="Logo do SUS Digital" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo5 d-none d-md-block" src="../media/logos/ministerio-saude-gov-federal.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-
-								<li>
-									<img class="img-fluid logo6 d-block d-md-none" src="../media/logos/ministerio-saude-gov-federal-mobile.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-							</ul>
+			<!-- Navegação da aula -->
+			<section>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8">
+							<div class="page-nav d-flex justify-content-evenly">
+								<!-- <a class="fio-button fio-button-primary" href="aula1.html" rel="prev"><span class="material-symbols-rounded">west</span> Início do módulo 1</a> -->
+								<a class="fio-button fio-button-primary" href="aula1/topico1.html" rel="next">Iniciar Aula 1 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</section>
 		</div>
 
-		<!--  Bootstrap JS and Popper -->
-		<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+		<footer>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-auto">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo1" src="../media/logos/logo-icict-vertical.svg" alt="Logo do ICICT" height="" />
+							</li>
 
-		<!-- Sticky Sidebar -->
-		<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
-		<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
-		<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+							<li>
+								<img class="img-fluid logo2" src="../media/logos/logo-campus-horizontal.png" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
 
-		<script type="text/javascript">
-			var sidebar = new StickySidebar('.sidebar', {
-				topSpacing: 0,
-				bottomSpacing: 0,
-				containerSelector: '.main',
-				innerWrapperSelector: '.sidebar__inner',
-				minWidth: 991,
-			});
-		</script>
+							<li>
+								<img class="img-fluid logo3" src="../media/logos/logo-fiocruz-horizontal-black.png" alt="Logo da Fiocruz" height="" />
+							</li>
+						</ul>
+					</div>
 
-		<script type="text/javascript" src="../assets/js/scripts.js"></script>
-		<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
-		<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+					<div class="col-12 col-md-auto">
+						<ul class="logos principais align-self-end">
+							<li>
+								<img class="img-fluid logo4" src="../media/logos/logo-sus-digital-cor.png" alt="Logo do SUS Digital" height="" />
+							</li>
 
-		<!-- Timeline horizontal -->
-		<script src="../assets/js/timeline-horizontal/util.js"></script>
-		<!-- util functions included in the CodyHouse framework -->
-		<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
-		<!-- A Vanilla JavaScript plugin to detect touch interactions -->
-		<script src="../assets/js/timeline-horizontal/main.js"></script>
-		<!-- Start the Timeline -->
-		<script>
-			document.getElementsByTagName('html')[0].className += ' js';
-		</script>
+							<li>
+								<img class="img-fluid logo5 d-none d-md-block" src="../media/logos/ministerio-saude-gov-federal.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
+							</li>
 
-		<script>
-			AOS.init();
-		</script>
-	</body>
+							<li>
+								<img class="img-fluid logo6 d-block d-md-none" src="../media/logos/ministerio-saude-gov-federal-mobile.png" alt="Logos do SUS, Ministério da Saúde e Governo Federal" height="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Bootstrap JS and Popper -->
+	<script src="../source/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Sticky Sidebar -->
+	<script type="text/javascript" src="../assets/js/ResizeSensor.js"></script>
+	<script type="text/javascript" src="../assets/js/sticky-sidebar.js"></script>
+	<script type="text/javascript" src="../assets/js/sidebar.js"></script>
+
+	<script type="text/javascript">
+		var sidebar = new StickySidebar('.sidebar', {
+			topSpacing: 0,
+			bottomSpacing: 0,
+			containerSelector: '.main',
+			innerWrapperSelector: '.sidebar__inner',
+			minWidth: 991,
+		});
+	</script>
+
+	<script type="text/javascript" src="../assets/js/scripts.js"></script>
+	<script type="text/javascript" src="../assets/js/custom-anime.js"></script>
+	<script type="text/javascript" src="../source/animate/aos/dist/aos.js"></script>
+
+	<!-- Timeline horizontal -->
+	<script src="../assets/js/timeline-horizontal/util.js"></script>
+	<!-- util functions included in the CodyHouse framework -->
+	<script src="../assets/js/timeline-horizontal/swipe-content.js"></script>
+	<!-- A Vanilla JavaScript plugin to detect touch interactions -->
+	<script src="../assets/js/timeline-horizontal/main.js"></script>
+	<!-- Start the Timeline -->
+	<script>
+		document.getElementsByTagName('html')[0].className += ' js';
+	</script>
+
+	<script>
+		AOS.init();
+	</script>
+</body>
+
 </html>
