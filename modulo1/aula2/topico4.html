@@ -166,10 +166,10 @@
 									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Introdução a Linguagem de Programação</a>
 								</li>
 								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</a>
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
 								</li>
 								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</a>
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
 								</li>
 							</ul>
 						</div>
@@ -262,40 +262,57 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de código"><code>
-dataframe &lt;-  dataframe %>% mutate(variavel = if_else(condicao, verdadeiro,falso))
-									</code></pre>
-								</div>
-							</div>
-						</div>
+								<!-- SINTAXE -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Sintaxe</h5>
+										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment"># Criando variáveis condicionais com if_else</span>
 
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Agora, você deverá ir até o nosso repositório para aplicar no RStudio a condicional com mutate para criar uma variável em nossos dados.</p>
-							</div>
-						</div>
+												<span class="variable">data_frame</span> <span class="operator">&lt;-</span> <span class="variable">data_frame</span> <span class="operator">%&gt;%</span>
+												   <span class="function">mutate</span>(<span class="variable">variável</span> <span class="operator">=</span> <span class="function">if_else</span>(<span class="variable">condição</span>, <span class="variable">verdadeiro</span>, <span class="variable">falso</span>))
+											</code>
+										</pre>
 
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 									</div>
+							</div>
+						</div>
 
-									<pre aria-label="Exemplo de código"><code>
-Comando:
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Agora, você pode aplicar no RStudio a condicional com <span class="color-tertiary-dark"><strong>mutate</strong></span> para criar uma variável em nossos dados.</p>
+							</div>
+						</div>
 
-<span class="variable">df_csv &lt;-</span> <span class="">df_csv %>%</span>
-  <span class="function">mutate(</span>
-    <span class="variable">sexo_p =</span> <span class="function">if_else(</span><span class="">SEXO ==</span> <span class="number">1</span>, "Masculino",
-                        <span class="function">if_else(</span>SEXO == <span class="number">2</span>, "Feminino", 
-                                <span class="function">if_else(</span>SEXO == <span class="number">0</span>, "Ignorado", NA_character_<span class="function">)))</span>
-  <span class="function">)</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img22a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div class="mb-5">
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img22b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -308,16 +325,26 @@ Comando:
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de código"><code>
-case_when( 
-	condição1 ~ resultado1, 
-	condição2 ~ resultado2, 
-	condição3 ~ resultado3, 
-	TRUE ~ resultado_padrão )
-									</code></pre>
-								</div>
+								<!-- SINTAXE -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Sintaxe</h5>
+										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment"># case_when para múltiplas condições</span>
+
+												<span class="function">case_when</span>(
+												   <span class="variable">condição_1</span> <span class="operator">˜</span> <span class="variable">resultado_1</span>,
+												   <span class="variable">condição_2</span> <span class="operator">˜</span> <span class="variable">resultado_2</span>,
+												   <span class="variable">condição_3</span> <span class="operator">˜</span> <span class="variable">resultado_3</span>,
+												   <span class="boolean">TRUE</span> <span class="operator">˜</span> <span class="variable">resultado_padrão</span>
+												)
+											</code>
+										</pre>
+
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+									</div>
 							</div>
 						</div>
 
@@ -329,47 +356,46 @@ case_when(
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img23a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div class="mb-5">
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img23b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
 									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="variable">df_csv &lt;-</span> <span class="">df_csv %>%</span>
-  <span class="function">mutate(</span>
-    <span class="variable">sexo_p =</span> <span class="function">case_when(</span><span class="">
-	  SEXO == <span class="number">1</span> ~ "Masculino",
-	  SEXO == <span class="number">2</span> ~ "Feminino",
-	  SEXO == <span class="number">0</span> ~ "Ignorado", 
-	  <span class="function">is.na(</span><SEXOspan class="function">) ~ NA_character_ <span class="comment"># Mantém o NA original
-    <span class="function">)</span>
-  <span class="function">)</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 								<p>O uso do <span class="color-tertiary-dark"><strong>case_when</strong></span>, nesse caso, torna o código mais organizado e legível. Dentro do <span class="color-tertiary-dark"><strong>mutate</strong></span>, começamos definindo o nome da variável, seguido pelo operador de atribuição (=). Após o <span class="color-tertiary-dark"><strong>case_when</strong></span>, podemos adicionar quantas condições forem necessárias para resolver o problema, separando cada uma por vírgulas. Por exemplo, a primeira condição é <span class="color-tertiary-dark"><strong>SEXO == 1 ~ "Masculino"</strong></span>, ou seja, se o valor de SEXO for igual a 1, o resultado será "Masculino", e assim por diante.</p>
+
 								<p>É importante destacar que, quando uma condição é verdadeira, o <span class="color-tertiary-dark"><strong>case_when</strong></span> não verifica as demais. Ao aplicar o <span class="color-tertiary-dark"><strong>case_when</strong></span> dessa forma, todas as linhas do <span class="color-tertiary-dark"><strong>dataframe</strong></span> são verificadas e uma nova coluna é criada, que chamamos de sexo_p (com "p" de padronizado). Agora, vamos verificar a frequência dessa (nova) variável.</p>
+
+								<p>Ao rodar esses comandos, você vai notar que o seu <span class="color-tertiary-dark"><strong>Dataframe</strong></span> passará a ter mais duas colunas, totalizando 8 variáveis. No primeiro comando, criamos a variável <span class="color-tertiary-dark"><strong>sexo_p</strong></span> e, no segundo, criamos a variável <span class="color-tertiary-dark"><strong>sexo_2</strong></span>. Se quiser conferir por conta própria você pode testar usar a função <span class="color-tertiary-dark"><strong>glimpse</strong></span> novamente.</p>
 							</div>
 						</div>
+
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img12.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-									<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						<div class="row justify-content-center mt-5">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
 									<h4 class="heading__title">Alterando a Variável de Data</h4>
@@ -377,7 +403,12 @@ Comando:
 
 								<p>Outra variável que vamos alterar é a <span class="color-tertiary-dark"><strong>DTOBITO</strong></span>, que representa a <strong>data do óbito</strong>. Ao executar o comando <span class="color-tertiary-dark"><strong>glimpse</strong></span>, percebemos que a variável <span class="color-tertiary-dark"><strong>DTOBITO</strong></span> está no tipo <span class="color-tertiary-dark"><strong>"caracter"</strong></span>, mas sabemos que se trata de uma data.</p>
 								<p>Para realizar operações com datas, como:</p>
+							</div>
+						</div>
 
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
 								<div class="list">
 									<ul class="list-group">
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Subtrair dias de uma data,</strong></li>
@@ -385,59 +416,65 @@ Comando:
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Calcular a diferença entre duas datas,</strong></li>
 									</ul>
 								</div>
-
-								<p>Precisamos que a variável esteja no tipo <span class="color-tertiary-dark"><strong>Date</strong></span>, que é o tipo apropriado para lidar com datas no R.</p>
-								<p>Para facilitar o trabalho com datas no R, utilizaremos o pacote <span class="color-tertiary-dark"><strong>lubridate</strong></span>, que está incluído no <span class="color-tertiary-dark"><strong>Tidyverse</strong></span>. Ele fornece funções simples e intuitivas para manipulação de datas.</p>
-								<p>Carregue o pacote <span class="color-tertiary-dark"><strong>lubridate</strong></span> no início do código, assim como fez anteriormente com outros pacotes.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
-									</div>
+								<p>Precisamos que a variável esteja no tipo <span class="color-tertiary-dark"><strong>Date</strong></span>, que é o tipo apropriado para lidar com datas no R.</p>
 
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="function">library(</span><span class="variable">df_csv &lt;-</span><span class="function">)</span> <span class="comment"># carrega o pacote lubridate</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
-								</div>
+								<p>Para facilitar o trabalho com datas no R, utilizaremos o pacote <span class="color-tertiary-dark"><strong>lubridate</strong></span>, que está incluído no <span class="color-tertiary-dark"><strong>Tidyverse</strong></span>. Ele fornece funções simples e intuitivas para manipulação de datas. Você já deve ter instalado e carregado este pacote junto com os outros no <strong><a href='topico3.html#pacotes' target='_blank'>subtópico Pacotes</a></strong>, em caso de dúvidas, revise esse conteúdo. </p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<p class="mb-0">Depois, crie uma variável do tipo date chamada de <span class="color-tertiary-dark"><strong>dt_DTOBITO</strong></span>, usando o <span class="color-tertiary-dark"><strong>mutate</strong></span> novamente. As datas nos bancos de dados podem aparecer em vários formatos, mas os dois mais comuns são:</p>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Não Ordenada -->
 								<div class="list">
 									<ul class="list-group">
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Formato brasileiro:</strong> dia/mês/ano (dd/mm/yyyy)</li>
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Formato americano:</strong> ano/mês/dia (yyyy/mm/dd)</li>
 									</ul>
 								</div>
+							</div>
+						</div>
 
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 								<p>No nosso caso, ao observar a variável <span class="color-tertiary-dark"><strong>DTOBITO</strong></span> usando <span class="color-tertiary-dark"><strong>glimpse</strong></span>, notamos que as datas estão no formato "<span class="color-tertiary-dark"><strong>ddmmyyyy</strong></span>" (por exemplo, 24072023 para o dia 24 de julho de 2023).</p>
 							</div>
 						</div>
 
-						<div class="row justify-content-center mt-5">
+						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
 									<h4 class="heading__title">Funções do lubridate para Manipulação de Datas</h4>
 								</div>
 
 								<p>O pacote <span class="color-tertiary-dark"><strong>lubridate</strong></span> oferece muitas funções para trabalhar com diferentes formatos de datas. A função <span class="color-tertiary-dark"><strong>ymd()</strong></span> é especialmente útil quando você precisa converter uma data no formato <strong>ano/mês/dia</strong> (mesmo que os valores estejam juntos, como no nosso caso).</p>
-								<p>Vamos utilizar <span class="color-tertiary-dark"><strong>ymd()</strong></span> para transformar a variável <span class="color-tertiary-dark"><strong>DTOBITO</strong></span>, que atualmente está no formato de texto, em uma data do tipo <span class="color-tertiary-dark"><strong>Date</strong></span>.</p>
-								<p><strong>Alterando e Criando Variáveis no Mutate</strong></p>
-								<p>O <span class="color-tertiary-dark"><strong>mutate</strong></span> pode ser usado para criar ou alterar múltiplas variáveis de uma só vez, separando cada nova operação por vírgula. Aqui, vamos:</p>
 
+								<p>Vamos utilizar <span class="color-tertiary-dark"><strong>ymd()</strong></span> para transformar a variável <span class="color-tertiary-dark"><strong>DTOBITO</strong></span>, que atualmente está no formato de texto, em uma data do tipo <span class="color-tertiary-dark"><strong>Date</strong></span>.</p>
+
+								<p><strong>Alterando e Criando Variáveis no Mutate</strong></p>
+
+								<p>O <span class="color-tertiary-dark"><strong>mutate</strong></span> pode ser usado para criar ou alterar múltiplas variáveis de uma só vez, separando cada nova operação por vírgula. Aqui, vamos:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
 								<div class="list">
 									<ol class="list-group list-group-numbered">
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Converter a variável</strong> <span class="color-tertiary-dark"><strong>DTOBITO</strong></span> para o formato de data usando <span class="color-tertiary-dark"><strong>ymd()</strong></span>.</li>
+
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Criar uma variável</strong> <span class="color-tertiary-dark"><strong>ano_obito</strong></span> que extrai o ano a partir da data de óbito, utilizando a função <span class="color-tertiary-dark"><strong>year()</strong></span> do <span class="color-tertiary-dark"><strong>lubridate</strong></span>.</li>
 									</ol>
 								</div>
@@ -446,21 +483,22 @@ Comando:
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img24.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
 									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="variable">df_csv &lt;-</span> df_csv %>%
-<span class="function">mutate(</span><span class="variable">DTOBITO_dt</span> = <span class="function">ymd(</span><span class="variable">DTOBITO</span><span class="function">)</span>, <span class="comment"># Converte DTOBITO para data</span>
-<span class="variable">ano_obito</span> = <span class="function">year(</span><span class="variable">DTOBITO_dt</span><span class="function">)</span> <span class="comment"># Extrai o ano da data de óbito</span>
-<span class="function">)</span>
-									</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
 								</div>
 							</div>
 						</div>
@@ -468,6 +506,8 @@ Comando:
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<p>Agora, temos:</p>
+
+								<!-- Lisa Ordenada -->
 								<div class="list">
 									<ul class="list-group">
 										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span class="color-tertiary-dark"><strong>DTOBITO_dt</strong></span> no formato correto de data, pronto para operações com datas.</li>
@@ -478,7 +518,7 @@ Comando:
 						</div>
 					</div>
 
-					<div class="container-fluid px-0">
+					<div class="container-fluid px-0 mb-5">
 						<div class="destaque-parallax my-0">
 							<div class="custom-shape-divider-top-1720289331">
 								<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -503,8 +543,9 @@ Comando:
 					</div>
 
 					<div class="container">
-						<div class="row justify-content-center mt-5">
+						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Saiba Mais -->
 								<div class="saiba-mais pb-5">
 									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
 										<div class="col-12 d-flex justify-content-center">
@@ -531,109 +572,25 @@ Comando:
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Agora, utilize de novo a função <span class="color-tertiary-dark"><strong>glimpse()</strong></span>. Você verá as alterações realizadas no seu <span class="color-tertiary-dark"><strong>data frame</strong></span>.</p>
+								<p>Agora, utilize de novo a função <span class="color-tertiary-dark"><strong>glimpse()</strong></span>. Você verá as alterações realizadas no seu <span class="color-tertiary-dark"><strong>Dataframe</strong></span> (destacado no retângulo vermelho).</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
-									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="function">glimpse(</span><span class="variable">df_csv</span><span class="function">)</span>
-										
-Abaixo. será o que aparecerá no seu console:
-
-DTOBITO    <chr> "01012023", "01012023", "01012023", "01012023", "01012023", "01012023", "01012023"
-DTOBITO_dt <date> 2023-01-01, 2023-01-01, 2023-01-01, 2023-01-01, 2023-01-01, 2023-01-01, 2023-01-01
-ano_obito  <dbl> 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, 2023, …
-									</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Agora vamos rever a função de contagem. Aqui está a comparação entre o uso da função <span class="color-tertiary-dark"><strong>table()</strong></span> do R base e a função <span class="color-tertiary-dark"><strong>count()</strong></span> do <span class="color-tertiary-dark"><strong>Tidyverse</strong></span> para contar a frequência de óbitos por ano e por sexo:</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
-									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="comment"># Frequência de óbitos por sexo</span>
-<span class="function">table(</span><span class="variable">df_csv</span>$<span class="variable">sexo_p</span>,useNA = “always”<span class="function">)</span> 
-<span class="comment"># Frequência de óbitos por ano de óbito</span>
-<span class="function">table(</span><span class="variable">df_csv</span>$<span class="variable">ano_obito</span>, useNA = “always”<span class="function">)</span> 
-
-vs. 
-Comando:
-
-<span class="comment"># Frequência de óbitos por sexo</span>
-<span class="variable">df_csv</span> %>%  <span class="function">count(</span><span class="variable">sexo_p</span><span class="function">)</span>
-<span class="comment"># Frequência de óbitos por ano de óbito</span>
-<span class="variable">df_csv</span> %>% <span class="function">count(</span><span class="variable">ano_obito</span><span class="function">)</span>
-
-Ainda podemos simplificar ainda mais a operação acima:
-
-Comando: 
-
-<span class="comment"># Frequência de óbitos por sexo e ano de óbito</span>
-<span class="variable">df_csv</span> %>% <span class="function">count(</span><span class="variable">sexo_p</span>, <span class="variable">ano_obito</span><span class="function">)</span>
-									</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img13.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-									<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Observe que todos os óbitos são do ano de 2023. Agora, vamos alterar a variável IDADE. Confira no dicionário de dados como funciona essa variável. Iremos alterar todas as observações para anos. Usaremos agora outro pacote para manipular character(também chamado de <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html="true" data-bs-content="O pacote stringr é utilizado no R para manipulação de strings (textos) de maneira simples e consistente. Ele facilita tarefas como busca, substituição, extração e modificação de textos, permitindo realizar operações comuns de forma eficiente, como encontrar padrões, contar caracteres e ajustar formatações. É ideal para o processamento e limpeza de dados textuais. " data-bs-original-title="String">string</a>), carregue o pacote stringr do tidyverse.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="saiba-mais pb-5">
-									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="col-12 d-flex justify-content-center">
-											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
 										</div>
-										<div class="col-12">
-											<div class="mt-3 collapse" id="saiba-mais2">
-												<p class="mb-0">A folha de resumo de utilização do strings pode ser encontrada no link:</p>
-
-												<div class="list">
-													<ul class="list-group">
-														<li class="list-group-item aos-init aos-animate" list-style="pdf" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-															<a href="https://rstudio.github.io/cheatsheets/translations/portuguese/strings_pt_br.pdf" target="_blank">https://rstudio.github.io/cheatsheets/translations/portuguese/strings_pt_br.pdf</a>
-														</li>
-													</ul>
-												</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img25.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
 											</div>
 										</div>
 									</div>
@@ -643,124 +600,188 @@ Comando:
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+								<p>Agora vamos rever a função de contagem. Use a função <span class="color-tertiary-dark"><strong>count()</strong></span> do <span class="color-tertiary-dark"><strong>Tidyverse</strong></span> para contar a frequência de óbitos por ano e por sexo:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img26a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div>
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img26b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
 									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="function">library(</span><span class="variable">stringr</span><span class="function">)</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>A variável idade tem uma codificação conforme dicionário de dados. O primeiro elemento da string varia de 0 a 5 , indica a unidade da idade, em horas, dias meses etc., enquanto os dígitos seguintes indicam a quantidade de unidades. Por exemplo, 204 significa que a idade está em dias e o indivíduo tinha 4 dias; 305 seria 5 meses, e assim por diante. Vamos alterar para anos.</p>
-								<p>Nosso primeiro passo vai ser dividir a string idade em duas, para simplificar. Usaremos a função do pacote stringr chamada <span class="color-tertiary-dark"><strong>str_sub()</strong></span>, que extrai uma parte da string, usando parâmetros como a string a ser extraída, o início e o final da nossa extração.</p>
+								<p>Observe que todos os óbitos são do ano de 2023. Agora, vamos alterar a variável IDADE. Confira no dicionário de dados como funciona essa variável. Iremos alterar todas as observações para anos. Usaremos agora outro pacote para manipular o tipo de dado character (também chamado de <strong>string</strong>), carregue o pacote <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html="true" data-bs-content="O pacote stringr é utilizado no R para manipulação de strings (textos) de maneira simples e consistente. Ele facilita tarefas como busca, substituição, extração e modificação de textos, permitindo realizar operações comuns de forma eficiente, como encontrar padrões, contar caracteres e ajustar formatações. É ideal para o processamento e limpeza de dados textuais. " data-bs-original-title="Stringr">stringr</a> do <span class="color-tertiary-dark"><strong>Tidyverse</strong></span>.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
-									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="variable">?str_sub</span> <span class="comment"># abrir a documentação</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
-								</div>
+								<p>Você já deve ter instalado e ativado o pacote stringr do Tidyverse no <a href='topico3.html#pacotes' target='_blank'>subtópico Pacotes</a>, em caso de dúvidas, revise esse conteúdo. </p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img14.jpg" alt="" title="Fonte: Documentação da library stringR no RStudio (2025)." />
-									<figcaption class="figure-caption">Fonte: Documentação da library stringR no RStudio (2025).</figcaption>
-								</figure>
-							</div>
-						</div>
+								<p>A variável <strong>IDADE</strong> tem uma codificação conforme dicionário de dados. O primeiro elemento da <em>string</em> varia de 0 a 5 , indica a unidade da idade, em horas, dias meses etc., enquanto os dígitos seguintes indicam a quantidade de unidades. Por exemplo, 204 significa que a idade está em dias e o indivíduo tinha 4 dias; 305 seria 5 meses, e assim por diante. Vamos alterar para anos.</p>
 
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Nosso primeiro passo vai ser dividir a <em>string</em> idade em duas, para simplificar. Usaremos a função do pacote stringr chamada <span class="color-tertiary-dark"><strong>str_sub()</strong></span>, que extrai uma parte da <em>string</em>, usando parâmetros como a <em>string</em> a ser extraída, o início e o final da nossa extração. Assim, conseguimos separar apenas os caracteres que precisamos. Qualquer dúvida, use o comando <span class="color-tertiary-dark"><strong>?str_sub</strong></span> no seu <span class="color-tertiary-dark"><strong>console</strong></span> para abrir a documentação. </p>
+
 								<p>Essa função recebe como parâmetro uma <span class="color-tertiary-dark"><strong>string</strong></span>, depois dois valores representando o começo e o final que queremos extrair dela. Criaremos duas variáveis, uma que chamaremos de <span class="color-tertiary-dark"><strong>tipo_idade</strong></span> referente ao primeiro elemento da <span class="color-tertiary-dark"><strong>string</strong></span>, e a segunda em relação ao restante da <span class="color-tertiary-dark"><strong>string</strong></span>, chamada idade. Confira o código a seguir que adicionaremos ao nosso <span class="color-tertiary-dark"><strong>mutate</strong></span>.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img27a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div>
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img27b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
 									</div>
-
-									<pre aria-label="Exemplo de código"><code>
-Comando:
-
-<span class="variable">df_csv</span> &lt;- <span class="variable">df_csv</span> %>%
-  <span class="function">mutate(</span> <span class="variable">tipo_idade</span> = stringr::<span class="function">str_sub(</span>IDADE,1,1<span class="function">)</span>, <span class="comment"># extrair o primeiro elemento</span>
-    <span class="variable">idade</span> = stringr::<span class="function">str_sub(</span>IDADE,2<span class="function">)</span> <span class="comment"># extrair do segundo elemento em diante</span>
-  <span class="function">)</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Iremos agora usar <span class="color-tertiary-dark"><strong>tipo_idade</strong></span> e idade em uma <span class="color-tertiary-dark"><strong>case_when</strong></span> para criar uma nova variável de idade contendo somente idades em anos. Em seguida, aplicamos nossa lógica com base no dicionário de dados e análise do banco para criar a variável idade em anos.</p>
-								<p>Podemos encadear todas as funções que aprendemos. Use o comando a seguir:</p>
+								<p>Dentro do <span class="color-tertiary-dark"><strong>mutate()</strong></span> estamos criando várias variáveis de uma só vez. Primeiro, extraímos partes específicas da <em>string</em> <strong>IDADE</strong>: <strong>tipo_idade</strong> recebe apenas o primeiro dígito, e idade recebe os demais. Em seguida, usamos <span class="color-tertiary-dark"><strong>case_when()</strong></span> para transformar essa codificação em idade em anos.</p>
+
+								<p>No <span class="color-tertiary-dark"><strong>case_when()</strong></span>, cada linha segue a sintaxe abaixo:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+										<h5 class="heading__title">Sintaxe</h5>
 									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment"># Estrutura de cada linha do case_when</span>
 
-									<pre aria-label="Exemplo de código"><code>
-Comando:
+											<span class="variable">condição</span> <span class="operator">˜</span> <span class="variable">resultado</span>
+										</code>
+									</pre>
 
-<span class="variable">df_csv</span> &lt;- <span class="variable">df_csv</span> %>%
-  <span class="function">mutate(</span>
-    <span class="variable">sexo_p</span> = <span class="function">case_when(</span>
-      <span class="variable">SEXO</span> == 1 ~ "Masculino",
-      <span class="variable">SEXO</span> == 2 ~ "Feminino",
-      <span class="variable">SEXO</span> == 0 ~ "Ignorado",
-      <span class="function">is.na(</span><span class="variable">SEXO</span><span class="function">)</span> ~ NA_character_  <span class="comment"># Mantém o NA original</span>
-    <span class="function">)</span>,
-   <span class="variable">DTOBITO_2</span> = <span class="function">dmy(</span><span class="variable">DTOBITO</span><span class="function">)</span>,
-    <span class="variable">ano_obito</span> = <span class="function">year(</span><span class="variable">dt_DTOBITO</span><span class="function">)</span>,
-    <span class="variable">tipo_idade</span> = stringr::<span class="function">str_sub(</span>IDADE,1,1<span class="function">)</span>, <span class="comment"># extrair o primeiro elemento</span>
-    <span class="variable">idade</span> = stringr::<span class="function">str_sub(</span>IDADE,2<span class="function">)</span>, <span class="comment"># extrair do segundo elemento em diante</span>
-    <span class="variable">idade_anos</span> = <span class="function">case_when(</span>  <span class="comment"># condicional para criar idade em anos</span>
-      <span class="variable">tipo_idade</span> &lt;= 3 ~ 0, <span class="comment"># se menor igual a 3 seria 0 anos</span>
-      <span class="variable">tipo_idade</span> == 4 ~ <span class="variable">idade</span>, <span class="comment"># 4 já está em anos somente capturar</span>
-      <span class="variable">tipo_idade</span> == 5 ~ 100 + <span class="variable">idade</span> <span class="comment"># 5 somar 100</span>
-    <span class="function">)</span>
-  <span class="function">)</span>
-										</code></pre>
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-									<button class="copy-btn">Copiar</button>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
+					
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O símbolo <span class="color-tertiary-dark"><strong>~</strong></span> separa a condição (à esquerda) do valor que será atribuído quando ela for verdadeira (à direita). Assim:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lisa Não Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Se tipo_idade</strong> &lt= 3, a idade representa horas, dias ou meses — por isso atribuimos 0 anos</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Se tipo_idade</strong> == 4, a idade já está em anos, e apenas convertemos para número.</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>Se tipo_idade</strong> == 5, a idade representa pessoas com 100 anos ou mais — somamos 100 + idade.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img28a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div>
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img28b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
+								<!-- Box de Dica -->
+								<div class="box" data-box="Dica">
+									<div class="card card--out">
+										<div class="card-header">
+											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+											<span class="label">Dica</span>
+										</div>
+										<div class="card-body">
+											<p>Use o comando <span class="color-tertiary-dark"><strong>View(df_csv)</strong></span> para visualizar a tabela completa em outra aba</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
 					</div>
 				</section>
 			</div>

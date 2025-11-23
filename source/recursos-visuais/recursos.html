@@ -1207,7 +1207,151 @@
 						</div>
 					</section>
 
-					<!-- Bloco - Códigos -->
+					<!-- Bloco - Códigos NESTE CURSO -->
+					<section id="code">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<span class="heading__before">Recurso 7</span>
+										<h3>Códigos</h3>
+										<p class="heading__lead">Boxes utilizados especificamente neste curso, de acordo com a finalidade pedagógica estipulada:</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<h6>Sintaxe:</h6>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- SINTAXE -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Sintaxe</h5>
+										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment">// Escopo de variáveis - variáveis globais e locais</span>
+
+												<span class="variable">A</span> <span class="operator">=</span> <span class="number">100</span>  <span class="comment">// Variável global</span>
+
+												<span class="comment">// Função com parâmetro chamado A (diferente do A global)</span>
+												<span class="keyword">função</span> <span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
+												<span class="variable">produto</span> <span class="operator">=</span> <span class="variable">A</span> <span class="operator">*</span> <span class="variable">multiplicador</span>  <span class="comment">// Usa o A do parâmetro, não o A global</span>
+												<span class="keyword">retorno</span> <span class="variable">produto</span>
+												}
+
+												<span class="variable">resposta</span> <span class="operator">=</span> <span class="function">multiplicar</span>(<span class="number">5</span>, <span class="number">3</span>)  <span class="comment">// Passa 5 como parâmetro A e 3 como multiplicador</span>
+
+												<span class="function">mostrar</span>(<span class="variable">A</span>)        <span class="comment">// 100 (A global permanece 100)</span>
+												<span class="function">mostrar</span>(<span class="variable">resposta</span>) <span class="comment">// 15 (usou A = 5 como parâmetro, então 5 * 3 = 15)</span>
+
+												<span class="comment">// O A dentro da função (parâmetro) é diferente do A fora (global)
+												// Mesmo tendo o mesmo nome, são variáveis independentes</span>
+											</code>
+										</pre>
+
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<h6>Exemplo de aplicação</h6>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- EXEMPLO DE APLICAÇÃO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo de aplicação</h5>
+										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment">// Laço REPITA-ATÉ (pós-teste) - ajusta modelo até erro &lt; valor desejado</span>
+
+												<span class="keyword">REPITA</span>
+												<span class="variable">X</span> <span class="operator">=</span> <span class="function">criar parâmetros</span>
+												<span class="function">executar a predição nos dados usando os parâmetros X</span>
+												<span class="variable">Y</span> <span class="operator">=</span> <span class="function">modelo</span>(<span class="variable">X</span>)
+												<span class="keyword">até_que</span> (<span class="variable">Y</span> <span class="operator">&lt;</span> <span class="variable">valor_desejado</span>)
+
+												<span class="comment">// Executa pelo menos uma vez antes de testar a condição</span>
+											</code>
+										</pre>
+
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<h6>Na Prática</h6>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3a.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3b.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<h6>Faça você mesmo</h6>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- FAÇA VOCÊ MESMO -->
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>Se quiser acompanhar a prática, abra o RStudio e tente escrever os comandos que iremos apresentar durante a aula. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Bloco - Códigos (geral) -->
 					<section id="code">
 						<div class="container">
 							<div class="row justify-content-center">

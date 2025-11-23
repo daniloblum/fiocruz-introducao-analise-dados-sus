@@ -234,7 +234,7 @@ body {
 }
 .heading__block .heading__title {
 	font-family: var(--fio-sys-typography-family-primary-bold);
-	font-size: var(--fio-sys-typography-size-3);
+	/* font-size: var(--fio-sys-typography-size-3); */
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -245,6 +245,10 @@ body {
 	height: 2px;
 	background-color: var(--fio-sys-color-secondary-accent-light);
 	border-radius: var(--fio-sys-size-border-radius-full);
+}
+
+.heading__block .heading__title {
+
 }
 
 /* CONTENT */
@@ -269,7 +273,7 @@ section {
 }
 
 .section.presentation .heading__block .heading__title {
-	font-size: var(--fio-sys-typography-size-5);
+	/* font-size: var(--fio-sys-typography-size-5); */
 	text-transform: none;
 	color: #fff;
 }

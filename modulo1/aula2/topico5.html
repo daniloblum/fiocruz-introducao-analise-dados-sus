@@ -299,22 +299,52 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- SINTAXE -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Sintaxe</h5>
+										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment"># Estrutura básica para agrupar e sumarizar dados</span>
+
+												<span class="variable">dados</span> <span class="operator">%&gt;%</span>
+												   <span class="function">group_by</span>(<span class="variable">nome_da_variável_de_agrupamento</span>) <span class="operator">%&gt;%</span>    
+												   <span class="function">summarize</span>(
+													<span class="variable">nova_variável</span> <span class="operator">=</span> <span class="function">função</span>()
+												   )
+											</code>
+										</pre>
+
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+									</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<p>Por exemplo, se quisermos calcular a soma de uma coluna de "atendimentos" para cada "município" e "ano", primeiro agrupamos as observações por essas categorias com <span class="color-tertiary-dark"><strong>group_by()</strong></span> e, em seguida, usamos <span class="color-tertiary-dark"><strong>summarise()</strong></span> para realizar a soma.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de estrutura básica do comando 'SE':">
-											<code>
-												<p>Olhe este exemplo:</p>
-												dados_agregados &lt;- dados %>% group_by(Ano, Municipio) %>% 
+								<!-- EXEMPLO DE APLICAÇÃO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Exemplo de aplicação</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment"># Agregando dados por ano e município</span>
+											
+											<span class="variable">dados_agregados</span> <span class="operator">&lt;-</span> <span class="variable">dados</span> <span class="operator">%&gt;%</span>    
+											   <span class="function">group_by</span>(<span class="variable">ano</span>, <span class="variable">município</span>) <span class="operator">%&gt;%</span> 
+											   <span class="function">summarize</span>(<span class="variable">atendimentos_totais</span> <span class="operator">=</span> <span class="function">sum</span>(<span class="variable">atendimentos</span>))
+										</code>
+									</pre>
 
-												summarise(Atendimentos_Totais = sum(Atendimentos))
-											</code>
-										</pre>
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
@@ -440,41 +470,73 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Na Prática - CÓDIGO -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Na prática</h5>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<div class="mb-5">
+												<p class="mb-1"><strong>Comando:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img29a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+
+											<div>
+												<p class="mb-1"><strong>Saída:</strong></p>
+												<figure class="lightbox">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img29b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+													<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
 									</div>
-
-									<pre aria-label="Exemplo de código">
-											<code>
-												<p>Comando:</p>
-												<span class="comment"># agrupar o n de óbitos por mês</span>
-												<span class="variable">grouped_mes</span> = <span class="function">df_csv %>% group_by(</span><span class="variable">mes</span> = <span class="function">month(</span><span class="keyword">dt_DTOBITO</span><span class="function">)) %>%</span> 
-
-												<span class="function">summarise(</span><span class="variable">n_obitos</span> = <span class="function">n())</span>
-
-												<p><strong>1. Agrupamento por mês:</strong> Utilizamos a função <span class="function">group_by()</span> para agrupar os dados pela coluna mes. Para extrair o mês da data, usamos a função <span class="function">month()</span> do pacote <span class="keyword">{lubridate}</span>, passando como argumento a coluna de data <span class="keyword">(dt_DTOBITO)</span>.</p>
-
-												<p><strong>2. Contagem de óbitos:</strong> Na função <span class="function">summarise()</span>, contamos o número de óbitos em cada mês utilizando a função <span class="function">n()</span>, que conta as linhas do agrupamento. O resultado é armazenado na nova coluna <span class="variable">n_obitos</span>.</p>
-
-												<p><strong>Resultado esperado:</strong> o resultado será uma tabela com duas colunas.</p>
-												<span class="variable d-inline">mes</span>: extraído da data do óbito.
-												<span class="variable d-inline">n_obitos</span>: contagem de óbitos ocorridos naquele mês.
-											</code>
-										</pre>
-
-									<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula2-img15.jpg" alt="" title="Fonte: Elaborada pelo autor (2025).">
-									<figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2025).</figcaption>
-								</figure>
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Para agrupar os óbitos por mês, primeiro usamos a função <span class="color-tertiary-dark"><strong>month()</strong></span> (do pacote <span class="color-tertiary-dark"><strong>lubridate</strong></span>) para extrair o mês da data de óbito e criar a variável <span class="color-tertiary-dark"><strong>mes_obito</strong></span>. Em seguida, aplicamos <span class="color-tertiary-dark"><strong>group_by()</strong></span> para reunir todas as linhas pertencentes ao mesmo mês.</p>
+
+								<p>Dentro de <span class="color-tertiary-dark"><strong>summarise()</strong></span>, calculamos duas estatísticas importantes:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lisa Não Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span class="color-tertiary-dark"><strong>total_obitos = n()</strong></span>, que conta quantas ocorrências há em cada mês;</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span class="color-tertiary-dark"><strong>idade_media = mean(idade_anos, na.rm = TRUE)</strong></span>, que calcula a idade média dos óbitos naquele mês.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>O resultado final é uma tabela com:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lisa Não Ordenada -->
+								<div class="list">
+									<ul class="list-group">
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>mes_obito</strong> – mês do óbito</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>total_obitos</strong> – número total de óbitos,</li>
+
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>idade_media</strong> – idade média para cada mês.</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 
@@ -514,17 +576,17 @@
 								<!-- Lista Não-Ordenada -->
 								<div class="list">
 									<ul class="list-group">
-										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" ><span class="color-tertiary-dark"><strong>Left Join</strong></span>: retorna todas as linhas da tabela à esquerda e as correspondências da tabela à direita. Se não houver correspondência, os resultados da tabela à direita serão nulos.</li>
+										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span class="color-tertiary-dark"><strong>Left Join</strong></span>: retorna todas as linhas da tabela à esquerda e as correspondências da tabela à direita. Se não houver correspondência, os resultados da tabela à direita serão nulos. Comando: <span class="color-tertiary-dark"><strong>left_join()</strong></span></li>
 
-										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span class="color-tertiary-dark"><strong>Inner Join</strong></span>: retorna apenas as linhas que têm correspondência em ambas as tabelas envolvidas.</li>
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span class="color-tertiary-dark"><strong>Inner Join</strong></span>: retorna apenas as linhas que têm correspondência em ambas as tabelas envolvidas. Comando: <span class="color-tertiary-dark"><strong>inner_join()</strong></span></li>
 
-										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span class="color-tertiary-dark"><strong>Right Join</strong></span>: retorna todas as linhas da tabela à direita e as correspondências da tabela à esquerda. Se não houver correspondência, os resultados da tabela à esquerda serão nulos.</li>
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span class="color-tertiary-dark"><strong>Right Join</strong></span>: retorna todas as linhas da tabela à direita e as correspondências da tabela à esquerda. Se não houver correspondência, os resultados da tabela à esquerda serão nulos. Comando: <span class="color-tertiary-dark"><strong>right_join()</strong></span></li>
 
-										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span class="color-tertiary-dark"><strong>Full join</strong></span>: retorna todas as linhas quando há uma correspondência em uma das tabelas. Inclui todas as linhas da tabela à esquerda e da tabela à direita, preenchendo com nulos quando não houver correspondência. </li>
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span class="color-tertiary-dark"><strong>Full join</strong></span>: retorna todas as linhas quando há uma correspondência em uma das tabelas. Inclui todas as linhas da tabela à esquerda e da tabela à direita, preenchendo com nulos quando não houver correspondência. Comando: <span class="color-tertiary-dark"><strong>full_join()</strong></span></li>
 
-										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Anti Join</strong></span>: retorna as linhas da tabela à esquerda que não têm correspondência na tabela à direita.</li>
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Anti Join</strong></span>: retorna as linhas da tabela à esquerda que não têm correspondência na tabela à direita. Comando: <span class="color-tertiary-dark"><strong>anti_join()</strong></span></li>
 
-										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Semi Join</strong></span>: rretorna as linhas da tabela à esquerda que têm pelo menos uma correspondência na tabela à direita, mas sem retornar dados da tabela à direita.</li>
+										<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400"><span class="color-tertiary-dark"><strong>Semi Join</strong></span>: rretorna as linhas da tabela à esquerda que têm pelo menos uma correspondência na tabela à direita, mas sem retornar dados da tabela à direita. Comando: <span class="color-tertiary-dark"><strong>semi_join()</strong></span></li>
 									</ul>
 								</div>
 							</div>
@@ -532,14 +594,14 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>A ideia central dos <span class="color-tertiary-dark"><strong>joins</strong></span> é simples: a junção entre dois <span class="color-tertiary-dark"><strong>dataframes</strong></span> só pode ocorrer se eles tiverem colunas com observações em comum, que atuem como chave para conectar as informações de um <span class="color-tertiary-dark"><strong>dataframe</strong></span> ao outro.</p>
+								<p>A ideia central dos <span class="color-tertiary-dark"><strong>joins</strong></span> é simples: a junção entre dois <span class="color-tertiary-dark"><strong>Dataframes</strong></span> só pode ocorrer se eles tiverem colunas com observações em comum, que atuem como chave para conectar as informações de um <span class="color-tertiary-dark"><strong>Dataframe</strong></span> ao outro.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
 								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula2-img16.jpg" alt="" title="Fonte: https://intro2r.library.duke.edu/join.html. Acesso em: 20 jul. 2025.">
+									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula2-img30.jpg" alt="" title="Fonte: https://intro2r.library.duke.edu/join.html. Acesso em: 20 jul. 2025.">
 									<figcaption class="figure-caption fonte">Fonte: https://intro2r.library.duke.edu/join.html. Acesso em: 20 jul. 2025.</figcaption>
 								</figure>
 							</div>
@@ -547,28 +609,52 @@
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Suponha que temos dois <span class="color-tertiary-dark"><strong>dataframe</strong></span>: o primeiro contém a soma total de atendimentos por município, e o segundo possui o código IBGE de cada um deles. Para combinar essas tabelas corretamente, precisamos de uma coluna que funcione como uma chave de ligação. No Brasil, o código IBGE é o identificador único de cada município, o que garante que possamos distinguir cidades com nomes iguais.</p>
+								<p>Suponha que temos dois <span class="color-tertiary-dark"><strong>Dataframes</strong></span>: o primeiro contém a soma total de atendimentos por município, e o segundo possui o código IBGE de cada um deles. Para combinar essas tabelas corretamente, precisamos de uma coluna que funcione como uma chave de ligação. No Brasil, o código IBGE é o identificador único de cada município, o que garante que possamos distinguir cidades com nomes iguais.</p>
 
 								<p>Por exemplo, podemos ter dois municípios chamados “São João”, mas cada um terá um código IBGE distinto. Isso nos permite unir as informações de forma precisa, sem confundir os dados de municípios com o mesmo nome.</p>
 
-								<p>Para unir as tabelas usando o código IBGE como chave, em R <span class="color-tertiary-dark"><strong>(com o pacote {dplyr})</strong></span>,</p>
+								<p>Para unir as tabelas usando o código IBGE como chave, em R (com o pacote <span class="color-tertiary-dark"><strong>dplyr</strong></span>).</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- CÓDIGO -->
-								<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<pre aria-label="Exemplo de estrutura básica do comando 'SE':">
-											<code>
-												<p>Comando:</p>
-												<span class="comment"># Juntando as tabelas de atendimentos e população</span>
-												m
-												dados_agregados &lt;- dados %>% group_by(Ano, Municipio) %>% 
+								<!-- SINTAXE -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Sintaxe</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment"># Estrutura básica para juntar tabelas com left_join</span>
 
-												tabela_unida <- atendimentos_totais %>%  left_join(populacao, by = codigo_ibge)
-											</code>
-										</pre>
+											<span class="variable">tabela_unida</span> <span class="operator">&lt-</span> <span class="variable">tabela_esquerda</span> <span class="operator">%&gt;%</span>
+											   <span class="function">left_join</span>(<span class="variable">populacao</span>, <span class="keyword">by</span> <span class="operator">=</span> <span class="string">"nome_da_coluna_chave"</span>)    
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- EXEMPLO DE APLICAÇÃO -->
+								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="heading__block">
+										<h5 class="heading__title">Exemplo de aplicação</h5>
+									</div>
+									<pre aria-label="Exemplo de código">
+										<code>
+											<span class="comment"># Juntando as tabelas de atendimentos e população</span>
+
+											<span class="variable">tabela_unida</span> <span class="operator">&lt-</span> <span class="variable">atendimentos_totais</span> <span class="operator">%&gt;%</span>
+											   <span class="function">left_join</span>(<span class="variable">populacao</span>, <span class="keyword">by</span> <span class="operator">=</span> <span class="string">"codigo_ibge"</span>)    
+										</code>
+									</pre>
+
+									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>

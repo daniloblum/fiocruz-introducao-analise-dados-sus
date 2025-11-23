@@ -246,7 +246,7 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<span class="small">Tópico 2</span>
-										<h3 class="heading__title">Linguagem de programação R.</h3>
+										<h3 class="heading__title">Linguagem de programação R</h3>
 									</div>
 
 									<p>O R é uma linguagem de programação para análise de dados que oferece uma variedade de ferramentas estatísticas, gráficas e para manipulação de dados.</p>
@@ -255,6 +255,7 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Saiba Mais -->
 									<div class="saiba-mais pb-5">
 										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
 											<div class="col-12 d-flex justify-content-center">
@@ -287,7 +288,7 @@
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
 									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-topico2-img1.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img1.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
 										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
 									</figure>
 								</div>
@@ -295,13 +296,14 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
+									<!-- Olho de texto -->
 									<div class="olho-de-texto my-5">
-										<p>A ausência do nome da pessoa na base de dados do público-alvo não deve ser impedimento para ele receber</p>
+										<p>Todos os tópicos desta aula podem ser testados em seu RStudio. Então, baixe o programa e teste!</p>
 									</div>
 								</div>
 							</div>
 
-							<div class="row justify-content-center mt-5">
+							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<h4 class="heading__title">RStudio</h4>
@@ -313,6 +315,7 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Saiba Mais -->
 									<div class="saiba-mais pb-5">
 										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
 											<div class="col-12 d-flex justify-content-center">
@@ -355,42 +358,79 @@
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-topico2-img2.jpg" alt="" title="Fonte: https://livro.curso-r.com/2-1-telas.html (2025)." />
-										<figcaption class="figure-caption">Fonte: https://livro.curso-r.com/2-1-telas.html (2025).</figcaption>
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img2.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
 									</figure>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>
-										No quadrante do Editor, temos o local onde escreveremos nosso código. No quadrante do Console, podemos ver os resultados da execução e também executar scripts diretamente. A diferença de executar códigos no Console é que não é possível salvá-los. Por isso, sempre escrevemos nossos códigos no Editor, quando podemos salvar os arquivos com a extensão
-										<span class="color-tertiary-dark"><strong>“.r”</strong></span>
-										. Por exemplo, um arquivo pode ser salvo como <span class="color-tertiary-dark"><strong>codigos_curso_r_01.r</strong></span>
-										. Todo script em R deve ser salvo com esse formato, que é automaticamente reconhecido pelo RStudio para abertura e edição. Os outros quadrantes são auxiliares:
-									</p>
+									<p>Veja a seguir a utilização de cada quadrante:</p>
 
+									<!-- Lista Ordenada -->
 									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Environment: painel com todos os objetos criados na sessão.</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">History: histórico dos comandos executados.</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-												Output:é possível verificar diversas saídas conforme as abas.
+										<ol class="list-group list-group-numbered"> 
+											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Editor (Source) — Painel Superior Esquerdo</strong></span>
 												<ul class="list-group">
-													<li class="list-group-item sub-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">plots: painel no qual os gráficos serão mostrados.</li>
-													<li class="list-group-item sub-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">files: mostra o diretório de trabalho atual, sendo possível navegar entre as pastas.</li>
-													<li class="list-group-item sub-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">packages: lista as bibliotecas instaladas e carregadas.</li>
-													<li class="list-group-item sub-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Help: mostra a documentação da linguagem R e funções quando chamadas.</li>
-													<li class="list-group-item sub-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">viewer: onde os relatórios são apresentados</li>
+													<li class="list-group-item sub-item">Onde você <strong>escreve, edita e salva</strong> seus códigos</li>
+
+													<li class="list-group-item sub-item">Permite trabalhar com arquivos .R, .Rmd, e outros.</li>
+
+													<li class="list-group-item sub-item">Os comandos só são executados quando enviados ao <strong>Console</strong>.</li>
 												</ul>
 											</li>
-										</ul>
+
+											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Console — Painel Inferior Esquerdo</strong></span>
+												<ul class="list-group">
+													<li class="list-group-item sub-item">Onde o <strong>código é executado</strong> e os <strong>resultados são exibidos</strong> imediatamente.</li>
+
+													<li class="list-group-item sub-item">Você pode digitar comandos diretamente.</li>
+
+													<li class="list-group-item sub-item">Também exibe mensagens, erros e avisos.</li>
+												</ul>
+											</li>
+
+											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Environment / History — Painel Superior Direito</strong></span>
+												<ul class="list-group">
+													<li class="list-group-item sub-item"><strong>Environment:</strong> mostra todos os <strong>objetos criados na sessão</strong> (variáveis, fun-ções, data frames etc.).</li>
+
+													<li class="list-group-item sub-item"><strong>History:</strong> exibe o <strong>histórico de comandos executados</strong>.</li>
+
+													<li class="list-group-item sub-item">Connections (opcional):<strong> gerencia conexões com bancos de dados.</li></strong>
+
+													<li class="list-group-item sub-item">Esse painel é conhecido como o <strong>Painel de Ambiente</strong>.</li>
+												</ul>
+											</li>
+
+											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Output — Painel Inferior Direito</strong></span>
+												<ul class="list-group">
+													<li class="list-group-item sub-item">Agrupa várias abas relacionadas às <strong>saídas e recursos</strong> do RStudio:
+														<ul class="list-group">
+															<li class="list-group-item sub-item"><strong>Plots:</strong> exibe gráficos gerados.</li>
+
+															<li class="list-group-item sub-item"><strong>Files:</strong> mostra o <strong>diretório de trabalho atual</strong> e permite navegar entre pastas.</li>
+
+															<li class="list-group-item sub-item"><strong>Packages:</strong> lista os <strong>pacotes instalados e carregados</strong>.</li>
+
+															<li class="list-group-item sub-item"><strong>Help:</strong> mostra a <strong>documentação</strong> de funções e pacotes.</li>
+
+															<li class="list-group-item sub-item"><strong>Viewer:</strong> apresenta relatórios, dashboards e visualizações HTML.</li>
+														</ul>
+													</li>
+
+													<li class="list-group-item sub-item">É conhecido como o <strong>Painel de Saídas (Output Panel)</strong>.</li>
+												</ul>
+											</li>
+											
+										</ol>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Saiba Mais -->
 									<div class="saiba-mais pb-5">
 										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
 											<div class="col-12 d-flex justify-content-center">
@@ -439,6 +479,7 @@
 										</div>
 									</div>
 								</div>
+								
 								<div class="col-12 col-md-5 col-lg-4 mb-5">
 									<div class="card">
 										<div class="card-header">
@@ -473,17 +514,14 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
+									<!-- FAÇA VOCÊ MESMO -->
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>Se quiser acompanhar a prática, abra o RStudio e <strong>tente escrever os comandos</strong> que iremos apresentar durante a aula. </p>
 										</div>
-
-										<pre aria-label="Exemplo de código"><code>
-1 + 2 <span class="comment"># isso é um comentário, digite isso no editor e aperte &lt;ctrl&gt; + &lt;enter&gt;</span>
-										</code></pre>
-
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-										<button class="copy-btn">Copiar</button>
 									</div>
 								</div>
 							</div>
@@ -496,20 +534,45 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-topico2-img3.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3a.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3b.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-
+							
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- CÓDIGO -->
-									<div class="code-example-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<pre aria-label="Exemplo de estrutura básica do comando 'SE':"><code>
-Aproveite também para experimentar realizar diferentes operações. Para subtrações use o símbolo "-", para multiplicar use "*" e para dividir use "/".
-										</code></pre>
+									<!-- FAÇA VOCÊ MESMO -->
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>Aproveite também para experimentar realizar diferentes operações. Para subtrações use o símbolo <span class="color-tertiary-dark"><strong>-</strong></span>, para multiplicar use <span class="color-tertiary-dark"><strong>*</strong></span> e para dividir use <span class="color-tertiary-dark"><strong>/</strong></span>.</p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -529,29 +592,41 @@ Aproveite também para experimentar realizar diferentes operações. Para subtra
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
 										</div>
-
-										<pre aria-label="Exemplo de código"><code>
-<span class="comment"># atribuindo o valor 15 na variável idade</span>
-
-<span class="variable">idade &gt;-</span> <span class="number">15</span>
-
-<span class="variable">idade</span> <span class="comment"># você pode usar o nome da variável para acessar o valor/objeto guardado dentro da variável idade</span>
-										</code></pre>
-
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-										<button class="copy-btn">Copiar</button>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>No quadrante <span class="color-tertiary-dark"><strong>Environment / History</strong></span>, você deverá visualizar uma tela semelhante a esta:</p>
+
 									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-topico2-img4.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4c.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
 										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
 									</figure>
 								</div>
@@ -561,6 +636,7 @@ Aproveite também para experimentar realizar diferentes operações. Para subtra
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<p>Quando você cria variáveis em R, é importante seguir algumas regras:</p>
 
+									<!-- Lista Não Ordenada -->
 									<div class="list">
 										<ul class="list-group">
 											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">O nome de uma variável <strong>deve começar com uma letra</strong>.</li>
@@ -575,116 +651,238 @@ Aproveite também para experimentar realizar diferentes operações. Para subtra
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- SINTAXE -->
 									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
+											<h5 class="heading__title">Sintaxe</h5>
 										</div>
+										<pre aria-label="Exemplo de código">
+											<code>
+												<span class="comment"># Exemplos de nomenclatura de variáveis em R</span>
 
-										<pre aria-label="Exemplo de código"><code>
-<span class="variable">variavel_idade</span>
+												<span class="variable">variavel_idade</span>
+												<span class="variable">cpf.paciente</span>
+											</code>
+										</pre>
 
-<span class="variable">cpf.paciente</span>
-										</code></pre>
-
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-										<button class="copy-btn">Copiar</button>
+										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Além disso, o R é case-sensitive, ou seja, ele diferencia letras maiúsculas de minúsculas. Portanto, as variáveis b e B são tratadas como duas variáveis diferentes.</p>
+									<p>Além disso, o R é <em>case-sensitive</em>, ou seja, ele diferencia letras maiúsculas de minúsculas. Portanto, as variáveis b e B são tratadas como duas variáveis diferentes.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
 										</div>
-
-										<pre aria-label="Exemplo de código"><code>
-<span class="variable">b &lt;-</span> <span class="number">10</span>
-<span class="variable">B &lt;-</span> <span class="number">30</span>
-
-<span class="function">print(</span><span class="variable">b</span><span class="function">)</span>
-<span class="function">print(</span><span class="variable">B</span><span class="function">)</span>
-										</code></pre>
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-										<button class="copy-btn">Copiar</button>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>No quadrante <span class="color-tertiary-dark"><strong>Environment / History</strong></span>, você deverá visualizar uma tela semelhante a esta:</p>
+
 									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-topico2-img5.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5c.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
 										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
 									</figure>
 								</div>
 							</div>
 
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Tipos de Objetos no R</h4>
-									</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Box de Atenção -->
+									<div class="box" data-box="Atenção">
+										<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="card-header">
+												<span class="icone material-symbols-rounded" aria-hidden="true"></span>
+												<span class="label">Atenção</span>
+											</div>
+											<div class="card-body">
+												<div class="custom-shape-divider-top-1720289331">
+													<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+														<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+													</svg>
+												</div>
 
-									<p>No R, trabalhamos com diferentes tipos de dados ou objetos. Vamos conhecer três tipos básicos:</p>
-									<p class="mb-0"><strong>Numérico:</strong> armazena números, que podem ser inteiros ou de ponto flutuante (números reais).</p>
+												<div>
+													<p>Para remover objetos do <span class="color-secondary-light"><strong>Environment</strong></span>, você pode utilizar o ícone localizado na parte superior do quadrante.</p>
 
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-												Se você quiser garantir que um valor seja inteiro, pode usar a função <span class="color-tertiary-dark"><strong>as.integer()</strong></span
-												>, que converte um número para esse formato.
-											</li>
-										</ul>
-									</div>
+													<p>O ícone “Clear Objects from Workspace” (vassoura do Environment) apaga todos os objetos carregados, ajudando a liberar espaço e manter o ambiente organizado. </p>
 
-									<p><strong>Caracteres (também chamado de string em outras linguagens):</strong> armazena texto, como "padaria".</p>
-
-									<p><strong>Lógico:</strong> armazena valores booleanos, ou seja, TRUE (verdadeiro) ou FALSE (falso).</p>
-									<p class="mb-0"><strong>Outros tipos de objetos:</strong></p>
-
-									<div class="list">
-										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Vetores.</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Fatores (usado para variáveis categóricas).</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Matrizes.</li>
-										</ul>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img6.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
+									<div class="heading__block">
+										<h4 class="heading__title">Tipos de Objetos no R</h4>
+									</div>
+
+									<p>No R trabalhamos com diferentes tipos de dados ou objetos. Vamos conhecer três ti-pos básicos, ilustrados no código abaixo:</p>
+
+									<!-- Lista Não Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Numérico:</strong> armazena números, que podem ser inteiros ou de ponto flutuante (números reais).
+												<ul class="list-group">
+													<li class="list-group-item sub-item">Números inteiros podem ser definidos diretamente (como 18).</li>
+
+													<li class="list-group-item sub-item">Números reais (de ponto flutuante) são escritos com casas decimais, como 18.5.</li>
+												</ul>
+											</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Caracteres</strong> (também chamados de <em>strings</em> em outras linguagens): armazenam textos, como <span class="color-tertiary-dark"><strong>"Saúde Pública"</strong></span>. Quando colocamos qualquer informação entre aspas, o R interpreta como texto — inclusive números, como <span class="color-tertiary-dark"><strong>"25"</strong></span>. Nesses casos, o valor pode ser convertido para numérico usando funções como <span class="color-tertiary-dark"><strong>as.numeric()</strong></span>.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Lógico:</strong> armazena valores booleanos, ou seja, <span class="color-tertiary-dark"><strong>TRUE</strong></span> (verdadeiro) ou <span class="color-tertiary-dark"><strong>FALSE</strong></span> (falso).</li>
+										</ul>
+									</div>
+
+									<p>Você pode verificar o tipo de cada objeto usando a função <span class="color-tertiary-dark"><strong>class()</strong></span>, como mostrado: <span class="color-tertiary-dark"><strong>class(numero_inteiro)</strong></span>, <span class="color-tertiary-dark"><strong>class(numero_real)</strong></span>, <span class="color-tertiary-dark"><strong>class(texto)</strong></span> e <span class="color-tertiary-dark"><strong>class(logico)</strong></span>.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img7a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img7b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
 										</div>
-
-										<pre aria-label="Exemplo de código"><code>
-<span class="variable">a &lt;-</span> <span class="number">15</span> <span class="comment"># Numérico</span>
-<span class="function">class(</span><span class="variable">a</span><span class="function">)</span> <span class="comment"># Verifica o tipo de dado: Numérico</span>
-
-<span class="comment"># Quando tentamos converter um número real em inteiro, o valor é arredondado</span>
-<span class="variable">a &lt;-</span> <span class="number">15.6</span> <span class="comment"># Numérico (real)</span>
-
-<span class="function">class(</span><span class="variable">a</span><span class="function">)</span>
-
-<span class="variable">a &lt;-</span> <span class="function">as.interger(</span><span class="variable">a</span><span class="function">)</span> <span class="comment"># Converte para inteiro</span>
-
-<span class="function">class(</span><span class="variable">a</span><span class="function">)</span> <span class="comment"># O valor é arredondado para 15</span>
-										</code></pre>
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
-										<button class="copy-btn">Copiar</button>
 									</div>
 								</div>
 							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>É possível converter um objeto de um tipo para outro usando funções como <span class="color-tertiary-dark"><strong>as.integer()</strong></span> e <span class="color-tertiary-dark"><strong>as.numeric()</strong></span>. Ao transformar um número real em inteiro, o valor é arredondado, e ao converter um texto contendo dígitos (como <span class="color-tertiary-dark"><strong>"25"</strong></span>) para numérico, ele passa a ser tratado como número pelo R.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img8a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img8b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Além dos tipos básicos, o R também trabalha com outras estruturas importantes para organizar dados. Com <strong>vetores</strong>, podemos armazenar múltiplos valores do mesmo tipo em um único objeto. Já <strong>fatores</strong> permitem representar categorias de forma estruturada, úteis para análises estatísticas. Por fim, <strong>matrizes</strong> organizam dados em linhas e colunas, facilitando operações numéricas em duas dimensões.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<!-- NA PRÁTICA -->
+									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="box-cor__base">
+											<div class="base-header">
+												<h4>Na Prática!</h4>
+											</div>
+											<div class="base-body">
+												<div class="mb-5">
+													<p class="mb-1"><strong>Comando:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img9a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+
+												<div>
+													<p class="mb-1"><strong>Saída:</strong></p>
+													<figure class="lightbox">
+														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img9b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+													</figure>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>							
 						</div>
 					</section>
 				</div>
