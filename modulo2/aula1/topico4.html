@@ -75,7 +75,6 @@
 
 				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-creditos">Créditos</a></li>
 				<li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-glossario">Glossário</a></li>
-				
 			</ul>
 		</header>
 		<div class="main">
@@ -126,8 +125,6 @@
 									<li class="dropdown-menu__item">
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
 									</li>
-
-									
 								</ul>
 							</div>
 						</div>
@@ -238,7 +235,7 @@
 								<h2 class="title">
 									<span class="label">Módulo 2 | Aula 1</span>
 									<br />
-									Sistema de Informação I (SIM, SINASC e CNES)
+									Análise exploratória e descritiva
 								</h2>
 							</div>
 						</div>
@@ -253,151 +250,741 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<span class="small">Tópico 4</span>
-										<h3 class="heading__title">Cadastro Nacional de Estabelecimentos de Saúde (CNES)</h3>
-									</div>
-
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O CNES foi criado inicialmente para cadastrar estabelecimentos que prestavam serviços ao SUS, focando em processos de faturamento no Sistema de Informações Ambulatoriais (SIA) e no Sistema de Informações Hospitalares (SIH). Em 2006, a ANVISA expandiu a obrigatoriedade do cadastro para todos os estabelecimentos de saúde, incluindo aqueles de saúde suplementar e privados. Assim, o CNES se consolidou como o cadastro oficial de todos os estabelecimentos de saúde no Brasil, independente do vínculo com o SUS.</p>
-
-									<p>O objetivo do CNES é fornecer uma base de dados completa sobre a oferta de serviços de saúde no país, padronizando informações para mais de 90 sistemas nacionais, como o e-SUS Atenção Primária (e-SUS APS). Além disso, ele apoia gestores no planejamento e tomada de decisões, permitindo o mapeamento detalhado dos serviços de saúde em cada território.</p>
-
-									<p>O cadastro no CNES inclui as seguintes informações:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<!-- Tabela -->
-									<div class="table-responsive aos-init" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<table class="table table-bordered">
-											<thead>
-												<tr class="text-center">
-													<th>Informação</th>
-													<th>Descrição</th>
-												</tr>
-											</thead>
-
-											<tbody>
-												<tr>
-													<td><strong>Identificação</strong></td>
-													<td>Dados como razão social, endereço, tipo de estabelecimento e convênios com o SUS.</td>
-												</tr>
-
-												<tr>
-													<td><strong>Informações gerais</strong></td>
-													<td>Serviços e equipamentos disponíveis.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Ambulatorial</strong></td>
-													<td>Dados sobre serviços especializados como diálise e oncologia.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Hospitalar</strong></td>
-													<td>Informações sobre leitos e especialidades.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Profissionais</strong></td>
-													<td>Lista de profissionais de saúde, carga horária e vínculo com o SUS.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Equipes</strong></td>
-													<td>Equipes como saúde da família e atenção domiciliar.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Telessaúde</strong></td>
-													<td>Tecnologias de saúde à distância.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Mantenedora</strong></td>
-													<td>Entidade responsável pelo estabelecimento.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Habilitação</strong></td>
-													<td>Habilitações como UTI e transplantes.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Regras contratuais</strong></td>
-													<td>Acordos entre prestadores e gestores de saúde.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Incentivos</strong></td>
-													<td>Incentivos financeiros recebidos pelo estabelecimento.</td>
-
-												</tr>
-
-												<tr>
-													<td><strong>Contrato de gestão e metas</strong></td>
-													<td>Metas e acordos entre o gestor e o prestador de serviços.</td>
-
-												</tr>
-											</tbody>
-										</table>
+										<h3 class="heading__title">Medidas de dispersão</h3>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O CNES é completamente eletrônico, e cada estabelecimento de saúde é responsável por preencher e atualizar mensalmente a Ficha de Cadastro de Estabelecimentos de Saúde (FCES). O gestor municipal ou estadual revisa e consolida os dados antes de enviá-los ao nível federal, conforme pode ser observado na figura 3. </p>
+									<p>Considere as duas amostras do mesmo indivíduo apresentadas na figura a seguir, obtidas usando-se diferentes técnicas de medição. Elas têm a mesma média aritmética (200mg/dl), entretanto aparentam uma dispersão em torno da média diferente. A diferença entre as duas amostras está na variabilidade do método de medição.</p>
+									<p>Estudaremos agora diferentes estatísticas usadas para quantificar essa noção de variabilidade.</p>
+									<p>Duas amostras de medidas de colesterol usando-se os métodos AutoAnalyzer e Microenzimatic.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
-								<div class="col-12">
-									<p class="text-muted text-center mb-5"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique e arraste</span> <span class="d-inline-block d-lg-none">Toque e arraste</span> para visualizar as imagens</p>
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo2/aula1-topico4-img1.jpg" alt="" title="Fonte: Rosner (2006)." />
+										<figcaption class="figure-caption">Fonte: Rosner (2006).</figcaption>
+									</figure>
 								</div>
+							</div>
 
-								<div class="col-12 col-md-12 col-lg-12">
-									<!-- Antes e depois -->
-									<div class="antes-e-depois aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="antes-e-depois--container">
-											<div class="image-container">
-												<img class="image-before slider-image img-fluid" src="../../media/modulo2/aula1-img9.jpg" alt="" title="Fonte: Campus Virtual Fiocruz">
-												<img class="image-after slider-image img-fluid" src="../../media/modulo2/aula1-img10.jpg" alt="" title="Campus Virtual Fiocruz">
-											</div>
-
-
-											<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="antes-e-depois--slider">
-											<div class="slider-line" aria-hidden="true"></div>
-											<div class="slider-button" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
-													<rect width="256" height="256" fill="none"></rect>
-													<line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-													<line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-													<polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-													<line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-													<polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
-												</svg>
-											</div>
-										</div>
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Amplitude</h4>
 									</div>
 								</div>
+							</div>
 
-								<div class="col-12 col-md-12 col-lg-8 mb-5">
-									<span class="figure-caption text-center d-block">Figura 3</span>
-										<span class="figure-caption text-center d-block">Fonte: Campus Virtual Fiocruz</span>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>É a medida de variabilidade mais simples, definida pela distância entre o maior e o menor valor da amostra. Exemplo: no caso dos recém-nascidos da tabela, é dada por 2077g (4146g-2069g). Vamos pensar juntos sobre outra possibilidade de estatística para medir a dispersão dos dados.</p>
+									<p>
+										A principal diferença entre os métodos AutoAnalyzer e Microenzimatic é a concentração dos dados ao redor do centro no segundo método. Se definirmos o centro da amostra no segundo método como sendo a média aritmética, então uma medida que poderia resumir a diferença (ou os desvios) entre os pontos individuais e a média aritmética deveria conter os termos:
+										<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>1</mn>
+												</msub>
+												<mo>-</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>&OverBar;</mo>
+												</mover>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msub>
+												<mo>-</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>&OverBar;</mo>
+												</mover>
+												<mo>)</mo>
+											</mrow>
+											<mo>,</mo>
+											<mo>...</mo>
+											<mo>,</mo>
+											<mrow>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>n</mi>
+												</msub>
+												<mo>-</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>&OverBar;</mo>
+												</mover>
+												<mo>)</mo>
+											</mrow>
+										</math>
+									</p>
+									<p>
+										Sem pensar muito, uma medida simples que poderia atingir esse objetivo seria a média desses desvios:
+										<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+											<munderover>
+												<mo>∑</mo>
+												<mrow>
+													<mi>i</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>n</mi>
+											</munderover>
+											<mfrac>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>x</mi>
+														<mi>i</mi>
+													</msub>
+													<mo>-</mo>
+													<mover>
+														<mi>x</mi>
+														<mo>¯</mo>
+													</mover>
+													<mo>)</mo>
+												</mrow>
+												<mi>n</mi>
+											</mfrac>
+										</math>
+										.
+									</p>
+									<p>Infelizmente, apesar de intuitiva, essa medida não funciona, já que, por definição, a média é construída de tal forma que a soma dos desvios das observações individuais de uma amostra em relação à média aritmética é sempre zero.</p>
+									<p>Como exercício, sugiro que você cheque essa afirmação. Vou deixar os passos indicados a seguir para ajudá-lo a chegar a essa conclusão, com base na série de colesterol aferida pelo método AutoAnalyzer:</p>
+
+									<math display="block" style="color: black; font-size: 20px">
+										<mfrac>
+											<mrow>
+												<munderover>
+													<mo>&#x2211;</mo>
+													<mrow>
+														<mi>i</mi>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+													<mi>n</mi>
+												</munderover>
+												<mfenced separators="">
+													<mrow>
+														<msub>
+															<mi>x</mi>
+															<mi>i</mi>
+														</msub>
+														<mo>&#x2212;</mo>
+														<mover accent="true">
+															<mi>x</mi>
+															<mo>&#xAF;</mo>
+														</mover>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mi>n</mi>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mfenced separators="">
+													<mrow>
+														<msub>
+															<mi>x</mi>
+															<mn>1</mn>
+														</msub>
+														<mo>&#x2212;</mo>
+														<mover accent="true">
+															<mi>x</mi>
+															<mo>&#xAF;</mo>
+														</mover>
+													</mrow>
+												</mfenced>
+												<mo>+</mo>
+												<mfenced separators="">
+													<mrow>
+														<msub>
+															<mi>x</mi>
+															<mn>2</mn>
+														</msub>
+														<mo>&#x2212;</mo>
+														<mover accent="true">
+															<mi>x</mi>
+															<mo>&#xAF;</mo>
+														</mover>
+													</mrow>
+												</mfenced>
+												<mo>+</mo>
+												<mo>&#x22EF;</mo>
+												<mo>+</mo>
+												<mfenced separators="">
+													<mrow>
+														<msub>
+															<mi>x</mi>
+															<mi>n</mi>
+														</msub>
+														<mo>&#x2212;</mo>
+														<mover accent="true">
+															<mi>x</mi>
+															<mo>&#xAF;</mo>
+														</mover>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mi>n</mi>
+										</mfrac>
+										<mo>=</mo>
+									</math>
+
+									<math display="block" style="color: black; font-size: 20px">
+										<mfrac>
+											<mrow>
+												<mfenced separators="">
+													<mrow>
+														<mn>177</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+													</mrow>
+												</mfenced>
+												<mo>+</mo>
+												<mfenced separators="">
+													<mrow>
+														<mn>193</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+													</mrow>
+												</mfenced>
+												<mo>+</mo>
+												<mo>&#x22EF;</mo>
+												<mo>+</mo>
+												<mfenced separators="">
+													<mrow>
+														<mn>226</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mn>5</mn>
+										</mfrac>
+										<mo>=</mo>
+										<mn>0</mn>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Assim, uma alternativa é tomar o quadrado dos desvios. Dado que o quadrado de qualquer número é um número positivo, a média dos desvios ao quadrado não resultará em zero.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Variância</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A estatística mais utilizada para medir o espalhamento dos dados em torno de um centro é a variância. A variância amostral é definida como a médias dos desvios ao quadrado, dividida por (n-1):</p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<msup>
+											<mi>s</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<munderover>
+											<mo>&#x2211;</mo>
+											<mrow>
+												<mi>i</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>n</mi>
+										</munderover>
+										<mfrac>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>x</mi>
+														<mi>i</mi>
+													</msub>
+													<mo>&#x2212;</mo>
+													<mover accent="true">
+														<mi>x</mi>
+														<mo>&#xAF;</mo>
+													</mover>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+											<mrow>
+												<mi>n</mi>
+												<mo>&#x2212;</mo>
+												<mn>1</mn>
+											</mrow>
+										</mfrac>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Voltando ao exemplo das duas medições de colesterol, as variâncias seriam, então:</p>
+									<p><strong>Método AutoAnalyzer:</strong></p>
+									<math display="block" style="color: #000; font-size: 20px">
+										<msup>
+											<mi>s</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<munderover>
+											<mo>&#x2211;</mo>
+											<mrow>
+												<mi>i</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>n</mi>
+										</munderover>
+										<mfrac>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>x</mi>
+														<mi>i</mi>
+													</msub>
+													<mo>&#x2212;</mo>
+													<mover accent="true">
+														<mi>x</mi>
+														<mo>&#xAF;</mo>
+													</mover>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+											<mrow>
+												<mi>n</mi>
+												<mo>&#x2212;</mo>
+												<mn>1</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>177</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>193</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mo>&#x2026;</mo>
+												<mo>+</mo>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>226</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+											<mn>4</mn>
+										</mfrac>
+										<mo>=</mo>
+										<mn>340</mn>
+										<mspace width="0.333em"></mspace>
+										<mi>mg</mi>
+										<mo>/</mo>
+										<msup>
+											<mi>dL</mi>
+											<mn>2</mn>
+										</msup>
+									</math>
+
+									<p class="mt-5"><strong>Método Microenzimatic:</strong></p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<msup>
+											<mi>s</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<munderover>
+											<mo>&#x2211;</mo>
+											<mrow>
+												<mi>i</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>n</mi>
+										</munderover>
+										<mfrac>
+											<msup>
+												<mrow>
+													<mo>(</mo>
+													<msub>
+														<mi>x</mi>
+														<mi>i</mi>
+													</msub>
+													<mo>&#x2212;</mo>
+													<mover accent="true">
+														<mi>x</mi>
+														<mo>&#xAF;</mo>
+													</mover>
+													<mo>)</mo>
+												</mrow>
+												<mn>2</mn>
+											</msup>
+											<mrow>
+												<mi>n</mi>
+												<mo>&#x2212;</mo>
+												<mn>1</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>192</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>197</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mo>&#x2026;</mo>
+												<mo>+</mo>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<mn>209</mn>
+														<mo>&#x2212;</mo>
+														<mn>200</mn>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+											<mn>4</mn>
+										</mfrac>
+										<mo>=</mo>
+										<mn>39,5</mn>
+										<mspace width="0.333em"></mspace>
+										<mi>mg</mi>
+										<mo>/</mo>
+										<msup>
+											<mi>dL</mi>
+											<mn>2</mn>
+										</msup>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Observe, entretanto, que a unidade da variância é o quadrado da unidade dos dados. No nosso exemplo o colesterol é medido em mg/dL — todas as medidas de locação são medidas em mg/dL e a variância em (mg/dL)<sup>2</sup>.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Desvio-padrão</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Uma forma muito natural de “resolver” a questão de escala da variância e tornar a estatística de dispersão uma medida na mesma escala dos dados é tomando a raiz quadrada da variância. Essa “nova” estatística se chama desvio-padrão. Dessa forma, o desvio-padrão pode ser interpretado como “o quanto, em média, os dados se desviam da média”.</p>
+									<p>O desvio-padrão amostral é definido como:</p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<mi>s</mi>
+										<mo>=</mo>
+										<msqrt>
+											<msup>
+												<mi>s</mi>
+												<mn>2</mn>
+											</msup>
+										</msqrt>
+										<mo>=</mo>
+										<msqrt>
+											<munderover>
+												<mo>&#x2211;</mo>
+												<mrow>
+													<mi>i</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+												</mrow>
+												<mi>n</mi>
+											</munderover>
+											<mfrac>
+												<msup>
+													<mrow>
+														<mo>(</mo>
+														<msub>
+															<mi>x</mi>
+															<mi>i</mi>
+														</msub>
+														<mo>&#x2212;</mo>
+														<mover accent="true">
+															<mi>x</mi>
+															<mo>&#xAF;</mo>
+														</mover>
+														<mo>)</mo>
+													</mrow>
+													<mn>2</mn>
+												</msup>
+												<mrow>
+													<mi>n</mi>
+													<mo>&#x2212;</mo>
+													<mn>1</mn>
+												</mrow>
+											</mfrac>
+										</msqrt>
+									</math>
+
+									<p class="mt-5">Para nosso exemplo de medições de colesterol, os desvios-padrão são:</p>
+
+									<p><strong>AutoAnalyzer:</strong></p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<mi>s</mi>
+										<mo>=</mo>
+										<msqrt>
+											<msup>
+												<mi>s</mi>
+												<mn>2</mn>
+											</msup>
+										</msqrt>
+										<mo>=</mo>
+										<msqrt>
+											<mn>340</mn>
+										</msqrt>
+										<mo>=</mo>
+										<mn>18,44</mn>
+										<mspace width="0.333em"></mspace>
+										<mi>mg</mi>
+										<mo>/</mo>
+										<mi>dL</mi>
+									</math>
+
+									<p class="mt-5"><strong>Microenzimatic:</strong></p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<mi>s</mi>
+										<mo>=</mo>
+										<msqrt>
+											<msup>
+												<mi>s</mi>
+												<mn>2</mn>
+											</msup>
+										</msqrt>
+										<mo>=</mo>
+										<msqrt>
+											<mn>39,5</mn>
+										</msqrt>
+										<mo>=</mo>
+										<mn>6,28</mn>
+										<mspace width="0.333em"></mspace>
+										<mi>mg</mi>
+										<mo>/</mo>
+										<mi>dL</mi>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Coeficiente de variação</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>
+										Nesse ponto, você já entendeu que a escala dos dados importa. Uma outra questão interessante a se pensar é na diferença de um desvio-padrão de 10u (unidades) em uma amostra cuja média aritmética é 10u e outra cuja média aritmética é 100u. A interpretação da concentração desses dados é completamente diferente. Enquanto na série em que
+										<math display="inline">
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+											<mo>=</mo>
+											<mn>10</mn>
+											<mi>u</mi>
+										</math>
+										, em média os dados variam também em 10u, na série
+										<math display="inline">
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+											<mo>=</mo>
+											<mn>100</mn>
+											<mi>u</mi>
+										</math>
+										, os dados variam apenas em 10u.
+									</p>
+
+									<p>Dessa forma, uma estatística que relacione o desvio-padrão com a média traz uma interpretação importante sobre o quanto da média temos em desvio-padrão. Essa estatística se chama coeficiente de variação, e é definida matematicamente como sendo:</p>
+
+									<math display="block" style="color: #000; font-size: 24px">
+										<mi>CV</mi>
+										<mo>=</mo>
+										<mfrac>
+											<mi>s</mi>
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+										</mfrac>
+									</math>
+
+									<p class="mt-5">
+										Note que o coeficiente de variação não tem unidade de medida, já que ambos (s e
+										<math display="inline">
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+										</math>
+										) têm a mesma unidade.
+									</p>
+									<p>No nosso exemplo de colesterol, os coeficientes de variação para ambos os métodos são:</p>
+
+									<p><strong>AutoAnalyzer:</strong></p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<mi>CV</mi>
+										<mo>=</mo>
+										<mfrac>
+											<mi>s</mi>
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mn>18,44</mn>
+											<mn>200</mn>
+										</mfrac>
+										<mo>=</mo>
+										<mn>0,0922</mn>
+										<mo>=</mo>
+										<mn>9,22</mn>
+										<mo>%</mo>
+									</math>
+
+									<p class="mt-5"><strong>Microenzimatic:</strong></p>
+
+									<math display="block" style="color: #000; font-size: 20px">
+										<mi>CV</mi>
+										<mo>=</mo>
+										<mfrac>
+											<mi>s</mi>
+											<mover accent="true">
+												<mi>x</mi>
+												<mo>&#xAF;</mo>
+											</mover>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mn>6,28</mn>
+											<mn>200</mn>
+										</mfrac>
+										<mo>=</mo>
+										<mn>0,0314</mn>
+										<mo>=</mo>
+										<mn>3,14</mn>
+										<mo>%</mo>
+									</math>
+
+									<p class="mt-5">Olhando essa estatística a conclusão é muito mais direta: enquanto no método AutoAnalyzer o desvio-padrão representa 9,22% da média, no método Microenzimatic os dados estão bem mais concentrados, com o desvio-padrão sendo 3,14% da média.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Intervalo Interquartil</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Uma medida mais robusta para dispersão é o intervalo interquartil, uma medida menos sensível a extremos ou outliers de amplitude, uma vez que utiliza o primeiro e terceiro quartil em vez do máximo e mínimo usados no cálculo da amplitude. Matematicamente é definida como:</p>
+
+									<p class="d-block text-center">
+										<em>IQ = Q<sub>3</sub> - Q<sub>1</sub></em>
+									</p>
+
+									<p>Em que Q<sub>1</sub> é o valor até o qual temos 25% dos dados e Q<sub>3</sub> o valor até o qual temos 75% da amostra.</p>
+
+									<p>No nosso exemplo do colesterol essa estatística seria calculada como:</p>
+
+									<p><strong>Para o método AutoAnalyzer:</strong></p>
+
+									<p>Q<sub>1</sub>: Já que (n*p)/100 <u>não</u> é inteiro (n=5 p=25, logo n*p/100=1,25), P<sub>25</sub> (ou Q<sub>1</sub>) será a (k+1)-ésima maior observação, em que k é o maior inteiro menor do que (n*p)/100. Como (n*p)/100=1,25, o maior inteiro menor do que 1,25 é um, e (K+1)=2. Logo P<sub>25</sub>= 2ª observação= 193mg/dL.</p>
+									<p>Q<sub>3</sub>: Já que (n*p)/100 <u>não</u> é inteiro (n=5 p=75, logo n*p/100=3,75), P<sub>75</sub> (ou Q<sub>3</sub>) será a (k+1)-ésima maior observação, em que k é o maior inteiro menor do que (n*p)/100. Como (n*p)/100=3,75, o maior inteiro menor do que 3,75 é 3, e (K+1)=4. Logo, P<sub>75</sub>= 4ª observação= 209mg/dL.</p>
+									<p>Logo, IQ=Q<sub>3</sub>-Q<sub>1</sub>=209-193=16 mg⁄dL</p>
+
+									<p><strong>Para o método Microenzimatic:</strong></p>
+
+									<p>Note que, como ambas as amostras (AutoAnalyzer e Microenzimatic) têm o mesmo tamanho, Q<sub>1</sub> continuará sendo a 2ª observação (que agora assume o valor 197mg/dL) e Q<sub>3</sub> a 4ª observação da amostra (que agora é 202mg/dL).</p>
+									<p>Logo, IQ=Q<sub>3</sub>-Q<sub>1</sub>=202-197=5 mg⁄dL</p>
 								</div>
 							</div>
 						</div>
@@ -468,11 +1055,11 @@
 		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
 
 		<script type="text/javascript">
-			var sidebar = new StickySidebar('.sidebar', {
+			var sidebar = new StickySidebar(".sidebar", {
 				topSpacing: 0,
 				bottomSpacing: 0,
-				containerSelector: '.main',
-				innerWrapperSelector: '.sidebar__inner',
+				containerSelector: ".main",
+				innerWrapperSelector: ".sidebar__inner",
 				minWidth: 991,
 			});
 		</script>
@@ -492,7 +1079,7 @@
 		<script src="../../assets/js/timeline-horizontal/main.js"></script>
 		<!-- Start the Timeline -->
 		<script>
-			document.getElementsByTagName('html')[0].className += ' js';
+			document.getElementsByTagName("html")[0].className += " js";
 		</script>
 
 		<script>

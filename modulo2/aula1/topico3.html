@@ -124,8 +124,6 @@
 									<li class="dropdown-menu__item">
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
 									</li>
-
-									
 								</ul>
 							</div>
 						</div>
@@ -236,7 +234,7 @@
 								<h2 class="title">
 									<span class="label">Módulo 2 | Aula 1</span>
 									<br />
-									Sistema de Informação I (SIM, SINASC e CNES)
+									Análise exploratória e descritiva
 								</h2>
 							</div>
 						</div>
@@ -251,133 +249,836 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<span class="small">Tópico 3</span>
-										<h3 class="heading__title">Sistema de Informação sobre Nascidos Vivos (SINASC)</h3>
+										<h3 class="heading__title">Medidas de locação.</h3>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Até os anos 1990, o registro civil era a principal fonte de dados sobre nascimentos, mas o sub-registro era alto, especialmente em regiões mais carentes, atingindo 22,6% na década de 1980. Um dos fatores era a cobrança de taxas nos cartórios, eliminada em 1997 com a <a href='https://www.planalto.gov.br/ccivil_03/leis/l9534.htm' target='_blank'>Lei nº 9.534.</a></p>
-
-									<p>O SINASC foi implementado em 1990 para registrar nascimentos em todo o país e resolver o problema do sub-registro. Além de dados demográficos e epidemiológicos sobre nascimentos, o sistema gera informações sobre a saúde materna e neonatal, e a atenção pré-natal.</p>
+									<p>Suponha que você já coletou seus dados (primários) usando alguma das técnicas de amostragem apresentadas anteriormente, ou está usando dados secundários. Você já tem seus dados em mãos, parabéns! Agora você deve estar se perguntando como começar a explorar esses dados, ou, em outras palavras, quais inferências ou conclusões podem advir sobre essa amostra?</p>
+									<p>Para entender melhor as características dessa população, precisamos <strong>resumir</strong> o máximo possível esses dados, já que, por mais bem tabulados que eles estejam, é impossível se extrair <strong>informação</strong> de uma lista grande de números/características.</p>
+									<p>Atenção! Não estamos falando de olhar uma amostra menor do que a que já temos, pois quando mais dados, melhor! Estamos falando em resumir de forma estratégica toda essa informação em algo que nos ajude a entender e tomar decisões! E é aqui que as estatísticas de locação e dispersão entram na jogada.</p>
+									<p>Um tipo de medida muito útil para o resumo dos dados é dado pelo centro, ou meio da amostra, e as estatísticas que medem esse “meio” são as médias.</p>
 								</div>
 							</div>
 
-							<div class="row justify-content-center">
+							<div class="row justify-content-center mt-5">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Box de Para refletir -->
-									<div class="box" data-box="Para Refletir">
-										<div class="card ">
-											<div class="card-header">
-												<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-												<span class="label">Para Refletir</span>
-											</div>
-											<div class="card-body">
-												<p>O monitoramento dos nascimentos é essencial para avaliar a saúde da população e planejar a assistência pré-natal e ao recém-nascido. Os dados do SINASC são usados para construir indicadores de saúde materno-infantil e apoiar políticas que busquem melhorar a qualidade dos serviços de saúde pública.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pt-5">
 									<div class="heading__block">
-										<h4 class="heading__title">Coleta e processamento dos dados sobre nascimentos</h4>
-									</div>
-
-									<p>O SINASC utilizada a Declaração de Nascido Vivo (DNV), um formulário padronizado em três vias (branca, amarela e rosa) com numeração única. Profissionais de saúde, incluindo parteiras, preenchem a DNV durante o parto. A DNV tem dois papéis: coleta dados sobre o nascimento e é o documento necessário para emitir a certidão de nascimento.</p>
-
-									<p>A Figura 2 mostra os blocos de informações da DNV, que incluem dados sobre a mãe, o pré-natal, o parto e o recém-nascido, com 52 variáveis organizadas em oito blocos.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img5.jpg" alt="" title="Fonte: Ministério da Saúde">
-										<figcaption class="figure-caption">Figura 2</figcaption>
-										<figcaption class="figure-caption fonte">Fonte: BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Declaração de nascido vivo: manual de instruções para preenchimento. Brasília: Ministério da Saúde, 2022.</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Após o preenchimento, as três vias da DNV seguem diferentes destinos: a via branca vai para o órgão responsável pela digitalização e registro no SINASC, a amarela é levada pela família ao cartório para gerar a certidão, e a rosa permanece na unidade de saúde, conforme você pode ver nos cards abaixo. Nos casos de partos domiciliares ou fora de hospitais, a família deve obter a DNV no cartório ou na Secretaria de Saúde.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center px-0">
-								<div class="col-12 col-md-10 col-lg-8">
-									<span class="h6 d-block text-center">Preenche as três vias</span>
-								</div>
-								<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
-									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste para navegar entre os
-										cartões</p>
-								</div>
-
-								<div class="col-9 col-md-8 col-lg-6 mb-5 pb-5 px-0">
-									<!-- Swipper Effect Card -->
-									<div class="swiper swiper--effect-card card">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img6.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color:#ebebeb;">
-														<span class="h6" style="color:#000;">1ª via - branca</span>
-												</div>
-
-												<div class="card-body">
-													<p class="visually-hidden"><strong>Secretaria de Saúde:</strong> Digita e arquiva 1ª via.</p>
-													<p><strong>Responsável pelo arquivo no estabelecimento de saúde:</strong></p>
-													<p>Arquiva no estabelecimento de saúde até ser recolhida por funcionário da Secretaria Municipal de Saúde.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img7.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color:#dcb729;">
-													<span class="h6" style="color:#000;">2ª via - amarela</span>
-												</div>
-
-												<div class="card-body">
-													<p class="visually-hidden"><strong>Cartório de Registro Civil:</strong> Arquiva 2ª via.</p>
-													<p><strong>Responsável legal:</strong></p>
-													<p>Utiliza na obtenção da Certidão de Nascimento junto ao Cartório de Registro Civil.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img8.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color: #de7981;">
-													<span class="h6" style="color:#000;">3ª via - rosa</span>
-												</div>
-
-												<div class="card-body">
-													<p class="visually-hidden"><strong>Estabelecimento de Saúde:</strong> Arquiva 3ª via.</p>
-													<p><strong>Responsável pelo arquivo no estabelecimento de saúde:</strong></p>
-													<p>Arquiva no prontuário do(a) parturiente.</p>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-pagination swiper-pagination3"></div>
+										<h4 class="heading__title">Média aritmética</h4>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p>Os dados são transferidos para as bases estaduais e depois ao nível federal, no qual a Secretaria de Vigilância em Saúde e Ambiente (SVSA) analisa e distribui as informações agregadas sobre natalidade, gerando relatórios e painéis de indicadores.</p>
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A média aritmética é dada pela soma de todas as observações, dividida pelo número delas. Essa média é denotada como:</p>
+
+									<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="color: #000; font-size: 24px">
+										<mrow>
+											<mover>
+												<mi>x</mi>
+												<mo>&#x00AF;</mo>
+												<!-- barra sobre x -->
+											</mover>
+											<mo>=</mo>
+											<mfrac>
+												<mrow>
+													<munderover>
+														<mo>&#x2211;</mo>
+														<!-- símbolo de soma -->
+														<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+														<mi>n</mi>
+													</munderover>
+													<msub><mi>x</mi><mi>i</mi></msub>
+												</mrow>
+												<mi>n</mi>
+											</mfrac>
+										</mrow>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Exemplo: suponha que se pretenda entender como estão os pesos de uma amostra de 20 recém-nascidos de uma maternidade de São Paulo (Tabela 1):</p>
+
+									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th class="text-center" colspan="3">Tabela 1 - Pesos de uma amostra de recém-nascidos de uma maternidade de São Paulo</th>
+												</tr>
+												<tr class="text-center">
+													<th>Indivíduo</th>
+													<th>Peso (g)</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr class="text-center">
+													<td>1</td>
+													<td>3265</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>2</td>
+													<td>3260</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>3</td>
+													<td>3245</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>4</td>
+													<td>3484</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>5</td>
+													<td>4146</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>6</td>
+													<td>3323</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>7</td>
+													<td>3649</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>8</td>
+													<td>3200</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>9</td>
+													<td>3031</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>10</td>
+													<td>2069</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>11</td>
+													<td>2581</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>12</td>
+													<td>2841</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>13</td>
+													<td>3609</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>14</td>
+													<td>2838</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>15</td>
+													<td>3541</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>16</td>
+													<td>2759</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>17</td>
+													<td>3248</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>18</td>
+													<td>3314</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>19</td>
+													<td>3101</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>20</td>
+													<td>2834</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Para tal, vamos começar calculando a média amostral:</p>
+
+									<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="color: #000; font-size: 20px">
+										<mrow>
+											<!-- x̄ -->
+											<mover>
+												<mi>x</mi>
+												<mo>&#x00AF;</mo>
+											</mover>
+
+											<mo>=</mo>
+
+											<!-- (Σ xi / n) -->
+											<mfrac>
+												<mrow>
+													<munderover>
+														<mo>&#x2211;</mo>
+														<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+														<mi>n</mi>
+													</munderover>
+													<msub><mi>x</mi><mi>i</mi></msub>
+												</mrow>
+												<mi>n</mi>
+											</mfrac>
+
+											<mo>=</mo>
+
+											<!-- (Σ xi / 20) -->
+											<mfrac>
+												<mrow>
+													<munderover>
+														<mo>&#x2211;</mo>
+														<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+														<mn>20</mn>
+													</munderover>
+													<msub><mi>x</mi><mi>i</mi></msub>
+												</mrow>
+												<mn>20</mn>
+											</mfrac>
+
+											<mo>=</mo>
+
+											<!-- (x1 + x2 + ... + x20)/20 -->
+											<mfrac>
+												<mrow>
+													<msub><mi>x</mi><mn>1</mn></msub>
+													<mo>+</mo>
+													<msub><mi>x</mi><mn>1</mn></msub>
+													<mo>+</mo>
+													<mo>&#x2026;</mo>
+													<mo>+</mo>
+													<msub><mi>x</mi><mn>20</mn></msub>
+												</mrow>
+												<mn>20</mn>
+											</mfrac>
+
+											<mo>=</mo>
+
+											<!-- (3265 + 3260 + ... + 2834) / 20 -->
+											<mfrac>
+												<mrow>
+													<mn>3265</mn>
+													<mo>+</mo>
+													<mn>3260</mn>
+													<mo>+</mo>
+													<mo>&#x2026;</mo>
+													<mo>+</mo>
+													<mn>2834</mn>
+												</mrow>
+												<mn>20</mn>
+											</mfrac>
+
+											<mo>=</mo>
+
+											<!-- Resultado final: 3166.9 g -->
+											<mrow> <mn>3166.9</mn><mi>g</mi> </mrow>
+										</mrow>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A média aritmética é, em geral, uma medida de locação muito natural. Uma de suas principais limitações é sua sensibilidade para valores extremos/aberrantes, já que nela se considera que todas as observações têm o mesmo peso. Na presença desses valores, essa estatística pode não ser a medida de locação mais apropriada para representar a amostra. Por exemplo, se o primeiro recém-nascido do nosso exemplo anterior fosse imputado erroneamente como 500 gramas (em vez de 3265 g), então a média aritmética cairia para 3028.65 g.</p>
+									<p>A média tem algumas propriedades interessantes que podem nos ajudar em momentos de crise, como medição sistemática errada. São elas:</p>
+
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												Se <em>y<sub>i</sub></em> = <em>x<sub>i</sub></em> + <em>c</em>, com i=1, ..., n e <em>c</em> é uma contante, então:
+												<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" style="color: #000">
+													<mrow>
+														<!-- ȳ -->
+														<mover>
+															<mi>y</mi>
+															<mo>&#x00AF;</mo>
+														</mover>
+
+														<mo>=</mo>
+
+														<!-- x̄ -->
+														<mover>
+															<mi>x</mi>
+															<mo>&#x00AF;</mo>
+														</mover>
+
+														<mo>+</mo>
+
+														<!-- c -->
+														<mi>c</mi>
+													</mrow>
+												</math>
+											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												Se <em>y<sub>i</sub></em> = <em>c</em> * <em>x<sub>i</sub></em
+												>, com i=1, ..., n e <em>c</em> é uma constante, então:
+												<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" style="color: #000">
+													<mrow>
+														<!-- ȳ -->
+														<mover>
+															<mi>y</mi>
+															<mo>&#x00AF;</mo>
+														</mover>
+
+														<mo>=</mo>
+
+														<!-- c -->
+														<mi>c</mi>
+
+														<!-- * -->
+														<mo>&#x2217;</mo>
+														<!-- símbolo de multiplicação (*) -->
+
+														<!-- x̄ -->
+														<mover>
+															<mi>x</mi>
+															<mo>&#x00AF;</mo>
+														</mover>
+													</mrow>
+												</math>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Mediana</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Uma medida de locação alternativa à tradicional média aritmética, e talvez a segunda mais popular é a mediana, definida pelo número que divide uma amostra ordenada em dois grupos de igual quantidade de observações. Dada uma amostra de n elementos ordenados (do menor para o maior) então a mediana será:</p>
+
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												Se n é ímpar, a mediana será o elemento do meio, ou o
+												<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" style="color: #000">
+													<mfrac>
+														<mrow>
+															<mi>n</mi>
+															<mo>+</mo>
+															<mn>1</mn>
+														</mrow>
+														<mn>2</mn>
+													</mfrac>
+												</math>
+												ésimo valor.
+											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												Se n é par, a mediana não está na amostra, e será a média das duas observações do meio da amostra, ou seja, a média entre o elemento
+												<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" style="color: #000">
+													<mfrac>
+														<mi>n</mi>
+														<mn>2</mn>
+													</mfrac>
+												</math>
+												e
+												<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline" style="color: #000">
+													<mrow>
+														<mfrac>
+															<mi>n</mi>
+															<mn>2</mn>
+														</mfrac>
+														<mo>+</mo>
+														<mn>1</mn>
+													</mrow>
+												</math>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A razão para existência dessas duas definições é a necessidade de se separar o grupo de números em dois subgrupos de igual quantidade de elementos.</p>
+									<p>Exemplo: para calcular a mediana dos pesos dos recém-nascidos da tabela, notemos que n é par (n=20), e os números ordenados são apresentados a seguir (Tabela 1):</p>
+
+									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th class="text-center" colspan="3">Tabela 1 - Pesos <u>ordenados</u> da amostra de recém-nascidos da maternidade de São Paulo</th>
+												</tr>
+												<tr class="text-center">
+													<th>Indivíduo</th>
+													<th>Peso (g)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="text-center">
+													<td>10</td>
+													<td>2069</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>11</td>
+													<td>2581</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>16</td>
+													<td>2759</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>20</td>
+													<td>2834</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>14</td>
+													<td>2838</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>12</td>
+													<td>2841</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>9</td>
+													<td>3031</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>19</td>
+													<td>3101</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>8</td>
+													<td>3200</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>3</td>
+													<td>3245</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>17</td>
+													<td>3248</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>2</td>
+													<td>3260</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>1</td>
+													<td>3265</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>18</td>
+													<td>3314</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>6</td>
+													<td>3323</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>4</td>
+													<td>3484</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>15</td>
+													<td>3541</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>13</td>
+													<td>3609</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>7</td>
+													<td>3649</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>5</td>
+													<td>4146</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Logo, a mediana será dada pela definição B, e será a média das observações 3245 e 3248, ou seja, 3246.5g.</p>
+									<p>Note que a principal característica da mediana é sua insensibilidade para valores extremos/aberrantes. Se voltássemos ao exercício de considerar que, na verdade, o recém-nascido 1 teve seu peso imputado como de 500 g, a mediana continuaria sendo 3246.5g.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Média aritmética ponderada</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Essa medida é uma modificação da média aritmética. Enquanto na média aritmética simples cada elemento tem o mesmo peso (1/n), na ponderada os elementos têm pesos distintos. Ela é muito útil em exemplos em que certos atributos valem mais do que outros, como na inferência sobre a qualidade dos serviços prestados em uma unidade de saúde, com perguntas sobre os atendentes e sobre o espaço físico. Se o espaço físico for mais difícil de modificar, pode-se atribuir nota maior às perguntas referentes ao atendimento.</p>
+									<p>A média aritmética ponderada é dada por:</p>
+
+									<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="color: #000; font-size: 24px">
+										<mover>
+											<mi>w</mi>
+											<mo>&#x000AF;</mo>
+										</mover>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<munderover>
+													<mo>&#x02211;</mo>
+													<mrow>
+														<mi>i</mi>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+													<mi>n</mi>
+												</munderover>
+												<msub>
+													<mi>w</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>*</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>i</mi>
+												</msub>
+											</mrow>
+											<msub>
+												<mi>w</mi>
+												<mi>i</mi>
+											</msub>
+										</mfrac>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>
+										Como exemplo, vamos atribuir pesos diferentes (<em>w<sub>i</sub></em
+										>) aos valores medidos dos pesos dos recém-nascidos da tabela.
+									</p>
+
+									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<table class="table table-bordered">
+											<thead>
+												<tr>
+													<th class="text-center" colspan="3">Tabela 2 - Tabela 1 com uma coluna adicional para w</th>
+												</tr>
+												<tr class="text-center">
+													<th>Indivíduo</th>
+													<th>Peso (g)</th>
+													<th>w</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="text-center">
+													<td>1</td>
+													<td>3265</td>
+													<td>22</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>2</td>
+													<td>3260</td>
+													<td>40</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>3</td>
+													<td>3245</td>
+													<td>33</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>4</td>
+													<td>3484</td>
+													<td>22</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>5</td>
+													<td>4146</td>
+													<td>5</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>6</td>
+													<td>3323</td>
+													<td>31</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>7</td>
+													<td>3649</td>
+													<td>24</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>8</td>
+													<td>3200</td>
+													<td>35</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>9</td>
+													<td>3031</td>
+													<td>48</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>10</td>
+													<td>2069</td>
+													<td>58</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>11</td>
+													<td>2581</td>
+													<td>61</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>12</td>
+													<td>2841</td>
+													<td>20</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>13</td>
+													<td>3609</td>
+													<td>45</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>14</td>
+													<td>2838</td>
+													<td>22</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>15</td>
+													<td>3541</td>
+													<td>41</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>16</td>
+													<td>2759</td>
+													<td>35</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>17</td>
+													<td>3248</td>
+													<td>36</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>18</td>
+													<td>3314</td>
+													<td>11</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>19</td>
+													<td>3101</td>
+													<td>10</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>20</td>
+													<td>2834</td>
+													<td>25</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A média aritmética ponderada será, então:</p>
+
+									<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="color: #000; font-size: 20px">
+										<mover>
+											<mi>w</mi>
+											<mo>¯</mo>
+										</mover>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<munderover>
+													<mo>∑</mo>
+													<mrow>
+														<mi>i</mi>
+														<mo>=</mo>
+														<mn>1</mn>
+													</mrow>
+													<mi>n</mi>
+												</munderover>
+												<msub>
+													<mi>w</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>*</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>i</mi>
+												</msub>
+											</mrow>
+											<msub>
+												<mi>w</mi>
+												<mi>i</mi>
+											</msub>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mn>22</mn>
+												<mo>*</mo>
+												<mn>3265</mn>
+												<mo>+</mo>
+												<mn>40</mn>
+												<mo>*</mo>
+												<mn>3260</mn>
+												<mo>+</mo>
+												<mo>⋯</mo>
+												<mo>+</mo>
+												<mn>25</mn>
+												<mo>*</mo>
+												<mn>2834</mn>
+											</mrow>
+											<mrow>
+												<mn>22</mn>
+												<mo>+</mo>
+												<mn>40</mn>
+												<mo>+</mo>
+												<mo>⋯</mo>
+												<mo>+</mo>
+												<mn>25</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mn>3062.28</mn>
+										<mi>g</mi>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Quantis</h4>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>As medidas de locação vistas até agora objetivam inferir sobre o centro da distribuição dos dados via diferentes perspectivas. Já os quantis expressam medidas mais gerais de locação, não se restringindo ao centro dos dados. Eles são nomeados de forma específica de acordo com a maneira como os dados são divididos. Generalizando, o q-ésimo quantil é o valor até o qual temos q% dos pontos da amostra (ordenada). Por exemplo:</p>
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												<p><strong>Percentil:</strong> quando dividem-se os dados em grupos que acumulam 1% dos dados. Exemplo: P<sub>3</sub> denota o conjunto de dados (ordenados), até o qual temos 3% das observações.</p>
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo2/aula1-topico3-img1.jpg" alt="Gráfico de Percentil" title="Percentil" />
+													<figcaption class="figure-caption">Fonte: aprendeconalf.es | Acesso em: 20 jul. 2025</figcaption>
+												</figure>
+											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												<p><strong>Decil:</strong> quando dividem-se os dados de grupos que acumulam 10% deles. Exemplo: D<sub>3</sub> denota o conjunto de dados (ordenados) até o qual temos 30% das observações.</p>
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo2/aula1-topico3-img2.jpg" alt="Gráfico de Decil" title="Decil" />
+													<figcaption class="figure-caption">Fonte: aprendeconalf.es | Acesso em: 20 jul. 2025.</figcaption>
+												</figure>
+											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">
+												<p><strong>Quartis:</strong> quando dividem-se os dados de grupos que acumulam 25% deles. Exemplo: Q<sub>3</sub> denota o conjunto de dados (ordenados) até o qual temos 75% das observações.</p>
+												<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo2/aula1-topico3-img3.jpg" alt="Gráfico de Quartil" title="Quartil" />
+													<figcaption class="figure-caption">Fonte: aprendeconalf.es | Acesso em: 20 jul. 2025</figcaption>
+												</figure>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Agora que já entendemos essa noção de distribuição dos dados em quantis, você já deve ter observado que a mediana é um quantil (até o qual temos 50% dos dados), assumindo os valores de P<sub>50</sub> (quinquagésimo percentil), D<sub>5</sub> (quinto decil) ou Q<sub>2</sub> (segundo quartil).</p>
+									<p>Usando a definição mais fina de percentil, analogamente à mediana, obtemos essas medidas de duas formas:</p>
+
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Se (n*p)/100 <u>não</u> for um número inteiro, o p-ésimo, percentil é a (k+1)-ésima maior observação, em que k é o maior inteiro menor do que (n*p)/100.</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Se (n*p)/100 <u>for</u> um número inteiro, o p-ésimo, percentil será a média entre (n*p)/100-ésima observação e a [(n*p)/100 + 1]-ésima observação.</li>
+										</ul>
+									</div>
+
+									<p>Calma, vai fazer sentido! Vamos voltar ao exemplo do peso dos recém-nascidos. Inicialmente, precisamos que os dados estejam ordenados. Já fizemos isso para o cálculo da mediana, Tabela 1.</p>
+									<p>Então vamos supor, como exemplo, que queremos calcular o percentil 10% e 90% desses dados.</p>
+									<p>Para P<sub>10</sub>:</p>
+									<p>Já que (n*p)/100 é inteiro (n=20, p=10, logo n*p/100=2) usamos a definição (B).</p>
+									<p>Dessa forma, P<sub>10</sub> será a média entre a 2ª e a 3ª observação: (2581+2759)/2=2670g.</p>
+									<p>Para P<sub>90</sub>:</p>
+									<p>Já que (n*p)/100 é inteiro (n=20, p=90, logo n*p/100=18) usamos a definição (B).</p>
+									<p>Dessa forma, P<sub>90</sub> será a média entre a 18ª e a 19ª observação: (3609+3649)/2=3629g.</p>
+									<p>E quando (n*p)/100 não for inteiro? Vamos calcular P1 como exemplo:</p>
+									<p>Para P<sub>1</sub>:</p>
+									<p>Já que (n*p)/100 <u>não</u> é inteiro (n=20, p=1, logo n*p/100=0,2) usamos a definição (A).</p>
+									<p>Dessa forma, P<sub>1</sub> será a (k+1)-ésima maior observação, em que k é o maior inteiro menor do que (n*p)/100. Como (n*p)/100=0,2, o maior inteiro menor do que 0,2 é zero, e (K+1)=1. Logo P<sub>1</sub>= 1ª observação= 2069g.</p>
 								</div>
 							</div>
 						</div>
@@ -448,11 +1149,11 @@
 		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
 
 		<script type="text/javascript">
-			var sidebar = new StickySidebar('.sidebar', {
+			var sidebar = new StickySidebar(".sidebar", {
 				topSpacing: 0,
 				bottomSpacing: 0,
-				containerSelector: '.main',
-				innerWrapperSelector: '.sidebar__inner',
+				containerSelector: ".main",
+				innerWrapperSelector: ".sidebar__inner",
 				minWidth: 991,
 			});
 		</script>
@@ -473,7 +1174,7 @@
 		<script src="../../assets/js/timeline-horizontal/main.js"></script>
 		<!-- Start the Timeline -->
 		<script>
-			document.getElementsByTagName('html')[0].className += ' js';
+			document.getElementsByTagName("html")[0].className += " js";
 		</script>
 
 		<script>

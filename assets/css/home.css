@@ -130,7 +130,7 @@ body {
 .hero-title h1 span.title {
 	font-size: 50px;
 	font-family: var(--fio-sys-typography-family-primary-black);
-	line-height: var(--fio-sys-typography-height-100);
+	line-height: var(--fio-sys-typography-height-125);
 	text-transform: uppercase;
 }
 
@@ -157,7 +157,7 @@ body {
 	}
 	#layer-3 {
 		background-image: url(../../media/home/layer-3.png);
-		background-position:1vw 0;
+		background-position: 1vw 0;
 	}
 	#layer-4 {
 		display: none;
@@ -178,17 +178,14 @@ body {
 	.hero-title .container .row:first-child {
 		background: transparent;
 		position: relative;
-        top: -60px;
 	}
 
 	.hero-title h1 .label {
-		font-size: 80px;
-	}
-	.hero-title h1 span {
-		font-size: 60px;
+		margin-bottom: 20px;
 	}
 	.hero-title h1 span.title {
 		font-size: 70px;
+		line-height: 1.25;
 	}
 
 	.hero-title h1 span.subtitle {
@@ -198,33 +195,19 @@ body {
 
 @media (min-width: 1200px) {
 	#layer-3 {
-		background-position: -10vw -5vh;
+		background-position: 0vw -5vh;
 	}
 }
 
 @media (min-width: 1300px) {
 	#layer-3 {
-		background-position: 0vw -5vh;
+		background-position: 5vw -5vh;
 	}
 }
 
 @media (min-width: 1600px) {
 	#layer-3 {
-		background-position: 1vw 80%;
-	}
-
-	.hero-title h1 .label {
-		font-size: 90px;
-	}
-	.hero-title h1 span {
-		font-size: 70px;
-	}
-	.hero-title h1 span.title {
-		font-size: 100px;
-	}
-
-	.hero-title h1 span.subtitle {
-		font-size: 48px;
+		background-position: 10vw -10vh;
 	}
 }
 
@@ -239,7 +222,7 @@ body {
 	text-transform: uppercase;
 }
 .heading__block::after {
-	content: '';
+	content: "";
 	display: block;
 	width: 60px;
 	height: 2px;
@@ -248,7 +231,6 @@ body {
 }
 
 .heading__block .heading__title {
-
 }
 
 /* CONTENT */
@@ -295,26 +277,26 @@ section {
 
 #organization .heading__block .heading__title {
 	text-transform: none;
-	color:#fff;
+	color: #fff;
 }
 
 #organization .heading__block::after {
-	content: '';
-    display: block;
-    position: relative;
-    background-color:#fff;
-    width: 140px;
-    height: 2px;
-    margin-top: 20px;
-    left: calc(50% - 65px);
+	content: "";
+	display: block;
+	position: relative;
+	background-color: #fff;
+	width: 140px;
+	height: 2px;
+	margin-top: 20px;
+	left: calc(50% - 65px);
 }
 
 #organization h6 {
-	color:#fff;
+	color: #fff;
 }
 
 #organization h6 span {
-	    font-family: var(--fio-sys-typography-family-primary-regular);
+	font-family: var(--fio-sys-typography-family-primary-regular);
 }
 
 #course-program {

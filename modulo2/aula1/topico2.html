@@ -124,8 +124,6 @@
 									<li class="dropdown-menu__item">
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../../modulo3/apresentacao.html"><strong>Módulo 3</strong><br />Modelos estatísticos</a>
 									</li>
-
-									
 								</ul>
 							</div>
 						</div>
@@ -236,7 +234,7 @@
 								<h2 class="title">
 									<span class="label">Módulo 2 | Aula 1</span>
 									<br />
-									Sistemas de Informação I (SIM, SINASC e CNES)
+									Análise exploratória e descritiva
 								</h2>
 							</div>
 						</div>
@@ -251,37 +249,48 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
 										<span class="small">Tópico 2</span>
-										<h3 class="heading__title">Sistema de Informação sobre Mortalidade (SIM)</h3>
+										<h3 class="heading__title">Variável aleatória</h3>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O Sistema de Informação sobre Mortalidade (SIM) foi criado pelo Ministério da Saúde em 1975 para padronizar a coleta de dados sobre óbitos no Brasil. Antes disso, as informações eram fragmentadas e desorganizadas, o que dificultava a vigilância epidemiológica.</p>
-
-									<p>Ao longo dos anos, o SIM se tornou mais robusto e abrangente, permitindo uma análise detalhada do perfil de mortalidade em diferentes regiões e grupos da população. Seu principal objetivo é coletar, processar e divulgar dados sobre óbitos, ajudando a calcular taxas de mortalidade por causas, faixas etárias e áreas geográficas.</p>
+									<p>Em estatística se usa muito o termo “variável aleatória”, que a princípio parece algo complicado, mas que, na verdade, é apenas uma representação de uma das características de interesse em determinado estudo. Por exemplo, em um estudo sobre morbidade em determinada cidade, além da variável <strong>doença</strong>, outras como <strong>época do ano, faixa etária, consumo de cigarro</strong>, são potencialmente importantes para análise do fenômeno. Uma variável aleatória é uma medição de determinado tópico, do qual se obtém valores não antecipadas. É claro que, ao medir <strong>consumo de cigarro</strong>, sabemos antecipadamente que nunca obteremos uma medição negativa, contudo também não conseguimos saber antecipadamente o valor de <strong>consumo</strong> para cada indivíduo. Esse conceito é essencial em estatística, pois destaca a incerteza dos fenômenos observados.</p>
+									<p>As variáveis aleatórias são classificadas segundo os valores que elas assumem em duas formas principais:</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Box de Atenção -->
-									<div class="box" data-box="Atenção">
-										<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="card-header">
-												<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-												<span class="label">Atenção</span>
-											</div>
-											<div class="card-body">
-												<div class="custom-shape-divider-top-1720289331">
-													<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-														<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-													</svg>
+									<div class="accordion accordion-flush" id="accordionExample1">
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item1">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Qualitativa</button>
+											</h5>
+											<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+												<div class="accordion-body">
+													<div class="list">
+														<ul class="list-group">
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Nominal:</strong> quando descrevem atributos não ordenáveis, que, no exemplo anterior, seria <u>doenças</u> (como “câncer”, “hiv”, “hepatite” etc.) ou <u>época do ano</u> (“verão”, “primavera”, “outono”, “inverno”).</li>
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Ordinal:</strong> quando descrevem qualidades ordenáveis como faixa etária (“&lt;18 anos”, “18 até 25 anos” etc.) ou tempo de consumo (“&lt;1 ano”, “1 até 3 anos” etc.”).</li>
+														</ul>
+													</div>
 												</div>
-
-												<div>
-													<p>Os dados do SIM são essenciais para entender os padrões de saúde, identificar áreas vulneráveis, direcionar recursos e implementar ações de saúde pública. Além disso, o SIM permite acompanhar tendências de mortalidade ao longo do tempo, facilitando a avaliação e o ajuste de políticas de saúde.</p>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item2">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="true" aria-controls="collapse1-item2">Quantitativa</button>
+											</h5>
+											<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+												<div class="accordion-body">
+													<div class="list">
+														<ul class="list-group">
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Discreta:</strong> valores inteiros, como idade (18, 19, 20 anos).</li>
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Contínua:</strong> valores fracionados, como altura (exemplo: 1,8 metros) e peso (exemplo: 67,8 quilos).</li>
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -290,104 +299,226 @@
 							</div>
 
 							<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
-								<div class="heading__block">
-									<h4 class="heading__title">Coleta e Processamento dos Dados sobre Mortalidade</h4>
-								</div>
-
-								<p>O Sistema de Informação sobre Mortalidade (SIM) coleta dados sobre todos os óbitos ocorridos no Brasil, independentemente de onde tenham acontecido. Cada registro no SIM corresponde a um único indivíduo.</p>
-
-								<p>A Declaração de Óbito (DO) é o documento padrão usado para coletar essas informações e também serve como base para a emissão da certidão de óbito, conforme a Lei dos Registros Públicos (<a href='https://www.planalto.gov.br/ccivil_03/leis/l6015original.htm' target='_blank'>Lei nº 6.015/1973</a>). A produção e distribuição das DOs são de responsabilidade da Secretaria de Vigilância em Saúde e Ambiente do Ministério da Saúde (SVS/MS), e cada DO tem uma numeração única, impressa em três vias (branca, amarela e rosa). Apenas médicos podem emitir uma DO, exceto em casos específicos previstos por lei.</p>
-
-								<p>A <strong>Figura 1</strong> abaixo mostra os blocos de informações presentes na DO, que contém 59 variáveis distribuídas em nove seções, caracterizando o óbito.</p>
-							</div>
-						</div>
-
-							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo2/aula1-img1.jpg" alt="" title="Fonte: Ministério da Saúde">
-										<figcaption class="figure-caption">Figura 1</figcaption>
-										<figcaption class="figure-caption fonte">Fonte: BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde e Ambiente. Declaração de óbito: manual de instruções para preenchimento. Brasília: Ministério da Saúde, 2022.</figcaption>
-									</figure>
+									<p>Vale ressaltar que uma variável quantitativa coletada originalmente como contínua por ser reestruturada para discreta ou mesmo para qualitativa ordinal, depende do interesse do analista e do assunto de investigação. Como exemplo, podemos citar o peso, quando valores incialmente coletados como 59,7 quilos (quantitativa contínua) por exemplo, podem virar 60 quilos se arredondado por um desinteresse em um maior detalhamento, ou mesmo virar “&lt;60 quilos” (qualitativa ordinal).</p>
+									<p>O rigor em se entender a natureza da variável que se está trabalhando é imprescindível para a escolha correta de modelos que ajudem na análise do seu assunto de investigação. Existem modelos específicos para variáveis qualitativas (nominais e ordinais, e quantitativas (discreta ou contínua).</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Levantamento estatístico</h4>
+									</div>
+
+									<p>O trabalho estatístico abrange atividades de coleta de dados, cálculo de medidas estatísticas e análise de dados, sendo essas etapas geralmente denominados de “levantamento” estatístico. Tal trabalho pode ser classificado quanto à:</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>As DOs são preenchidas nas unidades notificadoras (hospitais, IML, cartórios, etc.) e recolhidas pelas Secretarias Municipais de Saúde. A via branca é digitalizada por técnicos locais. Se houver campos incompletos ou ilegíveis, a Secretaria deve buscar as informações faltantes.</p>
-
-									<p>Os <em>cards</em> abaixo ilustram o fluxo de processamento dos dados que começa com o preenchimento da DO nas unidades notificadoras (hospitais, IML, cartórios, etc.). As Secretarias Municipais de Saúde recolhem regularmente essas declarações. A via branca da DO é digitalizada por técnicos municipais, que garantem o preenchimento completo dos dados. Se faltarem informações, a Secretaria deve buscar os dados faltantes.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<span class="h6 d-block text-center">Médico preenche as três vias</span>
-								</div>
-								<div class="col-12 col-md-10 col-lg-8 pt-5 mb-5">
-									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste para navegar entre os
-										cartões</p>
-								</div>
-
-								<div class="col-11 col-md-8 col-lg-6 mb-5 pb-5">
-									<!-- Swipper Effect Card -->
-									<div class="swiper swiper--effect-card card">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img2.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color:#f4f0df;">
-														<span class="h6" style="color:#000;">1ª via - branca</span>
-												</div>
-
-												<div class="card-body">
-													<p class="visually-hidden"><strong>Secretaria de Saúde:</strong> Digita e arquiva</p>
-													<p>Arquivada no estabelecimento de saúde até ser recolhida pela Secretaria Municipal de Saúde ou Secretaria de Estado de Saúde do Distrito Federal.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img3.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color:#e1ba47;">
-													<span class="h6" style="color:#000;">2ª via - amarela</span>
-												</div>
-
-												<div class="card-body">
-													<p>Entregue ao representante/familiar da pessoa falecida.</p>
-													<p class="visually-hidden"><strong>Cartório de Registro Civil:</strong> Arquiva</p>
-													<p>Utilizada para obtenção da Certidão de Óbito junto ao Cartório de Registro Civil.</p>
-												</div>
-											</div>
-
-											<div class="swiper-slide">
-												<div class="card-thumb">
-													<img src="../../media/modulo2/aula1-img4.jpg" alt="" title="Fonte: Campus Virtual Fiocruz, a partir de DALL-E">
-												</div>
-
-												<div class="card-header" style="background-color: #e1928c;">
-													<span class="h6" style="color:#000;">3ª via - rosa</span>
-												</div>
-
-												<div class="card-body">
-													<p class="visually-hidden"><strong>Estabelecimento de Saúde:</strong> Arquiva</p>  
-													<p>Arquivada no estabelecimento de saúde, no prontuário do paciente.</p>
+									<div class="accordion accordion-flush" id="accordionExample2">
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading2-item1">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item1" aria-expanded="true" aria-controls="collapse2-item1">Abrangência</button>
+											</h5>
+											<div id="collapse2-item1" class="accordion-collapse collapse" aria-labelledby="heading2-item1" data-bs-parent="">
+												<div class="accordion-body">
+													<div class="list">
+														<ul class="list-group">
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Total:</strong> todos os elementos/indivíduos de estudo entram na pesquisa. Exemplo: uma pesquisa com todos os alunos de uma determinada escola.</li>
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Parcial:</strong> apenas uma parte (amostra) dos elementos/indivíduos, de preferência representativa, é incluída no estudo. Exemplo: Pesquisa Nacional por Amostras de domicílios (PNAD).</li>
+														</ul>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="swiper-pagination swiper-pagination3"></div>
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading2-item2">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-item2" aria-expanded="true" aria-controls="collapse2-item2">Origem ou fonte de dados</button>
+											</h5>
+											<div id="collapse2-item2" class="accordion-collapse collapse" aria-labelledby="heading2-item2" data-bs-parent="">
+												<div class="accordion-body">
+													<div class="list">
+														<ul class="list-group">
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Primários:</strong> coletados diretamente do ambiente de estudo pelo interessado. Exemplo: pesquisas de campo.</li>
+															<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Secundários:</strong> coletados (muitas vezes com alguma periodicidade, como a cada 2, 3, ou 5 anos) por outros indivíduos/instituições. Exemplo: censo escolar.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Amostragem</h4>
+									</div>
+
+									<p>A amostragem é muito usada em levantamentos estatísticos por viabilizar estudos devido ao seu potencial de redução de custos, redução de tempo e pelo fato de possibilitar a realização de pesquisas originalmente “destrutivas” ou de “alto risco”. Aqui podemos pensar, por exemplo, em fábricas de alimentos que usam uma amostra para controle de qualidade, ou mesmo em exames de sangue.</p>
+									<p>As amostragens podem ser conduzidas de diferentes formas.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="swiper swiper--navigation card swiper-initialized swiper-horizontal swiper-backface-hidden card--in">
+										<!-- Additional required wrapper -->
+										<div class="swiper-wrapper" id="swiper-wrapper-130aadbe19a0087f" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); transition-delay: 0ms">
+											<!-- Slides -->
+											<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 856px">
+												<div class="card-header">
+													<span class="h6">Amostragem aleatória simples (AAS)</span>
+												</div>
+
+												<div class="card-body">
+													<p>Considerada o padrão ouro na estatística, ela tem uma relação direta com os elementos/indivíduos da população. Os elementos devem estar todos enumerados para ser possível a seleção, geralmente realizada por sorteio usando-se um software de geração de números aleatórios. Observem que, para tal, é necessário ter conhecimento <em>a priori</em> de todos os indivíduos dessa população para que, então, possamos enumerá-los e selecioná-los, e esse em geral é o principal empecilho para se usar essa abordagem. Exemplo: amostragem de funcionários em um hospital, utilizando-se o número de matrícula para seleção.</p>
+												</div>
+											</div>
+
+											<div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 856px">
+												<div class="card-header">
+													<span class="h6">Amostragem sistemática (AS)</span>
+												</div>
+
+												<div class="card-body">
+													<p>
+														Seleção aleatória apenas do primeiro elemento de uma amostra ordenada e, em seguida, seleciona-se um a cada
+														<span class="color-tertiary-dark"
+															><strong><em>k</em></strong></span
+														>
+														elementos. Exemplo: uma a cada quatro residências respondem a um questionário completo durante o recenseamento da população.
+													</p>
+												</div>
+											</div>
+
+											<div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 856px">
+												<div class="card-header">
+													<span class="h6">Amostragem Estratificada (AE)</span>
+												</div>
+
+												<div class="card-body">
+													<p>
+														Nesse caso, necessita-se de uma informação prévia sobre a população (<span class="color-tertiary-dark"><strong>variável estratificadora</strong></span
+														>). Consiste na divisão da população em subgrupos (chamados estratos) segundo alguma(s) característica(s) conhecida(s) (e mutuamente exclusivas) da população em estudo. De cada um desses estratos são selecionadas amostras em proporções convenientes. Exemplo: amostragem de trabalhadores de um hospital por sexo.
+													</p>
+												</div>
+											</div>
+
+											<div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 856px">
+												<div class="card-header">
+													<span class="h6">Amostragem por Conglomerados (AC)</span>
+												</div>
+
+												<div class="card-body">
+													<p>
+														É dada pela seleção AAS de conjuntos que contêm vários dos elementos que se quer estudar. Diferentemente da amostragem estratificada, na qual elementos de um mesmo subgrupo têm uma variável (estratificadora) em comum (sexo dos trabalhadores de um hospital), espera-se que um conglomerado seja uma microrrepresentação do universo sem nenhuma característica de estudo (<span class="color-tertiary-dark"
+															><strong><em>a priori</em></strong></span
+														>) em comum. Exemplo: no estudo sobre o perfil dos pacientes de hospitais públicos da Zona Oeste do Rio de Janeiro, um hospital dessa região pode definir um conglomerado.
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- If we need pagination -->
+										<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+
+										<!-- If we need navigation buttons -->
+										<div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-130aadbe19a0087f" aria-disabled="true"></div>
+										<div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-130aadbe19a0087f" aria-disabled="false"></div>
+
+										<!-- If we need scrollbar -->
+										<!-- <div class="swiper-scrollbar"></div> -->
+										<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<p>Após a digitalização nos municípios, as equipes estaduais codificam e enviam os dados para o Ministério da Saúde por meio do SIM federal. Os dados são então processados e analisados pelo DATASUS, com a divulgação dos resultados consolidados ocorrendo em até dois anos.</p>
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Agora que já entendemos conceitos importantes na estatística, vamos entender um pouco da nomenclatura matemática comumente usada.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Considere a tabela a seguir:</p>
+									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<table class="table table-bordered">
+											<thead>
+												<tr class="text-center">
+													<th>Indivíduo</th>
+													<th>Peso (Kg)</th>
+													<th>Altura (m)</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr class="text-center">
+													<td>1</td>
+													<td>87.9</td>
+													<td>1.82</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>2</td>
+													<td>74.7</td>
+													<td>1.70</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>...</td>
+													<td>...</td>
+													<td>...</td>
+												</tr>
+
+												<tr class="text-center">
+													<td>N</td>
+													<td>56.9</td>
+													<td>1.58</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>
+										Se Denotamos por X a variável “peso”, então
+										<span class="color-tertiary-dark"
+											><strong>X<sub>i</sub></strong></span
+										>
+										representará o peso do indivíduo i (<span class="color-tertiary-dark"><strong>1,2,...,N</strong></span
+										>). Analogamente, se Y representa a variável “altura, então
+										<span class="color-tertiary-dark"
+											><strong>Y<sub>2</sub></strong></span
+										>
+										é a altura do segundo indivíduo (1.70m). Dessa forma, a soma dos pesos dos 10 primeiros indivíduos dessa lista é denotada por:
+									</p>
+									<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" style="color: black; font-size: 20px">
+										<mrow>
+											<munderover>
+												<mo>&#x2211;</mo>
+												<!-- Σ -->
+												<mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow>
+												<mn>10</mn>
+											</munderover>
+											<msup><mi>X</mi><mi>i</mi></msup>
+											<mo>=</mo>
+											<msub><mi>X</mi><mn>1</mn></msub>
+											<mo>+</mo>
+											<msub><mi>X</mi><mn>2</mn></msub>
+											<mo>+</mo>
+											<mo>&#x2026;</mo>
+											<mo>+</mo>
+											<msub><mi>X</mi><mn>10</mn></msub>
+										</mrow>
+									</math>
 								</div>
 							</div>
 						</div>
@@ -458,11 +589,11 @@
 		<script type="text/javascript" src="../../assets/js/sidebar.js"></script>
 
 		<script type="text/javascript">
-			var sidebar = new StickySidebar('.sidebar', {
+			var sidebar = new StickySidebar(".sidebar", {
 				topSpacing: 0,
 				bottomSpacing: 0,
-				containerSelector: '.main',
-				innerWrapperSelector: '.sidebar__inner',
+				containerSelector: ".main",
+				innerWrapperSelector: ".sidebar__inner",
 				minWidth: 991,
 			});
 		</script>
@@ -483,7 +614,7 @@
 		<script src="../../assets/js/timeline-horizontal/main.js"></script>
 		<!-- Start the Timeline -->
 		<script>
-			document.getElementsByTagName('html')[0].className += ' js';
+			document.getElementsByTagName("html")[0].className += " js";
 		</script>
 
 		<script>
