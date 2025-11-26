@@ -259,7 +259,7 @@ const modalInfos = {
 						<p class="small text-muted"><em>Designer gráfico e web designer</em></p>
 					</div>
 
-					<span class="h5 mb-3 d-block">Coordenação do Projeto</span>
+					<span class="h5 mb-3 d-block">Coordenação Acadêmica</span>
 					
 					<div class="mb-5">
 						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
@@ -267,7 +267,7 @@ const modalInfos = {
 						<p class="small text-muted"><em>Coordenadora</em></p>
 
 						<p class="mb-1">Carlos Antonio de Souza Teles Santos</p>
-						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
+						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz Bahia</em></p>
 						<p class="small text-muted"><em>Coordenador</em></p>
 
 
