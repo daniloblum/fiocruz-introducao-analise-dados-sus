@@ -226,6 +226,9 @@ const modalInfos = {
 						<p class="mb-1">Bruno Athaydes</p>
 						<p class="small text-muted"><em>Editor audiovisual</em></p>
 			
+						<p class="mb-1">Teo Venerando</p>
+						<p class="small text-muted"><em>Editor audiovisual</em></p>
+			
 						<span class="h6 mb-3 d-block">Recursos Educacionais</span>
 						
 						<p class="mb-1">Carmélia Brito</p>
@@ -275,36 +278,36 @@ const modalInfos = {
 						<p class="mb-1">Juracy Bertoldo</p>
 						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
 						<p class="small text-muted mb-0"><em>Instituto de Saúde Coletiva da Universidade Federal da Bahia (ISC/UFBA)</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
+						<p class="small text-muted"><em>[Aula 1 e 2]</em></p>
 
 						<p class="mb-1">Pilar Tavares Veras Florentino</p>
 						<p class="small text-muted mb-0"><em>Centro de Integração de Dados e Conhecimentos para Saúde (CIDACS) – Fiocruz</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
+						<p class="small text-muted"><em>[Aula 1 e 2]</em></p>
 
-						<p class="mb-1"><strong>Módulo 2: Estatística Descritiva e Comunicação de Resultados</strong></p>
+						<p class="mb-1 mt-5"><strong>Módulo 2: Estatística Descritiva e Comunicação de Resultados</strong></p>
 
 						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
 						<p class="small text-muted mb-0"><em>Programa de Computação Científica (PROCC) – Fiocruz</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 1]</em></p>
+						<p class="small text-muted"><em>[Aula 1]</em></p>
 
 						<p class="mb-1">Thiago Cerqueira-Silva</p>
 						<p class="small text-muted mb-0"><em>London School of Hygiene and Tropical Medicine (LSHTM)</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 2]</em></p>
+						<p class="small text-muted"><em>[Aula 2]</em></p>
 
 						
-						<p class="mb-1"><strong>Módulo 3: Modelos estatísticos</strong></p>
+						<p class="mb-1 mt-5"><strong>Módulo 3: Modelos estatísticos</strong></p>
 
 						<p class="mb-1">Alexandra Ribeiro Mendes de Almeida</p>
 						<p class="small text-muted mb-0"><em>Programa de Computação Científica (PROCC) – Fiocruz</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 3]</em></p>
+						<p class="small text-muted"><em>[Aula 3]</em></p>
 
 						<p class="mb-1">Aline Araújo Nobre</p>
 						<p class="small text-muted mb-0"><em>Programa de Computação Científica, Presidência, Fundação Oswaldo Cruz</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 1 e 2]</em></p>
+						<p class="small text-muted"><em>[Aula 1 e 2]</em></p>
 
 						<p class="mb-1">Thiago Cerqueira-Silva</p>
 						<p class="small text-muted mb-0"><em>London School of Hygiene and Tropical Medicine (LSHTM)</em></p>
-						<p class="small text-muted mb-0"><em>[Aula 4]</em></p>
+						<p class="small text-muted"><em>[Aula 4]</em></p>
 					</div>
 					
 				</div>
