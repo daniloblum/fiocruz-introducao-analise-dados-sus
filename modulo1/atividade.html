@@ -203,35 +203,16 @@
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
-										<h3 class="heading__title">Atividade</h3>
+										<h3 class="heading__title">Atividade complementar</h3>
 									</div>
 
-									<p>Antes de seguir em frente, vamos realizar uma atividade prática para testar diferentes tipos de <span class="color-tertiary-dark"><strong>joins</strong></span>.</p>
+									<p>Quer consolidar tudo o que você aprendeu neste módulo?</p>
 
-									<p>Agora que você já aprendeu sobre a importância do código IBGE como identificador único para realizar <span class="color-tertiary-dark"><strong>joins</strong></span>, é hora de praticar com dados reais.</p>
+									<p>Então aproveite as atividades complementares que preparamos especialmente para você!</p>
 
-									<p>No repositório do curso, você encontrará as bases de dados do SIM (Sistema de Informação sobre Mortalidade) e da população do IBGE.</p>
+									<p>Disponibilizamos três atividades opcionais para você praticar com calma e no seu próprio ritmo. </p>
 
-									<p>Instruções:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Lista Não-Ordenada -->
-									<div class="list">
-										<ol class="list-group list-group-numbered">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Baixe os arquivos do repositório e os carregue no R.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Teste diferentes tipos de joins entre essas duas tabelas usando a coluna <span class="color-tertiary-dark"><strong>codigo_ibge</strong></span> como chave de junção.</li>
-										</ol>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 pt-5">
-									<p>Por exemplo, você pode usar:</p>
+									<p>No GitHub, você encontrará tudo organizado em uma única pasta:</p>
 								</div>
 							</div>
 
@@ -240,57 +221,56 @@
 									<!-- Lista Não-Ordenada -->
 									<div class="list">
 										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" ><span class="color-tertiary-dark"><strong>left_join()</strong></span>: Mantém todas as linhas da primeira tabela e adiciona as correspondências da segunda.</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Atividades em PDF</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span class="color-tertiary-dark"><strong>right_join()</strong></span>: Mantém todas as linhas da segunda tabela e adiciona as correspondências da primeira.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Base de dados para os exercícios</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span class="color-tertiary-dark"><strong>inner_join()</strong></span>: Mantém apenas as linhas que têm correspondências nas duas tabelas.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span class="color-tertiary-dark"><strong>full_join()</strong></span>: Mantém todas as linhas de ambas as tabelas, adicionando quando não houver correspondência.</li>	
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Gabarito em R com os resultados esperados em PDF</li>
 										</ul>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<p><a href='https://github.com/CampusVirtualFiocruz/curso-analise-de-dados/tree/main' target='_blank'>Acesse a pasta no GitHub</a> e comece a praticar quando quiser.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Na Prática - CÓDIGO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Na prática</h5>
-										</div>
-
-										<pre aria-label="Exemplo de código">
-												<code>
-													Vamos trabalhar com o arquivo <strong>lista_municipios_ba.csv</strong>, que contém informações sobre os 417 municípios da Bahia, como nome, latitude, longitude, entre outras.
-													
-													Comando:
-													<span class="comment"># Passo 1: carregar o arquivo.</span>
-													<span class="function">mun &lt;- fread("lista_municipios_ba.csv")</span>
-
-													<span class="comment"># Passo 2: selecionar colunas relevantes e renomear.</span>
-													Comando:
-													<span class="function">mun &lt;- mun %>% select(codigo_6,Latitude,Longitude) %>% rename(CODMUNRES = codigo_6) </span>
-
-													Note que usamos a função <span class="function">rename()</span> para garantir que a variável utilizada para fazer o join tenha o mesmo nome nas duas tabelas.
-
-													<span class="comment"># Passo 3:realizar diferentes joins.</span>
-													<strong>* Inner Join:</strong> O <span class="function">inner_join()</span> retorna apenas as linhas que têm correspondência nas duas tabelas. No exemplo a seguir apenas os dados de Salvador são incluídos:
-													Comando:
-													<span class="function">df_csv_inner &lt;-  df_csv %>% inner_join(mun, by = "CODMUNRES")</span>
-
-													<strong>* Left Join:</strong> O <span class="function">left_join()</span> mantém todas as linhas da tabela df_csv e adiciona as correspondências da tabela mun. Nesse caso, o resultado é o mesmo do <span class="function">inner_join()</span>, já que os dados são apenas de Salvador:
-													Comando:
-													<span class="function">df_csv_nome_left &lt;-  df_csv %>% left_join(mun , by = "CODMUNRES")</span>
-
-													<strong>* Full Join:</strong> O <span class="function">full_join()</span> retorna todas as linhas das duas tabelas, adicionando valores NA quando não há correspondência. Aqui, 416 linhas são adicionadas ao banco com valores nulos, pois os dados originais são somente de Salvador:
-													Comando:
-													<span class="function">df_csv_nome_full &lt;- df_csv %>% full_join(mun, by = "CODMUNRES")</span>
-												</code>
-											</pre>
-
-										<button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button>
+									<div class="heading__block">
+										<h4 class="heading__title">Outras bases de Dados para Praticar</h4>
 									</div>
+
+									<p>Além do banco de dados do SIM (Sistema de Informação sobre Mortalidade) que utilizamos nesta aula, existem outras bases de dados disponíveis no R que são excelentes para praticar os conceitos aprendidos:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Lista Ordenada -->
+									<div class="list">
+										<ol class="list-group list-group-numbered">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>nycflights13</strong> - Contém dados de voos partindo de Nova York. É especialmente útil para praticar joins (junções de tabelas) e agrupamentos. Para usar, instale o pacote com install.packages("nycflights13"), carregue-o com library(nycflights13) e consulte a documentação com ?flights.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>iris</strong> - Um dataset clássico sobre medidas de flores. É simples e didático, ideal para começar a praticar. Este dataset já vem incluído no R. Para acessá-lo, use data(iris) e consulte a documentação com ?iris.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>mtcars</strong> - Contém dados sobre características de diferentes modelos de carros. É excelente para praticar cálculos estatísticos e agrupamentos. Também já vem incluído no R. Acesse com data(mtcars) e veja a documentação com ?mtcars.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>gapminder</strong> - Apresenta dados de diversos países ao longo do tempo, incluindo informações sobre população, expectativa de vida e PIB. Ótimo para análises temporais. Instale com install.packages("gapminder"), carregue com library(gapminder) e consulte ?gapminder para mais informações.</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Dicas para um Aprendizado Eficaz</h4>
+									</div>
+
+									<p>Aprender a linguagem de programação R envolve uma curva de aprendizagem que exige dedicação e prática contínua. Aqui estão algumas dicas importantes:</p>
 								</div>
 							</div>
 
@@ -306,26 +286,30 @@
 								</div>
 							</div>
 
+							
+
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<!-- Lista Não-Ordenada -->
 									<div class="list">
-										<ol class="list-group list-group-numbered">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Pratique com problemas reais: envolva-se com problemas de situações reais para solidificar o seu entendimento. Experimente manipular e analisar dados de diferentes fontes e formatos.</li>
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Pratique com problemas reais:</strong> Envolva-se com problemas de situações reais para solidificar seu entendimento. Experimente manipular e analisar dados de diferentes fontes e formatos que sejam do seu interesse.</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Divida o problema em partes menores: quando enfrentar um problema complexo, divida-o em partes menores e mais gerenciáveis. A abordagem de "dividir para conquistar" pode facilitar a solução e o aprendizado.</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Divida o problema em partes menores:</strong> Quando enfrentar um problema complexo, divida-o em partes menores e mais gerenciáveis. A abordagem de "dividir para conquistar" pode facilitar muito a solução e o aprendizado.</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Explore recursos e exemplos: consulte a documentação oficial, tutoriais e fóruns online para encontrar soluções e exemplos relacionados a problemas que você está enfrentando.</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>Consulte a documentação:</strong> O R possui uma documentação completa e acessível. Use ?nome_da_funcao no console para acessar ajuda sobre qualquer função. Além disso, explore tutoriais e fóruns online como Stack Overflow e RStudio Community.</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Seja persistente: a prática constante é crucial. Não desanime se encontrar dificuldades; cada desafio é uma oportunidade de aprendizado.</li>
-										</ol>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>Explore recursos de aprendizado:</strong> Existem muitos recursos gratuitos disponíveis, incluindo a <a href='https://www.rdocumentation.org/' target='_blank'>documentação oficial do R</a>, os <a href='https://www.rstudio.com/resources/cheatsheets/' target='_blank'>cheat sheets do Tidyverse</a> e o excelente livro online "<a href='https://r4ds.had.co.nz/' target='_blank'>R for Data Science</a>".</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Seja persistente:</strong> A prática constante é crucial. Não desanime se encontrar dificuldades; cada desafio é uma oportunidade de aprendizado. Erros fazem parte do processo e são fundamentais para o desenvolvimento de suas habilidades.</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Continue explorando, praticando e aplicando suas habilidades para se tornar proficiente na linguagem R. <strong>Agora é a sua vez de testar os outros tipos de <span class="color-tertiary-dark"><strong>joins</strong></span> e verificar os resultados!</strong></p>
+									<p><strong>Continue explorando, praticando e aplicando suas habilidades para se tornar proficiente na linguagem R!</strong></p>
 								</div>
 							</div>
 
