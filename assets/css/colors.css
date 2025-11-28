@@ -88,6 +88,10 @@
 	background-color: var(--fio-sys-color-accent-dark-contrast) !important;
 }
 
+.background-accent-extra-dark {
+	background-color: var(--fio-sys-color-accent-extra-dark) !important;
+}
+
 /* Secondary - Accent - Color */
 .color-secondary-light {
 	color: var(--fio-sys-color-secondary-light) !important;
