@@ -467,9 +467,15 @@ const modalInfos = {
 									<div class="accordion-body">
 										<div class="list">
 											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INFRAESTRUTURA NACIONAL DE DADOS. BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. <strong>Infraestrutura Nacional de Dados</strong>. Brasília, DF: Governo Digital, 2023. Disponível em: <a href='https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados' target='_blank'>https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados</a>. Acesso em: 30 maio 2025.Serviços e Informações do Brasil</li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">DIEZ, D.; CETINKAYA-RUNDEL, M.; CHRISTOPHER, D. B. <strong>OpenIntro Statistics</strong>. v. 4. Boston, MA, USA: OpenIntro, 2019. </li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">REDE NACIONAL DE DADOS EM SAÚDE (RNDS). BRASIL. Ministério da Saúde. <strong>Rede Nacional de Dados em Saúde (RNDS)</strong>. Brasília, DF: Ministério da Saúde, 2020. Disponível em: <a href='https://www.gov.br/saude/pt-br/composicao/seidigi/rnds' target='_blank'>https://www.gov.br/saude/pt-br/composicao/seidigi/rnds</a>. Acesso em: 30 maio 2025.</li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MAGALHÃES, M. N; LIMA, A. C. P. <strong>Noções de probabilidade e estatística</strong>. 4. ed. São Paulo, SP, Brazil: Edusp, 2002.</li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PAGANO, M.; GAUVREAU, K. <strong>Princípios de bioestatística</strong>. 2. ed. São Paulo: Cengage Learning, 2011. </li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ANUNCIAÇÃO, L. Tipos de amostragem. <em>In:</em> ANUNCIAÇÃO, L. <strong>Conceitos e análises estatísticas com R e JASP</strong>. São Paulo: Nila Press, 2021.</li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PROFESSOR GURU. 2023. 1 vídeo (2 min.). Disponível em: <a href='https://www.youtube.com/channel/UCkBKRTla-WORg2aKwLo-iZg' target='_blank' rel="noopener noreferrer">https://www.youtube.com/channel/UCkBKRTla-WORg2aKwLo-iZg</a>. Acesso em: 31 ago. 2024.</li>
 
 											</ul>
 										</div>
@@ -485,44 +491,21 @@ const modalInfos = {
 									<div class="accordion-body">
 										<div class="list">
 											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Datasus. <strong>Ata da 2ª Reunião CIINFO, 10 de dezembro de 2019</strong> - Versão Final Assinada. Disponível em: <a href='https://datasus.saude.gov.br/wp-content/uploads/2020/05/ATA-da-2a-Reuni%C3%A3o-CIINFO-10.12.2019-Vers%C3%A3o-FINAL-Assinada.pdf' target='_blank'>https://datasus.saude.gov.br/wp-content/uploads/2020/05/ATA-da-2a-Reuni%C3%A3o-CIINFO-10.12.2019-Vers%C3%A3o-FINAL-Assinada.pdf</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PAGANO, M.; GAUVREAU, K. <strong>Princípios de bioestatística</strong>. 2. ed. São Paulo: Cengage Learning, 2011. </li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Ministério da Gstão e Inovação dos Serviços Públicos. Instituto Nacional de Tecnologia da Informação. <strong>ICP-Brasil</strong>. Disponível em: <a href='https://www.gov.br/iti/pt-br/assuntos/icp-brasil' target='_blank'>https://www.gov.br/iti/pt-br/assuntos/icp-brasil</a>. Acesso em: 13 jul. 2024.</li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. <strong>Lei n.º 13.709, de 14 de agosto de 2018</strong>. Dispõe sobre a proteção de dados pessoais e altera a Lei n.º 12.965, de 23 de abril de 2014 (Marco Civil da Internet). Este texto não substitui o publicado no DOU de 15.8.2018, e republicado parcialmente em 15.8.2018 - Edição extra Disponível em: <a href='https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm' target='_blank'>https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SILVA, F. R. <em>et al</em>. <strong>Análises ecológicas no R</strong>. Recife: Nupeea; Bauru, SP: Canal 6, 2022. Disponível em: <a href='https://canal6.com.br/livreacesso/livro/analises-ecologicas-no-r/' target='_blank' rel='noopener noreferrer'>https://canal6.com.br/livreacesso/livro/analises-ecologicas-no-r/</a></li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. <strong>Portaria GM/MS n.º 1796, de 22 de julho de 2019</strong>. Redefine o Comitê de Informação e Informática em Saúde (CIINFO/MS) no âmbito do Ministério da Saúde. Disponível em: <a href='https://bvsms.saude.gov.br/bvs/saudelegis/gm/2019/prt1796_22_07_2019.html' target='_blank'>https://bvsms.saude.gov.br/bvs/saudelegis/gm/2019/prt1796_22_07_2019.html</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">STATPLACE. Disponível em: <a href='www.youtube.com/@Statplace' target='_blank' rel='noopener noreferrer'>www.youtube.com/@Statplace</a>. Acesso em: 16 set. 2024.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Ministério da Saúde. Secretaria-Executiva. Departamento de Monitoramento e Avaliação do SUS. <strong>Política Nacional de Informação e Informática em Saúde</strong>. Brasília: Ministério da Saúde, 2016. 56 p. Disponível em: <a href='https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_infor_informatica_saude_2016.pdf' target='_blank'>https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_infor_informatica_saude_2016.pdf</a></li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Portaria nº 1.434, de 28 de maio de 2020. Meu SUS Digital: Legislação. <strong>Diário Oficial da União</strong>: Seção 1, Brasília, DF, n. 102, p. 231, 29 maio 2020. Disponível em: <a href='https://www.gov.br/saude/pt-br/composicao/seidigi/meususdigital/legislacao' target='_blank'>https://www.gov.br/saude/pt-br/composicao/seidigi/meususdigital/legislacao</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">COLOSIMO, E. <strong>Correlação e Regressão linear Simples</strong>. Apresentação do Beamer. Disponível em: <a href='https://www.est.ufmg.br/~enricoc/pdf/EstatisticaII/aula9-10_corr-reg.pdf' target='_blank' rel='noopener noreferrer'>https://www.est.ufmg.br/~enricoc/pdf/EstatisticaII/aula9-10_corr-reg.pdf</a>. Acesso em 12 set. 2024.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. Ministério da Saúde. <strong>Síndrome Respiratória Aguda Grave</strong>. SRAG 2021 e 2022. Disponível em: <a href='https://dados.gov.br/dados/conjuntos-dados/srag-2021-e-2022' target='_blank'>https://dados.gov.br/dados/conjuntos-dados/srag-2021-e-2022</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">LUCAMBIO PÉREZ, F. <strong>Modelos Lineares Generalizados</strong>. Disponível em: <a href='http://leg.ufpr.br/~lucambio/GLM/GLM.html' target='_blank' rel='noopener noreferrer'>http://leg.ufpr.br/~lucambio/GLM/GLM.html</a>. Acesso em: 16 set. 2024.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">D. Bender and K. Sartipi, "HL7 FHIR: An Agile and RESTful approach to healthcare information exchange," Proceedings of the 26th IEEE International Symposium on Computer-Based Medical Systems, Porto, Portugal, 2013, pp. 326-331, <a href='https://ieeexplore.ieee.org/document/6627810' target='_blank'>https://ieeexplore.ieee.org/document/6627810</a>. Acesso em: 22 maio 2025.</li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BENDER, Duane; SARTIPI, KAMRAN. HL7 FHIR: An Agile and REST-ful approach to healthcare information exchange. <em>In:</em> Proceedings of the 26th IEEE International Symposium on Computer-based Medical Systems; 2013. Portugal. p. 326-31.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">DOBSON, A. J.; BARNETT, A. G. <strong>An introduction to generalized linear models</strong>. 4. ed. Boca Raton, FL: CRC Press, 2018.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">HARRIS, P. A. <em>et al</em>. Research Electronic Data Capture (REDCap): a metadata-driven methodology and workflow process for providing translational research informatics support. <strong>Journal of Biomedical Informatics</strong>, v. 42, n. 2, p. 377-381, 2009. Disponível em: <a href='https://www.sciencedirect.com/science/article/pii/S1532046408001226' target='_blank'>https://www.sciencedirect.com/science/article/pii/S1532046408001226</a>. Acesso em: 13 jul. 2024.</li>
+											<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WOOD, S. N. <strong>Generalized additive models:</strong> an introduction with R. Boca Raton, FL: CRC Press, 2017.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INSTITUTO DE ESTUDOS PARA POLÍTICAS DE SAÚDE. <strong>Panorama IEPS:</strong> Programa TechSUS- Governança e interoperabilidade de dados para a Saúde. (Panorama IEPS nº 4) Disponível em: <a href='https://ieps.org.br/wp-content/uploads/2023/04/panorama-ieps-4-techSUS-saude-digital.pdf' target='_blank'>https://ieps.org.br/wp-content/uploads/2023/04/panorama-ieps-4-techSUS-saude-digital.pdf</a>. Acesso em: 13 jul. 2024.</li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Ayaz M, Pasha MF, Alzahrani MY, Budiarto R, Stiawan D
-												The Fast Health Interoperability Resources (FHIR) Standard: Systematic Literature Review of Implementations, Applications, Challenges and Opportunities. JMIR Med Inform 2021;9(7):e21929. <a href='https://medinform.jmir.org/2021/7/e21929' target='_blank'>https://medinform.jmir.org/2021/7/e21929</a>. Acesso em: 22 maio 2025.
-												</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">VORISEK CN, LEHNE M, KLOPFENSTEIN SAI, MAYER PJ, BARTSCHKE A, HAESE T, THUN S. Fast Healthcare Interoperability Resources (FHIR) for Interoperability in Health Research: Systematic Review JMIR Med Inform 2022;10(7):e35724 <a href='https://medinform.jmir.org/2022/7/e35724/' target='_blank'>https://medinform.jmir.org/2022/7/e35724/</a> Acesso em : 16 maio 2025.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">PRUD'HOMMEAUX E, COLLINS J, BOOTH D, PETERSON KJ, SOLBRIG HR, JIANG G. Development of a FHIR RDF data transformation and validation framework and its evaluation. J Biomed Inform. 2021 May;117:103755. doi: 10.1016/j.jbi.2021.103755. Epub 2021 Mar 26. PMID: 33781919; PMCID: PMC8131260. <a href='https://pmc.ncbi.nlm.nih.gov/articles/PMC8131260/' target='_blank'>https://pmc.ncbi.nlm.nih.gov/articles/PMC8131260/</a> Acesso em: 16 maio 2025</li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MORAIS NETO, O. L. D.; BARROS, M. B. D. A. Fatores de risco para mortalidade neonatal e pós-neonatal na Região Centro-Oeste do Brasil: linkage entre bancos de dados de nascidos vivos e óbitos infantis. <strong>Caderno de Saúde Pública</strong>, v. 16, n. 2, p. 477-85, 2000. Disponível em: <a href='https://www.scielo.br/j/csp/a/4j5FmhX3rKjGTC8fmHLrZxF/?format=pdf&lang=pt' target='_blank'>https://www.scielo.br/j/csp/a/4j5FmhX3rKjGTC8fmHLrZxF/?format=pdf&lang=pt</a></li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">NAKAMOTO, S. <strong>Bitcoin</strong>: a peer-to-peer electronic cash system. 2008. Disponível em: <a href='https://bitcoin.org/bitcoin.pdf' target='_blank'>https://bitcoin.org/bitcoin.pdf</a>. Acesso em: 13 jul. 2024.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANISATION FOR ECONOMIC CO-OPERATION AND DEVELOPMENT - OECD. <strong>Health Data Governance for the Digital Age</strong> - 2022. Disponível em: <a href='https://www.oecd-ilibrary.org/sites/68b60796-en/1/3/5/index.html?itemId=/content/publication/68b60796-en&_csp_=06e97bce8767c64c4b34a465198dee0c&itemIGO=oecd&itemContentType=book' target='_blank'>https://www.oecd-ilibrary.org/sites/68b60796-en/1/3/5/index.html?itemId=/content/publication/68b60796-en&_csp_=06e97bce8767c64c4b34a465198dee0c&itemIGO=oecd&itemContentType=book</a>. Acesso em: 13 jul. 2024.</li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SMITH, B.; JONES, J.; BROWN, A. Implementation of HL7 FHIR in Electronic Health Record Systems: Lessons Learned. <strong>IEEE Journal of Biomedical and Health Informatics</strong>, 2017. Disponível em: <a href='https://ieeexplore.ieee.org/document/7892358' target='_blank'>https://ieeexplore.ieee.org/document/7892358</a>. Acesso em: 13 jul. 2024.</li>
-											</ul>
+										</ul>
 										</div>
 									</div>
 								</div>
@@ -536,19 +519,31 @@ const modalInfos = {
 									<div class="accordion-body">
 										<div class="list">
 											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Araújo, M. S., Brito, M. B. R. de, Pessoa, L. T. S., Cadête, M. L. X., Marques, E. J. G., Coelho, L. N. L., … Resplandes, P. H. S. (2023). IMPACTO DA TELEMEDICINA NA PRESTAÇÃO DE CUIDADOS DE SAÚDE: DESAFIOS E OPORTUNIDADES. <strong>Revista Ibero-Americana De Humanidades, Ciências E Educação</strong>, 9(8), 1300–1306. <a href='https://doi.org/10.51891/rease.v9i8.10990' target='_blank'>https://doi.org/10.51891/rease.v9i8.10990</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">DIEZ-ROUX, A. V. Multilevel analysis in public health research. <strong>Annu Rev Public Health</strong>, v. 21, p. 171-92, 2000. doi: 10.1146/annurev.publhealth.21.1.171. PMID: 10884951.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Costa, M. V. da S., Camargos, M. C. S., Viana, S. M. N., & Mendes, U. V. de S. (2025). Avanços e desafios da interoperabilidade no Sistema Único de Saúde. <strong>Journal of Health Informatics</strong>, 17(1), 1112. <a href='https://doi.org/10.59681/2175-4411.v17.2025.1112' target='_blank'>https://doi.org/10.59681/2175-4411.v17.2025.1112</a></li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Rachid, Raquel <em>et al</em>. Saúde digital e a plataformização do Estado brasileiro. <strong>Ciência & Saúde Coletiva [online]</strong>. v. 28, n. 7 [Acessado 22 Maio 2025] , pp. 2143-2153. Disponível em: <<a href='https://doi.org/10.1590/1413-81232023287.14302022' target='_blank'>https://doi.org/10.1590/1413-81232023287.14302022</a>>. ISSN 1678-4561. <a href='https://doi.org/10.1590/1413-81232023287.14302022' target='_blank'>https://doi.org/10.1590/1413-81232023287.14302022</a>.</li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BOCK, C. <em>et al</em>. Machine Learning for Biomedical Time Series Classification: From Shapelets to Deep Learning. <strong>Methods Mol Biol</strong>., v. 2190, p. 33-71, 2021. <a href='https://doi.org/10.1007/978-1-0716-0826-5_2' target='_blank' rel='noopener noreferrer'>https://doi.org/10.1007/978-1-0716-0826-5_2</a></li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Brasil. Ministério da Saúde. Secretaria-Executiva. Departamento de Informática do SUS. <strong>Estratégia de Saúde Digital para o Brasil 2020-2028</strong> [recurso eletrônico]. / Ministério da Saúde, Secretaria-Executiva, Departamento de Informática do SUS. – Brasília : Ministério da Saúde, 2020. 128 p. : il. <a href='https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_saude_digital_Brasil.pdf' target='_blank'>https://bvsms.saude.gov.br/bvs/publicacoes/estrategia_saude_digital_Brasil.pdf</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CAPLEHORN, J. R. M.; BELL, J. Methadone dosage and retention of patients maintenance treatment. <strong>Medical Journal of Australia</strong>, v. 154, n. 3, p. 195-199, 1991. <a href='https://doi.org/10.5694/j.1326-5377.1991.tb121030.x' target='_blank' rel='noopener noreferrer'>https://doi.org/10.5694/j.1326-5377.1991.tb121030.x</a></li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ALBUQUERQUE, E. A. Y. <em>et al</em>. Prontuário Eletrônico do Paciente e certificação de software em saúde: Avanços que visam maior segurança dos dados médicos. <strong>Revista Brasileira de Inovação Tecnológica em Saúde</strong> ISSN: 2236-1103, v. 7, n. 2, 2017. <a href='https://revista.ibict.br/ciinf/article/view/5007' target='_blank'>https://revista.ibict.br/ciinf/article/view/5007</a></li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Brasil. Ministério da Saúde. Secretaria de Atenção à Saúde. Departamento de Atenção Básica. <strong>Diretrizes nacionais de implantação da estratégia e-SUS AB</strong> [recurso eletrônico] / Ministério da Saúde, Secretaria de Atenção à Saúde, Departamento de Atenção Básica. – Brasília : Ministério da Saúde, 2014. 11 p. <a href='https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_nacionais_implantacao_estrategia_esus.pdf' target='_blank'>https://bvsms.saude.gov.br/bvs/publicacoes/diretrizes_nacionais_implantacao_estrategia_esus.pdf</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CARVALHO, M. S. <em>et al</em>. <strong>Análise de sobrevivência:</strong> teoria e aplicações em saúde. Rio de Janeiro: Editora Fiocruz, 2011.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Colleti Junior, J., Andrade, A. B. de ., & Carvalho, W. B. de .. (2018). Avaliação do uso de sistemas de prontuário eletrônico nas unidades de terapia intensiva brasileiras. <strong>Revista Brasileira De Terapia Intensiva</strong>, 30(3), 338–346. <a href='https://doi.org/10.5935/0103-507X.20180057' target='_blank'>https://doi.org/10.5935/0103-507X.20180057</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MARQUES-TOLEDO, C. D. A. <em>et al</em>. Dengue prediction by the web: Tweets are a useful tool for estimating and forecasting Dengue at country and city level. <strong>PLOS Neglected Tropical Diseases</strong>, v. 11, n. 7, 2017. <a href='https://doi.org/10.1371/journal.pntd.0005729' target='_blank' rel='noopener noreferrer'>https://doi.org/10.1371/journal.pntd.0005729</a></li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">UTHMAN, O. A.; EKSTRÖM, A. M.; MORADI, T. T. Influence of socioeconomic position and gender on current cigarette smoking among people living with HIV in sub-Saharan Africa: Disentangling context from composition. <strong>BMC Public Health</strong>, v. 16, n. 998, 2016. <a href='https://doi.org/10.1186/s12889-016-3637-1' target='_blank' rel='noopener noreferrer'>https://doi.org/10.1186/s12889-016-3637-1</a></li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WANG, Y. <em>et al</em>. Time series analysis of temporal trends in hemorrhagic fever with renal syndrome morbidity rate in China from 2005 to 2019. <strong>Scientific Reports</strong>, v. 10, n. 9609, 2020. <a href='https://doi.org/10.1038/s41598-020-66758-4' target='_blank' rel='noopener noreferrer'>https://doi.org/10.1038/s41598-020-66758-4</a></li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WEI, W. W. S. <strong>Time series analysis:</strong> univariate and multivariate methods. 2nd ed. Boston: Pearson Addison Wesley, 2006.</li>
+											</ul>
+
+											<p><strong>Website:</strong></p>
+
+											<ul class="list-group">
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://ogre51.medium.com/in-time-series-forecasting-what-do-you-think-is-the-difference-between-seasonality-and-cyclicity-f4e8d9523d24' target='_blank' rel='noopener noreferrer'>https://ogre51.medium.com/in-time-series-forecasting-what-do-you-think-is-the-difference-between-seasonality-and-cyclicity-f4e8d9523d24</a></li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WHITE NOISE. In: WIKIPEDIA: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation, 2010]. Disponível em: <a href='https://en.wikipedia.org/wiki/White_noise' target='_blank' rel='noopener noreferrer'>https://en.wikipedia.org/wiki/White_noise</a></li>
+
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><a href='https://bookdown.org/mpfoley1973/survival/semiparametric.html' target='_blank' rel='noopener noreferrer'>https://bookdown.org/mpfoley1973/survival/semiparametric.html</a></li>
 											</ul>
 										</div>
 									</div>
@@ -563,17 +558,11 @@ const modalInfos = {
 									<div class="accordion-body">
 										<div class="list">
 											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BRASIL. MINISTÉRIO DA SAÚDE. Secretarie Executiva. Departamento de Monitoramento e Avaliação do SUS. <strong>Política Nacional de Informação e Informática em Saúde</strong> / Ministério da Saúde, Secretaria Executiva, Departamento de Monitoramento e Avaliação do SUS. – Brasília : Ministério da Saúde, 2016. 56 p. : il. <a href='https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_infor_informatica_saude_2016.pdf' target='_blank'>https://bvsms.saude.gov.br/bvs/publicacoes/politica_nacional_infor_informatica_saude_2016.pdf</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">LU, S.  <em>et al</em>. Osimertinib after Chemoradiotherapy in Stage III EGFR-Mutated NSCLC. <strong>New England Journal of Medicine</strong>, v. 391, n. 7, p. 585-587, 2024.</li>
 
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SCHÖNHOLZER TE, PINTO IC, ZACHARIAS FCM, GAETE RAC, SERRANO-GALLARDO MDP. <strong>Implantação do sistema e-SUS Atenção Básica</strong>: impacto no cotidiano dos profissionais da Atenção Primária à Saúde. Rev. Latino-Am. Enfermagem. 2021;29:e3447. <a href='https://www.scielo.br/j/rlae/a/mpkGdqxpRBHH3B7cSyzjSXc/?format=pdf&lang=pt' target='_blank'>https://www.scielo.br/j/rlae/a/mpkGdqxpRBHH3B7cSyzjSXc/?format=pdf&lang=pt</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">RANZANI, O. T. et al. Characterisation of the first 250 000 hospital admissions for COVID-19 in Brazil: a retrospective analysis of nationwide data. <strong>The Lancet Respiratory Medicine</strong>, v. 9, n. 4, p. 407-418, 2021.</li>
 												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">DE ALENCAR, M. M. V.; ANDRADE, C. R. A. G.; E VÉRAS, A. R. de A. R.; FREITAS NETO, O. de G.; POL-FACHIN, L. <strong>Interoperabilidade e Sistemas de Informações em Saúde</strong>: o que estamos publicando no Brasil?. Brazilian Journal of Health Review, [S. l.], v. 6, n. 4, p. 17771–17790, 2023. DOI: 10.34119/bjhrv6n4-292. <a href='https://ojs.brazilianjournals.com.br/ojs/index.php/BJHR/article/view/62255' target='_blank'>https://ojs.brazilianjournals.com.br/ojs/index.php/BJHR/article/view/62255</a></li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">REIS-SANTOS, BARBARA. <strong>Sistemas de Informação em Saúde: o quanto estamos avançando?</strong>. Epidemiologia e Serviços de Saúde [online]. v. 32, n. 2, 2023. <a href='https://www.scielo.br/j/ress/a/YcfndkbP5rnMXS4chLM4WSr/?lang=pt' target='_blank'>https://www.scielo.br/j/ress/a/YcfndkbP5rnMXS4chLM4WSr/?lang=pt</a></li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WORLD HEALTH ORGANIZATION. <strong>Global strategy on digital health 2020-2025</strong>. Geneva: World Health Organization; 2021. <a href='https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf' target='_blank'>https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf</a></li>
-												
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">COSTA, M. V. DA S., CAMARGOS, M. C. S., VIANA, S. M. N., & MENDES, U. V. DE S. <strong>Avanços e desafios da interoperabilidade no Sistema Único de Saúde</strong>. Journal of Health Informatics, 2025, 17(1). <a href='https://jhi.sbis.org.br/index.php/jhi-sbis/article/view/1112' target='_blank'>https://jhi.sbis.org.br/index.php/jhi-sbis/article/view/1112</a></li>
+												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">WEI, W. W. S. <strong>Time series analysis:</strong> univariate and multivariate methods. 2nd ed. Boston: Pearson Addison Wesley, 2006.</li>
 											</ul>
 										</div>
 									</div>
@@ -581,61 +570,6 @@ const modalInfos = {
 							</div>
 						</div>
 						<!-- Fim do Accordion -->
-					</div>
-				</div>
-			</div>
-		`,
-	},
-	bibliografiaMod4: {
-		ariaLabel: "bibliografiaMod4",
-		modalSize: "modal-xl",
-		modalTitle: "Bibliografia Módulo 4",
-		modalBody: `
-			<div class="row justify-content-center pt-5">
-				<div class="col-12 col-md-11">
-					<div class="mb-5">
-							<p>A bibliografia a seguir é comum às aulas 1, 2, 3 e 4.</p>
-
-							<div class="list">
-											<ul class="list-group">
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ASSOCIAÇÃO BRASILEIRA DE TELEMEDICINA E TELESSAÚDE. Relatório sobre Telemedicina no Brasil. 2023. Disponível em: <a href='https://www.abtms.org.br/' target='_blank'>https://www.abtms.org.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">BANCO MUNDIAL. Relatório sobre Saúde Global. 2020. Disponível em: <a href='https://www.worldbank.org/en/topic/health' target='_blank'>https://www.worldbank.org/en/topic/health</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">FUNDAÇÃO GETÚLIO VARGAS. Parcerias Público-Privadas na Saúde. 2021. Disponível em: <a href='https://www.fgv.br/' target='_blank'>https://www.fgv.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">FROST & SULLIVAN. Mercado de Saúde Digital no Brasil. 2023. Disponível em: <a href='https://ww2.frost.com/' target='_blank'>https://ww2.frost.com/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">GLOBAL MARKET INSIGHTS. Mercado Global de Saúde Digital. 2024. Disponível em: <a href='https://www.gminsights.com/' target='_blank'>https://www.gminsights.com/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. Pesquisa Nacional de Saúde. 2019a. Disponível em: <a href='https://www.ibge.gov.br/' target='_blank'>https://www.ibge.gov.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. Estatísticas de Saúde. 2019b. Disponível em: <a href='https://www.ibge.gov.br/' target='_blank'>https://www.ibge.gov.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. População Quilombola. 2019c. Disponível em: <a href='https://www.ibge.gov.br/' target='_blank'>https://www.ibge.gov.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">INTERNATIONAL DATA CORPORATION. Mercado Global de Dispositivos Vestíveis. 2024. Disponível em: <a href='https://www.idc.com/' target='_blank'>https://www.idc.com/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MCKINSEY & COMPANY. A IA na Saúde: Economia e Eficiência. 2023. Disponível em: <a href='https://www.mckinsey.com/' target='_blank'>https://www.mckinsey.com/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MINISTÉRIO DA SAÚDE. Boletim Epidemiológico de Arboviroses. 2022. Disponível em: <a href='https://www.saude.gov.br/' target='_blank'>https://www.saude.gov.br/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">MINISTÉRIO DA SAÚDE. Indicadores de Mortalidade Materna. 2020. Disponível em: <a href='https://www.saude.gov.br/indicadores-de-saude' target='_blank'>https://www.saude.gov.br/indicadores-de-saude</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANIZAÇÃO MUNDIAL DA SAÚDE. COVID-19 Dashboard. 2023. Disponível em: <a href='https://covid19.who.int/' target='_blank'>https://covid19.who.int/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANIZAÇÃO MUNDIAL DA SAÚDE. Doenças Crônicas. 2020. Disponível em: <a href='https://www.who.int/chronic_diseases/en/' target='_blank'>https://www.who.int/chronic_diseases/en/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANIZAÇÃO MUNDIAL DA SAÚDE. Envelhecimento e saúde. 2015. Disponível em: <a href='https://www.who.int/ageing/en/' target='_blank'>https://www.who.int/ageing/en/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANIZAÇÃO MUNDIAL DA SAÚDE. Tecnologias em Saúde. 2021. Disponível em: <a href='https://www.who.int/health-topics/technology' target='_blank'>https://www.who.int/health-topics/technology.</li>
-</a>
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Saúde Mental no Brasil. 2020. Disponível em: <a href='https://www.paho.org/' target='_blank'>https://www.paho.org/</a>.</li>
-
-												<li class="list-group-item aos-init aos-animate" list-style='default' data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">SECRETARIA ESPECIAL DE SAÚDE INDÍGENA. Relatório de Saúde Indígena. 2021. Disponível em: <a href='https://www.gov.br/saude/pt-br/composicao/sesai' target='_blank'>https://www.gov.br/saude/pt-br/composicao/sesai</a>.</li>
-												
-											</ul>
-										</div>
 					</div>
 				</div>
 			</div>
