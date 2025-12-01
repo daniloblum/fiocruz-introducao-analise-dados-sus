@@ -877,3 +877,19 @@
 }
 @media (min-width: 1200px) {
 }
+
+
+/* DESABILITAR LINKS NA SIDEBAR (para os módulos entrarem depois) */
+
+.sidebar .sidebar__group .sidebar__group-item button ~ .dropdown-menu .dropdown-menu__item span.dropdown-menu__item-link {
+	cursor:not-allowed;
+	border:none!important; 
+	opacity: .5;
+}
+
+.sidebar .sidebar__group .sidebar__group-item button ~ .dropdown-menu .dropdown-menu__item span.dropdown-menu__item-link strong.em-breve {
+	background-color:white; 
+	border-radius:8px; 
+	padding:0 4px; 
+	color:var(--fio-sys-color-primary-medium);
+}
