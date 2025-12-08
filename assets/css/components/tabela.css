@@ -21,13 +21,14 @@
 	border: var(--fio-sys-size-stroke-xs) solid var(--fio-sys-color-primary-dark);
 	border-spacing: 0;
 	border-collapse: separate;
-    border-radius: var(--fio-sys-size-radius-sm);
+	border-radius: var(--fio-sys-size-radius-sm);
 	overflow: hidden;
 }
 
 .table-responsive table thead th {
 	vertical-align: middle;
 	border: none;
+	padding: 8px;
 }
 
 /* .table-responsive thead tr:last-child::after{
@@ -42,26 +43,26 @@
 
 .table-responsive table thead tr th.table-border {
 	background-image: url(../../../media/templates/border.png);
-    height: 35px;
-    background-repeat: repeat-x;
-    background-color: transparent;
+	height: 35px;
+	background-repeat: repeat-x;
+	background-color: transparent;
 }
 
 .table-responsive table thead th:not(:last-child),
 .table-responsive table thead td:not(:last-child) {
- border-right: 1px solid var(--fio-sys-color-primary-extra-light);
- border-bottom: 1px solid var(--fio-sys-color-primary-extra-light);
+	border-right: 1px solid var(--fio-sys-color-primary-extra-light);
+	border-bottom: 1px solid var(--fio-sys-color-primary-extra-light);
 }
 
 .table-responsive table thead th:last-child,
 .table-responsive table thead td:last-child {
- border-bottom: 1px solid var(--fio-sys-color-primary-extra-light);
+	border-bottom: 1px solid var(--fio-sys-color-primary-extra-light);
 }
 
 .table-responsive th {
 	background-color: var(--fio-sys-color-primary-extra-dark);
 	font-family: var(--fio-sys-typography-family-primary-semibold);
-	font-size:var(--fio-sys-typography-size-0);
+	font-size: var(--fio-sys-typography-size-0);
 	color: var(--fio-sys-color-neutral-white);
 	border: 1px solid var(--fio-sys-color-primary-light);
 }
@@ -73,12 +74,12 @@
 .table-responsive td,
 .table-responsive tr {
 	/* border: 1px solid var(--fio-sys-color-primary-light); */
-	border:none;
+	border: none;
 	font-size: var(--fio-sys-typography-size-0);
 	/* vertical-align: middle; */
 	vertical-align: top;
 	/* text-align: left; */
-	padding:var(--fio-sys-size-padding-sm);
+	padding: var(--fio-sys-size-padding-sm);
 }
 
 /* .table .table-responsive tbody tr:last-child {

@@ -361,114 +361,100 @@
 									<p>Infelizmente, apesar de intuitiva, essa medida não funciona, já que, por definição, a média é construída de tal forma que a soma dos desvios das observações individuais de uma amostra em relação à média aritmética é sempre zero.</p>
 									<p>Como exercício, sugiro que você cheque essa afirmação. Vou deixar os passos indicados a seguir para ajudá-lo a chegar a essa conclusão, com base na série de colesterol aferida pelo método AutoAnalyzer:</p>
 
-									<math display="block" style="color: black; font-size: 20px">
+									<math display="block" style="color: #000; font-size: 20px">
+										<munderover>
+											<mo>∑</mo>
+											<mrow>
+												<mi>i</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+											</mrow>
+											<mi>n</mi>
+										</munderover>
 										<mfrac>
 											<mrow>
-												<munderover>
-													<mo>&#x2211;</mo>
-													<mrow>
-														<mi>i</mi>
-														<mo>=</mo>
-														<mn>1</mn>
-													</mrow>
-													<mi>n</mi>
-												</munderover>
-												<mfenced separators="">
-													<mrow>
-														<msub>
-															<mi>x</mi>
-															<mi>i</mi>
-														</msub>
-														<mo>&#x2212;</mo>
-														<mover accent="true">
-															<mi>x</mi>
-															<mo>&#xAF;</mo>
-														</mover>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>−</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>¯</mo>
+												</mover>
+												<mo>)</mo>
 											</mrow>
 											<mi>n</mi>
 										</mfrac>
 										<mo>=</mo>
 										<mfrac>
 											<mrow>
-												<mfenced separators="">
-													<mrow>
-														<msub>
-															<mi>x</mi>
-															<mn>1</mn>
-														</msub>
-														<mo>&#x2212;</mo>
-														<mover accent="true">
-															<mi>x</mi>
-															<mo>&#xAF;</mo>
-														</mover>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>1</mn>
+												</msub>
+												<mo>−</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>¯</mo>
+												</mover>
+												<mo>)</mo>
 												<mo>+</mo>
-												<mfenced separators="">
-													<mrow>
-														<msub>
-															<mi>x</mi>
-															<mn>2</mn>
-														</msub>
-														<mo>&#x2212;</mo>
-														<mover accent="true">
-															<mi>x</mi>
-															<mo>&#xAF;</mo>
-														</mover>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msub>
+												<mo>−</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>¯</mo>
+												</mover>
+												<mo>)</mo>
 												<mo>+</mo>
-												<mo>&#x22EF;</mo>
+												<mo>⋯</mo>
 												<mo>+</mo>
-												<mfenced separators="">
-													<mrow>
-														<msub>
-															<mi>x</mi>
-															<mi>n</mi>
-														</msub>
-														<mo>&#x2212;</mo>
-														<mover accent="true">
-															<mi>x</mi>
-															<mo>&#xAF;</mo>
-														</mover>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>n</mi>
+												</msub>
+												<mo>−</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>¯</mo>
+												</mover>
+												<mo>)</mo>
 											</mrow>
 											<mi>n</mi>
 										</mfrac>
 										<mo>=</mo>
 									</math>
-
-									<math display="block" style="color: black; font-size: 20px">
+									<br />
+									<math display="block" style="color: #000; font-size: 20px">
 										<mfrac>
 											<mrow>
-												<mfenced separators="">
-													<mrow>
-														<mn>177</mn>
-														<mo>&#x2212;</mo>
-														<mn>200</mn>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<mn>177</mn>
+												<mo>−</mo>
+												<mn>200</mn>
+												<mo>)</mo>
 												<mo>+</mo>
-												<mfenced separators="">
-													<mrow>
-														<mn>193</mn>
-														<mo>&#x2212;</mo>
-														<mn>200</mn>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<mn>193</mn>
+												<mo>−</mo>
+												<mn>200</mn>
+												<mo>)</mo>
 												<mo>+</mo>
-												<mo>&#x22EF;</mo>
+												<mo>⋯</mo>
 												<mo>+</mo>
-												<mfenced separators="">
-													<mrow>
-														<mn>226</mn>
-														<mo>&#x2212;</mo>
-														<mn>200</mn>
-													</mrow>
-												</mfenced>
+												<mo>(</mo>
+												<mn>226</mn>
+												<mo>−</mo>
+												<mn>200</mn>
+												<mo>)</mo>
 											</mrow>
 											<mn>5</mn>
 										</mfrac>
@@ -981,6 +967,23 @@
 
 									<p>Note que, como ambas as amostras (AutoAnalyzer e Microenzimatic) têm o mesmo tamanho, Q<sub>1</sub> continuará sendo a 2ª observação (que agora assume o valor 197mg/dL) e Q<sub>3</sub> a 4ª observação da amostra (que agora é 202mg/dL).</p>
 									<p>Logo, IQ=Q<sub>3</sub>-Q<sub>1</sub>=202-197=5 mg⁄dL</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>
+												Compare a dispersão entre grupos no R! No script <strong>modulo2aula1_atividades.R</strong> (Atividade 3), você irá calcular variância, desvio-padrão e coeficiente de variação para comparar dois métodos de medição de colesterol usando as funções <span class="color-tertiary-dark"><strong>var()</strong></span
+												>, <span class="color-tertiary-dark"><strong>sd()</strong></span> e <span class="color-tertiary-dark"><strong>group_by()</strong></span
+												>.
+											</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

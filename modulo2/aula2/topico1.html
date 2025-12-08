@@ -245,7 +245,7 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>A visualização de dados desempenha papel essencial na análise e comunicação de informações. Com a crescente quantidade de dados disponíveis, uma boa visualização permite que informações complexas sejam apresentadas de forma clara e compreensível. </p>
+									<p>A visualização de dados desempenha papel essencial na análise e comunicação de informações. Com a crescente quantidade de dados disponíveis, uma boa visualização permite que informações complexas sejam apresentadas de forma clara e compreensível.</p>
 
 									<p>Poderíamos simplesmente realizar as análises focando nos coeficientes, sem a necessidade de examinar gráficos com muitos pontos. Isso certamente facilitaria o processo de análise mais ágil, mas seria uma má ideia. Um dos exemplos clássicos é o quarteto de Anscombe, composto por quatro conjuntos de 11 pontos que possuem o mesmo coeficiente de correlação linear de Pearson.</p>
 								</div>
@@ -255,48 +255,48 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
 										<table class="table table-bordered">
-										  <thead>
-										  	<tr>
-										  		<th class="text-center" colspan="5">Correlação de Pearson dos conjuntos de Anscombe</th>
-										  	</tr>
-										    <tr>
-										      <th>Conjunto</th>
-										      <th>coeficiente</th>
-										      <th>Valor de p</th>
-										      <th>Limite inferior (Intervalo de confiança)</th>
-										      <th>Limite superior (Intervalo de confiança)</th>
-										    </tr>
-										  </thead>
-										  <tbody>
-										    <tr>
-										      <td>1</td>
-										      <td>0.82</td>
-										      <td>0.00217</td>
-										      <td>0.424391</td>
-										      <td>0.950693</td>
-										    </tr>
-										    <tr>
-										      <td>2</td>
-										      <td>0.82</td>
-										      <td>0.00218</td>
-										      <td>0.423939</td>
-										      <td>0.95064</td>
-										    </tr>
-										    <tr>
-										      <td>3</td>
-										      <td>0.82</td>
-										      <td>0.00218</td>
-										      <td>0.424062</td>
-										      <td>0.950655</td>
-										    </tr>
-										    <tr>
-										      <td>4</td>
-										      <td>0.82</td>
-										      <td>0.00216</td>
-										      <td>0.424639</td>
-										      <td>0.950722</td>
-										    </tr>
-										  </tbody>
+											<thead>
+												<tr>
+													<th class="text-center" colspan="5">Correlação de Pearson dos conjuntos de Anscombe</th>
+												</tr>
+												<tr>
+													<th>Conjunto</th>
+													<th>coeficiente</th>
+													<th style="width: 120px">Valor de p</th>
+													<th>Limite inferior (Intervalo de confiança)</th>
+													<th>Limite superior (Intervalo de confiança)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>0.82</td>
+													<td>0.00217</td>
+													<td>0.424391</td>
+													<td>0.950693</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>0.82</td>
+													<td>0.00218</td>
+													<td>0.423939</td>
+													<td>0.95064</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>0.82</td>
+													<td>0.00218</td>
+													<td>0.424062</td>
+													<td>0.950655</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>0.82</td>
+													<td>0.00216</td>
+													<td>0.424639</td>
+													<td>0.950722</td>
+												</tr>
+											</tbody>
 										</table>
 									</div>
 								</div>
@@ -323,19 +323,9 @@
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<p>No gráfico anterior podemos ver que cada conjunto de dados tem um comportamento bem diferente. O conjunto 1 apresenta um comportamento linear, enquanto o conjunto 2 um comportamento não linear; o conjunto 3 é também linear, porém com um outlier, e o conjunto 4 apresenta um comportamento constante, porém também com outlier.</p>
 
-
 									<p>Essa possibilidade de diferentes comportamentos com mesmas métricas de sumarização foi expandido por Matejka e Fitzmaurice.</p>
 
 									<p>Gráfico de dispersão dos 12 conjuntos de dados propostos por Matejka e Fitzmaurice</p>
-
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-
-									<p>Esses 12 conjuntos de dados parecem bem diferentes, não é? Porém, vamos ver as métricas de cada um deles.</p>
-
 								</div>
 							</div>
 
@@ -350,120 +340,150 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Esses 12 conjuntos de dados parecem bem diferentes, não é? Porém, vamos ver as métricas de cada um deles.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
 										<table class="table table-bordered">
-											  <thead>
-											  	<tr>
-											  		<th class="text-center" colspan="6">Correlação de Pearson dos conjuntos de Anscombe</th>
-											  	</tr>
-											    <tr>
-											      <th>Conjunto</th>
-											      <th>Média X</th>
-											      <th>Média Y</th>
-											      <th>Desvio Padrão X</th>
-											      <th>Desvio Padrão Y</th>
-											      <th>Coeficiente de correlação</th>
-											    </tr>
-											  </thead>
-											
-											  <tbody>
-											    <tr>
-											      <td><strong><em>away</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.83</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.06</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>bullseye</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.83</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>circle</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.84</td>
-											      <td>16.76</td>
-											      <td>26.93</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>dots</em></strong></td>
-											      <td>54.26</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.93</td>
-											      <td>-0.06</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>h_lines</em></strong></td>
-											      <td>54.26</td>
-											      <td>47.83</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.06</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>high_lines</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>slant_down</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>slant_up</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.83</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>star</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.93</td>
-											      <td>-0.06</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>v_lines</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>wide_lines</em></strong></td>
-											      <td>54.27</td>
-											      <td>47.83</td>
-											      <td>16.77</td>
-											      <td>26.94</td>
-											      <td>-0.07</td>
-											    </tr>
-											    <tr>
-											      <td><strong><em>x_shape</em></strong></td>
-											      <td>54.26</td>
-											      <td>47.84</td>
-											      <td>16.77</td>
-											      <td>26.93</td>
-											      <td>-0.07</td>
-											    </tr>
-											  </tbody>
+											<thead>
+												<tr>
+													<th class="text-center" colspan="6">Correlação de Pearson dos conjuntos de Anscombe</th>
+												</tr>
+												<tr>
+													<th>Conjunto</th>
+													<th>Média X</th>
+													<th>Média Y</th>
+													<th>Desvio Padrão X</th>
+													<th>Desvio Padrão Y</th>
+													<th>Coeficiente de correlação</th>
+												</tr>
+											</thead>
+
+											<tbody>
+												<tr>
+													<td>
+														<strong><em>away</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.83</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.06</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>bullseye</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.83</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>circle</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.84</td>
+													<td>16.76</td>
+													<td>26.93</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>dots</em></strong>
+													</td>
+													<td>54.26</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.93</td>
+													<td>-0.06</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>h_lines</em></strong>
+													</td>
+													<td>54.26</td>
+													<td>47.83</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.06</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>high_lines</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>slant_down</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>slant_up</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.83</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>star</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.93</td>
+													<td>-0.06</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>v_lines</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>wide_lines</em></strong>
+													</td>
+													<td>54.27</td>
+													<td>47.83</td>
+													<td>16.77</td>
+													<td>26.94</td>
+													<td>-0.07</td>
+												</tr>
+												<tr>
+													<td>
+														<strong><em>x_shape</em></strong>
+													</td>
+													<td>54.26</td>
+													<td>47.84</td>
+													<td>16.77</td>
+													<td>26.93</td>
+													<td>-0.07</td>
+												</tr>
+											</tbody>
 										</table>
 									</div>
 								</div>
@@ -488,82 +508,61 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-
-									<p>Você pode testar conferir isso utilizando o pacote datasauRus.</p>
-
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>Explore o Quarteto de Anscombe e o Datasaurus no R! No script <strong>modulo2aula2_atividades.R</strong> (Atividades 1 e 2), você irá calcular estatísticas idênticas para conjuntos de dados completamente diferentes e visualizar por que nunca devemos confiar apenas em números.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- EXEMPLO DE APLICAÇÃO -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Exemplo de aplicação</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											
-											<span class="keyword">SE</span> (<span class="variable">resultado</span> <span class="operator">==</span> <span class="number">1</span>) {
-											   <span class="string">"positivo"</span>
-											}
-											<span class="keyword">SE</span> (<span class="variable">resultado</span> <span class="operator">==</span> <span class="number">3</span>) {
-											   <span class="string">"negativo"</span>
-											}
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Você pode testar conferir isso utilizando o pacote datasauRus.</p>
 								</div>
 							</div>
-						</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<p>Vimos a importância de visualizar os dados anteriormente à análise de dados, <strong>mas qual é a utilidade da visualização de dados após a análise?</strong></p>
 								</div>
 							</div>
+						</div>
 
-							</div>
+						<div class="container-fluid px-0 mb-5">
+							<div class="destaque-parallax my-0">
+								<div class="custom-shape-divider-top-1720289331">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+										<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+									</svg>
+								</div>
 
-							<div class="container-fluid px-0 mb-5">
-								<div class="destaque-parallax my-0">
-									<div class="custom-shape-divider-top-1720289331">
-										<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-											<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-										</svg>
-									</div>
-
-									<div class="container">
-										<div class="row justify-content-center">
-											<div class="col-12 col-md-10 col-lg-8">
-												<p>A principal finalidade da visualização de dados é transformar os resultados de forma que seja de fácil consumo, compreensível e útil ao leitor.</p>
-												<p>Transmitir resultados por tabelas permite mostrar os dados de forma acurada e incluir muita informação, contudo tabelas não são consumidas rapidamente</p>
-											</div>
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-12 col-md-10 col-lg-8">
+											<p>A principal finalidade da visualização de dados é transformar os resultados de forma que seja de fácil consumo, compreensível e útil ao leitor.</p>
+											<p>Transmitir resultados por tabelas permite mostrar os dados de forma acurada e incluir muita informação, contudo tabelas não são consumidas rapidamente</p>
 										</div>
 									</div>
+								</div>
 
-									<div class="custom-shape-divider-bottom-1720289984">
-										<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-											<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-										</svg>
-									</div>
+								<div class="custom-shape-divider-bottom-1720289984">
+									<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+										<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+									</svg>
 								</div>
 							</div>
+						</div>
 
-							<div class="container">
-
-								<div class="row justify-content-center">
-									<div class="col-12 col-md-10 col-lg-8 mb-5">
-										<p>Vamos ver um exemplo da diferença entre tabelas e figuras utilizando dados do artigo:</p>
-
-										<p><em>Major acute cardiovascular events after dengue infection–A population-based observational study, de Wei et. al. </em>(2022). Nesse estudo os autores avaliaram o risco de eventos cardiovasculares após dengue.</p>
-									</div>
-								</div>
-
+						<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Na Prática</p>
+									<p>Vamos ver um exemplo da diferença entre tabelas e figuras utilizando dados do artigo:</p>
+
+									<p><em>Major acute cardiovascular events after dengue infection–A population-based observational study, de Wei et. al. </em>(2022). Nesse estudo os autores avaliaram o risco de eventos cardiovasculares após dengue.</p>
 								</div>
 							</div>
 
@@ -572,9 +571,6 @@
 									<p><strong>E o que caracteriza um bom gráfico?</strong> É o que vamos descobrir!</p>
 								</div>
 							</div>
-
-
-
 						</div>
 					</section>
 				</div>
