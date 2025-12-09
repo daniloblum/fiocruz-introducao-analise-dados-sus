@@ -427,6 +427,10 @@ const modalInfos = {
 												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">EME, P. E. <em>et al</em>. Obesity measures in the Kiribati population: a need to reclassify body mass index cut-points. <strong>BMC Public Health</strong>, v. 20, n. 1, 2020. <a href='https://doi.org/10.1186/s12889-020-09217-z' target='_blank' rel="noopener noreferrer">https://doi.org/10.1186/s12889-020-09217-z</a></li>
 
 												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">IMAI, C. <em>et al</em>. Tropical influenza and weather variability among children in an urban low-income population in Bangladesh. <strong>Global Health Action</strong>, v. 7, n. 1, 2014. <a href='https://doi.org/10.3402/gha.v7.24413' target='_blank' rel="noopener noreferrer">https://doi.org/10.3402/gha.v7.24413</a></li>
+												
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">CERQUEIRA-SILVA, Thiago; CARDIM, Luciana L.; PAIXÃO, Enny; ROSSI, Marta; SANTOS, Andreia Costa;<em>et al</em>. Hospitalisation, mortality and years of life lost among chikungunya and dengue cases in Brazil: a nationwide cohort study, 2015–2024. <strong>The Lancet Regional Health – Americas</strong>, [S. l.], v. 49, p. 101177, set. 2025.  <a href='https://www.sciencedirect.com/science/article/pii/S2667193X25001875' target='_blank' rel="noopener noreferrer">https://www.sciencedirect.com/science/article/pii/S2667193X25001875</a> </li>
+
+
 											</ul>
 
 											<p><strong>Websites</strong></p>
