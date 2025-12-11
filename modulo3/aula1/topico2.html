@@ -246,81 +246,319 @@
 				<section>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8 mb- pb-5">
 								<div class="heading__block">
 									<span class="small">Tópico 2</span>
 									<h3 class="heading__title">Intervalo de Confiança</h3>
 								</div>
+
+								<p>Os estimadores apresentados até agora são estimadores pontuais, pois fornecem como estimativa um único valor numérico para o parâmetro populacional de interesse. Vimos que, por serem variáveis aleatórias, os estimadores possuem uma distribuição de probabilidade e por isso podemos apresentar uma estimativa mais informativa para o parâmetro de interesse que inclua uma medida de variabilidade. Esse método de estimação é chamado de <strong>intervalo de confiança</strong>, sendo obtido a partir da distribuição amostral de seus estimadores.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Um algoritmo é uma sequência finita de passos ou instruções que, quando executadas em ordem lógica, resolve um problema ou realiza uma tarefa específica. Em programação, um algoritmo é implementado como código que um computador pode executar. Na figura a seguir, temos uma sequência de passos para resolver o grande problema, que é fazer um crepe. Vejam que existe uma ordem específica que precisamos seguir para que o crepe fique pronto. </p>
+								<div class="heading__block">
+									<h4 class="heading__title">Intervalo de confiança para média populacional</h4>
+								</div>
+
+								<p>Inicialmente vamos construir um intervalo de confiança para média μ de uma população Normal com variância conhecida &sigma;<sup>2</sup>. Seja X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub>uma amostra de tamanho n, vimos pelo Teorema Central do Limite que a média amostral tem distribuição Normal com a mesma média μ e variância &sigma;<sup>2</sup>/n. Assim,</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<math display="block" style="color:#000; font-size:20px;">
+									<mrow>
+										<mi>Z</mi>
+										<mo>=</mo>
+										<mfrac>
+										<mrow>
+											<mover>
+											<mi>X</mi>
+											<mo>¯</mo>
+											</mover>
+											<mo>-</mo>
+											<mi>μ</mi>
+										</mrow>
+										<mrow>
+											<mi>σ</mi>
+											<mo>/</mo>
+											<msqrt>
+											<mi>n</mi>
+											</msqrt>
+										</mrow>
+										</mfrac>
+										<mo>∼</mo>
+										<mi>N</mi>
+										<mo>(</mo>
+										<mn>0</mn>
+										<mo>,</mo>
+										<mn>1</mn>
+										<mo>)</mo>
+									</mrow>
+								</math>
+
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Podemos fixar um valor γ, tal que 0 &lt; γ &lt; 1, e construir um intervalo de confiança γ, tal que P(-z<sub>γ/2</sub> &lt; Z &lt; z<sub>γ/2</sub>) = γ, em que z<sub>γ/2</sub> pode ser obtido a partir da distribuição Normal padrão.</p>
+
+								<p>Assim, o intervalo de confiança para μ, é dado por:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<math display="block" style="color:#000; font-size:20px;">
+									<mrow>
+										<mo>[</mo>
+
+										<!-- X̄ - z_{γ/2} * σ / √n -->
+										<mrow>
+										<mover>
+											<mi>X</mi>
+											<mo>¯</mo>
+										</mover>
+										<mo>−</mo>
+										<msub>
+											<mi>z</mi>
+											<mrow>
+											<mi>γ</mi>
+											<mo>/</mo>
+											<mn>2</mn>
+											</mrow>
+										</msub>
+										<mfrac>
+											<mi>σ</mi>
+											<msqrt>
+											<mi>n</mi>
+											</msqrt>
+										</mfrac>
+										</mrow>
+
+										<mo>;</mo>
+
+										<!-- X̄ + z_{γ/2} * σ / √n -->
+										<mrow>
+										<mover>
+											<mi>X</mi>
+											<mo>¯</mo>
+										</mover>
+										<mo>+</mo>
+										<msub>
+											<mi>z</mi>
+											<mrow>
+											<mi>γ</mi>
+											<mo>/</mo>
+											<mn>2</mn>
+											</mrow>
+										</msub>
+										<mfrac>
+											<mi>σ</mi>
+											<msqrt>
+											<mi>n</mi>
+											</msqrt>
+										</mfrac>
+										</mrow>
+
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Usualmente, utilizamos γ=0,95 e obtemos z<sub>γ/2</sub>=1,96. O <span class="color-tertiary-dark"><strong>quantil</strong></span> da distribuição Normal padrão pode ser obtido por meio de tabela ou de qualquer software estatístico. No software R, o comando é <span class="color-tertiary-dark"><strong>qnorm</strong></span>.</p>
+
+								<p>A interpretação do intervalo de confiança é a seguinte: se obtivermos várias amostras de mesmo tamanho, esperamos que a proporção de intervalos que contenham o valor de μ seja igual a γ. A figura a seguir ilustra a interpretação do intervalo de confiança de 95%. A linha horizontal representa a média populacional μ, 100 intervalos de confiança foram construídos e desses 95 contêm o verdadeiro valor μ (azul) e 5 não contêm (vermelho). Na figura a seguir observamos, em azul, os Intervalos de Confiança que contêm o verdadeiro valor da média e, em vermelho, os Intervalos de Confiança que não contêm.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8">
 								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula1-img2.jpg" alt="" title="Fonte: Campus Virtual Fiocruz">
-									<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz</figcaption>
+									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img10.png" alt="" title="Fonte: Elaborado pelo autor (2025)">
+									<figcaption class="figure-caption fonte">Fonte: Elaborado pelo do autor (2025)</figcaption>
 								</figure>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>O algoritmo é, então, transformado em um programa de computador ou software, que pode ser executado para resolver o problema.</p>
+								<p>Na prática, raramente conhecemos o desvio-padrão populacional. Nesse caso, ele é estimado pelo desvio-padrão amostral s e o intervalo de confiança para média é dado por:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- EXEMPLO DE APLICAÇÃO -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Exemplo de aplicação</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Programando um crepe!</span>
-											
-											<span class="variable">Problema:</span> Querer um crepe.
-											<span class="variable">Lógica de programação:</span> Planejar como fazer o crepe.
-											<span class="variable">Algoritmo:</span> Segue a receita do crepe.
-											<span class="variable">Programa de computador:</span> O crepe está pronto, e você pode comê-lo.
-										</code>
-									</pre>
+								<math display="block" style="color:#000; font-size:20px;">
+									<mrow>
+										<mo>[</mo>
 
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+										<!-- X̄ - t_{γ/2, n−1} * s / √n -->
+										<mrow>
+										<mover>
+											<mi>X</mi>
+											<mo>¯</mo>
+										</mover>
+										<mo>−</mo>
+										<msub>
+											<mi>t</mi>
+											<mrow>
+											<mfrac>
+												<mi>γ</mi>
+												<mn>2</mn>
+											</mfrac>
+											<mo>,</mo>
+											<mrow>
+												<mi>n</mi>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+											</mrow>
+										</msub>
+										<mfrac>
+											<mi>s</mi>
+											<msqrt>
+											<mi>n</mi>
+											</msqrt>
+										</mfrac>
+										</mrow>
+
+										<mo>;</mo>
+
+										<!-- X̄ + t_{γ/2, n−1} * s / √n -->
+										<mrow>
+										<mover>
+											<mi>X</mi>
+											<mo>¯</mo>
+										</mover>
+										<mo>+</mo>
+										<msub>
+											<mi>t</mi>
+											<mrow>
+											<mfrac>
+												<mi>γ</mi>
+												<mn>2</mn>
+											</mfrac>
+											<mo>,</mo>
+											<mrow>
+												<mi>n</mi>
+												<mo>−</mo>
+												<mn>1</mn>
+											</mrow>
+											</mrow>
+										</msub>
+										<mfrac>
+											<mi>s</mi>
+											<msqrt>
+											<mi>n</mi>
+											</msqrt>
+										</mfrac>
+										</mrow>
+
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Em que t<sub>γ/2,n-1</sub> é o valor crítico da distribuição t de <span class="color-tertiary-dark"><strong>Student</strong></span> com n-1 graus de liberdade. A distribuição t de <span class="color-tertiary-dark"><strong>Student</strong></span> é simétrica e se aproxima da distribuição Normal quando o tamanho da amostra cresce.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que o IMC da população do Rio de Janeiro tenha uma distribuição Normal com média μ desconhecida. Uma amostra aleatória de tamanho 500 da população foi sorteada e forneceu uma média 27,2 Kg/m<sup>2</sup> e desvio-padrão igual a 4 Kg/mm<sup>2</sup>. Sabendo disso, vamos calcular o intervalo de confiança de 95%(IC95%) para média do IMC. </p>
+
+											<p>Como o desvio-padrão populacional é desconhecido, usaremos a distribuição t de Student. Como a amostra é grande, o valor crítico é igual ao da Normal, ou seja, t γ/2,n-1=1,96. Então, o IC95% para média do IMC é dado por:</p>
+
+											<math display="block" style="color:#000; font-size:20px;">
+												<mrow>
+													<mo>[</mo>
+
+													<!-- 27,2 − 1,96 * 4/√500 -->
+													<mrow>
+													<mn>27,2</mn>
+													<mo>−</mo>
+													<mn>1,96</mn>
+													<mfrac>
+														<mn>4</mn>
+														<msqrt>
+														<mn>500</mn>
+														</msqrt>
+													</mfrac>
+													</mrow>
+
+													<mo>;</mo>
+
+													<!-- 27,2 + 1,96 * 4/√500 -->
+													<mrow>
+													<mn>27,2</mn>
+													<mo>+</mo>
+													<mn>1,96</mn>
+													<mfrac>
+														<mn>4</mn>
+														<msqrt>
+														<mn>500</mn>
+														</msqrt>
+													</mfrac>
+													</mrow>
+
+													<mo>]</mo>
+
+													<mo>=</mo>
+
+													<!-- [26,85 ; 27,55] -->
+													<mo>[</mo>
+													<mn>26,85</mn>
+													<mo>;</mo>
+													<mn>27,55</mn>
+													<mo>]</mo>
+
+												</mrow>
+											</math>
+
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Se fizéssemos uma analogia novamente com a nossa receita de crepe, o programa de computador seria o nosso "crepe finalizado", depois de seguir corretamente todos os passos da receita. </p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- Box de Para refletir -->
-								<div class="box" data-box="Para Refletir">
-									<div class="card ">
-										<div class="card-header">
-											<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-											<span class="label">Para Refletir</span>
+								<!-- Saiba Mais -->
+								<div class="saiba-mais pb-5">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
 										</div>
-										<div class="card-body">
-											<div class="heading__block">
-												<p class="h6 heading__title">Já parou para pensar em quantos dispositivos ao seu redor são controlados por softwares?</p>
+
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais1">
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Para saber mais sobre a distribuição t de <span class="color-tertiary-dark"><strong>Student</strong></span> assista <a href='https://youtu.be/y_-UOcQMpms?si=G-SwRVr0yxQbGQXH' target='_blank' rel='noopener noreferrer'>a este vídeo</a>. </li>
+
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Para saber mais sobre Intervalo de Confiança para média, <a href='https://www.youtube.com/watch?v=2QvoklsWXuU&list=PL7xT0Gz6G0-SgMcsUnaSYs4kT2z69ikM2&index=7' target='_blank' rel='noopener noreferrer'>assista a este este vídeo</a>. </li>
+														
+													</ul>
+												</div>
 											</div>
-
-											<p>Calculadoras, computadores, celulares, tablets, óculos inteligentes, relógios, internet, TVs, micro-ondas, geladeiras, caixas eletrônicos, linhas de produção, satélites, carros, impressoras 3D, letreiros digitais, drones, câmeras, semáforos... e a lista continua! Poderíamos passar horas, talvez dias, citando tudo.</p>
-
-											<p>Hoje em dia, parece que tudo ao nosso redor tem um toque de "inteligência" e, no centro disso tudo, estão os softwares! Eles controlam dispositivos em praticamente todas as áreas: agricultura, manufatura, transporte, vendas, pecuária, medicina... Até em lugares que você nem imagina, há um software por trás. E isso é só o presente! Imagine como será no futuro.</p>
 										</div>
 									</div>
 								</div>
@@ -330,48 +568,178 @@
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
-									<h4 class="heading__title">Representação do algoritmo</h4>
+									<h4 class="heading__title">Intervalo de confiança para proporção populacional</h4>
 								</div>
 
-								<p>Um algoritmo pode ser entendido como um conjunto bem definido de instruções que descreve passo a passo como resolver um problema ou executar uma tarefa. Quando essas instruções são escritas usando-se uma linguagem de programação específica, elas se transformam em código. Em essência, o código é a representação concreta do algoritmo, traduzida em uma linguagem que o computador pode interpretar e executar. Cada linguagem de programação tem sua própria sintaxe e regras, mas o objetivo é o mesmo: comunicar instruções precisas à máquina para realizar operações de forma automatizada e eficiente. Essa distinção entre algoritmo e código é fundamental em programação, pois o algoritmo define a lógica e o fluxo da solução, enquanto o código implementa essa lógica em uma forma que o computador pode processar.</p>
+								<p>A proporção é uma medida bastante utilizada em epidemiologia, uma vez que pode ser interpretada como prevalência ou incidência de uma doença. A proporção pode ser pensada como uma média e podemos utilizar o Teorema Central do Limite para a construção do intervalo de confiança, ou seja, para um tamanho de amostra grande, poderemos aproximá-la para a Normal. Assim:</p>
+							</div>
+						</div>
 
-								<p>Representar um algoritmo consiste em expressar de forma clara e estruturada os passos necessários para resolver um problema ou executar uma tarefa. Essa representação é essencial para que a lógica por trás do algoritmo seja compreendida e posteriormente transformada em código executável. Existem diferentes formas de representar um algoritmo, cada uma delas adequada a diferentes públicos e níveis de abstração. Para garantir que a lógica seja bem transmitida, recomenda-se o uso de três formas principais de representação, que ajudam a visualizar e a planejar o funcionamento do algoritmo.</p>
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<math display="block" style="color:#000; font-size:20px;">
+									<mrow>
+										<mo>[</mo>
+										<mover>
+										<mi>p</mi>
+										<mo>^</mo>
+										</mover>
+										<mo>-</mo>
+										<msub>
+										<mi>z</mi>
+										<mrow>
+											<mi>&#x03B3;</mi>
+											<mo>/</mo>
+											<mn>2</mn>
+										</mrow>
+										</msub>
+										<msqrt>
+										<mrow>
+											<mfrac>
+											<mrow>
+												<mover>
+												<mi>p</mi>
+												<mo>^</mo>
+												</mover>
+												<mo>(</mo>
+												<mn>1</mn>
+												<mo>-</mo>
+												<mover>
+												<mi>p</mi>
+												<mo>^</mo>
+												</mover>
+												<mo>)</mo>
+											</mrow>
+											<mi>n</mi>
+											</mfrac>
+										</mrow>
+										</msqrt>
+										<mo>;</mo>
+										<mover>
+										<mi>p</mi>
+										<mo>^</mo>
+										</mover>
+										<mo>+</mo>
+										<msub>
+										<mi>z</mi>
+										<mrow>
+											<mi>&#x03B3;</mi>
+											<mo>/</mo>
+											<mn>2</mn>
+										</mrow>
+										</msub>
+										<msqrt>
+											<mrow>
+											<mfrac>
+											<mrow>
+												<mover>
+												<mi>p</mi>
+												<mo>^</mo>
+												</mover>
+												<mo>(</mo>
+												<mn>1</mn>
+												<mo>-</mo>
+												<mover>
+											<mi>p</mi>
+											<mo>^</mo>
+											</mover>
+											<mo>)</mo>
+										</mrow>
+										<mi>n</mi>
+										</mfrac>
+											</mrow>
+										</msqrt>
+									<mo>]</mo>
+								</mrow>
+								</math>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Em que z<sub>γ/2</sub> é o valor crítico da distribuição da Normal padrão e <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mover>
+    <mi>p</mi>
+    <mo>^</mo>
+  </mover>
+</math> é a proporção amostral.</p>
+
+								<p>Voltando ao exemplo sobre o consumo regular de frutas, pretende-se estimar a proporção p de seu consumo regular. Em uma amostra aleatória representativa da população, observou-se que 475 das 750 pessoas selecionadas informaram ter um consumo regular de frutas. A proporção amostral obtida foi igual a 300/750=0,40. Calculando o intervalo de confiança de 99% para p: como γ=0,99, usamos a distribuição Normal padrão e obtemos z<sub>γ/2</sub>=2,58.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<math display="block" style="color:#000; font-size:20px;">
+									<mrow>
+										<mo>[</mo>
+										<mn>0,40</mn>
+										<mo>-</mo>
+										<mn>2,58</mn>
+										<msqrt>
+										<mrow>
+											<mfrac>
+											<mrow>
+												<mn>0,40</mn>
+												<mo>&#x00D7;</mo>
+												<mn>0,60</mn>
+											</mrow>
+											<mn>750</mn>
+											</mfrac>
+										</mrow>
+										</msqrt>
+										<mo>;</mo>
+										<mn>0,40</mn>
+										<mo>+</mo>
+										<mn>2,58</mn>
+										<msqrt>
+										<mrow>
+											<mfrac>
+											<mrow>
+												<mn>0,40</mn>
+												<mo>&#x00D7;</mo>
+												<mn>0,60</mn>
+											</mrow>
+											<mn>750</mn>
+											</mfrac>
+										</mrow>
+										</msqrt>
+										<mo>]</mo>
+										<mo>=</mo>
+										<mo>[</mo>
+										<mn>0,35</mn>
+										<mo>;</mo>
+										<mn>0,45</mn>
+										<mo>]</mo>
+									</mrow>
+								</math>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8">
-								<!-- Accordion -->
-								<div class="accordion accordion-flush aos-init aos-animate" id="aula1-accordion1" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item1">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">1. Instruções passo a passo</button>
-										</h5>
-										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Essa forma de representação de algoritmos utiliza uma sequência simples e descritiva de passos, semelhante a uma receita de crepe. Cada passo é uma instrução clara e direta, permitindo que uma pessoa entenda o processo facilmente. Essa abordagem foca em explicitar a lógica do algoritmo de maneira acessível, muitas vezes usando uma linguagem natural. Por exemplo, em uma receita de crepe, os passos seriam “Misture os ingredientes secos”, “Adicione os ovos” e “Leve à frigideira”. No contexto de programação, isso se traduz em comandos como “Inicialize a variável”, “Verifique a condição”, ou “Execute o loop”.</p>
-											</div>
+								<!-- Saiba Mais -->
+								<div class="saiba-mais pb-5">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
 										</div>
-									</div>
 
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item2">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">2. Fluxograma</button>
-										</h5>
-										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
-											<div class="accordion-body">
-												<p>O fluxograma é uma representação gráfica de um algoritmo, usando símbolos padronizados como formas geométricas (retângulos, losangos, círculos etc.) para ilustrar o fluxo de controle e operações de um programa. Ele mostra visualmente o caminho que o algoritmo percorre, destacando processos, decisões, entradas e saídas de dados. Por exemplo, um retângulo pode representar uma ação ou operação, enquanto um losango indica uma decisão ou uma condição a ser avaliada. O uso de fluxogramas é muito útil para visualizar a estrutura lógica de um algoritmo e identificar possíveis caminhos alternativos ou ciclos, tornando mais fácil entender a sequência de operações.</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item3">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">3. Portugol/Pseudocódigo</button>
-										</h5>
-										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Portugol, ou pseudocódigo, é uma forma intermediária entre a linguagem natural e o código de uma linguagem de programação formal. Ele utiliza uma linguagem descritiva próxima ao português para descrever o algoritmo de forma simplificada, sem se preocupar com a sintaxe específica de uma linguagem de programação. O objetivo do pseudocódigo é detalhar a lógica do algoritmo de maneira que seja compreensível para humanos, assim como para ser facilmente convertido em código real. Um exemplo de pseudocódigo poderia ser: "Se a temperatura for maior do que 30 °C, então ligue o ventilador; senão, desligue o ventilador". Isso facilita a tradução posterior para uma linguagem de programação.</p>
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais2">
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Para saber mais sobre Intervalo de confiança para proporção, <a href='https://youtu.be/sBqSDx_jGPs?si=wK0gjJDDoO9FIZV6' target='_blank' rel='noopener noreferrer'>assista este vídeo</a>.</li>
+														
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -398,43 +766,43 @@
 		</div>
 
 		<footer>
-				<div class="container-fluid">
-					<div class="row justify-content-center align-items-center linha-de-marcas">
-						<div class="col-12 col-md-auto">
-							<ul class="logos">
-								<!-- <li class="realizacao"> -->
-								<li>
-									<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
-								</li>
+			<div class="container-fluid">
+				<div class="row justify-content-center align-items-center linha-de-marcas">
+					<div class="col-12 col-md-auto">
+						<ul class="logos">
+							<!-- <li class="realizacao"> -->
+							<li>
+								<img class="img-fluid logo1" src="../../media/logos/logo-cidacs.svg" alt="Logo do Centro de Integração de Dados e Conhecimentos para Saúde" height="" />
+							</li>
 
-								<li>
-									<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
-								</li>
+							<li>
+								<img class="img-fluid logo2" src="../../media/logos/logo-cvf.svg" alt="Logo do Campus Virtual Fiocruz" height="" />
+							</li>
 
-								<li>
-									<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
-								</li>
-							</ul>
-						</div>
+							<li>
+								<img class="img-fluid logo3" src="../../media/logos/logo-fiocruz.svg" alt="Logo da Fiocruz" height="" />
+							</li>
+						</ul>
+					</div>
 
-						<div class="col-12 col-md-auto">
-							<ul class="logos principais align-self-end">
-								<li>
-									<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
-								</li>
+					<div class="col-12 col-md-auto">
+						<ul class="logos principais align-self-end">
+							<li>
+								<img class="img-fluid logo4" src="../../media/logos/logo-sus-digital-cor.svg" alt="Logo do SUS Digital" height="" />
+							</li>
 
-								<li>
-									<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
+							<li>
+								<img class="img-fluid logo5 d-none d-md-block" src="../../media/logos/logo-ms-gov-federal.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+							</li>
 
-								<li>
-									<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
-								</li>
-							</ul>
-						</div>
+							<li>
+								<img class="img-fluid logo6 d-block d-md-none" src="../../media/logos/logo-ms-gov-federal-mobile.svg" alt="Logos SUS 35 anos, Ministério da Saúde e Governo Federal" height="" />
+							</li>
+						</ul>
 					</div>
 				</div>
-			</footer>
+			</div>
+		</footer>
 	</div>
 
 	<!--  Bootstrap JS and Popper -->

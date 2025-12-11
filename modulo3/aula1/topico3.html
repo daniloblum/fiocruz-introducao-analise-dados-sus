@@ -253,319 +253,244 @@
 									<h3 class="heading__title">Fundamentos do teste de hipóteses</h3>
 								</div>
 
-								<p>Neste tópico vamos começar a entender como representar algoritmos na prática, organizando ideias de forma lógica e estruturada. A partir de exemplos simples e cotidianos, você verá como traduzir um raciocínio passo a passo em formas que podem ser entendidas por humanos e por computadores.</p>
-
-								<p>Para quem deseja praticar os conceitos de lógica de programação de forma visual e em português, uma boa opção é o <a type="button" data-bs-toggle="offcanvas" data-bs-target="#visualG" aria-controls="visualG" tabindex="0">VisualG</a>.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Para facilitar a compreensão das diferentes formas de representação de um algoritmo, vamos considerar um exemplo simples relacionado à área de saúde. Suponha que o algoritmo descreva o procedimento para medir a temperatura de um paciente e tomar uma decisão com base no resultado. A seguir, temos uma figura que mostra como esse algoritmo pode ser representado de três formas: em instruções passo a passo (como uma receita), em um fluxograma e em pseudocódigo usando Portugol. Esse exemplo ilustra como diferentes abordagens podem ser usadas para descrever a mesma lógica, adaptando-se às necessidades e ao público-alvo.</p>
+								<p>Os testes de hipóteses representam uma regra de decisão que permite rejeitar ou não uma hipótese questionada, decisão essa que é tomada em função de valores obtidos em uma amostra. O objetivo do teste de hipótese é fornecer ferramentas que nos permitam validar ou refutar uma hipótese a partir dos resultados de uma amostra. A técnica será ilustrada com base em um exemplo.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula1-img3.png" alt="I" title="Fonte: Campus Virtual Fiocruz">
-									<figcaption class="figure-caption fonte">Fonte: Campus Virtual Fiocruz</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<div class="heading__block">
-									<h4 class="heading__title">Informações e instruções</h4>
-								</div>
-
-								<p>Em um programa de computador, lidamos essencialmente com dois elementos principais: <strong>as informações e as instruções</strong>. As informações representam os dados que o programa manipula — como números, textos ou medições —, enquanto as instruções definem o que o programa deve fazer com esses dados, como calcular, comparar ou exibir resultados. Agora, à medida que avançamos, vamos explorar como essas informações podem ser organizadas em objetos — estruturas que agrupam dados e comportamentos relacionados — e como os comandos permitem que o programa execute ações específicas. Juntos, esses conceitos são fundamentais para construir programas mais sofisticados e funcionais.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="heading__block">
-									<h4 class="heading__title">Variáveis e tipos de dados</h4>
-								</div>
-
-								<p>A variável é um espaço na memória do computador que tem um endereço atribuído a um nome, no nosso contexto, durante a criação de um algoritmo. Todo objeto armazenado na memória do computador precisa ser identificado previamente. Uma variável também precisa de um tipo de dado para que seja possível realizar seu armazenamento adequado.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Texto à esquerda com Imagem -->
-								<div class="row justify-content-center d-lg-block pt-0">
-									<!-- Imagem -->
-									<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
-										<figure class="lightbox">
-											<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula1-img4.jpg" alt="" title="Fonte: Freepik">
-											<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
-										</figure>
-									</div>
-
-									<!-- Texto -->
-									<div class="order-2 order-lg-1">
-										<p>Suponha que a memória do computador é um armário com muitas gavetas, sendo que cada gaveta é identificada com um nome. Cada gaveta seria uma variável e, dentro da gaveta, temos um valor que queremos guardar, então podemos acessar a qualquer momento a variável desejada. O nosso armário possui gavetas de tamanhos diferentes. Algumas delas são pequenas, ideais para guardar acessórios como anéis e brincos. Outras são maiores, perfeitas para armazenar roupas. Se tentássemos colocar uma peça de roupa em uma gaveta destinada a acessórios, ela não caberia. Por outro lado, se colocássemos um pequeno acessório em uma gaveta grande, estaríamos desperdiçando espaço. Isso é semelhante ao conceito de variáveis e tipos de dados em programação. Cada tipo de dado precisa ser armazenado em uma “gaveta” (ou variável) de tamanho apropriado, caso contrário podemos ter problemas de espaço ou eficiência.</p>
-
-										<p>Existem alguns tipos de dados básicos ou primitivos.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
-								<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste os cards para conhecê-los.</p>
-
-								<!-- Swipper Effect Card -->
-								<div class="swiper swiper--effect-card card">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="card-header">
-												<span class="h6">Inteiro</span>
-											</div>
-
-											<div class="card-body">
-												<p>São números inteiros, positivos ou negativos, excluindo valores fracionados; por exemplo, 10,20,-1050,25000, entre outros.</p>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="card-header">
-												<span class="h6">Real</span>
-											</div>
-
-											<div class="card-body">
-												<p>São números pertencentes ao conjunto de números reais, incluindo valores fracionários e inteiros; por exemplo, 5.9, 10.5,23,-85,998, entre outros.</p>
-
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="card-header">
-												<span class="h6">Caracter (ou String)</span>
-											</div>
-
-											<div class="card-body">
-												<p>São caracteres delimitados pelo símbolo aspas (“”), esse tipo de dado é também conhecido como string, podendo conter, letras, números e símbolos; por exemplo, “Curso”, “Rua principal n 10”,”25”,”PCR”, entre outros</p>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="card-header">
-												<span class="h6">Lógico</span>
-											</div>
-
-											<div class="card-body">
-												<p>É um tipo de dado binário, que somente pode receber dois valores: verdadeiro (true) ou falso (false). É também conhecido como booleano.</p>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-pagination swiper-pagination3"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Um problema comum relacionado aos tipos de dados é guardar números inteiros em variáveis do tipo <span class="color-tertiary-dark"><strong>caracter</strong></span>. Embora isso funcione, perdemos eficiência. Já no caso inverso, tentar armazenar um nome como “saúde” em uma variável do tipo inteiro resultaria em um erro ou na alteração do tipo para <span class="color-tertiary-dark"><strong>caracter</strong></span> a depender da linguagem de programação, como veremos ainda neste curso.</p>
-
-								<p>Em algumas linguagens de programação, é necessário especificar o tipo da variável no momento de sua criação, enquanto outras realizam a tipagem automaticamente com base no valor atribuído.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
+								<!-- EXEMPLO -->
 								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
 									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
+										<h5 class="heading__title">Exemplo</h5>
 									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Declaração de variável com tipo especificado</span>
-											<span class="keyword">Inteiro</span> <span class="variable">idade</span>
-											<span class="variable">idade</span> <span class="operator">=</span> <span class="number">18</span>
+									<p class="mt-5">Suponha que, entre pessoas sadias, a concentração de certa substância no sangue se comporta segundo uma distribuição Normal com média 14 unidades/ml e desvio-padrão igual a 4 unidades/ml. Pessoas sofrendo de uma doença específica têm concentração média da substância com distribuição Normal e média alterada para 20 unidades/ml e desvio-padrão igual a 4 unidades/ml. A figura a seguir ilustra a situação descrita.</p>
 
-											<span class="comment">// Sem especificar tipo (quando não é obrigatório)</span>
-											<span class="variable">idade</span> <span class="operator">=</span> <span class="number">18</span>
-										</code>
-									</pre>
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img11.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+										<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+									</figure>
 
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<p>No exemplo anterior a variável idade fica com o tipo inteiro, se o valor fosse 18.5 o tipo seria real, se o valor fosse "18A", seria do tipo <span class="color-tertiary-dark"><strong>string</strong></span> (ou caracter).</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="heading__block">
-									<h4 class="heading__title">Operadores aritméticos</h4>
-								</div>
-
-								<p>Operadores aritméticos são aqueles que permitem a realização de cálculos matemáticos de um algoritmo, exceto o operador de atribuição (=) que pode ser usado também para processamento lógico. Os operadores aritméticos são categorizados de duas formas: binários ou unários. </p>
-							</div>
-						</div>
-
-						<!--Comparação-->
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-4 mb-5">
-								<div class="card h-100">
-									<div class="card-header">
-										<span class="h6">Binários</span>
-									</div>
-									<div class="card-body">
-										<p>São <strong>binários</strong> quando utilizados em operações como radiciação, exponenciação, divisão, multiplicação, adição e subtração.</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-12 col-md-1 align-self-center mb-5 compare-symbol">
-								<span class="d-block text-center mx-auto">&</span>
-							</div>
-
-							<div class="col-12 col-md-4 mb-5">
-								<div class="card h-100">
-									<div class="card-header">
-										<span class="h6">Unários</span>
-									</div>
-									<div class="card-body">
-										<p>São <strong>unários</strong> quando usados para inverter um valor numérico, de positivo para negativo ou o inverso.</p>
-									</div>
+									<p>Note que as curvas, representando as concentrações, irão se cruzar em algum momento, fazendo com que certa proporção de indivíduos na população sadia possa apresentar valores de concentração tão altos quanto aqueles observados em pessoas doentes, ainda que esse evento ocorra com baixa probabilidade. Queremos saber se um certo tratamento proposto para combater a doença é eficaz. Assim, uma amostra aleatória de tamanho n=30 é selecionada entre indivíduos doentes que foram submetidos ao tratamento. Sejam X<sub>1</sub>,…,X<sub>30</sub> as concentrações dos indivíduos da amostra, sabemos que para i=1,…,30, Xi ~ N(μ,4), sendo  μ=14 ou μ=20 dependendo do tratamento ser eficaz ou não. Caso a amostra de 30 indivíduos forneça um valor médio de concentração alto e próximo de 20, teremos evidência de que o tratamento não é eficaz, ao passo que um valor baixo e próximo de 14 nos levaria a pensar que o tratamento é eficaz. O que significa ser próximo depende, entre outros fatores, da variabilidade da concentração na população. Como a amostra de 30 indivíduos é aleatória, precisaremos estudar probabilisticamente o problema por meio do teste de hipóteses.</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>A tabela a seguir apresenta os operadores aritméticos a serem utilizados na construção de expressões aritméticas. Observe que existe prioridade de execução dessas operações que serão executadas. Assim, caso seja necessário alterar a prioridade de execução, é preciso utilizar parênteses.</p>
+								<p>Para realizar um teste de hipótese estatístico, você precisa considerar vários elementos importantes que ajudam a formular, conduzir e interpretar o teste de maneira correta. A seguir estão os principais elementos necessários para realizar um teste de hipótese:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<!-- Tabela -->
-								<div class="table-responsive aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<table class="table table-bordered">
-										<thead>
-											<tr>
-												<th class="text-center" colspan="6">Tabela de operadores aritméticos</th>
-											</tr>
-											<tr class="text-center">
-												<th>Operador</th>
-												<th>Operação</th>
-												<th>Descrição</th>
-												<th>Tipo</th>
-												<th>Prioridade</th>
-												<th>Resultado</th>
-											</tr>
-										</thead>
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Accordion -->
+								<div class="accordion accordion-flush" id="accordionExample2">
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item1">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Formulação das Hipóteses</button>
+										</h5>
+										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+											<div class="accordion-body">
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Hipótese Nula (H<sub>0</sub>):</strong> é uma afirmação inicial ou padrão em que não há efeito ou diferença. A hipótese nula é geralmente a hipótese que o teste busca rejeitar. Por exemplo: não há diferença na média dos grupos A e B. </li>
 
-										<tbody>
-											<tr class="text-center">
-												<td><strong>+</strong></td>
-												<td>"+n" ou "n"</td>
-												<td>Manutenção de sinal</td>
-												<td>Unário</td>
-												<td>-</td>
-												<td>Positivo</td>
-											</tr>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Hipótese Alternativa (H<sub>1</sub> ou H<sub>a</sub>):</strong> é uma afirmação que contradiz a hipótese nula, sugerindo que há um efeito ou diferença. A hipótese alternativa é o que você espera encontrar ou o que deseja demonstrar. Por exemplo: há uma diferença na média dos grupos A e B.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 
-											<tr class="text-center">
-												<td><strong>-</strong></td>
-												<td>-n</td>
-												<td>Inversão de sinal</td>
-												<td>Unário</td>
-												<td>-</td>
-												<td>Negativo</td>
-											</tr>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item2">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Erro Tipo I, Erro Tipo II e Poder do Teste</button>
+										</h5>
+										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+											<div class="accordion-body">
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Erro Tipo I (α):</strong> o erro de rejeitar a hipótese nula quando ela é verdadeira.</li>
 
-											<tr class="text-center">
-												<td>←</td>
-												<td>x ← n</td>
-												<td>Atribuição do valor “n” a “x”</td>
-												<td>Binário</td>
-												<td>-</td>
-												<td>Positivo ou Negativo</td>
-											</tr>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Erro Tipo II (β):</strong> o erro de não rejeitar a hipótese nula quando ela é falsa.
+														
+															<!-- Tabela -->
+															<div class="table-responsive aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr class="text-center">
+																			<th rowspan="2">Decisão</th>
+																			<th colspan="2">Situação</th>
+																		</tr>
 
-											<tr class="text-center">
-												<td>↑</td>
-												<td>x ↑ n</td>
-												<td>Exponenciação de xⁿ</td>
-												<td>Binário</td>
-												<td>1</td>
-												<td>Inteiro ou Real</td>
-											</tr>
+																		<tr class="text-center">
+																			<th>H<sub>0</sub> verdadeira</th>
+																			<th>H<sub>0</sub> falsa</th>
+																		</tr>
+																	</thead>
+						
+																	<tbody>
+																		<tr class="text-center">
+																			<td>Rejeitar H<sub>0</sub></td>
+																			<td><strong>Erro Tipo I (α)</strong></td>
+																			<td>Decisão correta</td>
+																		</tr>
+						
+																		<tr class="text-center">
+																			<td>Não rejeitar H<sub>0</sub></td>
+																			<td>Decisão correta</td>
+																			<td><strong>Erro Tipo II (β)</strong></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</li>
 
-											<tr class="text-center">
-												<td>↑ (1 / n)</td>
-												<td>x ↑ (1 / n)</td>
-												<td>Radiciação de ⁿ√x</td>
-												<td>Binário</td>
-												<td>1</td>
-												<td>Real</td>
-											</tr>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>O poder do teste (1 – β):</strong> é a probabilidade de rejeitar a hipótese nula quando a hipótese alternativa é verdadeira. Um teste de maior poder é desejável, pois reduz a probabilidade de se cometer um erro tipo II. A figura a seguir ilustra o erro tipo I, erro tipo II e o poder do teste.
+														
+														<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+															<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img12.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+															<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+														</figure>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 
-											<tr class="text-center">
-												<td>/</td>
-												<td>x / n</td>
-												<td>Divisão de “x” por “n”</td>
-												<td>Binário</td>
-												<td>2</td>
-												<td>Real</td>
-											</tr>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item3">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Nível de Significância (α)</button>
+										</h5>
+										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O <strong>nível de significância</strong> é a probabilidade de rejeitar a hipótese nula quando ela é verdadeira (erro tipo I). É um limiar predefinido para decidir se o resultado de um teste é estatisticamente significativo. Os valores mais usados são α = 1%, 5% ou 10%.</p>
+											</div>
+										</div>
+									</div>
 
-											<tr class="text-center">
-												<td>*</td>
-												<td>x * n</td>
-												<td>Multiplicação de “x” por “n”</td>
-												<td>Binário</td>
-												<td>2</td>
-												<td>Inteiro ou Real</td>
-											</tr>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item4">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Estatística de Teste</button>
+										</h5>
+										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A estatística de teste é um valor calculado a partir dos dados da amostra, que permite decidir se devemos rejeitar a hipótese nula.</p>
+											</div>
+										</div>
+									</div>
 
-											<tr class="text-center">
-												<td>+</td>
-												<td>x + n</td>
-												<td>Adição de “x” com “n”</td>
-												<td>Binário</td>
-												<td>3</td>
-												<td>Inteiro ou Real</td>
-											</tr>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item5">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Região Crítica ou Valor Crítico</button>
+										</h5>
+										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
+											<div class="accordion-body">
+												<p>A região crítica (ou valor crítico) é o intervalo ou ponto além do qual rejeitamos a hipótese nula. É determinada pela estatística de teste e pelo nível de significância. O valor crítico depende do tipo de teste (unilateral ou bilateral) e do nível de significância.</p>
+											</div>
+										</div>
+									</div>
 
-											<tr class="text-center">
-												<td>−</td>
-												<td>x − n</td>
-												<td>Subtração de “n” de “x”</td>
-												<td>Binário</td>
-												<td>3</td>
-												<td>Inteiro ou Real</td>
-											</tr>
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item6">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item6" aria-expanded="false" aria-controls="collapse1-item6">Tipo de Teste de Hipótese</button>
+										</h5>
+										<div id="collapse1-item6" class="accordion-collapse collapse" aria-labelledby="heading1-item6" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Dependendo da questão de pesquisa e da natureza dos dados, você deve escolher o tipo apropriado de teste de hipótese. As caudas em uma distribuição são as regiões extremas limitadas pelos valores críticos.</p>
 
-											<tr class="text-center">
-												<td>div</td>
-												<td>x div n</td>
-												<td>Divisão de “x” por “n”</td>
-												<td>Binário</td>
-												<td>4</td>
-												<td>Inteiro</td>
-											</tr>
-										</tbody>
-									</table>
-									<p class="small">A tabela apresenta os operadores segundo a ordem de prioridade matemática em que as operações são realizadas, exceção à definição do operador <strong>div</strong>, que é aritmético e de uso exclusivo para obtenção de quocientes inteiros e, por esta razão, possui nível de prioridade inferior a qualquer outro operador aritmético.Caso necessite alterar o nível de prioridade de um referido cálculo, ele deve ser colocado entre parênteses. Na abordagem computacional não se utilizam chaves ou colchetes, normalmente usados na área matemática.</p>
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Teste bilateral (duas caudas): </strong> região crítica, está nas duas regiões extremas</li>
 
-									<span class="fonte d-block text-center">Fonte: Oliveira; Garcia (2016, p. 47).</span>
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Teste unilateral à direita:</strong> região crítica, está na região extrema (cauda) direita sob a curva.</li>
+
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><strong>Unilateral à esquerda:</strong> região crítica, está na região extrema (cauda) esquerda sob a curva.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item7">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item7" aria-expanded="false" aria-controls="collapse1-item7">Regra de Decisão</button>
+										</h5>
+										<div id="collapse1-item7" class="accordion-collapse collapse" aria-labelledby="heading1-item7" data-bs-parent="">
+											<div class="accordion-body">
+												<p>Com base na estatística de teste e no valor crítico, você decide se rejeita ou não a hipótese nula:</p>
+
+												<!-- Lista Não-Ordenada -->
+												<div class="list">
+													<ul class="list-group">
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Rejeitar H<sub>0</sub>:</strong> se o valor da estatística de teste está na área de rejeição.</li>
+
+														<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Não rejeitar H<sub>0</sub>:</strong> se o valor da estatística de teste está na área de não rejeição.</li>
+													</ul>
+												</div>
+
+												<p>A figura a seguir ilustra os tipos de teste e a regra de decisão com base no valor crítico.</p>
+
+												<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img13.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+													<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
+
+									<div class="accordion-item">
+										<h5 class="accordion-header" id="heading1-item8">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item8" aria-expanded="false" aria-controls="collapse1-item8">p-valor</button>
+										</h5>
+										<div id="collapse1-item8" class="accordion-collapse collapse" aria-labelledby="heading1-item8" data-bs-parent="">
+											<div class="accordion-body">
+												<p>O p-valor é a probabilidade de obtermos uma estatística de teste tão extrema quanto a observada, ou mais extrema, sob a suposição de que a hipótese nula é verdadeira. Se o p-valor é menor do que o nível de significância (p &lt; α), rejeitamos a hipótese nula. A figura adiante ilustra o p-valor para um teste unilateral à direita.</p>
+
+												<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+													<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img14.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+													<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+												</figure>
+											</div>
+										</div>
+									</div>
 								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>As etapas para realização dos testes de hipóteses são:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered"> 
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Enunciar as hipóteses H<sub>0</sub> e H<sub>1</sub>.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Determinar um nível de significância (α) aceitável.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Determinar a região crítica.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Calcular o valor da Estatística de Teste</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Rejeitar ou não a hipótese nula de acordo com a estimativa obtida no 4º item, em comparação com a região crítica estabelecida no 3º item ou comparar o p-valor obtido com o nível de significância.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Agora que sabemos quais são os principais elementos e as etapas para elaboração de um teste de hipóteses, veremos alguns tipos de teste que estão divididos em teste de hipóteses para média e teste de  hipóteses para proporção.</p>
 							</div>
 						</div>
 					</div>

@@ -247,308 +247,223 @@
 				<section>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 								<div class="heading__block">
 									<span class="small">Tópico 5</span>
 									<h3 class="heading__title">Teste de hipóteses para proporção</h3>
 								</div>
 
-								<p>Laços, também chamados de <em>loops</em>, são estruturas que permitem a repetição de um determinado trecho de código, facilitando o trabalho de programação ao evitar repetições manuais. Existem diversos tipos de laços nas diferentes linguagens de programação. Alguns autores mencionam até seis formas de laços, mas a maioria das linguagens costuma implementar cerca de três dessas formas, ou até menos.</p>
-
-								<p>Os laços podem ser definidos de diferentes formas. Abordaremos dois tipos. O primeiro é o laço chamado de pré-teste, que executa as ações do bloco repetido somente após validar uma condição. Um exemplo é o laço <span class="color-tertiary-dark"><strong>enquanto</strong></span>, ou <span class="color-tertiary-dark"><strong>while</strong></span> em inglês, que segue a seguinte estrutura:</p>
+								<p>O teste de hipótese para proporção é uma técnica estatística utilizada para tomar decisões sobre a proporção de uma característica em uma população com base em dados amostrais. Esse tipo de teste é útil quando se quer avaliar se a proporção observada em uma amostra é significativamente diferente de uma proporção hipotética ou se duas proporções amostrais diferem entre si.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Laço ENQUANTO - estrutura de repetição com pré-teste</span>
+								<div class="heading__block">
+									<h4 class="heading__title">Teste para uma proporção</h4>
+								</div>
 
-											<span class="keyword">ENQUANTO</span> (<span class="variable">condição</span>) <span class="keyword">FAÇA</span> {
-											   <span class="variable">instruções executadas enquanto a condição é verdadeira</span> 
-											} <span class="keyword">FIM_ENQUANTO</span>
-										</code>
-									</pre>
+								<p>Usado quando se quer testar se a proporção de uma amostra é significativamente diferente de uma proporção hipotética conhecida. O objetivo é testar se a proporção de uma amostra é significativamente diferente de um valor específico (proporção/prevalência populacional conhecida). </p>
 
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+								<p>As etapas para realização do teste de hipóteses para a proporção de uma única amostra são:</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered"> 
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Enunciar as hipóteses H<sub>0</sub> e H<sub>1</sub>:
+											<p>H<sub>0</sub>: &#x03C1; = p<sub>0</sub></p>
+											<p>H<sub>1</sub>: &#x03C1; ≠ p<sub>0</sub></p>
+
+											<p>Em que p<sub>0</sub> é a proporção populacional hipotética conhecida. Outras possibilidades são: H<sub>1</sub>: &#x03C1; &gt; &#x03C1;<sub>0</sub> (teste unilateral à direita) ou H<sub>1</sub>: &#x03C1; &lt; &#x03C1;<sub>0</sub> (teste unilateral à esquerda).</p>
+										</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Determinar um nível de significância (α) aceitável: usualmente α=5%.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Determinar a região crítica: usando a tabela da distribuição Normal padrão, determine o valor crítico de, para o nível de significância escolhido.</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">Calcular o valor da Estatística de Teste: para uma proporção única, a estatística de teste é calculada como:
+
+										<math class="my-5" display="block" style="color:#000; font-size:20px;">
+											<mi>Z</mi>
+											<mo>=</mo>
+											<mfrac>
+												<mrow>
+												<mo>(</mo>
+												<mover>
+													<mi>p</mi>
+													<mo>^</mo>
+												</mover>
+												<mo>-</mo>
+												<msub>
+													<mi>p</mi>
+													<mn>0</mn>
+												</msub>
+												<mo>)</mo>
+												</mrow>
+												<msqrt>
+												<mrow>
+													<mfrac>
+													<mrow>
+														<msub>
+														<mi>p</mi>
+														<mn>0</mn>
+														</msub>
+														<mo>(</mo>
+														<mn>1</mn>
+														<mo>-</mo>
+														<msub>
+														<mi>p</mi>
+														<mn>0</mn>
+														</msub>
+														<mo>)</mo>
+													</mrow>
+													<mi>n</mi>
+													</mfrac>
+												</mrow>
+												</msqrt>
+											</mfrac>
+										</math>
+
+										<p>Em que <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>&#x03C1;</mi><mo>^</mo></mover></math> é a proporção amostral, n é o tamanho da amostra, &#x03C1;<sub>0</sub> é um valor hipotético para &#x03C1; e z é chamada estatística de teste. </p>
+										</li>
+
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Tomar a decisão com base na região crítica ou do &#x03C1;-valor. O &#x03C1;-valor é apresentado nas saídas dos softwares estatísticos. No R, o comando para a realização do teste é <span class="color-tertiary-dark"><strong>prop.test</strong></span> </li>
+									</ol>
 								</div>
 							</div>
 						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p><strong>Exemplo:</strong></p>
-
-								<p>Temos uma lista de 100 pacientes e seus pesos e alturas, precisamos calcular  o Índice de Massa Corporal (IMC) de cada um deles e verificar se estão dentro da faixa saudável.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- EXEMPLO DE APLICAÇÃO -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Exemplo de aplicação</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Laço ENQUANTO (pré-teste) - calcula IMC de 100 pacientes</span>
-
-											<span class="variable">N</span> <span class="operator">=</span> <span class="number">100</span>
-											<span class="variable">contador</span> <span class="operator">=</span> <span class="number">1</span>
-
-											<span class="keyword">ENQUANTO</span> (<span class="variable">contador</span> <span class="operator">&lt;=</span> <span class="variable">N</span>) <span class="keyword">faça</span> {
-											   <span class="function">calcula o IMC e mostra na tela se está ou não dentro da faixa saudável</span>
-											   <span class="variable">contador</span> <span class="operator">=</span> <span class="variable">contador</span> <span class="operator">+</span> <span class="number">1</span>
-											} <span class="keyword">fim_enquanto</span>
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>O código acima seria executado pela primeira vez com a condição: “100 é maior do que 1?” Como a resposta é sim, o IMC é calculado, o resultado é exibido, o contador é incrementado em 1, e a condição é verificada novamente: “100 é maior do que 2?” Novamente sim, e o mesmo procedimento é executado para o segundo paciente. No caso do paciente número 100, a condição seria: “100 é maior ou igual a 100?” A resposta continua sendo sim, então o procedimento é realizado. Na próxima execução, a condição seria “100 é maior do que 101?”, o que retorna falso, encerrando o laço, e o código seguiria para a primeira instrução após o laço.</p>
-
-								<p>Outra opção é o laço de pós-teste, que tem como finalidade garantir a execução do bloco de código pelo menos uma vez. Ao final da primeira execução, é verificada uma condição lógica: se for verdadeira, o laço continua; caso contrário, a execução é automaticamente encerrada</p>
-
-								<p>O comando para esse caso é o <span class="color-tertiary-dark"><strong>repita / até</strong></span> que observe que a condição fica ao final, sendo preciso o bloco de código ser executado ao menos uma vez.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Laço REPITA-ATÉ - estrutura de repetição com pré-teste</span>
-
-											<span class="keyword">REPITA</span> {
-											   <span class="variable">bloco de código</span> 
-											} <span class="keyword">ATÉ_QUE</span> (<span class="variable">condição</span>)
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Considere que estamos realizando a modelagem de um caso de predição, com a meta de que o erro seja menor do que um valor Y. Durante a modelagem, temos diversos parâmetros que podem ser ajustados e queremos testá-los até que o erro seja inferior a Y. Nesse caso, o laço de pós-teste seria mais adequado, pois precisamos executar a predição pelo menos uma vez. Se, na primeira execução, o erro for menor do que o valor desejado, o processo pode ser encerrado. Caso contrário, continuaremos ajustando os parâmetros e testando a predição até que o erro seja menor do que Y.</p>
-							</div>
-						</div>
-
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<!-- EXEMPLO DE APLICAÇÃO -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Exemplo de aplicação</h5>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em verificar se a prevalência de hipertensão arterial em adultos de uma dada cidade pequena do interior é diferente da hipertensão arterial do estado em que é igual a 0,35. Uma amostra de tamanho 100 foi entrevistada e 32 adultos disseram ter hipertensão arterial, obtendo uma proporção amostral igual a 0,32. Realize o teste de hipótese ao nível de 10% de significância.</p>
+
+											<!-- Lista Ordenada -->
+											<div class="list">
+												<ol class="list-group list-group-numbered"> 
+													<li class="list-group-item">Formule as hipóteses:
+														<p>H<sub>0</sub>: &#x03C1; = 0,35</p>
+														<p>H<sub>1</sub>: &#x03C1; ≠ 0,35</p>
+													</li>
+
+													<li class="list-group-item">Nível de significância: 10%</li>
+
+													<li class="list-group-item">Região crítica: para α=0,10, o valor crítico é aproximadamente 1,64 (baseado na tabela da Normal Padrão).</li>
+
+													<li class="list-group-item">Cálculo da estatística z:
+
+														<math class="my-5" display="block" style="color:#000; font-size:20px;">
+															<mi>z</mi>
+															<mo>=</mo>
+															<mfrac>
+																<mrow>
+																<mn>0,37</mn>
+																<mo>-</mo>
+																<mn>0,35</mn>
+																</mrow>
+																<msqrt>
+																<mrow>
+																	<mfrac>
+																	<mrow>
+																		<mn>0,35</mn>
+																		<mo>&#x00D7;</mo>
+																		<mo>(</mo>
+																		<mn>1</mn>
+																		<mo>-</mo>
+																		<mn>0,35</mn>
+																		<mo>)</mo>
+																	</mrow>
+																	<mn>100</mn>
+																	</mfrac>
+																</mrow>
+																</msqrt>
+																<mo>=</mo>
+																<mn>0,42</mn>
+															</mfrac>
+														</math>
+													</li>
+
+													<li class="list-group-item">Como o teste é bilateral, rejeita-se H0 para valores da estatística de teste maiores do que 1,64 ou menores do que -1,64. Nesse caso, não rejeitamos H0, ou seja, podemos afirmar ao nível de 10% de significância que a prevalência de hipertensão arterial de uma dada cidade pequena do interior é igual a 0,35.
+													
+													<figure class="lightbox aos-init aos-animate mt-5" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+														<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula1-img16.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+														<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+													</figure>
+													
+													</li>
+												</ol>
+											</div>
+										</div>
 									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Laço REPITA-ATÉ (pós-teste) - ajusta modelo até erro &lt; valor desejado</span>
-
-											<span class="keyword">REPITA</span>
-											   <span class="variable">X</span> <span class="operator">=</span> <span class="function">criar parâmetros</span>
-											   <span class="function">executar a predição nos dados usando os parâmetros X</span>
-											   <span class="variable">Y</span> <span class="operator">=</span> <span class="function">modelo</span>(<span class="variable">X</span>)
-											<span class="keyword">até_que</span> (<span class="variable">Y</span> <span class="operator">&lt;</span> <span class="variable">valor_desejado</span>)
-
-											<span class="comment">// Executa pelo menos uma vez antes de testar a condição</span>
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
 								</div>
 							</div>
 						</div>
 
-						
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
-									<h4 class="heading__title">Estrutura de dados</h4>
+									<h4 class="heading__title">Teste para duas proporções</h4>
 								</div>
 
-								<p>Até agora exploramos técnicas básicas sobre lógica de programação, como variáveis, tipos de dados, operadores, estruturas de decisão e laços de repetição. Essas técnicas permitem compreender a construção de algoritmos. Utilizamos variáveis simples, que permitem armazenar apenas um valor por vez. No entanto, esse método exigiria a criação de um grande número de variáveis durante o desenvolvimento de um algoritmo. A partir de agora, vamos explorar formas de agrupar dados do mesmo tipo em uma única variável. Falaremos sobre estruturas de dados homogêneas, que também são conhecidas por outros nomes, como vetores, matrizes, arrays, entre outros.</p>
+								<p>O teste para duas proporções é uma técnica estatística usada para comparar as proporções de dois grupos independentes e determinar se há uma diferença estatisticamente significativa entre elas. Esse teste é particularmente útil em estudos por meio dos quais se quer comparar a prevalência ou a frequência de um determinado evento ou característica entre dois grupos.</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="heading__block">
-									<p class="h5 heading__title">Vetor</p>
-								</div>
+								<!-- Lista Ordenada -->
+								<div class="list">
+									<ol class="list-group list-group-numbered"> 
+										<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Enunciar as hipóteses H<sub>0</sub> e H<sub>1</sub>:
+											<p>H<sub>0</sub>:  &#x03C1; =  &#x03C1;<sub>2</sub></p>
+											<p>H<sub>1</sub>:  &#x03C1; ≠  &#x03C1;<sub>2</sub></p>
 
-								<p>Vetores são uma forma simples de armazenar vários valores do mesmo tipo utilizando apenas uma variável. Vamos voltar ao exemplo da gaveta: dentro de uma gaveta temos pequenos compartimentos menores, subdividindo-a em 20 espaços, onde podemos guardar nossos acessórios. Chamaremos essa gaveta de “A”. Dentro de “A”, temos indexadores que representam as posições, como <span class="color-tertiary-dark"><strong>A[1], A[2], A[3], A[4], até A[20]</strong></span>. Em cada um desses espaços podemos armazenar uma informação diferente, <strong>mas todas devem ser do mesmo tipo</strong>, como apenas números, apenas textos ou apenas valores lógicos. Note que, mesmo assim, criamos apenas uma variável do tipo vetor, que nos permite armazenar 20 valores neste exemplo. </p>
+											<p>Em que  &#x03C1;<sub>1</sub> é a proporção populacional do grupo 1 e &#x03C1;<sub>2</sub> é a proporção populacional do grupo 2.</p>
 
-								<p>Podemos criar vetores de qualquer tamanho necessário, desde que o computador tenha memória RAM suficiente para isso.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo1/aula1-img5.jpg" alt="Imagem aleatória de exmplo" title="Fonte: Freepik">
-									<figcaption class="figure-caption fonte">Fonte: Freepik</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<p>Vetores possuem apenas uma dimensão (uma linha com várias colunas ou uma coluna com várias linhas). No entanto, podemos ter estruturas com mais de uma linha e coluna, chamadas matrizes. No exemplo da imagem da gaveta de talheres, cada tipo de talher (colheres, garfos, facas) está organizado em linha, como se fossem vetores, ou seja, uma sequência de elementos do mesmo tipo. </p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="heading__block">
-									<p class="h5 heading__title">Matriz</p>
-								</div>
-
-								<p>Matrizes são estruturas de dados bidimensionais utilizadas para organizar e manipular informações. Diferente dos vetores, que possuem apenas uma dimensão, as matrizes têm tanto linhas quanto colunas, permitindo o armazenamento de dados em uma grade. Essa estrutura é útil quando precisamos representar tabelas ou qualquer conjunto de informações que requerem organização em duas dimensões. Cada elemento de uma matriz pode ser acessado por sua posição específica, definida pelos índices de linha e coluna, facilitando operações como iteração, busca e modificação de dados.</p>
-
-								<p>Supondo que temos a seguinte matriz:</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Declaração de matriz bidimensional</span>
-
-											<span class="variable">m</span> <span class="operator">=</span> [<span class="variable">a</span>, <span class="variable">b</span>]
-											    [<span class="variable">c</span>, <span class="variable">d</span>]
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Levando em conta que esse índice começa de 1, podemos acessar a posição de <span class="color-tertiary-dark"><strong>b</strong></span> usando os seguintes index: 1 para a primeira linha e 2 para a segunda coluna.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Acessando posições específicas em uma matriz</span>
-
-											<span class="variable">posição</span> <span class="operator">=</span> <span class="variable">m</span>[<span class="number">1</span>, <span class="number">2</span>]
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
+											<p>A estatística de teste considera a diferença das proporções amostrais dos grupos 1 e 2.</p>
+										</li>
+									</ol>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-								<p>É comum o uso de laços de repetição para preenchimento ou manipulação de vetores e matrizes.</p>
-
-								<p>Voltando ao exemplo da gaveta de talheres, se imaginarmos a gaveta vista de cima, com várias fileiras (linhas) e colunas, cada posição ocupada por um tipo de talher em determinada quantidade, temos uma matriz, por meio da qual podemos acessar os dados por linha e coluna.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<div class="heading__block">
-									<p class="h5 heading__title">Função</p>
+								<!-- NA PRÁTICA -->
+								<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+									<div class="box-cor__base">
+										<div class="base-header">
+											<h4>Na Prática!</h4>
+										</div>
+										<div class="base-body">
+											<p>Suponha que estamos interessados em saber se a prevalência de hipertensão arterial (HA) é diferente em homens e mulheres: seja &#x03C1;<sub>1</sub> a prevalência de HA nos homens e &#x03C1;<sub>2</sub> a prevalência de HA nas mulheres. Nesse caso, o teste para duas proporções é adequado para responder à pergunta.</p>
+										</div>
+									</div>
 								</div>
-
-								<p>Funções são blocos de códigos reutilizáveis que podem realizar operações computacionais específicas, como entrada, processamento e saída. A ideia de utilizar funções é que, de maneira geral, problemas complexos exigem algoritmos complexos  e o uso de funções pode ajudar a quebrar um problema complexo em vários problemas mais simples (dividir para conquistar). Esse tipo de estrutura usa o conceito de modularidade, que é a divisão de um algoritmo em partes menores, e tem vários benefícios, como:</p>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Accordion -->
-								<div class="accordion accordion-flush aos-init aos-animate" id="aula1-accordion2" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item1">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Reutilização</button>
-										</h5>
-										<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Quando uma função é definida, ela pode ser usada <span class="color-tertiary-dark"><strong>N</strong></span> vezes em várias partes do algoritmo sem precisar duplicar o código.</p>
-											</div>
+							<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+								<!-- Saiba Mais -->
+								<div class="saiba-mais">
+									<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="col-12 d-flex justify-content-center">
+											<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
 										</div>
-									</div>
 
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item2">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Organização</button>
-										</h5>
-										<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
-											<div class="accordion-body">
-												<p>O uso de funções pode deixar o código mais fácil de entender e melhorar a legibilidade, já que cada bloco faz uma tarefa específica.</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item3">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Manutenção</button>
-										</h5>
-										<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Se você usa uma função várias vezes e precisa alterar, só é necessário alterar em um local, sem a necessidade de modificar várias partes do código.</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item4">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Colaboração</button>
-										</h5>
-										<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Em projetos maiores, diferentes programadores podem trabalhar em funções diferentes de forma independente, facilitando o trabalho.</p>
-											</div>
-										</div>
-									</div>
-
-									<div class="accordion-item">
-										<h5 class="accordion-header" id="heading1-item5">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item5" aria-expanded="false" aria-controls="collapse1-item5">Testabilidade</button>
-										</h5>
-										<div id="collapse1-item5" class="accordion-collapse collapse" aria-labelledby="heading1-item5" data-bs-parent="">
-											<div class="accordion-body">
-												<p>Usando funções podemos testar o funcionamento da função individualmente, permitindo que bugs sejam identificados mais rapidamente.</p>
+										<div class="col-12">
+											<div class="mt-3 collapse" id="saiba-mais1">
+												<p>Para saber mais sobre o teste de proporção, <a href='https://youtu.be/OS8V6Zr83L8?si=O--VG9yiTE47nsxF' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
 											</div>
 										</div>
 									</div>
@@ -557,78 +472,8 @@
 						</div>
 
 						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Uma função tem um início e fim, é identificada por um nome, que é como essa função vai ser utilizada por todo o código. Para usar uma função é preciso escrevê-la antes da sua chamada. </p>
-
-								<p>Uma função pode ter parâmetros, que são os dados de entrada, e a função pode ou não retornar um resultado. No exemplo a seguir definimos 2 parâmetros de entrada, e usamos a palavra especial para retornar um valor chamada de retorno, a <strong>sintaxe é <span class="color-tertiary-dark"><strong>retorno [variável]</strong></span>.</p></strong>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Definição e uso de funções</span>
-											<span class="keyword">função</span> <span class="function">somar</span>(<span class="variable">A</span>, <span class="variable">B</span>) {
-											   <span class="keyword">retorno</span> <span class="variable">A</span> <span class="operator">+</span> <span class="variable">B</span>  <span class="comment">// retorna a soma de A e B</span>
-											}
-
-											<span class="comment">// Chamando a função</span>
-											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">1</span>, <span class="number">3</span>)
-											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 4</span>
-
-											<span class="variable">resultado</span> <span class="operator">=</span> <span class="function">somar</span>(<span class="number">100</span>, <span class="number">200</span>)
-											<span class="function">mostrar</span>(<span class="variable">resultado</span>)  <span class="comment">// 300</span>
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Observe que, no primeiro exemplo anterior, enviamos para a função <strong>somar</strong> os números 1 e 3, que chamaremos de argumentos, enquanto eles serão atribuídos de forma correspondente aos parâmetros A e B que foram definidos na <strong>função somar</strong>. Quando estamos no âmbito de uma função, as variáveis passam a ter um contexto local, ou seja, os parâmetros dentro de uma função só existem dentro daquela função e não são visíveis ao código principal, enquanto às variáveis que ficam fora da função, e dentro do código principal, chamamos de variáveis de <strong>contexto global</strong>. Vamos a um exemplo.</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- SINTAXE -->
-								<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-									<div class="heading__block">
-										<h5 class="heading__title">Sintaxe</h5>
-									</div>
-									<pre aria-label="Exemplo de código">
-										<code>
-											<span class="comment">// Escopo de variáveis - variáveis globais e locais</span>
-
-											<span class="variable">A</span> <span class="operator">=</span> <span class="number">100</span>  <span class="comment">// Variável global</span>
-
-											<span class="comment">// Função com parâmetro chamado A (diferente do A global)</span>
-											<span class="keyword">função</span> <span class="function">multiplicar</span>(<span class="variable">A</span>, <span class="variable">multiplicador</span>) {
-											   <span class="variable">produto</span> <span class="operator">=</span> <span class="variable">A</span> <span class="operator">*</span> <span class="variable">multiplicador</span>  <span class="comment">// Usa o A do parâmetro, não o A global</span>
-											   <span class="keyword">retorno</span> <span class="variable">produto</span>
-											}
-
-											<span class="variable">resposta</span> <span class="operator">=</span> <span class="function">multiplicar</span>(<span class="number">5</span>, <span class="number">3</span>)  <span class="comment">// Passa 5 como parâmetro A e 3 como multiplicador</span>
-
-											<span class="function">mostrar</span>(<span class="variable">A</span>)        <span class="comment">// 100 (A global permanece 100)</span>
-											<span class="function">mostrar</span>(<span class="variable">resposta</span>) <span class="comment">// 15 (usou A = 5 como parâmetro, então 5 * 3 = 15)</span>
-
-											<span class="comment">// O A dentro da função (parâmetro) é diferente do A fora (global)
-											// Mesmo tendo o mesmo nome, são variáveis independentes</span>
-										</code>
-									</pre>
-
-									<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-								</div>
+							<div class="col-12 col-md-10 col-lg-8">
+								<p>Os testes de hipótese são ferramentas fundamentais em estatística inferencial, permitindo que os pesquisadores tirem conclusões sobre populações a partir de dados amostrais. Cada teste de hipótese tem suposições sobre os dados. Normalidade e independência são pressupostos necessários para a realização dos testes de hipóteses apresentados nesta aula. É essencial verificar se os dados atendem a essas suposições antes de realizar o teste. Esses elementos fornecem uma estrutura para a realização de testes de hipótese, desde a formulação inicial até a tomada de decisão. Seguir esse procedimento sistemático ajuda a garantir que suas conclusões sejam baseadas em análises estatísticas robustas e bem fundamentadas.</p>
 							</div>
 						</div>
 					</div>
