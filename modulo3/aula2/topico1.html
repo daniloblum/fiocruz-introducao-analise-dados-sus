@@ -159,10 +159,18 @@
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
 									</li>
 									<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</a>
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
 									</li>
 									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</a>
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
 									</li>
 								</ul>
 							</div>
@@ -247,9 +255,276 @@
 							</div>
 
 							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Avaliar se existe relação entre duas características numéricas é uma das metas de muitos estudos em ciências da saúde. Esse tipo de relação é chamado de correlação e pode ser medido por meio do coeficiente de correlação linear. Para analisar essa associação entre duas variáveis, é selecionada uma amostra aleatória e as duas variáveis são observadas simultaneamente em cada indivíduo. Veja o exemplo a seguir.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- EXEMPLO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo</h5>
+										</div>
+										<p class="mt-5">Trinta pacientes são atendidos em uma clínica e os seguintes valores são registrados para pressão arterial sistólica (PAS) e idade. Uma maneira de descrever os dados conjuntamente é a partir do diagrama de dispersão apresentado na figura a seguir:</p>
+
+										<figure class="lightbox">
+											<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img1.png" alt="" title="Fonte: Elaborado pelo autor (2025).">
+											<figcaption class="figure-caption fonte">Fonte: Elaborado pelo autor (2025).</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>O diagrama de dispersão é a representação gráfica da relação entre duas variáveis numéricas. Cada ponto no gráfico representa uma observação (paciente), o eixo horizontal representa a idade e o eixo vertical a pressão arterial sistólica. Por meio do diagrama de dispersão é possível observar que, em geral, valores de idade mais altos são associados a valores de pressão sistólica mais altos, indicando uma relação entre elas. A partir do gráfico, podemos levantar algumas perguntas:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-8 col-lg-6 mb-5 pb-5">
+									<p class="text-muted text-center"><span class="material-symbols-rounded" style="transform: rotateX(180deg)">pan_tool_alt</span> <span class="d-none d-lg-inline-block">Clique</span><span class="d-inline-block d-lg-none">Toque</span> e arraste os cards para conhecê-los.</p>
+
+									<!-- Swipper Effect Card -->
+									<div class="swiper swiper--effect-card card">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="card-header">
+													<span class="h6">Pergunta 1</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>Qual é o tipo da relação entre as variáveis idade e PAS?</strong></p>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="card-header">
+													<span class="h6">Pergunta 2</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>Qual é a força dessa relação?</strong></p>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="card-header">
+													<span class="h6">Pergunta 3</span>
+												</div>
+
+												<div class="card-body">
+													<p><strong>A relação é estatisticamente significativa?</strong></p>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination swiper-pagination3"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>O diagrama de dispersão é útil para descrever a relação entre duas variáveis numéricas. Nesse caso, parece que existe uma relação linear positiva entre idade e PAS, ou seja, quanto maior a idade, maior a PAS. Outras relações podem ser observadas, como exemplificamos na figura a seguir.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img2.png" alt="" title="Fonte: https://analises-ecologicas.com/cap7. Acesso em: 30 jul. 2025.">
+										<figcaption class="figure-caption fonte">Fonte: https://analises-ecologicas.com/cap7. Acesso em: 30 jul. 2025.</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>As figuras A e B representam, respectivamente, correlações lineares negativa e positiva. A figura C, ausência de correlação, e as figuras C e D correlação não lineares.</p>
+
+									<p>Se existe uma relação linear entre duas variáveis, podemos medir a força e a direção dessa relação a partir do <strong>coeficiente de correlação de Pearson</strong>.</p>
+
+									<p>O coeficiente de correlação de Pearson é a medida mais comum de correlação linear e mede a intensidade de associação linear existente entre duas variáveis numéricas. O coeficiente de correlação de Pearson é denotado por r e pode ser calculado por meio da seguinte expressão:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mi>r</mi>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+											<munderover>
+												<mo>&#x2211;</mo>
+												<mrow>
+												<mi>i</mi>
+												<mo>=</mo>
+												<mn>1</mn>
+												</mrow>
+												<mi>n</mi>
+											</munderover>
+											<mo>(</mo>
+											<msub>
+												<mi>x</mi>
+												<mi>i</mi>
+											</msub>
+											<mo>-</mo>
+											<mover>
+												<mi>x</mi>
+												<mo>¯</mo>
+											</mover>
+											<mo>)</mo>
+											<mo>(</mo>
+											<msub>
+												<mi>y</mi>
+												<mi>i</mi>
+											</msub>
+											<mo>-</mo>
+											<mover>
+												<mi>y</mi>
+												<mo>¯</mo>
+											</mover>
+											<mo>)</mo>
+											</mrow>
+											<mrow>
+											<msqrt>
+												<mrow>
+												<munderover>
+													<mo>&#x2211;</mo>
+													<mrow>
+													<mi>i</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+													</mrow>
+													<mi>n</mi>
+												</munderover>
+												<mo>(</mo>
+												<msub>
+													<mi>x</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>-</mo>
+												<mover>
+													<mi>x</mi>
+													<mo>¯</mo>
+												</mover>
+												<msup>
+													<mo>)</mo>
+													<mn>2</mn>
+												</msup>
+												<mo>&#x00D7;</mo>
+												<munderover>
+													<mo>&#x2211;</mo>
+													<mrow>
+													<mi>i</mi>
+													<mo>=</mo>
+													<mn>1</mn>
+													</mrow>
+													<mi>n</mi>
+												</munderover>
+												<mo>(</mo>
+												<msub>
+													<mi>y</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>-</mo>
+												<mover>
+													<mi>y</mi>
+													<mo>¯</mo>
+												</mover>
+												<msup>
+													<mo>)</mo>
+													<mn>2</mn>
+												</msup>
+												</mrow>
+											</msqrt>
+											</mrow>
+										</mfrac>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>O valor de r varia entre −1 e +1 com as seguintes interpretações:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">r=+1: Correlação linear perfeita positiva. Todos os pontos no diagrama de dispersão estão em uma linha reta ascendente.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">r=−1: Correlação linear perfeita negativa. Todos os pontos no diagrama de dispersão estão em uma linha reta descendente.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">r=0: Nenhuma correlação linear. Não há uma relação linear aparente entre as variáveis.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">0 &lt; r &lt; 1: Correlação linear positiva. À medida que uma variável aumenta, a outra tende a aumentar.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="400">−1 &lt; r &lt; 0: Correlação linear negativa. À medida que uma variável aumenta, a outra tende a diminuir.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Lembrando que o coeficiente de correlação de Pearson só deve ser calculado quando a correlação é linear. Quando os pontos formam uma nuvem cujo eixo principal é uma curva, o valor de r não mede corretamente a associação entre as variáveis.</p>
+
+									<p>Para avaliar a significância do coeficiente de correlação, podemos testar as seguintes hipóteses:</p>
+
+									<p>H<sub>0</sub>: &#x03C1; = 0 (não há correlação linear).</p>
+									<p>H<sub>1</sub>: &#x03C1; ≠ 0 (há correlação linear).</p>
+
+									<p>Em que &#x03C1; é o coeficiente de correlação populacional. As suposições para realizar o teste de hipóteses são: as duas variáveis numéricas têm distribuição normal e a relação entre elas é linear. A seguinte estatística de teste é utilizada:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mi>t</mi>
+										<mo>=</mo>
+										<mfrac>
+											<mi>r</mi>
+											<msqrt>
+											<mrow>
+												<mfrac>
+												<mrow>
+													<mn>1</mn>
+													<mo>-</mo>
+													<msup>
+													<mi>r</mi>
+													<mn>2</mn>
+													</msup>
+												</mrow>
+												<mrow>
+													<mi>n</mi>
+													<mo>-</mo>
+													<mn>2</mn>
+												</mrow>
+												</mfrac>
+											</mrow>
+											</msqrt>
+										</mfrac>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
-									<p>O processo de programação é a maneira que utilizamos para nos comunicarmos com o computador, pois, para que ele funcione, é necessário que seja programado. Essa comunicação é feita por meio de uma linguagem de programação, que nos permite escrever instruções que o computador consegue interpretar e executar. Softwares são conjuntos de instruções executadas com o objetivo de realizar uma tarefa específica, e essa série de instruções é o que chamamos de programa.</p>
-									<p>Existem linguagens de <strong>baixo nível</strong>, que são mais próximas da linguagem de máquina e pouco convencionais, apresentando grande dificuldade para a maioria das pessoas. Um exemplo é a linguagem Assembly. Por outro lado, temos as linguagens de <strong>alto nível</strong>, que se assemelham mais à comunicação humana, geralmente baseadas em palavras em inglês, o que as torna mais fáceis de entender. Exemplos de linguagens de alto nível incluem R, Python, C, Ruby, Pascal, Java, C++, JavaScript, entre outras.</p>
+									<p>A região crítica e o p-valor são obtidos usando-se a tabela da distribuição t de Student com n-2 graus de liberdade. Rejeitamos H<sub>0</sub>se o p-valor obtido for menor do que o nível de significância estabelecido. A rejeição de H<sub>0</sub> indica uma correlação linear estatisticamente significante.</p>
+
+									<p>Voltando ao exemplo da pressão sistólica e idade, se o coeficiente de correlação for igual a 0,66 e o p-valor &lt; 0,001. Nesse caso, rejeitamos H0, isso significa que existe uma correlação linear positiva e significativa entre idade e pressão arterial sistólica. No R, podemos obter o coeficiente de correlação de Pearson e o respectivo p-valor utilizando o comando <span class="color-tertiary-dark"><strong>cor.test</strong></span>.</p>
+
+									<p>O coeficiente de correlação de Pearson é paramétrico no sentido de que assume distribuição normal para as duas variáveis. Se a suposição de normalidade for válida, ele deve ser preferido. Caso a suposição não seja válida, podemos utilizar o coeficiente de correlação de <span class="color-tertiary-dark"><strong>Spearman</strong></span>. Esse coeficiente de correlação é baseado nos postos das observações e, portanto, não paramétrico. </p>
+
+									<p>Lembrando que correlação não implica causalidade. Um valor de r elevado não indica necessariamente que uma variável causa mudança na outra. Pode haver outras variáveis não observadas que influenciam ambas.</p>
 								</div>
 							</div>
 						</div>
@@ -330,6 +605,7 @@
 
 		<!-- Swiper -->
 		<script src="../../assets/js/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/swiper-init.js"></script>
 
 		<script type="text/javascript" src="../../assets/js/scripts.js"></script>
 		<script type="text/javascript" src="../../assets/js/custom-anime.js"></script>

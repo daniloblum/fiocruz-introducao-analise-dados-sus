@@ -159,10 +159,18 @@
 										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula2/topico1.html"><strong>Aula 2: </strong>Modelos Estatísticos: lineares e não lineares</a>
 									</li>
 									<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</a>
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
 									</li>
 									<li class="dropdown-menu__item">
-										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</a>
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../atividade.html"><strong>Atividade</strong></a>
+									</li>
+
+									<li class="dropdown-menu__item">
+										<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../encerramento.html"><strong>Resumo do módulo</strong></a>
 									</li>
 								</ul>
 							</div>
@@ -238,406 +246,67 @@
 					<section>
 						<div class="container">
 							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
 									<div class="heading__block">
 										<span class="small">Tópico 2</span>
 										<h3 class="heading__title">Modelos de regressão</h3>
 									</div>
 
-									<p>O R é uma linguagem de programação para análise de dados que oferece uma variedade de ferramentas estatísticas, gráficas e para manipulação de dados.</p>
-								</div>
-							</div>
+									<p>Os modelos de regressão são ferramentas estatísticas usadas para descrever a relação entre uma variável dependente (ou resposta) e uma ou mais variáveis independentes (ou preditoras). Eles permitem não só prever valores da variável dependente com base nas variáveis independentes, mas também examinar a força e a natureza dessas relações.  A variável dependente é também chamada de variável resposta ou desfecho, e a variável independente, de variável explicativa, preditora ou covariável. </p>
 
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais pb-5">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais1">
-													<p>O link para download e outras informações úteis pode ser encontrado no site oficial:</p>
+									<p>Geralmente denotamos a variável dependente de Y e as k variáveis independentes de X<sub>1</sub>,X<sub>2</sub>,…,X<sub>k</sub>.  Os objetivos do estudo da regressão são avaliar uma possível associação de Y em relação a X e expressar matematicamente essa relação por meio de uma equação.</p>
 
-													<div class="list">
-														<ul class="list-group">
-															<li class="list-group-item aos-init aos-animate" list-style="page" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-																<a href="https://www.r-project.org/" target="_blank">https://www.r-project.org/</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>O R é uma linguagem de código aberto, com uma comunidade ativa que lança periodicamente atualizações e melhorias. Dessa forma, é importante mencionar que, na data de elaboração desta aula, estamos utilizando o R na versão 4.4.1, lançada em junho de 2024. Observe a imagem a seguir do R após a instalação. Ele apresenta uma interface simples, baseada em linha de comando, sem uma interface sofisticada. No próximo tópico mostraremos como utilizar um Ambiente de Desenvolvimento Integrado (IDE).</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img1.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
-									<!-- Olho de texto -->
-									<div class="olho-de-texto my-5">
-										<p>Todos os tópicos desta aula podem ser testados em seu RStudio. Então, baixe o programa e teste!</p>
-									</div>
+									<p>Os principais tipos de modelos de regressão utilizados na área da saúde são: regressão linear, regressão logística e regressão Poisson.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
-										<h4 class="heading__title">RStudio</h4>
+										<h4 class="heading__title">Regressão linear simples</h4>
 									</div>
 
-									<p>RStudio é uma IDE (Ambiente de Desenvolvimento Integrado) utilizada para programação em R. Embora os programadores possam escrever código em um simples arquivo de texto, o uso de uma IDE melhora a produtividade, automatiza e simplifica tarefas comuns, além de ajudar na organização do código. Existem diversas IDEs para R, como RStudio, Positron, Jupyter Notebook, VSCode, entre outras.</p>
+									<p>A regressão linear simples descreve a relação entre uma variável dependente e uma variável independente a partir de equações de linhas retas, por isso o termo linear. O termo simples é usado porque é utilizada apenas uma variável explicativa. O modelo assume que a relação entre a variável explicativa X e o desfecho Y é linear, expressa pela equação:</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais pb-5">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais2">
-													<p class="mb-0">O link para download e outras informações úteis pode ser encontrado no site oficial:</p>
-
-													<div class="list">
-														<ul class="list-group">
-															<li class="list-group-item aos-init aos-animate" list-style="page" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-																<a href="https://posit.co/download/rstudio-desktop/" target="_blank">https://posit.co/download/rstudio-desktop/</a>
-															</li>
-														</ul>
-													</div>
-
-													<!--p class="mb-0">Em caso de dúvidas, acesse o tutorial no site:</p>
-
-													<div class="list">
-														<ul class="list-group">
-															<li class="list-group-item aos-init aos-animate" list-style="page" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-																<a href="https://livro.curso-r.com/1-1-instalacao-do-r.html" target="_blank">https://livro.curso-r.com/1-1-instalacao-do-r.html</a>
-															</li>
-														</ul>
-													</div-->
-												</div>
-											</div>
-										</div>
-									</div>
+									<math display="block" style="color:#000; font-size:24px;">
+										<mi>Y</mi>
+										<mo>=</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mn>0</mn>
+										</msub>
+										<mo>+</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mn>1</mn>
+										</msub>
+										<mi>X</mi>
+										<mo>+</mo>
+										<mi>&#x03B5;</mi>
+									</math>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Com o RStudio e R devidamente instalados em seu computador, abra o RStudio, e veremos uma tela como a seguir, com 4 quadrantes. Caso tenha somente 3 quadrantes, vá ao menu File-> New file -> Rscript</p>
+									<p>Em que:</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img2.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Veja a seguir a utilização de cada quadrante:</p>
-
-									<!-- Lista Ordenada -->
-									<div class="list">
-										<ol class="list-group list-group-numbered"> 
-											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Editor (Source) — Painel Superior Esquerdo</strong></span>
-												<ul class="list-group">
-													<li class="list-group-item sub-item">Onde você <strong>escreve, edita e salva</strong> seus códigos</li>
-
-													<li class="list-group-item sub-item">Permite trabalhar com arquivos .R, .Rmd, e outros.</li>
-
-													<li class="list-group-item sub-item">Os comandos só são executados quando enviados ao <strong>Console</strong>.</li>
-												</ul>
-											</li>
-
-											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Console — Painel Inferior Esquerdo</strong></span>
-												<ul class="list-group">
-													<li class="list-group-item sub-item">Onde o <strong>código é executado</strong> e os <strong>resultados são exibidos</strong> imediatamente.</li>
-
-													<li class="list-group-item sub-item">Você pode digitar comandos diretamente.</li>
-
-													<li class="list-group-item sub-item">Também exibe mensagens, erros e avisos.</li>
-												</ul>
-											</li>
-
-											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Environment / History — Painel Superior Direito</strong></span>
-												<ul class="list-group">
-													<li class="list-group-item sub-item"><strong>Environment:</strong> mostra todos os <strong>objetos criados na sessão</strong> (variáveis, fun-ções, data frames etc.).</li>
-
-													<li class="list-group-item sub-item"><strong>History:</strong> exibe o <strong>histórico de comandos executados</strong>.</li>
-
-													<li class="list-group-item sub-item">Connections (opcional):<strong> gerencia conexões com bancos de dados.</li></strong>
-
-													<li class="list-group-item sub-item">Esse painel é conhecido como o <strong>Painel de Ambiente</strong>.</li>
-												</ul>
-											</li>
-
-											<li class="list-group-item aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><span style="color:var(--fio-sys-color-primary-extra-dark);"><strong>Output — Painel Inferior Direito</strong></span>
-												<ul class="list-group">
-													<li class="list-group-item sub-item">Agrupa várias abas relacionadas às <strong>saídas e recursos</strong> do RStudio:
-														<ul class="list-group">
-															<li class="list-group-item sub-item"><strong>Plots:</strong> exibe gráficos gerados.</li>
-
-															<li class="list-group-item sub-item"><strong>Files:</strong> mostra o <strong>diretório de trabalho atual</strong> e permite navegar entre pastas.</li>
-
-															<li class="list-group-item sub-item"><strong>Packages:</strong> lista os <strong>pacotes instalados e carregados</strong>.</li>
-
-															<li class="list-group-item sub-item"><strong>Help:</strong> mostra a <strong>documentação</strong> de funções e pacotes.</li>
-
-															<li class="list-group-item sub-item"><strong>Viewer:</strong> apresenta relatórios, dashboards e visualizações HTML.</li>
-														</ul>
-													</li>
-
-													<li class="list-group-item sub-item">É conhecido como o <strong>Painel de Saídas (Output Panel)</strong>.</li>
-												</ul>
-											</li>
-											
-										</ol>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- Saiba Mais -->
-									<div class="saiba-mais pb-5">
-										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="col-12 d-flex justify-content-center">
-												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais3" aria-expanded="false" aria-controls="saiba-mais3"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
-											</div>
-											<div class="col-12">
-												<div class="mt-3 collapse" id="saiba-mais3">
-													<p class="mb-0">Acesse informações, explicações e comandos úteis sobre o RStudio no site:</p>
-
-													<div class="list">
-														<ul class="list-group">
-															<li class="list-group-item aos-init aos-animate" list-style="page" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-																<a href="https://rstudio.github.io/cheatsheets/translations/portuguese/rstudio-ide_pt.pdf" target="_blank">https://rstudio.github.io/cheatsheets/translations/portuguese/rstudio-ide_pt.pdf</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Primeiros passos no R e RStudio</h4>
-									</div>
-
-									<p>O RStudio é um ambiente de desenvolvimento que facilita o uso do R. Veja como ele funciona de maneira simples:</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-5 col-lg-4 mb-5">
-									<div class="card h-100">
-										<div class="card-header">
-											<span class="">Executando comandos no console</span>
-										</div>
-
-										<div class="card-body">
-											<p>
-												Você pode digitar um comando diretamente no console (a área na parte inferior da tela) e, em seguida, pressionar a tecla <span class="color-tertiary-dark"><strong>&lt;Enter&gt;</strong></span
-												>. O R executará o comando e exibirá o resultado logo abaixo.
-											</p>
-										</div>
-									</div>
-								</div>
-								
-								<div class="col-12 col-md-5 col-lg-4 mb-5">
-									<div class="card">
-										<div class="card-header">
-											<span class="">Executando códigos no editor</span>
-										</div>
-
-										<div class="card-body">
-											<p>Outra forma de rodar códigos é usando o editor de scripts (localizado na parte superior esquerda). Nele, você pode escrever várias linhas de código e depois executá-las:</p>
-
-											<div class="list">
-												<ul class="list-group">
-													<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-														<strong>Opção 1:</strong> selecione as linhas que deseja rodar com o mouse e, em seguida, pressione <span class="color-tertiary-dark"><strong>&lt;Ctrl&gt; + &lt;Enter&gt;</strong></span> (Windows ou Linux) ou <span class="color-tertiary-dark"><strong>&lt;Command&gt; + &lt;Enter&gt;</strong></span> (macOs).
-													</li>
-													<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300"><strong>Opção 2:</strong> coloque o cursor na linha que deseja executar e clique no botão <strong>Run</strong>, localizado no topo do quadrante do editor.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>
-										Em R, podemos adicionar comentários usando o símbolo <span class="color-tertiary-dark"><strong>#</strong></span
-										>. Os comentários servem para explicar partes do código, tornando-o mais fácil de entender. Eles são ignorados pelo R, ou seja, não afetam a execução nem os resultados do código.
-									</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>Se quiser acompanhar a prática, abra o RStudio e <strong>tente escrever os comandos</strong> que iremos apresentar durante a aula. </p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Ao executar o comando acima no editor, o resultado é exibido no quadrante "console”. Esse quadrante é onde podemos ver a “saída” do comando, que é o valor gerado após a execução da instrução. No exemplo citado, a saída é igual a 3, ou seja, após processar o comando, o R realiza os cálculos necessários e apresenta 3 como resultado.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3a.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img3b.jpg" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- FAÇA VOCÊ MESMO -->
-									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="olho-de-texto my-5">
-											<div class="heading__block">
-												<h5 class="heading__title">Faça você mesmo!</h5>
-											</div>
-											<p>Aproveite também para experimentar realizar diferentes operações. Para subtrações use o símbolo <span class="color-tertiary-dark"><strong>-</strong></span>, para multiplicar use <span class="color-tertiary-dark"><strong>*</strong></span> e para dividir use <span class="color-tertiary-dark"><strong>/</strong></span>.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center mt-5">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title">Objetos e funções</h4>
-									</div>
-
-									<p>
-										No R, podemos criar variáveis, que também chamamos de objetos. Para isso, usamos o operador de atribuição <span class="color-tertiary-dark"><strong>&lt;-</strong></span
-										>. Ele serve para atribuir um valor da direita para a variável na esquerda. Veja um exemplo simples:
-									</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>No quadrante <span class="color-tertiary-dark"><strong>Environment / History</strong></span>, você deverá visualizar uma tela semelhante a esta:</p>
-
-									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img4c.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Quando você cria variáveis em R, é importante seguir algumas regras:</p>
-
-									<!-- Lista Não Ordenada -->
+									<!-- Lista Não-Ordenada -->
 									<div class="list">
 										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">O nome de uma variável <strong>deve começar com uma letra</strong>.</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">Ele <strong>pode conter números, mas não pode começar com um número</strong>.</li>
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="300">
-												Você pode usar <span class="color-tertiary-dark"><strong>underline (_)</strong></span> ou <span class="color-tertiary-dark"><strong>ponto (.)</strong></span> para separar palavras no nome da variável.
-											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">β<sub>0</sub> é o intercepto (valor de Y quando X=0).</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>1</sub> é o coeficiente angular (a inclinação da linha, que indica a mudança em Y para cada unidade de mudança em X).</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">ϵ é o termo de erro, que captura a variação em Y não explicada por X.</li>
 										</ul>
 									</div>
 								</div>
@@ -645,98 +314,197 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- SINTAXE -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Sintaxe</h5>
-										</div>
-										<pre aria-label="Exemplo de código">
-											<code>
-												<span class="comment"># Exemplos de nomenclatura de variáveis em R</span>
-
-												<span class="variable">variavel_idade</span>
-												<span class="variable">cpf.paciente</span>
-											</code>
-										</pre>
-
-										<!-- <button class="copy-btn" aria-label="Copiar código para a área de transferência">Copiar</button> -->
-									</div>
+									<p>A figura a seguir ilustra a equação da reta.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Além disso, o R é <em>case-sensitive</em>, ou seja, ele diferencia letras maiúsculas de minúsculas. Portanto, as variáveis b e B são tratadas como duas variáveis diferentes.</p>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>No quadrante <span class="color-tertiary-dark"><strong>Environment / History</strong></span>, você deverá visualizar uma tela semelhante a esta:</p>
-
 									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img5c.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img3.png" alt="" title="Fonte: https://www.alura.com.br/artigos/desvendando-a-regressao-linear. Acesso em: 25 jul. 2025." />
+										<figcaption class="figure-caption">Fonte: https://www.alura.com.br/artigos/desvendando-a-regressao-linear. Acesso em: 25 jul. 2025.</figcaption>
 									</figure>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- Box de Atenção -->
-									<div class="box" data-box="Atenção">
-										<div class="card aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-											<div class="card-header">
-												<span class="icone material-symbols-rounded" aria-hidden="true"></span>
-												<span class="label">Atenção</span>
-											</div>
-											<div class="card-body">
-												<div class="custom-shape-divider-top-1720289331">
-													<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-														<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-													</svg>
+									<!-- EXEMPLO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo</h5>
+										</div>
+										<p class="mt-5">Voltando ao exemplo da pressão sistólica e idade, já vimos que existe uma relação linear positiva entre elas, mas a relação não é perfeita. Nesse caso, a variável desfecho Y é a pressão sistólica e a variável explicativa X é a idade do paciente. A figura linha vermelha na imagem a seguir ilustra a equação da reta.</p>
+
+										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+											<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img4.png" alt="" title="Fonte: EElaborada por professores da ENSP (2025).">
+											<figcaption class="figure-caption fonte">Fonte: Elaborada por professores da ENSP (2025).</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Existe uma dispersão dos pontos sugerindo que a variação da pressão sistólica não é explicada apenas pela idade. O método dos mínimos quadros é o método utilizado para estimar os coeficientes β<sub>0</sub> e β<sub>1</sub>, assim chamados porque garantem que a reta obtida é aquela na qual se tem as menores distâncias (ao quadrado) entre os valores observados (Y) e a própria reta. A figura a seguir ilustra a ideia do método dos mínimos quadrados. O objetivo é encontrar a reta que minimiza a soma dos resíduos (diferença entre o observado e o estimado pele reta) ao quadrado. </p>
+
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img5.png" alt="" title="Fonte: EElaborada por professores da ENSP (2025).">
+										<figcaption class="figure-caption fonte">Fonte: Elaborada por professores da ENSP (2025).</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A partir de um software estatístico, podemos obter as estimativas de  β<sub>0</sub> e β<sub>1</sub>. No R, usando o comando <span class="color-tertiary-dark"><strong>lm</strong></span>. A equação da reta obtida é igual a:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mover>
+											<mi>Y</mi>
+											<mo>^</mo>
+										</mover>
+										<mo>=</mo>
+										<mn>98,71</mn>
+										<mo>+</mo>
+										<mn>0,97</mn>
+										<mi>X</mi>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p><strong>Interpretação dos parâmetros:</strong></p>
+
+									<p>Intercepto: β<sub>0</sub> = 98,71, valor da pressão arterial sistólica quando idade (X=0). Nesse caso, a interpretação não faz sentido.</p>
+
+									<p>Inclinação da reta: β<sub>1</sub> = 0,97, cada ano a mais na idade corresponde a um aumento médio de 0,97 mmHg na pressão arterial sistólica.</p>
+
+									<p>Podemos verificar se existe associação estatisticamente significativa entre idade e pressão arterial. As hipóteses para a realização do teste são: </p>
+
+									<p>H<sub>0</sub>: β<sub>1</sub> = 0 </p>
+									<p>H<sub>1</sub>:  β<sub>1</sub> ≠ 0</p>
+
+									<p>O <span class="color-tertiary-dark"><strong>teste de Wald</strong></span> é utilizado para testar as hipóteses acima e a decisão pode ser tomada com base no p-valor obtido. Utilizando o R, obtemos um p-valor &lt; 0,001. Então, rejeitamos H<sub>0</sub>, ou seja, existe uma associação estatisticamente significativa em torno de 5% entre idade e pressão arterial. </p>
+
+									<p>A reta de regressão permite:</p>
+									
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">Representar a dependência de uma variável quantitativa em relação à outra por meio de uma equação simples.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">Prever valores para a variável dependente de acordo com valores determinados (inclusive não observados) da variável independente, desde que estejam dentro da faixa de valores estudados. Por exemplo, podemos prever a pressão sistólica média de um paciente de 50 anos. </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mover>
+											<mi>Y</mi>
+											<mo>^</mo>
+										</mover>
+										<mo>=</mo>
+										<mn>98,71</mn>
+										<mo>+</mo>
+										<mn>0,97</mn>
+										<mo>&#x00D7;</mo>
+										<mn>50</mn>
+										<mo>=</mo>
+										<mn>147,21</mn>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center mt-5">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Os pressupostos do modelo de regressão linear são:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Accordion -->
+									<div class="accordion accordion-flush" id="accordionExample2">
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item1">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item1" aria-expanded="true" aria-controls="collapse1-item1">Linearidade</button>
+											</h5>
+											<div id="collapse1-item1" class="accordion-collapse collapse" aria-labelledby="heading1-item1" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A relação entre a variável dependente Y e a variável independente X deve ser linear.</p>
 												</div>
+											</div>
+										</div>
 
-												<div>
-													<p>Para remover objetos do <span class="color-secondary-light"><strong>Environment</strong></span>, você pode utilizar o ícone localizado na parte superior do quadrante.</p>
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item2">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item2" aria-expanded="false" aria-controls="collapse1-item2">Independência</button>
+											</h5>
+											<div id="collapse1-item2" class="accordion-collapse collapse" aria-labelledby="heading1-item2" data-bs-parent="">
+												<div class="accordion-body">
+													<p>Os erros devem ser independentes entre si.</p>
+												</div>
+											</div>
+										</div>
 
-													<p>O ícone “Clear Objects from Workspace” (vassoura do Environment) apaga todos os objetos carregados, ajudando a liberar espaço e manter o ambiente organizado. </p>
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item3">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item3" aria-expanded="false" aria-controls="collapse1-item3">Homocedasticidade</button>
+											</h5>
+											<div id="collapse1-item3" class="accordion-collapse collapse" aria-labelledby="heading1-item3" data-bs-parent="">
+												<div class="accordion-body">
+													<p>A variância dos erros deve ser constante ao longo de todos os valores da variável independente X.</p>
+												</div>
+											</div>
+										</div>
 
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img6.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
+										<div class="accordion-item">
+											<h5 class="accordion-header" id="heading1-item4">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-item4" aria-expanded="false" aria-controls="collapse1-item4">Normalidade</button>
+											</h5>
+											<div id="collapse1-item4" class="accordion-collapse collapse" aria-labelledby="heading1-item4" data-bs-parent="">
+												<div class="accordion-body">
+													<p>Os resíduos do modelo devem ser normalmente distribuídos. Isso é especialmente importante para a validade de testes estatísticos e intervalos de confiança.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>A qualidade de ajuste no modelo de regressão linear é avaliada pelo coeficiente de determinação denotado por R2, que é a proporção da variabilidade total observada de Y, explicada pela regressão. Quanto maior o R2, melhor a qualidade de ajuste do modelo. Existem várias técnicas para verificar os pressupostos e fazer diagnóstico dos modelos de regressão.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Saiba Mais -->
+									<div class="saiba-mais">
+										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="col-12 d-flex justify-content-center">
+												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais1" aria-expanded="false" aria-controls="saiba-mais1"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+											</div>
+
+											<div class="col-12">
+												<div class="mt-3 collapse" id="saiba-mais1">
+													<p>Para saber mais sobre regressão linear simples, <a href='https://youtu.be/-gN3ohYHo0E?si=Ufh9ZwcFP_zAPEou' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
 												</div>
 											</div>
 										</div>
@@ -747,58 +515,268 @@
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<div class="heading__block">
-										<h4 class="heading__title">Tipos de Objetos no R</h4>
+										<h4 class="heading__title">Regressão linear múltipla</h4>
 									</div>
 
-									<p>No R trabalhamos com diferentes tipos de dados ou objetos. Vamos conhecer três ti-pos básicos, ilustrados no código abaixo:</p>
+									<p>A regressão linear múltipla é uma extensão da regressão linear simples que permite modelar a relação entre uma variável dependente Y e várias variáveis independentes X<sub>1</sub>,X<sub>2</sub>,…,X<sub>k</sub>. A equação é:</p>
+								</div>
+							</div>
 
-									<!-- Lista Não Ordenada -->
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mi>Y</mi>
+										<mo>=</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mn>0</mn>
+										</msub>
+										<mo>+</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mn>1</mn>
+										</msub>
+										<msub>
+											<mi>X</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>+</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mn>2</mn>
+										</msub>
+										<msub>
+											<mi>X</mi>
+											<mn>2</mn>
+										</msub>
+										<mo>+</mo>
+										<mo>&#x2026;</mo>
+										<mo>+</mo>
+										<msub>
+											<mi>&#x03B2;</mi>
+											<mi>k</mi>
+										</msub>
+										<msub>
+											<mi>X</mi>
+											<mi>k</mi>
+										</msub>
+										<mo>+</mo>
+										<mi>&#x03B5;</mi>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Em que: </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
 									<div class="list">
 										<ul class="list-group">
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><strong>Numérico:</strong> armazena números, que podem ser inteiros ou de ponto flutuante (números reais).
-												<ul class="list-group">
-													<li class="list-group-item sub-item">Números inteiros podem ser definidos diretamente (como 18).</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">β<sub>0</sub> é o intercepto (valor de Y quando X=0).</li>
 
-													<li class="list-group-item sub-item">Números reais (de ponto flutuante) são escritos com casas decimais, como 18.5.</li>
-												</ul>
-											</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>j</sub> é a inclinação da reta que mede a mudança em Y para cada unidade de mudança em X<sub>j</sub>, j=1,...,k.</li>
 
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Caracteres</strong> (também chamados de <em>strings</em>): armazenam textos, como <span class="color-tertiary-dark"><strong>"Saúde Pública"</strong></span>. Quando colocamos qualquer informação entre aspas, o R interpreta como texto — inclusive números, como <span class="color-tertiary-dark"><strong>"25"</strong></span>. Nesses casos, o valor pode ser convertido para numérico usando funções como <span class="color-tertiary-dark"><strong>as.numeric()</strong></span>.</li>
-
-											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100"><strong>Lógico:</strong> armazena valores booleanos, ou seja, <span class="color-tertiary-dark"><strong>TRUE</strong></span> (verdadeiro) ou <span class="color-tertiary-dark"><strong>FALSE</strong></span> (falso).</li>
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">ϵ é o erro aleatório referente à variável Y, que não pode ser explicado pelas preditoras incluídas no modelo.</li>
 										</ul>
 									</div>
+								</div>
+							</div>
 
-									<p>Você pode verificar o tipo de cada objeto usando a função <span class="color-tertiary-dark"><strong>class()</strong></span>, como mostrado: <span class="color-tertiary-dark"><strong>class(numero_inteiro)</strong></span>, <span class="color-tertiary-dark"><strong>class(numero_real)</strong></span>, <span class="color-tertiary-dark"><strong>class(texto)</strong></span> e <span class="color-tertiary-dark"><strong>class(logico)</strong></span>.</p>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- EXEMPLO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo</h5>
+										</div>
+										<p class="mt-5">Voltando ao exemplo da pressão sistólica, suponha que, além de idade, temos informação sobre o sexo do paciente. Podemos ajustar um modelo de regressão linear múltipla considerando como variáveis explicativas idade (X<sub>1</sub>) e sexo (X<sub>2</sub>). A partir de um software estatístico, podemos obter as estimativas de β<sub>0</sub>, β<sub>1</sub>e β<sub>1</sub>. No R, usamos o comando <span class="color-tertiary-dark"><strong>lm</strong></span>. A equação da reta obtida é igual a:</p>
+
+										<math display="block" style="color:#000; font-size:24px;">
+											<mover>
+												<mi>Y</mi>
+												<mo>^</mo>
+											</mover>
+											<mo>=</mo>
+											<mn>101,03</mn>
+											<mo>+</mo>
+											<mn>0,95</mn>
+											<msub>
+												<mi>X</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>-</mo>
+											<mn>2,41</mn>
+											<msub>
+												<mi>X</mi>
+												<mn>2</mn>
+											</msub>
+										</math>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<p><strong>Interpretação dos parâmetros:</strong></p>
+
+									<p>β<sub>0</sub> = 101,03, valor da pressão arterial sistólica quando idade (X=0). Nesse caso, a interpretação não faz sentido.</p>
+
+									<p>β<sub>1</sub> = 0,95, cada ano a mais na idade corresponde a um aumento médio de 0,95 mmHg na pressão arterial sistólica, ajustado por sexo.</p>
+
+									<p>β<sub>2</sub> = -2,41, os homens têm redução média de 2,41 mmHg na pressão arterial sistólica, ajustado por idade. O modelo foi ajustado considerando-se o sexo feminino como categoria de referência.</p>
+
+									<p>Testes de hipóteses para verificar a significância dos coeficientes são similares aos testes do modelo de regressão linear simples. Assim como os pressupostos, a medida de qualidade de ajuste e os métodos de diagnóstico dos modelos de regressão linear simples e múltipla são similares.</p>
+								</div>
+							</div>
+							
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Regressão logística</h4>
+									</div>
+									
+									<p>O modelo de regressão logística avalia a relação entre uma variável dependente binária (ou dicotômica) e uma ou mais variáveis independentes. É útil quando o objetivo é modelar a probabilidade de o desfecho ocorrer ou, ainda, estimar a razão de chances, medida de associação bastante utilizada em epidemiologia. Alguns exemplos de variável binária de interesse na saúde: doente (sim/não), inatividade física (sim/não), obesidade (sim/não) etc. A codificação mais comum é atribuirmos os valores 0 e 1 para esse tipo de desfecho. O valor 1 indica “sucesso” e 0 “fracasso”. Por exemplo, se estamos interessados em estudar os fatores de risco associados a uma determinada doença, o “sucesso” será ter a doença e atribuímos o valor 1. O gráfico a seguir ilustra a vantagem da regressão logística para desfechos binários. A regressão logística utiliza a função logística (sigmoide) para modelar a probabilidade de um evento.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img7a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula2-img6.png" alt="" title="Fonte: https://medium.com/@maithilijoshi6/a-comparison-between-linear-and-logistic-regression-8aea40867e2d. Acesso em: 25 jul. 2025. .">
+										<figcaption class="figure-caption fonte">Fonte: https://medium.com/@maithilijoshi6/a-comparison-between-linear-and-logistic-regression-8aea40867e2d. Acesso em: 25 jul. 2025.</figcaption>
+									</figure>
+								</div>
+							</div>
 
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img7b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-												
-											</div>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Assim como no modelo de regressão linear, as variáveis independentes podem ser numéricas ou categóricas. A regressão logística examina como essas variáveis influenciam a probabilidade de ocorrência do evento: seja Y a variável desfecho com valores 0 e 1. Então, assumimos que Y tem uma distribuição de Bernoulli com parâmetro p. A regressão logística modela o <span class="color-tertiary-dark"><strong>logit</strong></span> da probabilidade como uma função linear das variáveis independentes</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mrow>
+											<mi>log</mi>
+											<mo>(</mo>
+											<mfrac>
+											<mi>p</mi>
+											<mrow>
+												<mn>1</mn>
+												<mo>-</mo>
+												<mi>p</mi>
+											</mrow>
+											</mfrac>
+											<mo>)</mo>
+											<mo>=</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>0</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>1</mn>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mn>1</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>2</mn>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mn>2</mn>
+											</msub>
+											<mo>+</mo>
+											<mo>&#x2026;</mo>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mi>k</mi>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mi>k</mi>
+											</msub>
+										</mrow>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Em que:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200"><span class="color-tertiary-dark"><strong>Logit</strong></span> é o logaritmo da razão de chances.  </li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>0</sub> é o intercepto e indica o logit da probabilidade de Y=1 quando todas as variáveis independentes são zero.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">β<sub>j</sub> coeficiente que representa a mudança no logit da probabilidade de Y=1 para cada unidade de aumento na variável independente Xj. Na prática, podemos interpretar exponencial de β<sub>j</sub> como a razão de chances associada a X<sub>j</sub>.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- EXEMPLO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo</h5>
+										</div>
+										<p class="mt-5">Um estudo foi conduzido na população adulta com o objetivo de identificar fatores associados a autoavaliação de saúde (AAS) ruim. O desfecho AAS ruim foi categorizado em sim/não e as possíveis variáveis explicativas foram idade, sexo e inatividade física. Como o desfecho é binário e temos mais de uma variável explicativa, a regressão logística múltipla é adequada para responder ao objetivo do estudo. Utilizando-se um software estatístico é possível estimar os coeficientes β<sub>0</sub>, β<sub>1</sub>, β<sub>2</sub> e β<sub>3</sub>. No R, o comando <span class="color-tertiary-dark"><strong>glm</strong></span> com o argumento <span class="color-tertiary-dark"><strong>family=”binomial”</strong></span> é utilizado no ajuste do modelo de regressão logística. </p>
+
+										<p>A equação de regressão estimada foi igual a:</p>
+
+										<math class="my-5" display="block" style="color:#000; font-size:24px;">
+											<mover>
+												<mi>Y</mi>
+												<mo>^</mo>
+											</mover>
+											<mo>=</mo>
+											<mn>101,03</mn>
+											<mo>+</mo>
+											<mn>0,95</mn>
+											<msub>
+												<mi>X</mi>
+												<mn>1</mn>
+											</msub>
+											<mo>-</mo>
+											<mn>2,41</mn>
+											<msub>
+												<mi>X</mi>
+												<mn>2</mn>
+											</msub>
+										</math>
+
+										<p>Em que:</p>
+
+										<!-- Lista Não-Ordenada -->
+										<div class="list">
+											<ul class="list-group">
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">X<sub>1</sub>: inatividade física (1 - sim, 0 - não).</li>
+
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">X<sub>2</sub>: sexo (1 - feminino, 0 - masculino).</li>
+
+												<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">X<sub>3</sub>: idade numérica.</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -806,77 +784,237 @@
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>É possível converter um objeto de um tipo para outro usando funções como <span class="color-tertiary-dark"><strong>as.integer()</strong></span> e <span class="color-tertiary-dark"><strong>as.numeric()</strong></span>. Ao transformar um número real em inteiro, o valor é arredondado, e ao converter um texto contendo dígitos (como <span class="color-tertiary-dark"><strong>"25"</strong></span>) para numérico, ele passa a ser tratado como número pelo R.</p>
+									<p>As variáveis X<sub>1</sub> e X<sub>2</sub> são categóricas e as categorias de referências são, respectivamente, não inativo (ativo) e sexo masculino. A partir da equação é possível estimar probabilidade de autoavaliação de saúde ruim com base nas variáveis explicativas utilizadas. Por exemplo, suponha uma mulher inativa fisicamente de 75 anos, ou seja,  X<sub>1</sub> = 1, X<sub>2</sub> = 1 e X<sub>3</sub> = 75. Ao substituir na equação de regressão ajustada, obtemos uma probabilidade estimada de autoavaliação de saúde ruim de 0,119. Além de calcular probabilidades, podemos calcular a razão de chances (OR) e o respectivo intervalo de confiança de 95% (IC95%). A tabela a seguir apresenta os resultados.</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img8a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img8b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
-												
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<p>Além dos tipos básicos, o R também trabalha com outras estruturas importantes para organizar dados. Com <strong>vetores</strong>, podemos armazenar múltiplos valores do mesmo tipo em um único objeto. Já <strong>fatores</strong> permitem representar categorias de forma estruturada, úteis para análises estatísticas. Por fim, <strong>matrizes</strong> organizam dados em linhas e colunas, facilitando operações numéricas em duas dimensões.</p>
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img7.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+									</figure>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8">
-									<!-- NA PRÁTICA -->
-									<div class="box-cor aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="box-cor__base">
-											<div class="base-header">
-												<h4>Na Prática!</h4>
-											</div>
-											<div class="base-body">
-												<div class="mb-5">
-													<p class="mb-1"><strong>Comando:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img9a.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
-												</div>
+									<p><strong>Interpretação:</strong></p>
+								</div>
+							</div>
 
-												<div>
-													<p class="mb-1"><strong>Saída:</strong></p>
-													<figure class="lightbox">
-														<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo1/aula2-img9b.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-														<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-													</figure>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">A chance de pessoas inativas fisicamente autoavaliarem sua saúde como ruim é 1,93 vezes a chance de pessoas ativas fisicamente autoavaliarem sua saúde como ruim.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">A chance de pessoas do sexo feminino autoavaliarem sua saúde como ruim é 2,39 vezes a chance de pessoas do sexo masculino autoavaliarem sua saúde como ruim. </li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">O aumento de 1 ano na idade aumenta a chance de autoavaliação de saúde ruim em 1% (1,01-1).</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Saiba Mais -->
+									<div class="saiba-mais">
+										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="col-12 d-flex justify-content-center">
+												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais2" aria-expanded="false" aria-controls="saiba-mais2"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+											</div>
+
+											<div class="col-12">
+												<div class="mt-3 collapse" id="saiba-mais2">
+													<p>Para saber mais sobre a obtenção dos coeficientes e da OR no modelo de regressão logística, <a href='https://youtu.be/Qyg8jD2cWxA?si=dHUPJ_D64Eq0Hg99' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
 												</div>
-												
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>							
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>O método de estimação por máxima verossimilhança é o principal método de estimação dos parâmetros do modelo de regressão logística. O teste de Wald é utilizado para testar a significância dos coeficientes do modelo e a Deviance para comparar os modelos ajustados. Existem também testes de diagnósticos específicos para avaliar os pressupostos do modelo. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Saiba Mais -->
+									<div class="saiba-mais">
+										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="col-12 d-flex justify-content-center">
+												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais3" aria-expanded="false" aria-controls="saiba-mais3"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+											</div>
+
+											<div class="col-12">
+												<div class="mt-3 collapse" id="saiba-mais3">
+													<p>Para saber mais sobre regressão logística, <a href='https://smolski.github.io/livroavancado/reglog.html#regressao-logistica-simples' target='_blank' rel='noopener noreferrer'>acesse aqui.</a>.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<div class="heading__block">
+										<h4 class="heading__title">Regressão de Poisson</h4>
+									</div>
+
+									<p>O modelo de regressão de Poisson é utilizado para modelar a contagem de eventos que ocorrem em um intervalo de tempo ou espaço. É apropriado para dados em que a variável dependente é uma contagem, como o número de ocorrências de um evento em um determinado período ou localização geográfica. Alguns exemplos de dados de contagem de interesse na saúde: número de internações por doença respiratória por semana epidemiológica, casos de dengue por bairro no município do Rio de Janeiro, óbitos anuais por câncer de mama por estado. Observem que todos os eventos estão indexados por um período e/ou espaço.</p>
+
+									<p>As variáveis independentes podem ser numéricas ou categóricas. A regressão de Poisson avalia como essas variáveis influenciam a média ou a taxa de ocorrência dos eventos: seja Y a variável desfecho representando a contagem em um dado período ou espaço. Então, assumimos que Y tem uma distribuição Poisson com parâmetro λ. A regressão de Poisson modela o log da média ou taxa como uma função linear das variáveis independentes.</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<math display="block" style="color:#000; font-size:24px;">
+										<mrow>
+											<mi>log</mi>
+											<mo>(</mo>
+											<mi>&#x03BB;</mi>
+											<mo>)</mo>
+											<mo>=</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>0</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>1</mn>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mn>1</mn>
+											</msub>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mn>2</mn>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mn>2</mn>
+											</msub>
+											<mo>+</mo>
+											<mo>&#x2026;</mo>
+											<mo>+</mo>
+											<msub>
+											<mi>&#x03B2;</mi>
+											<mi>k</mi>
+											</msub>
+											<msub>
+											<mi>X</mi>
+											<mi>k</mi>
+											</msub>
+										</mrow>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<p>Em que:</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">λ é a média esperada de Y.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">β<sub>0</sub> é o intercepto.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">β<sub>1</sub>, β<sub>2</sub>,…,β<sub>k</sub> são os coeficientes das variáveis independentes X<sub>1</sub>, X<sub>2</sub>,…,X<sub>k</sub>.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Em muitas situações, queremos modelar a taxa e não a média. Nesse caso, devemos introduzir no modelo um termo denominado offset. Em geral, utilizamos o logaritmo da população ou do valor esperado. </p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- Saiba Mais -->
+									<div class="saiba-mais">
+										<div class="row aos-init aos-animate" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="600">
+											<div class="col-12 d-flex justify-content-center">
+												<button class="saiba-mais fio-button button-md fio-button-secondary collapsed" type="collapsed" data-bs-toggle="collapse" data-bs-target="#saiba-mais4" aria-expanded="false" aria-controls="saiba-mais4"><span class="icone material-symbols-rounded" aria-hidden="true"></span> Você sabia?</button>
+											</div>
+
+											<div class="col-12">
+												<div class="mt-3 collapse" id="saiba-mais4">
+													<p>Para saber mais sobre a regressão de Poisson, <a href='https://youtu.be/oR8ZF_Khg_E?si=WTAxgy-9NjEbekel' target='_blank' rel='noopener noreferrer'>assista este vídeo.</a>.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
+									<!-- EXEMPLO -->
+									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="heading__block">
+											<h5 class="heading__title">Exemplo</h5>
+										</div>
+										<p class="mt-5">Uma pesquisa foi realizada com o objetivo de avaliar a associação entre fatores climáticos e a incidência de dengue no município do Rio de Janeiro no período de 2001 a 2009. O desfecho foi o número de casos mensais de dengue e as variáveis explicativas climáticas foram temperatura mínima e precipitação acumulada. Como o desfecho representa uma contagem, a regressão de Poisson é adequada para responder ao objetivo do estudo. O logaritmo da população foi introduzido no modelo Poisson a partir de um termo denominado offset, e com isso modelamos a taxa em vez da contagem média. Ao exponenciarmos os coeficientes das variáveis climáticas teremos uma estimativa do Risco Relativo (RR). Utilizando-se um software estatístico é possível estimar os coeficientes β<sub>0</sub>, β<sub>1</sub> e β<sub>2</sub>. No R, o comando <span class="color-tertiary-dark"><strong>glm</strong></span> com o argumento <span class="color-tertiary-dark"><strong>family=”poisson”</strong></span> é utilizado no ajuste do modelo de regressão de Poisson. A tabela a seguir apresenta os RR e os respectivos intervalos de confiança de 95% estimados.</p>
+
+
+										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img8.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
+										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
+									</figure>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<p><strong>Interpretação:</strong></p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- Lista Não-Ordenada -->
+									<div class="list">
+										<ul class="list-group">
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">O aumento da temperatura mínima e da precipitação aumenta o risco de dengue.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">O aumento de 1 °C na temperatura mínima acarretou aumento de aproximadamente 45% (1-1,452) no risco de dengue.</li>
+
+											<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">O aumento de 10mm na precipitação acarretou aumento de aproximadamente 0,06% no risco de dengue. </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
+									<p>A regressão de Poisson assume que a média é igual à variância (λ). Se a variância observada nos dados for maior do que a média, isso é chamado de superdispersão, de modo que a regressão de Poisson padrão pode não ser apropriada. Uma alternativa seria utilizar a regressão Binomial Negativa.  Se houver um número excessivo de zeros na variável dependente, a regressão de Poisson pode não se ajustar bem. Nesse caso, pode-se considerar modelos como o modelo Poisson inflacionado de zeros (ZIP) e a Binomial Negativa inflacionada de zeros (ZINB). </p>
+
+									<p>O método de estimação por máxima verossimilhança é o principal método de estimação dos parâmetros do modelo de regressão de Poisson. O teste de Wald é utilizado para testar a significância dos coeficientes do modelo e a Deviance para comparar os modelos ajustados. Existem também testes de diagnósticos específicos para avaliar os pressupostos do modelo. </p>
+
+									<p>Os modelos de regressão logística, o modelo de regressão de Poisson e o modelo de regressão linear fazem parte de uma classe de modelos denominada Modelos Lineares Generalizados (GLM, do inglês <em>Generalized Linear Models</em>). Os GLMs são uma extensão dos modelos de regressão linear ao permitir que a variável dependente assuma outras distribuições de probabilidade, como a Binomial e Poisson. O GLM tem flexibilidade para modelar diferentes tipos de variáveis dependentes (contínuas, categóricas, contagens). </p>
+								</div>
+							</div>
 						</div>
 					</section>
 				</div>
