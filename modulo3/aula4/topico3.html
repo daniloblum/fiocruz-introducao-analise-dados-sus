@@ -269,12 +269,97 @@
 									<span class="small">Tópico 3</span>
 									<h3 class="heading__title">Exemplo práticos dos modelos estatísticos</h3>
 								</div>
+
+									<!-- Olho de texto -->
+									<div class="olho-de-texto my-5">
+										<p>Os diversos tipos de modelos (estatísticos, matemáticos e computacionais) fornecem informações distintas e complementares para a compreensão de um fenômeno. Quando possível, o uso de múltiplas abordagens para responder a uma pergunta na área da saúde deve sempre ser incentivado, uma vez que torna mais robusta a evidência fornecida.</p>
+									</div>
+									<!--Fim de Olho de texto -->
+
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p></p>
+								<p>Os modelos estatísticos são os mais aplicados em relação aos dados da saúde, incluindo estudos observacionais, aqueles em que o pesquisador não interfere com os participantes, tanto quanto em estudos experimentais, em que os pesquisadores interferem com os participantes, definindo qual deles irá receber o tratamento ou não.</p>
+
+								<p>Durante o processo de desenvolvimento de um novo medicamento são realizados estudos experimentais, o conhecido ensaio clínico randomizado (ECT). Esses estudos são analisados utilizando-se um modelo estatístico, uma vez que o objetivo do ECT é, por exemplo, <strong>descrever as diferenças nas distribuições do desenvolvimento de uma doença entre o grupo tratado e não tratado (placebo)</strong>. Isto é, descrever a relação observada nos dados.</p>
+
+								<p>Por exemplo, o estudo <em>Osimertinib after Chemoradiotherapy in Stage III EGFR-Mutated NSCLC</em> (Lu et al., 2024) avaliou 216 pacientes com câncer de pulmão de células não pequenas em estágio avançado; desses, 143 receberam o novo tratamento (<em>Osimertinib</em>) e 73 receberam o tratamento padrão para essa doença. Na análise estatística foi encontrada uma redução no risco de progredir ou ir a óbito de 84% no grupo tratado, como visto na figura a seguir, que foi extraída do artigo.</p>
+							</div>
+						</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img4.png" alt="Progressão de pacientes vivos sem câncer" title="Fonte: Fonte: 10.1056/NEJMoa2402614 (2025).">
+										<figcaption class="figure-caption">Progressão de pacientes vivos sem câncer</figcaption>
+										<figcaption class="figure-caption fonte">Fonte: 10.1056/NEJMoa2402614 (2025).</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Estudos randomizados usualmente podem ser analisados com facilidade, devido ao balanceamento de fatores confundidores medidos e não medidos. Contudo, no caso de estudos observacionais, por exemplo, utilizando-se dados do sistema de informação do Brasil, é necessário utilizar modelos para tentar balancear os fatores confundidores nos dois grupos. Por exemplo, o estudo Clinical characteristics and risk factors for death among hospitalised children and adolescents with COVID-19 in Brazil: an analysis of a nationwide database utilizou um modelo com múltiplas variáveis, tais como: idade, sexo, região de residência, presença de comorbidades, entre outros.</p>
+							</div>
+						</div>
+
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img5.png" alt="Incidência cumulativa de óbito em crianças e adolescentes" title="Fonte: https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(21)00134-6/. Acesso em: 28 ago. 2025.">
+										<figcaption class="figure-caption">Incidência cumulativa de óbito em crianças e adolescentes</figcaption>
+										<figcaption class="figure-caption fonte">Fonte: https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(21)00134-6/. Acesso em: 28 ago. 2025.</figcaption>
+									</figure>
+								</div>
+							</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Seria impossível listar todas as possíveis aplicações dos modelos estatísticos no estudo de dados da saúde. Porém, vamos ver mais dois exemplos da aplicação de modelos estatísticos utilizando os dados disponíveis no Datasus.</p>
+
+								<p>O estudo <em>Characterisation of the first 250 000 hospital admissions for COVID-19 in Brazil: a retrospective analysis of nationwide data</em> (Ranzani et al., 2021) utilizou os dados disponíveis do mesmo estudo envolvendo crianças e adolescentes para caracterizar as primeiras hospitalizações por covid-19 no Brasil. Na figura a seguir, extraída do artigo, é possível ver a descrição da mortalidade hospitalar nas cinco regiões do Brasil, diferentemente do primeiro exemplo, quando foi avaliada a diferença entre dois grupos. Nesse caso, é avaliada apenas a distribuição da mortalidade hospitalar por região geográfica e semana epidemiológica.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img6.png" alt="Taxas de admissão por covid-19 por 100.000 habitantes nas diferentes regiões geográficas do Brasil" title="Fonte: https://doi.org/10.1016/S2213-2600(20)30560-9. Acesso em: 26 ago. 2025.">
+										<figcaption class="figure-caption">Taxas de admissão por covid-19 por 100.000 habitantes nas diferentes regiões geográficas do Brasil</figcaption>
+										<figcaption class="figure-caption fonte">Fonte: https://doi.org/10.1016/S2213-2600(20)30560-9. Acesso em: 26 ago. 2025.</figcaption>
+									</figure>
+								</div>
+							</div>
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>Seria impossível listar todas as possíveis aplicações dos modelos estatísticos no estudo de dados da saúde. Porém, vamos ver mais dois exemplos da aplicação de modelos estatísticos utilizando os dados disponíveis no Datasus.</p>
+
+								<p>Outro exemplo similar que utiliza modelagem estatística, agora com o intuito preditivo, é o InfoGripe, conforme a imagem a seguir.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img7.png" alt="Mapa" title="Fonte: http://info.gripe.fiocruz.br/. Acesso em: 26 ago. 2024.">
+										<figcaption class="figure-caption">Mapa</figcaption>
+										<figcaption class="figure-caption fonte">Fonte: http://info.gripe.fiocruz.br/. Acesso em: 26 ago. 2024.</figcaption>
+									</figure>
+								</div>
+							</div>
+
+
+						<div class="row justify-content-center">
+							<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<p>No Info Gripe, um modelo utilizando o número de casos de síndrome respiratória aguda e informações como tempo entre início dos sintomas e notificação do caso, sazonalidade da doença, entre outros é feito com o intuito de predizer se haverá aumento no número de casos nas semanas seguintes ou não.</p>
 							</div>
 						</div>
 

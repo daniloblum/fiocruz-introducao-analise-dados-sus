@@ -252,17 +252,200 @@
 										<h3 class="heading__title">Modelos estatísticos</h3>
 									</div>
 
-									<p></p>
+									<p>Um modelo estatístico — que é uma representação matemática — busca descrever e quantificar a relação, dependência ou associação entre <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>As variáveis são características, atributos ou propriedades que podem assumir diferentes valores em uma pesquisa, estudo ou análise de dados. São chamadas de variáveis justamente porque apresentam quantidades de interesse que variam, como número de casos, idade das pessoas etc.</p>" data-bs-original-title="Variáveis">variáveis</a> de acordo com um conjunto específico de pressupostos. Modelos comuns incluem a Regressão Linear, ideal para desfecho contínuo, a Análise de Variância (ANOVA), usada para comparar médias entre múltiplos grupos, e a Regressão Logística, aplicada em desfecho dicotômico (binário). A escolha do modelo dependerá da natureza do dado e da questão da pesquisa.</p>
+
+									<p>Um simples exemplo é a fórmula do modelo:</p>
 								</div>
 							</div>
 
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-10 col-lg-8 mb-5">
-									<div class="heading__block">
-										<h4 class="heading__title"></h4>
-									</div>
 
-									<p></p>
+									<math display="block" style="color:#000; font-size:24px;">
+									  <mi>Y</mi>
+									  <mo>=</mo>
+									  <msub>
+									    <mi>&beta;</mi>
+									    <mn>0</mn>
+									  </msub>
+									  <mo>+</mo>
+									  <msub>
+									    <mi>&beta;</mi>
+									    <mn>1</mn>
+									  </msub>
+									  <mo>&InvisibleTimes;</mo>
+									  <mi>X</mi>
+									  <mo>+</mo>
+									  <mi>E</mi>
+									  <mo>(</mo>
+									  <mn>1</mn>
+									  <mo>)</mo>
+									</math>
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Vamos entender melhor: se essa fórmula traz à lembrança a equação da reta em geometria (y = m*x + n) (2), você está no caminho certo. Podemos fazer paralelos com as duas equações (1) e (2); o termo n da equação da reta (coeficiente linear), indica onde a reta cruza o eixo y quando x é 0, esse termo seria equivalente ao termo β_0 do modelo estatístico que pode ser interpretado como a quantidade basal. O termo m da equação da reta (coeficiente angular) indica o quão inclinada é a reta, e no nosso modelo esse termo seria o <span class="color-tertiary-dark"><strong>β_1</strong></span>, que indica o quanto de mudança será adicionado por mudança no <span class="color-tertiary-dark"><strong>X</strong></span>. </p>
+
+									<p>Porém, há uma diferença marcante nas duas equações, que é um termo adicional na equação (1), o <span class="color-tertiary-dark"><strong>E</strong></span> (de erro); esse termo indica que nosso modelo é um modelo probabilístico, isto é, existe um erro associado no cálculo do valor de Y, enquanto na equação (2) não há esse erro adicional.</p>
+
+									
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<!-- Olho de texto -->
+									<div class="olho-de-texto my-5">
+										<p>Formalmente, podemos definir que <strong>um modelo estatístico é um conjunto de observações (espaço amostral) e um conjunto de distribuições probabilísticas referente a esse espaço amostral.</strong> </p>
+									</div>
+									<!--Fim de Olho de texto -->
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<p>Usando a equação (1), vista no exemplo anterior, também é possível ver os <strong>componentes do modelo estatístico</strong>. Veja:</p>
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<math display="block" style="color:#000; font-size:24px;">
+										  <mi>Y</mi>
+										  <mo>=</mo>
+										  <msub>
+										    <mi>&beta;</mi>
+										    <mn>0</mn>
+										  </msub>
+										  <mo>+</mo>
+										  <msub>
+										    <mi>&beta;</mi>
+										    <mn>1</mn>
+										  </msub>
+										  <mo>*</mo>
+										  <mi>X</mi>
+										  <mo>+</mo>
+										  <mi>E</mi>
+										  <mo>(</mo>
+										  <mn>1</mn>
+										  <mo>)</mo>
+									</math>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<p>O <span class="color-tertiary-dark"><strong>“Y”</strong></span> é a variável dependente (ou desfecho), enquanto o <span class="color-tertiary-dark"><strong>“X”</strong></span> é a variável independente (ou preditora). Vamos utilizar um exemplo para clarificar esses conceitos.</p>
+
+									<p>Em 1886, o <a class="" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-html='true' data-bs-content="<p>Polímata é uma pessoa que possui conhecimento profundo e habilidades em diversas áreas do saber — como ciências, artes, filosofia, matemática, línguas, entre outras.</p>" data-bs-original-title="Polímata">polímata</a> Francis Galton estudou a altura dos componentes de diversas famílias (pai, mãe e filhos). Nesse conjunto de dados, ele registrou o sexo e a ordem de nascimento dos filhos da família e as alturas de cada membro. Nós podemos utilizar essas informações para montar uma equação parecida com a (1) e avaliar se há diferença na altura da criança segundo a altura média dos pais. Veja a seguir.</p>
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<math display="block" style="color:#000; font-size:24px;">
+										<mrow>
+										    <mi>Altura</mi>
+										    <mo>&#x00A0;</mo>
+										    <mi>da</mi>
+										    <mo>&#x00A0;</mo>
+										    <mi>Criança</mi>
+										    <mo>=</mo>
+										    <msub>
+										      <mi>&beta;</mi>
+										      <mn>0</mn>
+										    </msub>
+										    <mo>+</mo>
+										    <msub>
+										      <mi>&beta;</mi>
+										      <mn>1</mn>
+										    </msub>
+										    <mo>*</mo>
+										    <mo>(</mo>
+										    <mi>Altura</mi>
+										    <mo>&#x00A0;</mo>
+										    <mi>média</mi>
+										    <mo>&#x00A0;</mo>
+										    <mi>dos</mi>
+										    <mo>&#x00A0;</mo>
+										    <mi>pais</mi>
+										    <mo>)</mo>
+										    <mo>+</mo>
+										    <mi>E</mi>
+										    <mo>(</mo>
+										    <mn>3</mn>
+										    <mo>)</mo>
+										 </mrow>
+									</math>
+								</div>
+							</div>
+
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+									<p>Essa equação pode ser traduzida pela figura a seguir, descrita pela equação: <span class="color-tertiary-dark"><strong>Y = 22,6 + 0,6 *Altura média dos pais + E (4). </strong></span></p>
+
+									<p>Esse modelo estatístico é chamado de regressão linear. Os valores 22,6 <span class="color-tertiary-dark"><strong>(β_0  )</strong></span> e 0,6 <span class="color-tertiary-dark"><strong>(β_1  )</strong></span> da equação foram obtidos a partir do método dos mínimos quadrados. Esse método tenta encontrar a reta que tem a menor soma das distâncias de cada ponto em relação à reta. Na realidade, é o mínimo da soma dos quadrados das distâncias e por isso o nome: método dos mínimos quadrados.</p>
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+								<!-- Imagem -->
+									<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img2.png" alt="Correlação entre a altura média dos pais e altura dos filhos" title="Fonte: Elaborada pelo autor (2025)">
+										<figcaption class="figure-caption">Correlação entre a altura média dos pais e altura dos filhos</figcaption>
+										<figcaption class="figure-caption fonte">Fonte: Elaborada pelo autor (2025).</figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<p>Com esse exemplo também podemos ver a equivalência entre as equações (1) e (2).</p>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+
+							<!-- Texto à esquerda com Imagem -->
+									<div class="row justify-content-center d-lg-block">
+										<!-- Imagem -->
+										<div class="col-md-8 col-lg-6 float-lg-end ms-lg-4 px-0 order-1 order-lg-2">
+											<figure>
+												<img class="img-fluid mx-auto d-block mb-3" src="../../media/modulo3/aula4-img3.png" alt="" title="Fonte: Fiocruz (2025)">
+												<figcaption class="figure-caption fonte">Correlação entre a altura média dos pais e a altura dos filhos extrapolada até o ponto de altura 0 da altura média dos pais.</figcaption>
+											</figure>
+										</div>
+		
+										<!-- Texto -->
+										<div class="order-2 order-lg-1">
+											<p>
+												Na figura ao lado, podemos ver onde a reta cruza o eixo y quando x é 0 é no valor de 22, nosso β0 descrito na equação (4). Além disso, nas duas figuras é possível ver uma região cinza ao redor da reta azul, que indica o erro associado em cada um dos nossos cálculos.</p>
+										</div>
+									</div>
+									<!-- Fim de texto e imagem à esquerda-->
+
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
 								</div>
 							</div>
 
