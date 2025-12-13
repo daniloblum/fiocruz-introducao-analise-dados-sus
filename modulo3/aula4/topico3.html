@@ -49,7 +49,7 @@
 	<!-- <meta name="theme-color" content="#003066" /> -->
 	<meta name="theme-color" content="#001833" />
 
-	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 2</title>
+	<title>Curso Introdução à Análise de Dados para pesquisa no SUS | Mod 3 | Aula 4</title>
 
 	<!-- Bootstrap CSS 5.1.3 -->
 	<link rel="stylesheet" href="../../source/bootstrap-5.1.3/css/bootstrap.min.css" />
@@ -177,7 +177,7 @@
 									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 3: </strong>Dados com estruturas de dependência: multiníveis, séries temporais e espaciais e sobrevida</a>
 								</li>
 								<li class="dropdown-menu__item">
-									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula4/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
+									<a class="dropdown-menu__item-link" tabindex="0" role="link" href="../aula3/topico1.html"><strong>Aula 4: </strong>Aplicação dos modelos estatísticos</a>
 								</li>
 
 								<li class="dropdown-menu__item">
@@ -196,7 +196,7 @@
 				</div>
 				<div class="sidebar__group">
 					<div class="sidebar__group-item">
-						<span class="text class">Aula 2</span>
+						<span class="text class">Aula 4</span>
 					</div>
 					<div class="sidebar__group-item">
 						<div class="dropend">
@@ -214,16 +214,16 @@
 											class="icon material-symbols-rounded">read_more</span></a>
 								</li>
 								<li class="dropdown-menu__title">
-									<span class="label">Aula 2</span>
-									<span class="title">Modelos Estatísticos: lineares e não lineares</span>
+									<span class="label">Aula 4</span>
+									<span class="title">Aplicação dos modelos estatísticos </span>
 								</li>
 								<li class="dropdown-menu__item">
 									<nav class="topic-list">
 											<a href="topico1.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Introdução</a>
 
-											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Modelos de regressão</a>
+											<a href="topico2.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"> <span class="material-symbols-rounded"></span>Modelos estatísticos</a>
 
-											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Modelos Aditivos Generalizados</a>
+											<a href="topico3.html" tabindex="0" role="link" class="topic-list__item" aria-label="Tópico concluído" status="visited"><span class="material-symbols-rounded"></span>Exemplo práticos dos modelos estatísticos</a>
 										</nav>
 								</li>
 							</ul>
@@ -250,9 +250,9 @@
 					<div class="row align-items-center hstify-content-center justify-content-xxl-start ms-lg-5">
 						<div class="col-12 col-md-10 col-lg-11">
 							<h2 class="title">
-								<span class="label">Módulo 3 | Aula 2</span>
+								<span class="label">Módulo 3 | Aula 4</span>
 								<br />
-								Modelos Estatísticos: lineares e não lineares
+								Aplicação dos modelos estatísticos
 							</h2>
 						</div>
 					</div>
@@ -267,135 +267,18 @@
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
 								<div class="heading__block">
 									<span class="small">Tópico 3</span>
-									<h3 class="heading__title">Modelos Aditivos Generalizados</h3>
+									<h3 class="heading__title">Exemplo práticos dos modelos estatísticos</h3>
 								</div>
 							</div>
 						</div>
 
 						<div class="row justify-content-center">
 							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>Os modelos aditivos generalizados (GAM, do inglês <em>Generalized Additive Models</em>) são uma extensão dos Modelos Lineares Generalizados, que permitem modelar de maneira mais flexível as relações entre variáveis explicativas e a variável dependente. Enquanto os GLMs assumem que a relação entre as variáveis explicativas e a variável resposta é linear (ou linear após a aplicação de uma função de ligação), os GAMs permitem que essas relações sejam <strong>não lineares</strong>, utilizando funções suaves (splines). A figura a seguir ilustra a diferença entre GLM e GAM.</p>
+								<p></p>
 							</div>
 						</div>
 
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-									<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img9.png" alt="" title="Fonte: https://cienciadedatos.net/documentos/63_gamlss. Acesso em: 25 jul. 2025." />
-									<figcaption class="figure-caption">Fonte: https://cienciadedatos.net/documentos/63_gamlss. Acesso em: 25 jul. 2025.</figcaption>
-								</figure>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>A estrutura geral dos GAMs é aditiva, o que significa que o efeito de cada variável explicativa na variável dependente é somado. A equação é dada por:</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<math display="block" style="color:#000; font-size:24px;">
-									<mrow>
-										<mi>g</mi>
-										<mo>(</mo>
-										<mi>&#x03BC;</mi>
-										<mo>)</mo>
-										<mo>=</mo>
-										<msub>
-										<mi>&#x03B2;</mi>
-										<mn>0</mn>
-										</msub>
-										<mo>+</mo>
-										<msub>
-										<mi>f</mi>
-										<mn>1</mn>
-										</msub>
-										<mo>(</mo>
-										<msub>
-										<mi>X</mi>
-										<mn>1</mn>
-										</msub>
-										<mo>)</mo>
-										<mo>+</mo>
-										<msub>
-										<mi>f</mi>
-										<mn>2</mn>
-										</msub>
-										<mo>(</mo>
-										<msub>
-										<mi>X</mi>
-										<mn>2</mn>
-										</msub>
-										<mo>)</mo>
-										<mo>+</mo>
-										<mo>&#x2026;</mo>
-										<mo>+</mo>
-										<msub>
-										<mi>f</mi>
-										<mi>k</mi>
-										</msub>
-										<mo>(</mo>
-										<msub>
-										<mi>X</mi>
-										<mi>k</mi>
-										</msub>
-										<mo>)</mo>
-									</mrow>
-								</math>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<p>Em que:</p>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<!-- Lista Não-Ordenada -->
-								<div class="list">
-									<ul class="list-group">
-										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200">μ é a média da variável dependente Y.</li>
-
-										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="100">g(μ) é a função de ligação que transforma a média da variável dependente.</li>
-
-										<li class="list-group-item aos-init aos-animate" list-style="default" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1200" data-aos-delay="200">f<sub>1</sub>(X<sub>1</sub>),f<sub>2</sub>(X<sub>2</sub>),…,f<sub>k</sub>(X<sub>k</sub>) são funções suaves que descrevem a relação não linear entre as variáveis explicativas e a variável dependente.</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8 mb-5">
-								<p>A variável dependente Y pode ser uma variável contínua (Normal), dicotômica (Binomial=>logística), uma contagem (Poisson) etc. Isso significa que, a todos os exemplos vistos até agora, poderíamos incorporar um termo não linear usando uma função suave f.</p>
-							</div>
-						</div>
 						
-						<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8 mb-5 pb-5">
-									<!-- EXEMPLO -->
-									<div class="code-container aos-init aos-animate" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="600">
-										<div class="heading__block">
-											<h5 class="heading__title">Exemplo</h5>
-										</div>
-										<p class="mt-5">Um estudo foi realizado para investigar se há padrões específicos de sexo na associação de fatores de risco cardiometabólicos com duração do sono autorrelatada. Um dos fatores de risco cardiometabólicos avaliados foi obesidade. Como o desfecho obesidade é dicotômico (sim/não) e a variável independente duração do sono é uma variável contínua, o modelo aditivo generalizado com distribuição binomial foi ajustado considerando-se uma relação não linear da duração do sono a partir de uma função suave (<em>spline</em>). Para observar diferenças na associação por sexo, o modelo foi estratificado. A figura a seguir apresenta o resultado do GAM para ambos os sexos.</p>
-
-
-										<figure class="lightbox aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
-										<img class="img-fluid rounded mx-auto d-block mb-3" src="../../media/modulo3/aula2-img10.png" alt="" title="Fonte: Elaborada pelo autor (2025)." />
-										<figcaption class="figure-caption">Fonte: Elaborada pelo autor (2025).</figcaption>
-									</figure>
-									</div>
-								</div>
-							</div>
-
-						<div class="row justify-content-center">
-							<div class="col-12 col-md-10 col-lg-8">
-								<p>Podemos observar que existe uma relação não linear entre duração do sono e obesidade para as mulheres, com um efeito protetor para duração do sono entre 6 e 8 horas (efeito negativo – eixo vertical) e risco para duração do sono inferior a 6 horas e superior a 8 horas. Por outro lado, não existe relação entre duração do sono e obesidade para os homens (reta estimada paralela ao eixo horizontal).</p>
-							</div>
-						</div>
 					</div>
 				</section>
 			</div>
@@ -407,7 +290,7 @@
 						<div class="col-12 col-md-10 col-lg-8">
 							<div class="page-nav d-flex justify-content-evenly">
 								<a class="fio-button fio-button-primary" href="topico2.html" rel="prev"><span class="material-symbols-rounded">west</span> Tópico anterior</a>
-								<a class="fio-button fio-button-primary" href="../aula3/topico1.html" rel="next">Aula 3 <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
+								<a class="fio-button fio-button-primary" href="../atividade.html" rel="next">Atividade <span class="material-symbols-rounded" aria-hidden="true">east</span></a>
 							</div>
 						</div>
 					</div>
