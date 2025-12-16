@@ -517,11 +517,29 @@
 							</div>
 
 							<div class="row justify-content-center">
-								<div class="col-12 col-md-10 col-lg-8">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
 									<p>A região crítica e o p-valor são obtidos usando-se a tabela da distribuição t de Student com n-2 graus de liberdade. Rejeitamos H<sub>0</sub>se o p-valor obtido for menor do que o nível de significância estabelecido. A rejeição de H<sub>0</sub> indica uma correlação linear estatisticamente significante.</p>
 
 									<p>Voltando ao exemplo da pressão sistólica e idade, se o coeficiente de correlação for igual a 0,66 e o p-valor &lt; 0,001. Nesse caso, rejeitamos H0, isso significa que existe uma correlação linear positiva e significativa entre idade e pressão arterial sistólica. No R, podemos obter o coeficiente de correlação de Pearson e o respectivo p-valor utilizando o comando <span class="color-tertiary-dark"><strong>cor.test</strong></span>.</p>
+								</div>
+							</div>
 
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 mb-5">
+									<!-- FAÇA VOCÊ MESMO -->
+									<div class="faca-voce-mesmo aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="600">
+										<div class="olho-de-texto my-5">
+											<div class="heading__block">
+												<h5 class="heading__title">Faça você mesmo!</h5>
+											</div>
+											<p>É hora de praticar! No script <strong>modulo3aula2_atividades.R</strong>, calcule a correlação entre PA e idade, interprete a força e direção da relação, e visualize com gráfico de dispersão.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8">
 									<p>O coeficiente de correlação de Pearson é paramétrico no sentido de que assume distribuição normal para as duas variáveis. Se a suposição de normalidade for válida, ele deve ser preferido. Caso a suposição não seja válida, podemos utilizar o coeficiente de correlação de <span class="color-tertiary-dark"><strong>Spearman</strong></span>. Esse coeficiente de correlação é baseado nos postos das observações e, portanto, não paramétrico. </p>
 
 									<p>Lembrando que correlação não implica causalidade. Um valor de r elevado não indica necessariamente que uma variável causa mudança na outra. Pode haver outras variáveis não observadas que influenciam ambas.</p>
